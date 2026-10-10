@@ -1,0 +1,470 @@
+The following ports are set to default value, please confirm:
+Port 'p:ddr3_dq[0]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[1]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[2]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[3]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[4]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[5]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[6]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[7]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[8]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[9]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[10]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[11]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[12]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[13]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[14]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[15]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[16]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[17]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[18]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[19]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[20]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[21]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[22]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[23]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[24]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[25]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[26]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[27]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[28]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[29]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[30]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dq[31]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_n[0]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_n[1]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_n[2]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_n[3]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_p[0]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_p[1]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_p[2]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dqs_p[3]':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:qspi_dq[0]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+SLEW is set to default value: SLOW,
+OFF_CHIP_TERMINATION is set to default value: Y,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:qspi_dq[1]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+SLEW is set to default value: SLOW,
+OFF_CHIP_TERMINATION is set to default value: Y,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:qspi_dq[2]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+SLEW is set to default value: SLOW,
+OFF_CHIP_TERMINATION is set to default value: Y,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:qspi_dq[3]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+SLEW is set to default value: SLOW,
+OFF_CHIP_TERMINATION is set to default value: Y,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:ddr3_addr[0]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[1]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[2]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[3]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[4]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[5]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[6]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[7]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[8]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[9]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[10]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[11]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[12]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[13]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[14]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_addr[15]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ba[0]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ba[1]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ba[2]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_cas_n':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ck_n':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ck_p':
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_cke':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_cs_n':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dm[0]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dm[1]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dm[2]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_dm[3]':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_odt':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_ras_n':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_reset_n':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:ddr3_we_n':
+DRIVE is set to default value: 7.5,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+
+Port 'p:led[0]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[1]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[2]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[3]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[4]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[5]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[6]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:led[7]':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:qspi_cs_n':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:qspi_sck':
+DRIVE is set to default value: 8,
+BUS_KEEPER is set to default value: NONE,
+OFF_CHIP_TERMINATION is set to default value: Y,
+OPEN_DRAIN is set to default value: OFF,
+
+Port 'p:clk_50m':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[0]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[1]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[2]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[3]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[4]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[5]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[6]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:key_n[7]':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+Port 'p:reset_n':
+BUS_KEEPER is set to default value: NONE,
+HYS_DRIVE_MODE is set to default value: NOHYS,
+
+

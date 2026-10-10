@@ -1,0 +1,5 @@
+### PGL50H HMIC priority route constraint adapted to the SoC hierarchy.
+### Generated example hierarchy: I_ipsxb_ddr_top/ddrphy_ioclk_gate.
+### SoC hierarchy: u_ddr3/u_pds_ddr3/u_hmic/ddrphy_ioclk_gate.
+### REGION_NUM=3 uses two PHY PLLs to cover Bank3 regions 0 and 2.
+def_route -prior_net {u_ddr3/u_pds_ddr3/u_hmic/ddrphy_ioclk_gate} -load {u_ddr3/u_pds_ddr3/u_hmic/u_ipsxb_ddrphy_pll_0/u_pll_e3/goppll:CLKOUT0_SYN; u_ddr3/u_pds_ddr3/u_hmic/u_ipsxb_ddrphy_pll_1/u_pll_e3/goppll:CLKOUT0_SYN; }

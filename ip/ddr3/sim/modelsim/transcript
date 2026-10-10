@@ -1,0 +1,32 @@
+# vsim -lib work -c ddr_test_top_tb 
+# 1000000 fs 
+# 110000000 fs 
+# St0
+# St0
+# 110000000 fs 
+# St0
+# St0
+# No interrupted macro
+# 110000000 fs 
+# 1
+# 1
+# St0
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/dfi_init_complete'.
+# 
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/u_ipsxb_ddrphy_pll/pll_rst'.
+# 
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/u_ipsxb_ddrphy_pll/clkin1'.
+# 
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/u_ipsxb_ddrphy_pll/clkout0'.
+# 
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/u_ipsxb_ddrphy_pll/pll_lock'.
+# 
+# ** Error: (vish-4014) No objects found matching 'ddr_test_top_tb/u_ddr/ddrphy_clkin'.
+# 
+# {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top (pgl50h_hmic_ddr3)} {/ddr_test_top_tb/u_ddr/u_free_clk_rstn_sync (ipsxb_rst_sync_v1_1)} {/ddr_test_top_tb/u_ddr/u_bist_top (axi_bist_top_v1_0)} {/ddr_test_top_tb/u_ddr/u_core_clk_rst_sync (ipsxb_rst_sync_v1_1)} {/ddr_test_top_tb/u_ddr/u_uart_rd_lock (uart_rd_lock)} {/ddr_test_top_tb/u_ddr/u_ipsxb_uart_ctrl (ipsxb_uart_ctrl_top_32bit)} {/ddr_test_top_tb/u_ddr/free_clk_ibufg (GTP_CLKBUFG)}
+# {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_ddrp_rstn_sync (ipsxb_rst_sync_v1_1)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_ddrphy_top (pgl50h_hmic_ddr3_ddrphy_top)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/I_GTP_IOCLKBUF_0 (GTP_IOCLKBUF)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_clkbufg_gate (GTP_CLKBUFG)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/I_GTP_CLKDIV (GTP_IOCLKDIV)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_clkbufg (GTP_CLKBUFG)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_ipsxb_ddrc_top (ipsxb_mcdq_wrapper_v1_2b)} {/ddr_test_top_tb/u_ddr/I_ipsxb_ddr_top/u_ipsxb_ddrphy_pll (ipsxb_ddrphy_pll_v1_0)}
+# St1
+# St1
+# St0
+# St0
+# St0

@@ -1,0 +1,48 @@
+library verilog;
+use verilog.vl_types.all;
+entity NaxRiscvContest is
+    port(
+        FetchCachePlugin_mem_cmd_valid: out    vl_logic;
+        FetchCachePlugin_mem_cmd_ready: in     vl_logic;
+        FetchCachePlugin_mem_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        FetchCachePlugin_mem_cmd_payload_io: out    vl_logic;
+        FetchCachePlugin_mem_rsp_valid: in     vl_logic;
+        FetchCachePlugin_mem_rsp_ready: out    vl_logic;
+        FetchCachePlugin_mem_rsp_payload_data: in     vl_logic_vector(63 downto 0);
+        FetchCachePlugin_mem_rsp_payload_error: in     vl_logic;
+        PrivilegedPlugin_io_int_machine_timer: in     vl_logic;
+        PrivilegedPlugin_io_int_machine_software: in     vl_logic;
+        PrivilegedPlugin_io_int_machine_external: in     vl_logic;
+        PrivilegedPlugin_io_rdtime: in     vl_logic_vector(63 downto 0);
+        LsuPlugin_peripheralBus_cmd_valid: out    vl_logic;
+        LsuPlugin_peripheralBus_cmd_ready: in     vl_logic;
+        LsuPlugin_peripheralBus_cmd_payload_write: out    vl_logic;
+        LsuPlugin_peripheralBus_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        LsuPlugin_peripheralBus_cmd_payload_data: out    vl_logic_vector(31 downto 0);
+        LsuPlugin_peripheralBus_cmd_payload_mask: out    vl_logic_vector(3 downto 0);
+        LsuPlugin_peripheralBus_cmd_payload_size: out    vl_logic_vector(1 downto 0);
+        LsuPlugin_peripheralBus_rsp_valid: in     vl_logic;
+        LsuPlugin_peripheralBus_rsp_payload_error: in     vl_logic;
+        LsuPlugin_peripheralBus_rsp_payload_data: in     vl_logic_vector(31 downto 0);
+        DataCachePlugin_mem_read_cmd_valid: out    vl_logic;
+        DataCachePlugin_mem_read_cmd_ready: in     vl_logic;
+        DataCachePlugin_mem_read_cmd_payload_id: out    vl_logic_vector(0 downto 0);
+        DataCachePlugin_mem_read_cmd_payload_address: out    vl_logic_vector(31 downto 0);
+        DataCachePlugin_mem_read_rsp_valid: in     vl_logic;
+        DataCachePlugin_mem_read_rsp_ready: out    vl_logic;
+        DataCachePlugin_mem_read_rsp_payload_id: in     vl_logic_vector(0 downto 0);
+        DataCachePlugin_mem_read_rsp_payload_data: in     vl_logic_vector(63 downto 0);
+        DataCachePlugin_mem_read_rsp_payload_error: in     vl_logic;
+        DataCachePlugin_mem_write_cmd_valid: out    vl_logic;
+        DataCachePlugin_mem_write_cmd_ready: in     vl_logic;
+        DataCachePlugin_mem_write_cmd_payload_last: out    vl_logic;
+        DataCachePlugin_mem_write_cmd_payload_fragment_address: out    vl_logic_vector(31 downto 0);
+        DataCachePlugin_mem_write_cmd_payload_fragment_data: out    vl_logic_vector(63 downto 0);
+        DataCachePlugin_mem_write_cmd_payload_fragment_id: out    vl_logic_vector(0 downto 0);
+        DataCachePlugin_mem_write_rsp_valid: in     vl_logic;
+        DataCachePlugin_mem_write_rsp_payload_error: in     vl_logic;
+        DataCachePlugin_mem_write_rsp_payload_id: in     vl_logic_vector(0 downto 0);
+        clk             : in     vl_logic;
+        reset           : in     vl_logic
+    );
+end NaxRiscvContest;

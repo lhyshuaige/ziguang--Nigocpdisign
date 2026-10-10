@@ -1,0 +1,170 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP6.7.1 <build 188940>)
+| Date         : Wed Oct  7 10:59:44 2026
+| Design       : pgl50h_top
+| Device       : PGL50H
+| Speed Grade  : -6
+| Package      : FBG484
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing -force_to_run -delay_type {min} -max_path 20000 -slack_less_than 0 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                                                                                          
+*************************************************************************************************************************************************************************
+                                                                                 Clock   Non-clock                                                                       
+ Clock                    Period       Waveform            Type                  Loads       Loads  Sources                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ clk_50m                  20.0000      {0.0000 10.0000}    Declared                 64           6  {clk_50m}                                                            
+   pll_clk_sys            10.0000      {0.0000 5.0000}     Generated (clk_50m)   14142           0  {u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0} 
+   ddrphy_clkin           10.0000      {0.0000 5.0000}     Generated (clk_50m)    4394           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_CLKDIV/gopclkdiv/CLKDIV}             
+   ioclk0                 2.5000       {0.0000 1.2500}     Generated (clk_50m)      11           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_0/gopclkgate/OUT}           
+   ioclk1                 2.5000       {0.0000 1.2500}     Generated (clk_50m)      27           1  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_1/gopclkgate/OUT}           
+   ioclk2                 2.5000       {0.0000 1.2500}     Generated (clk_50m)       2           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_2/gopclkgate/OUT}           
+   ioclk_gate_clk         10.0000      {0.0000 5.0000}     Generated (clk_50m)       1           0  {u_ddr3/u_pds_ddr3/u_hmic/u_clkbufg_gate/gopclkbufg/CLKOUT}          
+=========================================================================================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+ hmic_ref_async_test           asynchronous               clk_50m                                   
+ hmic_ioclk0_async_test        asynchronous               ioclk0                                    
+ hmic_ioclk1_async_test        asynchronous               ioclk1                                    
+ hmic_ioclk2_async_test        asynchronous               ioclk2                                    
+ hmic_gate_async_test          asynchronous               ioclk_gate_clk                            
+ soc_hmic_cdc_async            asynchronous                                                         
+     soc_hmic_cdc_async_0                                 pll_clk_sys                               
+     soc_hmic_cdc_async_1                                 ddrphy_clkin                              
+====================================================================================================
+
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                      0.315       0.000              0            182
+ pll_clk_sys            pll_clk_sys                  0.138       0.000              0          60330
+ ddrphy_clkin           ddrphy_clkin                 0.171       0.000              0          12653
+ ioclk0                 ioclk0                       0.250       0.000              0             24
+ ioclk1                 ioclk1                       0.250       0.000              0             72
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                      0.712       0.000              0             62
+ pll_clk_sys            pll_clk_sys                  0.918       0.000              0            529
+ ddrphy_clkin           ddrphy_clkin                 0.506       0.000              0           2694
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                                             9.380       0.000              0             64
+ pll_clk_sys                                         3.100       0.000              0          14142
+ ddrphy_clkin                                        3.100       0.000              0           4394
+ ioclk0                                              0.397       0.000              0             11
+ ioclk1                                              0.397       0.000              0             27
+ ioclk2                                              0.397       0.000              0              2
+ ioclk_gate_clk                                      4.580       0.000              0              1
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                      0.253       0.000              0            182
+ pll_clk_sys            pll_clk_sys                  0.092       0.000              0          60330
+ ddrphy_clkin           ddrphy_clkin                 0.100       0.000              0          12653
+ ioclk0                 ioclk0                       0.183       0.000              0             24
+ ioclk1                 ioclk1                       0.183       0.000              0             72
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                      0.546       0.000              0             62
+ pll_clk_sys            pll_clk_sys                  0.676       0.000              0            529
+ ddrphy_clkin           ddrphy_clkin                 0.306       0.000              0           2694
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                                             9.504       0.000              0             64
+ pll_clk_sys                                         3.480       0.000              0          14142
+ ddrphy_clkin                                        3.480       0.000              0           4394
+ ioclk0                                              0.568       0.000              0             11
+ ioclk1                                              0.568       0.000              0             27
+ ioclk2                                              0.568       0.000              0              2
+ ioclk_gate_clk                                      4.664       0.000              0              1
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Inputs and Outputs :
++----------------------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                                        
++----------------------------------------------------------------------------------------------------------------+
+| Input      | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/place_route/pgl50h_top_pnr.adf             
+| Output     | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top_rtp.adf           
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top_exception.rtr     
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top.rtr               
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/rtr.db                       
++----------------------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing -force_to_run -delay_type {min} -max_path 20000 -slack_less_than 0 
+Peak memory: 1,609 MB
+Total CPU time to report_timing completion : 0h:0m:17s
+Process Total CPU time to report_timing completion : 0h:0m:25s
+Total real time to report_timing completion : 0h:0m:20s

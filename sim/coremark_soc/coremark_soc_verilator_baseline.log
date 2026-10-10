@@ -1,0 +1,21 @@
+
+SOC_COREMARK_CYCLES=1000000 hmic_reads=886 hmic_writes=40 leds=0x0
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 2108732
+Total time (secs): 2108732.000000
+Iterations/Sec   : 0.000005
+Iterations       : 10
+Compiler version : GCC11.1.0
+Compiler flags   : -DPERFORMANCE_RUN=1  -march=rv32im -mabi=ilp32 -mcmodel=medany -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -I../driver -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -DCORE_DEBUG=0  -lgcc -lc -nostartfiles -ffreestanding -Wl,-Bstatic,-T,../common/app.ld,-Map,coremark.map,--print-memory-usage
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xfcaf
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 0.000005 / GCC11.1.0 -DPERFORMANCE_RUN=1  -march=rv32im -mabi=ilp32 -mcmodel=medany -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -I../driver -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -DCORE_DEBUG=0  -lgcc -lc -nostartfiles -ffreestanding -Wl,-Bstatic,-T,../common/app.ld,-Map,coremark.map,--print-memory-usage / STACK
+4.74 Coremark/MHz
+COREMARK_SOC_PASS cycles=2176110 hmic_reads=1908 hmic_writes=96
+SOC_COREMARK_CYCLES=2000000 hmic_reads=1070 hmic_writes=80 leds=0x0

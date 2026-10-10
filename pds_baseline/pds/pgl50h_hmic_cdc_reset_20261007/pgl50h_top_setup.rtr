@@ -1,0 +1,1926 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP6.7.1 <build 188940>)
+| Date         : Wed Oct  7 10:59:21 2026
+| Design       : pgl50h_top
+| Device       : PGL50H
+| Speed Grade  : -6
+| Package      : FBG484
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing -force_to_run -delay_type {max} -max_path 20000 -slack_less_than 0 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                                                                                          
+*************************************************************************************************************************************************************************
+                                                                                 Clock   Non-clock                                                                       
+ Clock                    Period       Waveform            Type                  Loads       Loads  Sources                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ clk_50m                  20.0000      {0.0000 10.0000}    Declared                 64           6  {clk_50m}                                                            
+   pll_clk_sys            10.0000      {0.0000 5.0000}     Generated (clk_50m)   14142           0  {u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0} 
+   ddrphy_clkin           10.0000      {0.0000 5.0000}     Generated (clk_50m)    4394           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_CLKDIV/gopclkdiv/CLKDIV}             
+   ioclk0                 2.5000       {0.0000 1.2500}     Generated (clk_50m)      11           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_0/gopclkgate/OUT}           
+   ioclk1                 2.5000       {0.0000 1.2500}     Generated (clk_50m)      27           1  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_1/gopclkgate/OUT}           
+   ioclk2                 2.5000       {0.0000 1.2500}     Generated (clk_50m)       2           0  {u_ddr3/u_pds_ddr3/u_hmic/I_GTP_IOCLKBUF_2/gopclkgate/OUT}           
+   ioclk_gate_clk         10.0000      {0.0000 5.0000}     Generated (clk_50m)       1           0  {u_ddr3/u_pds_ddr3/u_hmic/u_clkbufg_gate/gopclkbufg/CLKOUT}          
+=========================================================================================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+ hmic_ref_async_test           asynchronous               clk_50m                                   
+ hmic_ioclk0_async_test        asynchronous               ioclk0                                    
+ hmic_ioclk1_async_test        asynchronous               ioclk1                                    
+ hmic_ioclk2_async_test        asynchronous               ioclk2                                    
+ hmic_gate_async_test          asynchronous               ioclk_gate_clk                            
+ soc_hmic_cdc_async            asynchronous                                                         
+     soc_hmic_cdc_async_0                                 pll_clk_sys                               
+     soc_hmic_cdc_async_1                                 ddrphy_clkin                              
+====================================================================================================
+
+ Performance Summary:                                                                               
+****************************************************************************************************
+                              Requested       Estimated      Requested      Estimated               
+ Clock                        Frequency       Frequency      Period         Period             Slack
+----------------------------------------------------------------------------------------------------
+ clk_50m                    50.0000 MHz    108.7903 MHz        20.0000         9.1920         10.808
+ pll_clk_sys               100.0000 MHz     99.8303 MHz        10.0000        10.0170         -0.017
+ ddrphy_clkin              100.0000 MHz    122.1747 MHz        10.0000         8.1850          1.815
+ ioclk0                    400.0000 MHz    992.0635 MHz         2.5000         1.0080          1.492
+ ioclk1                    400.0000 MHz    992.0635 MHz         2.5000         1.0080          1.492
+====================================================================================================
+
+Design Summary : Some Constraints Violated.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                     10.808       0.000              0            182
+ pll_clk_sys            pll_clk_sys                 -0.017      -0.019              2          60330
+ ddrphy_clkin           ddrphy_clkin                 1.815       0.000              0          12653
+ ioclk0                 ioclk0                       1.492       0.000              0             24
+ ioclk1                 ioclk1                       1.492       0.000              0             72
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                     16.653       0.000              0             62
+ pll_clk_sys            pll_clk_sys                  5.393       0.000              0            529
+ ddrphy_clkin           ddrphy_clkin                 4.070       0.000              0           2694
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                                             9.380       0.000              0             64
+ pll_clk_sys                                         3.100       0.000              0          14142
+ ddrphy_clkin                                        3.100       0.000              0           4394
+ ioclk0                                              0.397       0.000              0             11
+ ioclk1                                              0.397       0.000              0             27
+ ioclk2                                              0.397       0.000              0              2
+ ioclk_gate_clk                                      4.580       0.000              0              1
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                     13.476       0.000              0            182
+ pll_clk_sys            pll_clk_sys                  2.660       0.000              0          60330
+ ddrphy_clkin           ddrphy_clkin                 4.126       0.000              0          12653
+ ioclk0                 ioclk0                       1.634       0.000              0             24
+ ioclk1                 ioclk1                       1.634       0.000              0             72
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                clk_50m                     17.525       0.000              0             62
+ pll_clk_sys            pll_clk_sys                  6.685       0.000              0            529
+ ddrphy_clkin           ddrphy_clkin                 5.703       0.000              0           2694
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk_50m                                             9.504       0.000              0             64
+ pll_clk_sys                                         3.480       0.000              0          14142
+ ddrphy_clkin                                        3.480       0.000              0           4394
+ ioclk0                                              0.568       0.000              0             11
+ ioclk1                                              0.568       0.000              0             27
+ ioclk2                                              0.568       0.000              0              2
+ ioclk_gate_clk                                      4.664       0.000              0              1
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_alu0/banks_0_ram/ram_24/iGopDrm/CLKB
+Endpoint    : u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_fetch_1_integer_RS2[31:0]_3_ret_1[20]/opit_0_MUX4TO1Q/I0
+Path Group  : pll_clk_sys
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.036  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.617
+  Launch Clock Delay      :  4.961
+  Clock Pessimism Removal :  0.308
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ DRM_178_148/CLKB[1]                                                       r       u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_alu0/banks_0_ram/ram_24/iGopDrm/CLKB
+
+ DRM_178_148/QA1[16]               tco                   2.351       7.312 f       u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_alu0/banks_0_ram/ram_24/iGopDrm/DOA[16]
+                                   net (fanout=1)        1.231       8.543         u_soc_core/u_cpu/_N608
+ CLMS_226_165/Y1                   td                    0.212       8.755 r       u_soc_core/u_cpu/N3881_12[15]/gateop_perm/Z
+                                   net (fanout=2)        0.623       9.378         u_soc_core/u_cpu/_N24579
+ CLMS_242_165/Y0                   td                    0.210       9.588 r       u_soc_core/u_cpu/N3881_13[15]/gateop_perm/Z
+                                   net (fanout=1)        0.630      10.218         u_soc_core/u_cpu/_N24611
+ CLMA_230_160/Y1                   td                    0.212      10.430 r       u_soc_core/u_cpu/N3885_6[15]_1/gateop/F
+                                   net (fanout=1)        0.422      10.852         u_soc_core/u_cpu/ALU0_SrcPlugin_logic_addsub_rs2Patched [15]
+                                   td                    0.327      11.179 f       u_soc_core/u_cpu/N160_16/gateop_A2/Cout
+                                   net (fanout=1)        0.000      11.179         u_soc_core/u_cpu/_N13155
+ CLMS_222_157/COUT                 td                    0.058      11.237 r       u_soc_core/u_cpu/N160_18/gateop_A2/Cout
+                                   net (fanout=1)        0.000      11.237         u_soc_core/u_cpu/_N13157
+ CLMS_222_161/Y1                   td                    0.498      11.735 r       u_soc_core/u_cpu/N160_20/gateop_A2/Y1
+                                   net (fanout=1)        0.554      12.289         u_soc_core/u_cpu/ALU0_ExecutionUnitBase_pipeline_execute_0_SrcStageables_ADD_SUB [20]
+ CLMA_226_160/Y2                   td                    0.196      12.485 f       u_soc_core/u_cpu/ALU0_ExecutionUnitBase_pipeline_execute_1_IntAluPlugin_ALU_RESULT[20]/opit_0_L5Q_perm/Z
+                                   net (fanout=6)        0.960      13.445         u_soc_core/u_cpu/ALU0_ExecutionUnitBase_pipeline_execute_0_IntAluPlugin_ALU_RESULT [20]
+ CLMA_210_193/Y0                   td                    0.341      13.786 f       u_soc_core/u_cpu/N2631_4[20]/gateop/F
+                                   net (fanout=1)        0.816      14.602         u_soc_core/u_cpu/_N24121
+ CLMA_194_225/CD                                                           f       u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_fetch_1_integer_RS2[31:0]_3_ret_1[20]/opit_0_MUX4TO1Q/I0
+
+ Data arrival time                                                  14.602         Logic Levels: 7  
+                                                                                   Logic: 4.405ns(45.690%), Route: 5.236ns(54.310%)
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                        10.000      10.000 r                        
+ P20                                                     0.000      10.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074      10.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.047      11.121 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      11.121         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.048      11.169 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.758      11.927         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.100      12.027 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.059      13.086         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000      13.086 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.531      14.617         ntclkbufg_0      
+ CLMA_194_225/CLK                                                          r       u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_fetch_1_integer_RS2[31:0]_3_ret_1[20]/opit_0_MUX4TO1Q/CLK
+ clock pessimism                                         0.308      14.925                          
+ clock uncertainty                                      -0.150      14.775                          
+
+ Setup time                                             -0.190      14.585                          
+
+ Data required time                                                 14.585                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 14.585                          
+ Data arrival time                                                  14.602                          
+----------------------------------------------------------------------------------------------------
+ Slack (VIOLATED)                                                   -0.017                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_eu0/banks_0_ram/ram_3/iGopDrm/CLKB
+Endpoint    : u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_execute_1_MulPlugin_logic_mul_VALUES_1[40]/opit_0/D
+Path Group  : pll_clk_sys
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.177  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.617
+  Launch Clock Delay      :  5.084
+  Clock Pessimism Removal :  0.290
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.708       5.084         ntclkbufg_0      
+ DRM_178_252/CLKB[0]                                                       r       u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_eu0/banks_0_ram/ram_3/iGopDrm/CLKB
+
+ DRM_178_252/QA0[10]               tco                   2.331       7.415 r       u_soc_core/u_cpu/integer_RegFilePlugin_logic_regfile_fpga_eu0/banks_0_ram/ram_3/iGopDrm/DOA[10]
+                                   net (fanout=1)        0.729       8.144         u_soc_core/u_cpu/_N141
+ CLMA_170_248/Y3                   td                    0.288       8.432 f       u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_fetch_1_SrcStageables_SRC1[31:0]_15[9]/gateop_perm/Z
+                                   net (fanout=2)        1.141       9.573         u_soc_core/u_cpu/_N30702
+ CLMA_150_164/Y3                   td                    0.210       9.783 r       u_soc_core/u_cpu/EU0_CsrAccessPlugin_logic_fsm_regs_rs1[9]/opit_0_L5Q_perm/Z
+                                   net (fanout=5)        1.595      11.378         u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_execute_0_MUL_SRC1 [9]
+ APM_106_228/P[32]                 td                    2.570      13.948 r       u_soc_core/u_cpu/N197/gopapm/P[32]
+                                   net (fanout=15)       0.840      14.788         u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_execute_0_MulPlugin_logic_mul_VALUES_1 [46]
+ CLMA_110_236/CD                                                           r       u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_execute_1_MulPlugin_logic_mul_VALUES_1[40]/opit_0/D
+
+ Data arrival time                                                  14.788         Logic Levels: 3  
+                                                                                   Logic: 5.399ns(55.637%), Route: 4.305ns(44.363%)
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                        10.000      10.000 r                        
+ P20                                                     0.000      10.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074      10.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.047      11.121 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      11.121         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.048      11.169 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.758      11.927         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.100      12.027 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.059      13.086         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000      13.086 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.531      14.617         ntclkbufg_0      
+ CLMA_110_236/CLK                                                          r       u_soc_core/u_cpu/EU0_ExecutionUnitBase_pipeline_execute_1_MulPlugin_logic_mul_VALUES_1[40]/opit_0/CLK
+ clock pessimism                                         0.290      14.907                          
+ clock uncertainty                                      -0.150      14.757                          
+
+ Setup time                                              0.029      14.786                          
+
+ Data required time                                                 14.786                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 14.786                          
+ Data arrival time                                                  14.788                          
+----------------------------------------------------------------------------------------------------
+ Slack (VIOLATED)                                                   -0.002                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/CLK
+Endpoint    : ddr3_reset_n (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ddrphy_clkin (rising edge)                        0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        2.438       3.842         _N36             
+ USCM_84_109/CLK_USCM              td                    0.000       3.842 r       u_ddr3/u_pds_ddr3/u_hmic/u_clkbufg/gopclkbufg/CLKOUT
+                                   net (fanout=66)       1.738       5.580         u_ddr3/u_pds_ddr3/u_hmic/pll_clkin
+ PLL_158_199/CLK_OUT0_WL           td                    0.165       5.745 r       u_ddr3/u_pds_ddr3/u_hmic/u_ipsxb_ddrphy_pll_0/u_pll_e3/goppll/CLKOUT0_WL
+                                   net (fanout=3)        1.121       6.866         clkout0_wl_0     
+ IOCKGATE_6_322/OUT                td                    0.348       7.214 r       clkgate_2/gopclkgate/OUT
+                                   net (fanout=1)        0.000       7.214         ntclkgate_0      
+ IOCKDIV_6_323/CLK_IODIV           td                    0.000       7.214 r       u_ddr3/u_pds_ddr3/u_hmic/I_GTP_CLKDIV/gopclkdiv/CLKDIV
+                                   net (fanout=1)        2.191       9.405         ddrphy_clkin     
+ USCM_84_111/CLK_USCM              td                    0.000       9.405 r       clkbufg_1/gopclkbufg/CLKOUT
+                                   net (fanout=4394)     1.708      11.113         ntclkbufg_1      
+ CLMA_18_288/CLK                                                           r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/CLK
+
+ CLMA_18_288/Q3                    tco                   0.286      11.399 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/Q
+                                   net (fanout=342)      2.607      14.006         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/calib_done
+ CLMA_10_56/Y1                     td                    0.316      14.322 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_dfi/N48/gateop_perm/Z
+                                   net (fanout=1)        0.764      15.086         nt_ddr3_reset_n  
+ IOL_7_21/DO                       td                    0.139      15.225 f       ddr3_reset_n_obuf/opit_1/O
+                                   net (fanout=1)        0.000      15.225         ddr3_reset_n_obuf/ntO
+ IOBS_LR_0_20/PAD                  td                    3.903      19.128 f       ddr3_reset_n_obuf/opit_0/O
+                                   net (fanout=1)        0.069      19.197         ddr3_reset_n     
+ W4                                                                        f       ddr3_reset_n (port)
+
+ Data arrival time                                                  19.197         Logic Levels: 3  
+                                                                                   Logic: 4.644ns(57.447%), Route: 3.440ns(42.553%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/CLK
+Endpoint    : led[6] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/CLK
+
+ CLMA_110_196/Q2                   tco                   0.289       5.250 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/Q
+                                   net (fanout=2)        2.849       8.099         nt_led[6]        
+ IOL_15_373/DO                     td                    0.139       8.238 f       led_obuf[6]/opit_1/O
+                                   net (fanout=1)        0.000       8.238         led_obuf[6]/ntO  
+ IOBS_TB_13_376/PAD                td                    3.818      12.056 f       led_obuf[6]/opit_0/O
+                                   net (fanout=1)        0.075      12.131         led[6]           
+ D5                                                                        f       led[6] (port)    
+
+ Data arrival time                                                  12.131         Logic Levels: 2  
+                                                                                   Logic: 4.246ns(59.219%), Route: 2.924ns(40.781%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/CLK
+Endpoint    : led[7] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/CLK
+
+ CLMA_110_196/Q0                   tco                   0.287       5.248 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/Q
+                                   net (fanout=2)        2.797       8.045         nt_led[7]        
+ IOL_15_374/DO                     td                    0.139       8.184 f       led_obuf[7]/opit_1/O
+                                   net (fanout=1)        0.000       8.184         led_obuf[7]/ntO  
+ IOBD_12_376/PAD                   td                    3.818      12.002 f       led_obuf[7]/opit_0/O
+                                   net (fanout=1)        0.072      12.074         led[7]           
+ D4                                                                        f       led[7] (port)    
+
+ Data arrival time                                                  12.074         Logic Levels: 2  
+                                                                                   Logic: 4.244ns(59.665%), Route: 2.869ns(40.335%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/CLK
+Endpoint    : led[3] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/CLK
+
+ CLMA_110_209/Q1                   tco                   0.289       5.250 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/Q
+                                   net (fanout=2)        2.774       8.024         nt_led[3]        
+ IOL_23_374/DO                     td                    0.139       8.163 f       led_obuf[3]/opit_1/O
+                                   net (fanout=1)        0.000       8.163         led_obuf[3]/ntO  
+ IOBD_20_376/PAD                   td                    3.818      11.981 f       led_obuf[3]/opit_0/O
+                                   net (fanout=1)        0.061      12.042         led[3]           
+ E5                                                                        f       led[3] (port)    
+
+ Data arrival time                                                  12.042         Logic Levels: 2  
+                                                                                   Logic: 4.246ns(59.963%), Route: 2.835ns(40.037%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/CLK
+Endpoint    : led[2] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/CLK
+
+ CLMA_110_209/Q0                   tco                   0.287       5.248 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/Q
+                                   net (fanout=2)        2.627       7.875         nt_led[2]        
+ IOL_23_373/DO                     td                    0.139       8.014 f       led_obuf[2]/opit_1/O
+                                   net (fanout=1)        0.000       8.014         led_obuf[2]/ntO  
+ IOBS_TB_21_376/PAD                td                    3.818      11.832 f       led_obuf[2]/opit_0/O
+                                   net (fanout=1)        0.046      11.878         led[2]           
+ E6                                                                        f       led[2] (port)    
+
+ Data arrival time                                                  11.878         Logic Levels: 2  
+                                                                                   Logic: 4.244ns(61.356%), Route: 2.673ns(38.644%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/CLK
+Endpoint    : led[5] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/CLK
+
+ CLMA_110_209/Y0                   tco                   0.368       5.329 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/Q
+                                   net (fanout=2)        2.475       7.804         nt_led[5]        
+ IOL_43_374/DO                     td                    0.139       7.943 f       led_obuf[5]/opit_1/O
+                                   net (fanout=1)        0.000       7.943         led_obuf[5]/ntO  
+ IOBD_40_376/PAD                   td                    3.818      11.761 f       led_obuf[5]/opit_0/O
+                                   net (fanout=1)        0.102      11.863         led[5]           
+ C4                                                                        f       led[5] (port)    
+
+ Data arrival time                                                  11.863         Logic Levels: 2  
+                                                                                   Logic: 4.325ns(62.663%), Route: 2.577ns(37.337%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/CLK
+Endpoint    : led[4] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/CLK
+
+ CLMA_110_209/Q3                   tco                   0.286       5.247 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/Q
+                                   net (fanout=2)        2.456       7.703         nt_led[4]        
+ IOL_43_373/DO                     td                    0.139       7.842 f       led_obuf[4]/opit_1/O
+                                   net (fanout=1)        0.000       7.842         led_obuf[4]/ntO  
+ IOBS_TB_41_376/PAD                td                    3.818      11.660 f       led_obuf[4]/opit_0/O
+                                   net (fanout=1)        0.102      11.762         led[4]           
+ A4                                                                        f       led[4] (port)    
+
+ Data arrival time                                                  11.762         Logic Levels: 2  
+                                                                                   Logic: 4.243ns(62.388%), Route: 2.558ns(37.612%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/CLK
+Endpoint    : led[0] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/CLK
+
+ CLMA_110_196/Q1                   tco                   0.289       5.250 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/Q
+                                   net (fanout=2)        2.427       7.677         nt_led[0]        
+ IOL_71_373/DO                     td                    0.139       7.816 f       led_obuf[0]/opit_1/O
+                                   net (fanout=1)        0.000       7.816         led_obuf[0]/ntO  
+ IOBS_TB_69_376/PAD                td                    3.818      11.634 f       led_obuf[0]/opit_0/O
+                                   net (fanout=1)        0.063      11.697         led[0]           
+ F9                                                                        f       led[0] (port)    
+
+ Data arrival time                                                  11.697         Logic Levels: 2  
+                                                                                   Logic: 4.246ns(63.034%), Route: 2.490ns(36.966%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/CLK
+Endpoint    : led[1] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    1.254       1.328 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.328         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.076       1.404 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.787       2.191         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.107       2.298 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        1.078       3.376         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       3.376 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         1.585       4.961         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/CLK
+
+ CLMA_110_209/Q2                   tco                   0.289       5.250 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/Q
+                                   net (fanout=2)        2.424       7.674         nt_led[1]        
+ IOL_71_374/DO                     td                    0.139       7.813 f       led_obuf[1]/opit_1/O
+                                   net (fanout=1)        0.000       7.813         led_obuf[1]/ntO  
+ IOBD_68_376/PAD                   td                    3.818      11.631 f       led_obuf[1]/opit_0/O
+                                   net (fanout=1)        0.060      11.691         led[1]           
+ G8                                                                        f       led[1] (port)    
+
+ Data arrival time                                                  11.691         Logic Levels: 2  
+                                                                                   Logic: 4.246ns(63.091%), Route: 2.484ns(36.909%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[1] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[1]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 f       key_n[1] (port)  
+                                   net (fanout=1)        0.055       0.055         key_n[1]         
+ IOBD_17_0/DIN                     td                    1.367       1.422 f       key_n_ibuf[1]/opit_0/O
+                                   net (fanout=1)        0.000       1.422         key_n_ibuf[1]/ntD
+ IOL_19_6/RX_DATA_DD               td                    0.127       1.549 f       key_n_ibuf[1]/opit_1/OUT
+                                   net (fanout=1)        3.083       4.632         nt_key_n[1]      
+ CLMS_122_149/Y1                   td                    0.466       5.098 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[1]/gateop_perm/Z
+                                   net (fanout=1)        1.313       6.411         u_soc_core/g_axi_fabric.u_csr_fabric/_N22758
+ CLMS_94_197/Y1                    td                    0.212       6.623 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[1]/gateop_perm/Z
+                                   net (fanout=1)        0.405       7.028         u_soc_core/g_axi_fabric.u_csr_fabric/_N22822
+ CLMA_94_200/Y0                    td                    0.210       7.238 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[1]/gateop_perm/Z
+                                   net (fanout=1)        0.462       7.700         u_soc_core/g_axi_fabric.u_csr_fabric/_N22886
+ CLMA_110_201/Y3                   td                    0.273       7.973 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[1]/gateop/F
+                                   net (fanout=1)        0.451       8.424         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [1]
+ CLMA_110_192/A3                                                           r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[1]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   8.424         Logic Levels: 6  
+                                                                                   Logic: 2.655ns(31.517%), Route: 5.769ns(68.483%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[0] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[0]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ U6                                                      0.000       0.000 f       key_n[0] (port)  
+                                   net (fanout=1)        0.056       0.056         key_n[0]         
+ IOBS_TB_16_0/DIN                  td                    1.367       1.423 f       key_n_ibuf[0]/opit_0/O
+                                   net (fanout=1)        0.000       1.423         key_n_ibuf[0]/ntD
+ IOL_19_5/RX_DATA_DD               td                    0.127       1.550 f       key_n_ibuf[0]/opit_1/OUT
+                                   net (fanout=1)        3.186       4.736         nt_key_n[0]      
+ CLMA_122_172/Y1                   td                    0.288       5.024 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[0]/gateop/F
+                                   net (fanout=1)        0.265       5.289         u_soc_core/g_axi_fabric.u_csr_fabric/_N22757
+ CLMA_122_172/Y3                   td                    0.210       5.499 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[0]/gateop_perm/Z
+                                   net (fanout=1)        1.007       6.506         u_soc_core/g_axi_fabric.u_csr_fabric/_N22821
+ CLMA_74_180/Y0                    td                    0.210       6.716 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[0]/gateop_perm/Z
+                                   net (fanout=1)        0.271       6.987         u_soc_core/g_axi_fabric.u_csr_fabric/_N22885
+ CLMS_70_181/Y3                    td                    0.274       7.261 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[0]/gateop/F
+                                   net (fanout=1)        0.886       8.147         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [0]
+ CLMS_122_185/C3                                                           f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[0]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   8.147         Logic Levels: 6  
+                                                                                   Logic: 2.476ns(30.392%), Route: 5.671ns(69.608%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[4] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[4]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ Y7                                                      0.000       0.000 f       key_n[4] (port)  
+                                   net (fanout=1)        0.088       0.088         key_n[4]         
+ IOBD_109_0/DIN                    td                    1.367       1.455 f       key_n_ibuf[4]/opit_0/O
+                                   net (fanout=1)        0.000       1.455         key_n_ibuf[4]/ntD
+ IOL_111_6/RX_DATA_DD              td                    0.127       1.582 f       key_n_ibuf[4]/opit_1/OUT
+                                   net (fanout=1)        2.480       4.062         nt_key_n[4]      
+ CLMA_122_168/Y2                   td                    0.210       4.272 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[4]/gateop_perm/Z
+                                   net (fanout=1)        0.955       5.227         u_soc_core/g_axi_fabric.u_csr_fabric/_N22761
+ CLMA_118_204/Y2                   td                    0.210       5.437 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[4]/gateop_perm/Z
+                                   net (fanout=1)        0.259       5.696         u_soc_core/g_axi_fabric.u_csr_fabric/_N22825
+ CLMA_118_204/Y3                   td                    0.210       5.906 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[4]/gateop_perm/Z
+                                   net (fanout=1)        0.443       6.349         u_soc_core/g_axi_fabric.u_csr_fabric/_N22889
+ CLMA_110_204/Y1                   td                    0.274       6.623 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[4]/gateop/F
+                                   net (fanout=1)        0.463       7.086         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [4]
+ CLMA_110_192/D3                                                           r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[4]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   7.086         Logic Levels: 6  
+                                                                                   Logic: 2.398ns(33.841%), Route: 4.688ns(66.159%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[3] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[3]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ Y8                                                      0.000       0.000 f       key_n[3] (port)  
+                                   net (fanout=1)        0.056       0.056         key_n[3]         
+ IOBR_TB_100_0/DIN                 td                    1.367       1.423 f       key_n_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       1.423         key_n_ibuf[3]/ntD
+ IOL_103_5/RX_DATA_DD              td                    0.127       1.550 f       key_n_ibuf[3]/opit_1/OUT
+                                   net (fanout=1)        2.099       3.649         nt_key_n[3]      
+ CLMS_118_153/Y1                   td                    0.460       4.109 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[3]/gateop_perm/Z
+                                   net (fanout=1)        0.739       4.848         u_soc_core/g_axi_fabric.u_csr_fabric/_N22760
+ CLMS_114_177/Y3                   td                    0.210       5.058 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[3]/gateop_perm/Z
+                                   net (fanout=1)        0.119       5.177         u_soc_core/g_axi_fabric.u_csr_fabric/_N22824
+ CLMA_114_176/Y3                   td                    0.210       5.387 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[3]/gateop_perm/Z
+                                   net (fanout=1)        0.556       5.943         u_soc_core/g_axi_fabric.u_csr_fabric/_N22888
+ CLMA_110_184/Y3                   td                    0.273       6.216 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[3]/gateop/F
+                                   net (fanout=1)        0.828       7.044         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [3]
+ CLMS_94_205/A3                                                            r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[3]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   7.044         Logic Levels: 6  
+                                                                                   Logic: 2.647ns(37.578%), Route: 4.397ns(62.422%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[2] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[2]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ W9                                                      0.000       0.000 f       key_n[2] (port)  
+                                   net (fanout=1)        0.068       0.068         key_n[2]         
+ IOBD_101_0/DIN                    td                    1.367       1.435 f       key_n_ibuf[2]/opit_0/O
+                                   net (fanout=1)        0.000       1.435         key_n_ibuf[2]/ntD
+ IOL_103_6/RX_DATA_DD              td                    0.127       1.562 f       key_n_ibuf[2]/opit_1/OUT
+                                   net (fanout=1)        2.312       3.874         nt_key_n[2]      
+ CLMS_114_181/Y2                   td                    0.286       4.160 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[2]/gateop_perm/Z
+                                   net (fanout=1)        0.485       4.645         u_soc_core/g_axi_fabric.u_csr_fabric/_N22759
+ CLMA_110_196/Y0                   td                    0.210       4.855 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[2]/gateop_perm/Z
+                                   net (fanout=1)        0.122       4.977         u_soc_core/g_axi_fabric.u_csr_fabric/_N22823
+ CLMA_110_196/Y1                   td                    0.212       5.189 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[2]/gateop_perm/Z
+                                   net (fanout=1)        0.602       5.791         u_soc_core/g_axi_fabric.u_csr_fabric/_N22887
+ CLMS_98_197/Y3                    td                    0.273       6.064 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[2]/gateop/F
+                                   net (fanout=1)        0.669       6.733         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [2]
+ CLMS_62_201/A3                                                            r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[2]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   6.733         Logic Levels: 6  
+                                                                                   Logic: 2.475ns(36.759%), Route: 4.258ns(63.241%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[6] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[6]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AA6                                                     0.000       0.000 f       key_n[6] (port)  
+                                   net (fanout=1)        0.092       0.092         key_n[6]         
+ IOBD_97_0/DIN                     td                    1.367       1.459 f       key_n_ibuf[6]/opit_0/O
+                                   net (fanout=1)        0.000       1.459         key_n_ibuf[6]/ntD
+ IOL_99_6/RX_DATA_DD               td                    0.127       1.586 f       key_n_ibuf[6]/opit_1/OUT
+                                   net (fanout=1)        2.534       4.120         nt_key_n[6]      
+ CLMA_118_156/Y3                   td                    0.303       4.423 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[6]/gateop_perm/Z
+                                   net (fanout=1)        0.687       5.110         u_soc_core/g_axi_fabric.u_csr_fabric/_N22827
+ CLMS_118_165/Y3                   td                    0.210       5.320 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[6]/gateop_perm/Z
+                                   net (fanout=1)        0.259       5.579         u_soc_core/g_axi_fabric.u_csr_fabric/_N22891
+ CLMA_118_164/Y1                   td                    0.274       5.853 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[6]/gateop/F
+                                   net (fanout=1)        0.319       6.172         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [6]
+ CLMA_118_172/B3                                                           r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[6]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   6.172         Logic Levels: 5  
+                                                                                   Logic: 2.281ns(36.957%), Route: 3.891ns(63.043%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[5] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[5]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AB7                                                     0.000       0.000 f       key_n[5] (port)  
+                                   net (fanout=1)        0.087       0.087         key_n[5]         
+ IOBS_TB_108_0/DIN                 td                    1.367       1.454 f       key_n_ibuf[5]/opit_0/O
+                                   net (fanout=1)        0.000       1.454         key_n_ibuf[5]/ntD
+ IOL_111_5/RX_DATA_DD              td                    0.127       1.581 f       key_n_ibuf[5]/opit_1/OUT
+                                   net (fanout=1)        2.233       3.814         nt_key_n[5]      
+ CLMA_114_180/Y0                   td                    0.487       4.301 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[5]/gateop/F
+                                   net (fanout=1)        0.408       4.709         u_soc_core/g_axi_fabric.u_csr_fabric/_N22826
+ CLMA_110_184/Y2                   td                    0.210       4.919 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[5]/gateop_perm/Z
+                                   net (fanout=1)        0.623       5.542         u_soc_core/g_axi_fabric.u_csr_fabric/_N22890
+ CLMA_98_184/Y2                    td                    0.295       5.837 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[5]/gateop/F
+                                   net (fanout=1)        0.267       6.104         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [5]
+ CLMS_98_181/A3                                                            r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[5]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   6.104         Logic Levels: 5  
+                                                                                   Logic: 2.486ns(40.727%), Route: 3.618ns(59.273%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[7] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[7]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AB6                                                     0.000       0.000 f       key_n[7] (port)  
+                                   net (fanout=1)        0.073       0.073         key_n[7]         
+ IOBS_TB_96_0/DIN                  td                    1.367       1.440 f       key_n_ibuf[7]/opit_0/O
+                                   net (fanout=1)        0.000       1.440         key_n_ibuf[7]/ntD
+ IOL_99_5/RX_DATA_DD               td                    0.127       1.567 f       key_n_ibuf[7]/opit_1/OUT
+                                   net (fanout=1)        1.909       3.476         nt_key_n[7]      
+ CLMA_114_144/Y2                   td                    0.478       3.954 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[7]/gateop_perm/Z
+                                   net (fanout=1)        0.584       4.538         u_soc_core/g_axi_fabric.u_csr_fabric/_N22828
+ CLMA_118_152/Y1                   td                    0.212       4.750 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[7]/gateop_perm/Z
+                                   net (fanout=1)        0.401       5.151         u_soc_core/g_axi_fabric.u_csr_fabric/_N22892
+ CLMS_114_157/Y3                   td                    0.273       5.424 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[7]/gateop/F
+                                   net (fanout=1)        0.564       5.988         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [7]
+ CLMA_122_148/A3                                                           r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[7]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   5.988         Logic Levels: 5  
+                                                                                   Logic: 2.457ns(41.032%), Route: 3.531ns(58.968%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[24] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ G3                                                      0.000       0.000 r       ddr3_dq[24] (port)
+                                   net (fanout=1)        0.094       0.094         nt_ddr3_dq[24]   
+ IOBS_LR_0_264/DIN                 td                    0.880       0.974 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.974         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].u_iobuf_dq/ntI
+ IOL_7_265/RX_DATA_DD              td                    0.763       1.737 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        1.245       2.982         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_in_dly [0]
+ CLMA_18_284/Y3                    td                    0.303       3.285 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.636       3.921         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/_N105313
+ CLMA_10_292/C0                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+
+ Data arrival time                                                   3.921         Logic Levels: 3  
+                                                                                   Logic: 1.946ns(49.630%), Route: 1.975ns(50.370%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[9] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ U1                                                      0.000       0.000 r       ddr3_dq[9] (port)
+                                   net (fanout=1)        0.116       0.116         nt_ddr3_dq[9]    
+ IOBS_LR_0_161/DIN                 td                    0.880       0.996 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.996         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].u_iobuf_dq/ntI
+ IOL_7_162/RX_DATA_DD              td                    0.763       1.759 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        1.373       3.132         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_in_dly [1]
+ CLMA_10_132/Y0                    td                    0.210       3.342 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.409       3.751         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/_N103089
+ CLMA_10_136/D3                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   3.751         Logic Levels: 3  
+                                                                                   Logic: 1.853ns(49.400%), Route: 1.898ns(50.600%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[20] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ K4                                                      0.000       0.000 r       ddr3_dq[20] (port)
+                                   net (fanout=1)        0.069       0.069         nt_ddr3_dq[20]   
+ IOBS_LR_0_232/DIN                 td                    0.880       0.949 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.949         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/ntI
+ IOL_7_233/RX_DATA_DD              td                    0.763       1.712 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.616       2.328         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_in_dly [4]
+ CLMA_14_240/Y3                    td                    0.468       2.796 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.934       3.730         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/_N104761
+ CLMS_10_217/C0                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+
+ Data arrival time                                                   3.730         Logic Levels: 3  
+                                                                                   Logic: 2.111ns(56.595%), Route: 1.619ns(43.405%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[13] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T1                                                      0.000       0.000 r       ddr3_dq[13] (port)
+                                   net (fanout=1)        0.107       0.107         nt_ddr3_dq[13]   
+ IOBS_LR_0_165/DIN                 td                    0.880       0.987 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.987         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/ntI
+ IOL_7_166/RX_DATA_DD              td                    0.763       1.750 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        1.013       2.763         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_in_dly [5]
+ CLMS_10_145/Y1                    td                    0.468       3.231 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.448       3.679         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/_N103090
+ CLMA_10_136/D1                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+
+ Data arrival time                                                   3.679         Logic Levels: 3  
+                                                                                   Logic: 2.111ns(57.380%), Route: 1.568ns(42.620%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[3] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R1                                                      0.000       0.000 r       ddr3_dq[3] (port)
+                                   net (fanout=1)        0.107       0.107         nt_ddr3_dq[3]    
+ IOBS_LR_0_169/DIN                 td                    0.880       0.987 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.987         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].u_iobuf_dq/ntI
+ IOL_7_170/RX_DATA_DD              td                    0.763       1.750 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        1.056       2.806         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_in_dly [3]
+ CLMA_10_204/Y1                    td                    0.288       3.094 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.500       3.594         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/_N104840
+ CLMA_10_220/A1                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+
+ Data arrival time                                                   3.594         Logic Levels: 3  
+                                                                                   Logic: 1.931ns(53.728%), Route: 1.663ns(46.272%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[5] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R3                                                      0.000       0.000 r       ddr3_dq[5] (port)
+                                   net (fanout=1)        0.111       0.111         nt_ddr3_dq[5]    
+ IOBS_LR_0_168/DIN                 td                    0.880       0.991 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.991         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/ntI
+ IOL_7_169/RX_DATA_DD              td                    0.763       1.754 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.891       2.645         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_in_dly [5]
+ CLMA_10_204/Y3                    td                    0.287       2.932 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.637       3.569         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/_N104841
+ CLMA_10_220/A3                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   3.569         Logic Levels: 3  
+                                                                                   Logic: 1.930ns(54.077%), Route: 1.639ns(45.923%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[29] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J6                                                      0.000       0.000 r       ddr3_dq[29] (port)
+                                   net (fanout=1)        0.040       0.040         nt_ddr3_dq[29]   
+ IOBS_LR_0_284/DIN                 td                    0.880       0.920 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.920         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/ntI
+ IOL_7_285/RX_DATA_DD              td                    0.763       1.683 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[5].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.807       2.490         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_in_dly [5]
+ CLMS_14_269/Y2                    td                    0.210       2.700 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.795       3.495         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/_N105314
+ CLMA_10_292/C3                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   3.495         Logic Levels: 3  
+                                                                                   Logic: 1.853ns(53.019%), Route: 1.642ns(46.981%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[18] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L2
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ K2                                                      0.000       0.000 r       ddr3_dq[18] (port)
+                                   net (fanout=1)        0.071       0.071         nt_ddr3_dq[18]   
+ IOBS_LR_0_236/DIN                 td                    0.880       0.951 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.951         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].u_iobuf_dq/ntI
+ IOL_7_237/RX_DATA_DD              td                    0.763       1.714 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.698       2.412         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_in_dly [2]
+ CLMA_10_216/Y0                    td                    0.487       2.899 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.122       3.021         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/_N104760
+ CLMS_10_217/C2                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L2
+
+ Data arrival time                                                   3.021         Logic Levels: 3  
+                                                                                   Logic: 2.130ns(70.506%), Route: 0.891ns(29.494%)
+====================================================================================================
+
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/CLK
+Endpoint    : ddr3_reset_n (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ddrphy_clkin (rising edge)                        0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        1.449       2.442         _N36             
+ USCM_84_109/CLK_USCM              td                    0.000       2.442 r       u_ddr3/u_pds_ddr3/u_hmic/u_clkbufg/gopclkbufg/CLKOUT
+                                   net (fanout=66)       1.019       3.461         u_ddr3/u_pds_ddr3/u_hmic/pll_clkin
+ PLL_158_199/CLK_OUT0_WL           td                    0.133       3.594 r       u_ddr3/u_pds_ddr3/u_hmic/u_ipsxb_ddrphy_pll_0/u_pll_e3/goppll/CLKOUT0_WL
+                                   net (fanout=3)        0.682       4.276         clkout0_wl_0     
+ IOCKGATE_6_322/OUT                td                    0.268       4.544 r       clkgate_2/gopclkgate/OUT
+                                   net (fanout=1)        0.000       4.544         ntclkgate_0      
+ IOCKDIV_6_323/CLK_IODIV           td                    0.000       4.544 r       u_ddr3/u_pds_ddr3/u_hmic/I_GTP_CLKDIV/gopclkdiv/CLKDIV
+                                   net (fanout=1)        1.306       5.850         ddrphy_clkin     
+ USCM_84_111/CLK_USCM              td                    0.000       5.850 r       clkbufg_1/gopclkbufg/CLKOUT
+                                   net (fanout=4394)     1.037       6.887         ntclkbufg_1      
+ CLMA_18_288/CLK                                                           r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/CLK
+
+ CLMA_18_288/Q3                    tco                   0.220       7.107 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_calib_top/ddrphy_main_ctrl/calib_done/opit_0_inv_MUX4TO1Q/Q
+                                   net (fanout=342)      1.800       8.907         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/calib_done
+ CLMA_10_56/Y1                     td                    0.244       9.151 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_dfi/N48/gateop_perm/Z
+                                   net (fanout=1)        0.523       9.674         nt_ddr3_reset_n  
+ IOL_7_21/DO                       td                    0.106       9.780 f       ddr3_reset_n_obuf/opit_1/O
+                                   net (fanout=1)        0.000       9.780         ddr3_reset_n_obuf/ntO
+ IOBS_LR_0_20/PAD                  td                    3.229      13.009 f       ddr3_reset_n_obuf/opit_0/O
+                                   net (fanout=1)        0.069      13.078         ddr3_reset_n     
+ W4                                                                        f       ddr3_reset_n (port)
+
+ Data arrival time                                                  13.078         Logic Levels: 3  
+                                                                                   Logic: 3.799ns(61.363%), Route: 2.392ns(38.637%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/CLK
+Endpoint    : led[6] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/CLK
+
+ CLMA_110_196/Q2                   tco                   0.223       3.316 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[6]/opit_0_inv/Q
+                                   net (fanout=2)        1.979       5.295         nt_led[6]        
+ IOL_15_373/DO                     td                    0.106       5.401 f       led_obuf[6]/opit_1/O
+                                   net (fanout=1)        0.000       5.401         led_obuf[6]/ntO  
+ IOBS_TB_13_376/PAD                td                    3.213       8.614 f       led_obuf[6]/opit_0/O
+                                   net (fanout=1)        0.075       8.689         led[6]           
+ D5                                                                        f       led[6] (port)    
+
+ Data arrival time                                                   8.689         Logic Levels: 2  
+                                                                                   Logic: 3.542ns(63.295%), Route: 2.054ns(36.705%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/CLK
+Endpoint    : led[7] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/CLK
+
+ CLMA_110_196/Q0                   tco                   0.221       3.314 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[7]/opit_0_inv/Q
+                                   net (fanout=2)        1.939       5.253         nt_led[7]        
+ IOL_15_374/DO                     td                    0.106       5.359 f       led_obuf[7]/opit_1/O
+                                   net (fanout=1)        0.000       5.359         led_obuf[7]/ntO  
+ IOBD_12_376/PAD                   td                    3.213       8.572 f       led_obuf[7]/opit_0/O
+                                   net (fanout=1)        0.072       8.644         led[7]           
+ D4                                                                        f       led[7] (port)    
+
+ Data arrival time                                                   8.644         Logic Levels: 2  
+                                                                                   Logic: 3.540ns(63.772%), Route: 2.011ns(36.228%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/CLK
+Endpoint    : led[3] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/CLK
+
+ CLMA_110_209/Q1                   tco                   0.223       3.316 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[3]/opit_0_inv/Q
+                                   net (fanout=2)        1.928       5.244         nt_led[3]        
+ IOL_23_374/DO                     td                    0.106       5.350 f       led_obuf[3]/opit_1/O
+                                   net (fanout=1)        0.000       5.350         led_obuf[3]/ntO  
+ IOBD_20_376/PAD                   td                    3.213       8.563 f       led_obuf[3]/opit_0/O
+                                   net (fanout=1)        0.061       8.624         led[3]           
+ E5                                                                        f       led[3] (port)    
+
+ Data arrival time                                                   8.624         Logic Levels: 2  
+                                                                                   Logic: 3.542ns(64.039%), Route: 1.989ns(35.961%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/CLK
+Endpoint    : led[5] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/CLK
+
+ CLMA_110_209/Y0                   tco                   0.283       3.376 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[5]/opit_0_inv/Q
+                                   net (fanout=2)        1.733       5.109         nt_led[5]        
+ IOL_43_374/DO                     td                    0.106       5.215 f       led_obuf[5]/opit_1/O
+                                   net (fanout=1)        0.000       5.215         led_obuf[5]/ntO  
+ IOBD_40_376/PAD                   td                    3.213       8.428 f       led_obuf[5]/opit_0/O
+                                   net (fanout=1)        0.102       8.530         led[5]           
+ C4                                                                        f       led[5] (port)    
+
+ Data arrival time                                                   8.530         Logic Levels: 2  
+                                                                                   Logic: 3.602ns(66.250%), Route: 1.835ns(33.750%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/CLK
+Endpoint    : led[2] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/CLK
+
+ CLMA_110_209/Q0                   tco                   0.221       3.314 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[2]/opit_0_inv/Q
+                                   net (fanout=2)        1.832       5.146         nt_led[2]        
+ IOL_23_373/DO                     td                    0.106       5.252 f       led_obuf[2]/opit_1/O
+                                   net (fanout=1)        0.000       5.252         led_obuf[2]/ntO  
+ IOBS_TB_21_376/PAD                td                    3.213       8.465 f       led_obuf[2]/opit_0/O
+                                   net (fanout=1)        0.046       8.511         led[2]           
+ E6                                                                        f       led[2] (port)    
+
+ Data arrival time                                                   8.511         Logic Levels: 2  
+                                                                                   Logic: 3.540ns(65.338%), Route: 1.878ns(34.662%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/CLK
+Endpoint    : led[4] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/CLK
+
+ CLMA_110_209/Q3                   tco                   0.220       3.313 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[4]/opit_0_inv/Q
+                                   net (fanout=2)        1.711       5.024         nt_led[4]        
+ IOL_43_373/DO                     td                    0.106       5.130 f       led_obuf[4]/opit_1/O
+                                   net (fanout=1)        0.000       5.130         led_obuf[4]/ntO  
+ IOBS_TB_41_376/PAD                td                    3.213       8.343 f       led_obuf[4]/opit_0/O
+                                   net (fanout=1)        0.102       8.445         led[4]           
+ A4                                                                        f       led[4] (port)    
+
+ Data arrival time                                                   8.445         Logic Levels: 2  
+                                                                                   Logic: 3.539ns(66.125%), Route: 1.813ns(33.875%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/CLK
+Endpoint    : led[1] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_209/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/CLK
+
+ CLMA_110_209/Q2                   tco                   0.223       3.316 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[1]/opit_0_inv/Q
+                                   net (fanout=2)        1.728       5.044         nt_led[1]        
+ IOL_71_374/DO                     td                    0.106       5.150 f       led_obuf[1]/opit_1/O
+                                   net (fanout=1)        0.000       5.150         led_obuf[1]/ntO  
+ IOBD_68_376/PAD                   td                    3.213       8.363 f       led_obuf[1]/opit_0/O
+                                   net (fanout=1)        0.060       8.423         led[1]           
+ G8                                                                        f       led[1] (port)    
+
+ Data arrival time                                                   8.423         Logic Levels: 2  
+                                                                                   Logic: 3.542ns(66.454%), Route: 1.788ns(33.546%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/CLK
+Endpoint    : led[0] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock pll_clk_sys (rising edge)                         0.000       0.000 r                        
+ P20                                                     0.000       0.000 r       clk_50m (port)   
+                                   net (fanout=1)        0.074       0.074         clk_50m          
+ IOBS_LR_328_209/DIN               td                    0.861       0.935 r       clk_50m_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.935         clk_50m_ibuf/ntD 
+ IOL_327_210/INCK                  td                    0.058       0.993 r       clk_50m_ibuf/opit_1/INCK
+                                   net (fanout=2)        0.478       1.471         _N36             
+ PLL_158_55/CLK_OUT0               td                    0.083       1.554 r       u_clock_reset/u_pgl50h_pll/u_generated_pll/u_pll_e3/goppll/CLKOUT0
+                                   net (fanout=1)        0.614       2.168         u_clock_reset/pll_clk
+ USCM_84_108/CLK_USCM              td                    0.000       2.168 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=14142)
+                                                         0.925       3.093         ntclkbufg_0      
+ CLMA_110_196/CLK                                                          r       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/CLK
+
+ CLMA_110_196/Q1                   tco                   0.223       3.316 f       u_soc_core/g_axi_fabric.u_csr_fabric/leds_reg[0]/opit_0_inv/Q
+                                   net (fanout=2)        1.701       5.017         nt_led[0]        
+ IOL_71_373/DO                     td                    0.106       5.123 f       led_obuf[0]/opit_1/O
+                                   net (fanout=1)        0.000       5.123         led_obuf[0]/ntO  
+ IOBS_TB_69_376/PAD                td                    3.213       8.336 f       led_obuf[0]/opit_0/O
+                                   net (fanout=1)        0.063       8.399         led[0]           
+ F9                                                                        f       led[0] (port)    
+
+ Data arrival time                                                   8.399         Logic Levels: 2  
+                                                                                   Logic: 3.542ns(66.755%), Route: 1.764ns(33.245%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[1] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[1]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 f       key_n[1] (port)  
+                                   net (fanout=1)        0.055       0.055         key_n[1]         
+ IOBD_17_0/DIN                     td                    0.918       0.973 f       key_n_ibuf[1]/opit_0/O
+                                   net (fanout=1)        0.000       0.973         key_n_ibuf[1]/ntD
+ IOL_19_6/RX_DATA_DD               td                    0.097       1.070 f       key_n_ibuf[1]/opit_1/OUT
+                                   net (fanout=1)        2.144       3.214         nt_key_n[1]      
+ CLMS_122_149/Y1                   td                    0.359       3.573 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[1]/gateop_perm/Z
+                                   net (fanout=1)        0.914       4.487         u_soc_core/g_axi_fabric.u_csr_fabric/_N22758
+ CLMS_94_197/Y1                    td                    0.151       4.638 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[1]/gateop_perm/Z
+                                   net (fanout=1)        0.259       4.897         u_soc_core/g_axi_fabric.u_csr_fabric/_N22822
+ CLMA_94_200/Y0                    td                    0.150       5.047 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[1]/gateop_perm/Z
+                                   net (fanout=1)        0.306       5.353         u_soc_core/g_axi_fabric.u_csr_fabric/_N22886
+ CLMA_110_201/Y3                   td                    0.211       5.564 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[1]/gateop/F
+                                   net (fanout=1)        0.276       5.840         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [1]
+ CLMA_110_192/A3                                                           f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[1]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   5.840         Logic Levels: 6  
+                                                                                   Logic: 1.886ns(32.295%), Route: 3.954ns(67.705%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[0] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[0]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ U6                                                      0.000       0.000 f       key_n[0] (port)  
+                                   net (fanout=1)        0.056       0.056         key_n[0]         
+ IOBS_TB_16_0/DIN                  td                    0.918       0.974 f       key_n_ibuf[0]/opit_0/O
+                                   net (fanout=1)        0.000       0.974         key_n_ibuf[0]/ntD
+ IOL_19_5/RX_DATA_DD               td                    0.097       1.071 f       key_n_ibuf[0]/opit_1/OUT
+                                   net (fanout=1)        2.213       3.284         nt_key_n[0]      
+ CLMA_122_172/Y1                   td                    0.224       3.508 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[0]/gateop/F
+                                   net (fanout=1)        0.161       3.669         u_soc_core/g_axi_fabric.u_csr_fabric/_N22757
+ CLMA_122_172/Y3                   td                    0.151       3.820 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[0]/gateop_perm/Z
+                                   net (fanout=1)        0.693       4.513         u_soc_core/g_axi_fabric.u_csr_fabric/_N22821
+ CLMA_74_180/Y0                    td                    0.162       4.675 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[0]/gateop_perm/Z
+                                   net (fanout=1)        0.164       4.839         u_soc_core/g_axi_fabric.u_csr_fabric/_N22885
+ CLMS_70_181/Y3                    td                    0.211       5.050 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[0]/gateop/F
+                                   net (fanout=1)        0.628       5.678         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [0]
+ CLMS_122_185/C3                                                           f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[0]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   5.678         Logic Levels: 6  
+                                                                                   Logic: 1.763ns(31.050%), Route: 3.915ns(68.950%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[3] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[3]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ Y8                                                      0.000       0.000 f       key_n[3] (port)  
+                                   net (fanout=1)        0.056       0.056         key_n[3]         
+ IOBR_TB_100_0/DIN                 td                    0.918       0.974 f       key_n_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       0.974         key_n_ibuf[3]/ntD
+ IOL_103_5/RX_DATA_DD              td                    0.097       1.071 f       key_n_ibuf[3]/opit_1/OUT
+                                   net (fanout=1)        1.438       2.509         nt_key_n[3]      
+ CLMS_118_153/Y1                   td                    0.359       2.868 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[3]/gateop_perm/Z
+                                   net (fanout=1)        0.502       3.370         u_soc_core/g_axi_fabric.u_csr_fabric/_N22760
+ CLMS_114_177/Y3                   td                    0.162       3.532 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[3]/gateop_perm/Z
+                                   net (fanout=1)        0.072       3.604         u_soc_core/g_axi_fabric.u_csr_fabric/_N22824
+ CLMA_114_176/Y3                   td                    0.151       3.755 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[3]/gateop_perm/Z
+                                   net (fanout=1)        0.360       4.115         u_soc_core/g_axi_fabric.u_csr_fabric/_N22888
+ CLMA_110_184/Y3                   td                    0.211       4.326 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[3]/gateop/F
+                                   net (fanout=1)        0.548       4.874         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [3]
+ CLMS_94_205/A3                                                            f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[3]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.874         Logic Levels: 6  
+                                                                                   Logic: 1.898ns(38.941%), Route: 2.976ns(61.059%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[4] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[4]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ Y7                                                      0.000       0.000 f       key_n[4] (port)  
+                                   net (fanout=1)        0.088       0.088         key_n[4]         
+ IOBD_109_0/DIN                    td                    0.918       1.006 f       key_n_ibuf[4]/opit_0/O
+                                   net (fanout=1)        0.000       1.006         key_n_ibuf[4]/ntD
+ IOL_111_6/RX_DATA_DD              td                    0.097       1.103 f       key_n_ibuf[4]/opit_1/OUT
+                                   net (fanout=1)        1.723       2.826         nt_key_n[4]      
+ CLMA_122_168/Y2                   td                    0.150       2.976 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[4]/gateop_perm/Z
+                                   net (fanout=1)        0.629       3.605         u_soc_core/g_axi_fabric.u_csr_fabric/_N22761
+ CLMA_118_204/Y2                   td                    0.162       3.767 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[4]/gateop_perm/Z
+                                   net (fanout=1)        0.154       3.921         u_soc_core/g_axi_fabric.u_csr_fabric/_N22825
+ CLMA_118_204/Y3                   td                    0.162       4.083 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[4]/gateop_perm/Z
+                                   net (fanout=1)        0.266       4.349         u_soc_core/g_axi_fabric.u_csr_fabric/_N22889
+ CLMA_110_204/Y1                   td                    0.212       4.561 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[4]/gateop/F
+                                   net (fanout=1)        0.289       4.850         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [4]
+ CLMA_110_192/D3                                                           f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[4]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.850         Logic Levels: 6  
+                                                                                   Logic: 1.701ns(35.072%), Route: 3.149ns(64.928%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[2] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[2]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ W9                                                      0.000       0.000 f       key_n[2] (port)  
+                                   net (fanout=1)        0.068       0.068         key_n[2]         
+ IOBD_101_0/DIN                    td                    0.918       0.986 f       key_n_ibuf[2]/opit_0/O
+                                   net (fanout=1)        0.000       0.986         key_n_ibuf[2]/ntD
+ IOL_103_6/RX_DATA_DD              td                    0.097       1.083 f       key_n_ibuf[2]/opit_1/OUT
+                                   net (fanout=1)        1.597       2.680         nt_key_n[2]      
+ CLMS_114_181/Y2                   td                    0.227       2.907 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_17[2]/gateop_perm/Z
+                                   net (fanout=1)        0.299       3.206         u_soc_core/g_axi_fabric.u_csr_fabric/_N22759
+ CLMA_110_196/Y0                   td                    0.162       3.368 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[2]/gateop_perm/Z
+                                   net (fanout=1)        0.074       3.442         u_soc_core/g_axi_fabric.u_csr_fabric/_N22823
+ CLMA_110_196/Y1                   td                    0.151       3.593 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[2]/gateop_perm/Z
+                                   net (fanout=1)        0.394       3.987         u_soc_core/g_axi_fabric.u_csr_fabric/_N22887
+ CLMS_98_197/Y3                    td                    0.211       4.198 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[2]/gateop/F
+                                   net (fanout=1)        0.433       4.631         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [2]
+ CLMS_62_201/A3                                                            f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[2]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.631         Logic Levels: 6  
+                                                                                   Logic: 1.766ns(38.134%), Route: 2.865ns(61.866%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[6] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[6]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AA6                                                     0.000       0.000 f       key_n[6] (port)  
+                                   net (fanout=1)        0.092       0.092         key_n[6]         
+ IOBD_97_0/DIN                     td                    0.918       1.010 f       key_n_ibuf[6]/opit_0/O
+                                   net (fanout=1)        0.000       1.010         key_n_ibuf[6]/ntD
+ IOL_99_6/RX_DATA_DD               td                    0.097       1.107 f       key_n_ibuf[6]/opit_1/OUT
+                                   net (fanout=1)        1.727       2.834         nt_key_n[6]      
+ CLMA_118_156/Y3                   td                    0.233       3.067 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[6]/gateop_perm/Z
+                                   net (fanout=1)        0.421       3.488         u_soc_core/g_axi_fabric.u_csr_fabric/_N22827
+ CLMS_118_165/Y3                   td                    0.162       3.650 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[6]/gateop_perm/Z
+                                   net (fanout=1)        0.153       3.803         u_soc_core/g_axi_fabric.u_csr_fabric/_N22891
+ CLMA_118_164/Y1                   td                    0.211       4.014 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[6]/gateop/F
+                                   net (fanout=1)        0.195       4.209         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [6]
+ CLMA_118_172/B3                                                           r       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[6]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.209         Logic Levels: 5  
+                                                                                   Logic: 1.621ns(38.513%), Route: 2.588ns(61.487%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[5] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[5]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AB7                                                     0.000       0.000 f       key_n[5] (port)  
+                                   net (fanout=1)        0.087       0.087         key_n[5]         
+ IOBS_TB_108_0/DIN                 td                    0.918       1.005 f       key_n_ibuf[5]/opit_0/O
+                                   net (fanout=1)        0.000       1.005         key_n_ibuf[5]/ntD
+ IOL_111_5/RX_DATA_DD              td                    0.097       1.102 f       key_n_ibuf[5]/opit_1/OUT
+                                   net (fanout=1)        1.534       2.636         nt_key_n[5]      
+ CLMA_114_180/Y0                   td                    0.380       3.016 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[5]/gateop/F
+                                   net (fanout=1)        0.250       3.266         u_soc_core/g_axi_fabric.u_csr_fabric/_N22826
+ CLMA_110_184/Y2                   td                    0.162       3.428 r       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[5]/gateop_perm/Z
+                                   net (fanout=1)        0.376       3.804         u_soc_core/g_axi_fabric.u_csr_fabric/_N22890
+ CLMA_98_184/Y2                    td                    0.233       4.037 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[5]/gateop/F
+                                   net (fanout=1)        0.171       4.208         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [5]
+ CLMS_98_181/A3                                                            f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[5]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.208         Logic Levels: 5  
+                                                                                   Logic: 1.790ns(42.538%), Route: 2.418ns(57.462%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key_n[7] (port)
+Endpoint    : u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[7]/opit_0_inv_MUX4TO1Q/S0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ AB6                                                     0.000       0.000 f       key_n[7] (port)  
+                                   net (fanout=1)        0.073       0.073         key_n[7]         
+ IOBS_TB_96_0/DIN                  td                    0.918       0.991 f       key_n_ibuf[7]/opit_0/O
+                                   net (fanout=1)        0.000       0.991         key_n_ibuf[7]/ntD
+ IOL_99_5/RX_DATA_DD               td                    0.097       1.088 f       key_n_ibuf[7]/opit_1/OUT
+                                   net (fanout=1)        1.313       2.401         nt_key_n[7]      
+ CLMA_114_144/Y2                   td                    0.379       2.780 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_19[7]/gateop_perm/Z
+                                   net (fanout=1)        0.364       3.144         u_soc_core/g_axi_fabric.u_csr_fabric/_N22828
+ CLMA_118_152/Y1                   td                    0.151       3.295 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_21[7]/gateop_perm/Z
+                                   net (fanout=1)        0.253       3.548         u_soc_core/g_axi_fabric.u_csr_fabric/_N22892
+ CLMS_114_157/Y3                   td                    0.211       3.759 f       u_soc_core/g_axi_fabric.u_csr_fabric/N185_24[7]/gateop/F
+                                   net (fanout=1)        0.370       4.129         u_soc_core/g_axi_fabric.u_csr_fabric/N185 [7]
+ CLMA_122_148/A3                                                           f       u_soc_core/g_axi_fabric.u_csr_fabric/rsp_rdata_reg[7]/opit_0_inv_MUX4TO1Q/S0
+
+ Data arrival time                                                   4.129         Logic Levels: 5  
+                                                                                   Logic: 1.756ns(42.528%), Route: 2.373ns(57.472%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[24] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ G3                                                      0.000       0.000 r       ddr3_dq[24] (port)
+                                   net (fanout=1)        0.094       0.094         nt_ddr3_dq[24]   
+ IOBS_LR_0_264/DIN                 td                    0.534       0.628 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.628         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].u_iobuf_dq/ntI
+ IOL_7_265/RX_DATA_DD              td                    0.589       1.217 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[0].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.746       1.963         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_in_dly [0]
+ CLMA_18_284/Y3                    td                    0.243       2.206 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.385       2.591         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/_N105313
+ CLMA_10_292/C0                                                            f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+
+ Data arrival time                                                   2.591         Logic Levels: 3  
+                                                                                   Logic: 1.366ns(52.721%), Route: 1.225ns(47.279%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[20] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ K4                                                      0.000       0.000 r       ddr3_dq[20] (port)
+                                   net (fanout=1)        0.069       0.069         nt_ddr3_dq[20]   
+ IOBS_LR_0_232/DIN                 td                    0.534       0.603 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.603         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/ntI
+ IOL_7_233/RX_DATA_DD              td                    0.589       1.192 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[4].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.358       1.550         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_in_dly [4]
+ CLMA_14_240/Y3                    td                    0.360       1.910 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.579       2.489         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/_N104761
+ CLMS_10_217/C0                                                            f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L0
+
+ Data arrival time                                                   2.489         Logic Levels: 3  
+                                                                                   Logic: 1.483ns(59.582%), Route: 1.006ns(40.418%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[13] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T1                                                      0.000       0.000 r       ddr3_dq[13] (port)
+                                   net (fanout=1)        0.107       0.107         nt_ddr3_dq[13]   
+ IOBS_LR_0_165/DIN                 td                    0.534       0.641 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.641         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/ntI
+ IOL_7_166/RX_DATA_DD              td                    0.589       1.230 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[5].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.602       1.832         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_in_dly [5]
+ CLMS_10_145/Y1                    td                    0.360       2.192 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.274       2.466         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/_N103090
+ CLMA_10_136/D1                                                            f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+
+ Data arrival time                                                   2.466         Logic Levels: 3  
+                                                                                   Logic: 1.483ns(60.138%), Route: 0.983ns(39.862%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[9] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ U1                                                      0.000       0.000 r       ddr3_dq[9] (port)
+                                   net (fanout=1)        0.116       0.116         nt_ddr3_dq[9]    
+ IOBS_LR_0_161/DIN                 td                    0.534       0.650 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.650         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].u_iobuf_dq/ntI
+ IOL_7_162/RX_DATA_DD              td                    0.589       1.239 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_loop[1].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.814       2.053         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/dq_in_dly [1]
+ CLMA_10_132/Y0                    td                    0.162       2.215 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.246       2.461         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/_N103089
+ CLMA_10_136/D3                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   2.461         Logic Levels: 3  
+                                                                                   Logic: 1.285ns(52.215%), Route: 1.176ns(47.785%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[3] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R1                                                      0.000       0.000 r       ddr3_dq[3] (port)
+                                   net (fanout=1)        0.107       0.107         nt_ddr3_dq[3]    
+ IOBS_LR_0_169/DIN                 td                    0.534       0.641 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.641         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].u_iobuf_dq/ntI
+ IOL_7_170/RX_DATA_DD              td                    0.589       1.230 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[3].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.621       1.851         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_in_dly [3]
+ CLMA_10_204/Y1                    td                    0.222       2.073 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.306       2.379         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/_N104840
+ CLMA_10_220/A1                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L1
+
+ Data arrival time                                                   2.379         Logic Levels: 3  
+                                                                                   Logic: 1.345ns(56.536%), Route: 1.034ns(43.464%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[5] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R3                                                      0.000       0.000 r       ddr3_dq[5] (port)
+                                   net (fanout=1)        0.111       0.111         nt_ddr3_dq[5]    
+ IOBS_LR_0_168/DIN                 td                    0.534       0.645 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.645         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].u_iobuf_dq/ntI
+ IOL_7_169/RX_DATA_DD              td                    0.589       1.234 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_loop[5].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.529       1.763         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/dq_in_dly [5]
+ CLMA_10_204/Y3                    td                    0.221       1.984 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.386       2.370         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/_N104841
+ CLMA_10_220/A3                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   2.370         Logic Levels: 3  
+                                                                                   Logic: 1.344ns(56.709%), Route: 1.026ns(43.291%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[28] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ F2                                                      0.000       0.000 r       ddr3_dq[28] (port)
+                                   net (fanout=1)        0.091       0.091         nt_ddr3_dq[28]   
+ IOBS_LR_0_268/DIN                 td                    0.534       0.625 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.625         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[4].u_iobuf_dq/ntI
+ IOL_7_269/RX_DATA_DD              td                    0.589       1.214 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_loop[4].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.244       1.458         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/dq_in_dly [4]
+ CLMS_14_269/Y2                    td                    0.379       1.837 f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_7/gateop_perm/Z
+                                   net (fanout=1)        0.500       2.337         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/_N105314
+ CLMA_10_292/C3                                                            f       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L3
+
+ Data arrival time                                                   2.337         Logic Levels: 3  
+                                                                                   Logic: 1.502ns(64.270%), Route: 0.835ns(35.730%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : ddr3_dq[18] (port)
+Endpoint    : u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L2
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ K2                                                      0.000       0.000 r       ddr3_dq[18] (port)
+                                   net (fanout=1)        0.071       0.071         nt_ddr3_dq[18]   
+ IOBS_LR_0_236/DIN                 td                    0.534       0.605 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].u_iobuf_dq/opit_0/O
+                                   net (fanout=1)        0.000       0.605         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].u_iobuf_dq/ntI
+ IOL_7_237/RX_DATA_DD              td                    0.589       1.194 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_loop[2].DQ0_GTP_ISERDES/gateop_a_IO/OUT
+                                   net (fanout=1)        0.402       1.596         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/dq_in_dly [2]
+ CLMA_10_216/Y0                    td                    0.376       1.972 r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/N433[0]_6/gateop_perm/Z
+                                   net (fanout=1)        0.074       2.046         u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/_N104760
+ CLMS_10_217/C2                                                            r       u_ddr3/u_pds_ddr3/u_hmic/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].u_ddrphy_data_slice/data_slice_wrlvl/wrlvl_dq_r[0]/opit_0_inv_L5Q_perm/L2
+
+ Data arrival time                                                   2.046         Logic Levels: 3  
+                                                                                   Logic: 1.499ns(73.265%), Route: 0.547ns(26.735%)
+====================================================================================================
+
+====================================================================================================
+
+Inputs and Outputs :
++----------------------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                                        
++----------------------------------------------------------------------------------------------------------------+
+| Input      | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/place_route/pgl50h_top_pnr.adf             
+| Output     | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top_rtp.adf           
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top_exception.rtr     
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/pgl50h_top.rtr               
+|            | D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/report_timing/rtr.db                       
++----------------------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing -force_to_run -delay_type {max} -max_path 20000 -slack_less_than 0 
+Peak memory: 1,616 MB
+Total CPU time to report_timing completion : 0h:0m:20s
+Process Total CPU time to report_timing completion : 0h:0m:28s
+Total real time to report_timing completion : 0h:0m:23s

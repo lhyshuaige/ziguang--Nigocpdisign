@@ -1,0 +1,12 @@
+### PGL50H SoC timing baseline
+### Board input clock: 50 MHz on P20.  The PDS-generated PLL constraint
+### should add the actual generated clk_sys/DDR PHY clocks after IP creation.
+create_clock -name {clk_50m} [get_ports {clk_50m}] -period {20.000} -waveform {0.000 10.000}
+set_false_path -from [get_ports {reset_n}]
+
+### The generated HMIC constraint file adds the 100 MHz DDR PHY clock and
+### training-related generated clocks.  Import it together with this file:
+###   ip/ddr3/pnr/ddr_test.fdc
+
+### Do not copy the old contest_timing.fdc into the board project: its
+### top-level port is named clk and targets the core-only wrapper.

@@ -1,0 +1,1 @@
+.rtl_screen -top_module {pgl50h_pll_50m_to_90m} -include_path {<D:/PDS/project/NAX/ip/pll90/pgl50h_pll_50m_to_90m/rev_1>} -design_files {<D:/PDS/project/NAX/ip/pll90/pgl50h_pll_50m_to_90m/pgl50h_pll_50m_to_90m.v|work>}

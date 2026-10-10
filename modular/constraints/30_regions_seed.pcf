@@ -1,0 +1,15 @@
+# Parent-context seed regions. Coordinates are intentionally placeholders
+# until the region seed run is accepted. Do not apply this file to signoff
+# until each region is non-overlapping and the HMIC official region is checked.
+#
+# def_region {soc_cpu}  <xmin> <xmax> <ymin> <ymax>
+# def_region {soc_ai}   <xmin> <xmax> <ymin> <ymax>
+# def_region {soc_dma}  <xmin> <xmax> <ymin> <ymax>
+# def_region {soc_fabric} <xmin> <xmax> <ymin> <ymax>
+# def_inst_region {u_soc_core/u_cpu_partition} {soc_cpu}
+# def_inst_region {u_soc_core/u_ai_partition} {soc_ai}
+# def_inst_region {u_soc_core/u_dma_partition} {soc_dma}
+# def_inst_region {u_soc_core/u_axi_fabric_partition} {soc_fabric}
+#
+# The DDR region is controlled by the PDS HMIC generator and its official
+# constraints. Do not place a generic region over the DDR PHY.

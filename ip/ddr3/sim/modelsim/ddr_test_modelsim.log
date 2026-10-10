@@ -1,0 +1,3 @@
+# vsim -do {run 800us; quit -f} -l ddr_test_modelsim.log -lib work -c ddr_test_top_tb 
+# run 800us 
+#  quit -f 

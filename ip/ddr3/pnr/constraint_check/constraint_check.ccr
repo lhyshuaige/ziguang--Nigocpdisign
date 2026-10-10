@@ -1,0 +1,45 @@
+##### Written on 2026/09/26 16:02:57 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL50H-6FBG484
+
+Top Module : 
+	test_ddr
+
+Constraint File(s) : 
+	D:/PDS/project/NAX/ip/ddr3/pnr/ddr_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 713 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:mem_dq[0]} {PAP_IO_LOC} {M1}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/ip/ddr3/pnr/ddr_test.fdc(line number: 231)] | Port mem_dq[0] has been placed at location M1, whose type is share pin.
+
+define_attribute {p:mem_dq[2]} {PAP_IO_LOC} {M2}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/ip/ddr3/pnr/ddr_test.fdc(line number: 253)] | Port mem_dq[2] has been placed at location M2, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

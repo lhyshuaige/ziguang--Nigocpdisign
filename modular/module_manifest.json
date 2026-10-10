@@ -1,0 +1,67 @@
+{
+  "device": "PGL50H",
+  "pds_version": "2022.2-SP6.7.1",
+  "top": "pgl50h_top",
+  "system_clock": {
+    "name": "pll_clk_sys",
+    "frequency_mhz": 100,
+    "period_ns": 10.0
+  },
+  "modules": {
+    "cpu": {
+      "hierarchy": "u_soc_core/u_cpu_partition",
+      "rtl_top": "NaxRiscvContest",
+      "current_impl": "NaxRiscvContest.v",
+      "clock": "pll_clk_sys",
+      "boundary": "AXI4 I-read + AXI4 D-read/write + AXI-Lite CSR/interrupt sideband",
+      "parent_instance_prefix": "u_soc_core/u_cpu",
+      "region_policy": "reserved region after parent-context seed placement",
+      "signoff": "CPU internal paths and CPU-to-fabric boundary paths"
+    },
+    "ai": {
+      "hierarchy": "u_soc_core/u_ai_partition",
+      "rtl_top": "pgl50h_ai_partition",
+      "current_impl": "pgl50h_ai_engine.v",
+      "clock": "pll_clk_sys",
+      "boundary": "AXI4-Lite CSR slave + AXI4 256-bit data master + IRQ",
+      "parent_instance_prefix": "u_soc_core/g_axi_fabric.u_ai_engine",
+      "region_policy": "reserved compute region; no DDR PHY resources",
+      "signoff": "INT8 MAC pipeline and AXI master timing"
+    },
+    "dma": {
+      "hierarchy": "u_soc_core/u_dma_partition",
+      "rtl_top": "pgl50h_dma_partition",
+      "current_impl": "pgl50h_camera_dma.v",
+      "clock": "pll_clk_sys",
+      "boundary": "AXI4-Lite CSR slave + AXI4 256-bit data master + pixel stream + IRQ",
+      "parent_instance_prefix": "u_soc_core/g_axi_fabric.u_camera_dma",
+      "region_policy": "reserved stream/DMA region",
+      "signoff": "burst master, camera stream and interrupt paths"
+    },
+    "axi_fabric": {
+      "hierarchy": "u_soc_core/u_axi_fabric_partition",
+      "rtl_top": "pgl50h_axi4_mem_fabric",
+      "current_impl": "pgl50h_axi4_mem_fabric.v",
+      "clock": "pll_clk_sys",
+      "boundary": "four AXI4 masters to one AXI4 memory master",
+      "parent_instance_prefix": "u_soc_core/g_axi_fabric.u_axi_fabric",
+      "region_policy": "interface corridor between compute modules and HMIC CDC",
+      "signoff": "arbitration, QoS, burst ordering and boundary timing"
+    },
+    "ddr": {
+      "hierarchy": "u_ddr3/u_pds_ddr3/u_hmic",
+      "rtl_top": "pgl50h_hmic_ddr3",
+      "current_impl": "ip/ddr3/pgl50h_hmic_ddr3.v",
+      "clock": "ddrphy_clkin",
+      "boundary": "PDS HMIC AXI user port + DDR3 pins",
+      "parent_instance_prefix": "u_ddr3",
+      "region_policy": "official HMIC placement and constraints are authoritative",
+      "signoff": "HMIC training, DDR timing and official CA/DQS/clock topology"
+    }
+  },
+  "artifacts": {
+    "parent_reference": "pds/snapshots/pgl50h_soc_cdc_reset_setup_m0017_20261007",
+    "parent_placement_db": "pds/snapshots/pgl50h_soc_cdc_reset_setup_m0017_20261007/pds/pgl50h_hmic_cdc_reset_20261007/place_route/pgl50h_top_plc.adf",
+    "parent_routed_db": "pds/snapshots/pgl50h_soc_cdc_reset_setup_m0017_20261007/pds/pgl50h_hmic_cdc_reset_20261007/place_route/pgl50h_top_pnr.adf"
+  }
+}

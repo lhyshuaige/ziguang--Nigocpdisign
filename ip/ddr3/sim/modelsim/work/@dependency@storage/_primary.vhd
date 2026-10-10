@@ -1,0 +1,46 @@
+library verilog;
+use verilog.vl_types.all;
+entity DependencyStorage is
+    port(
+        io_writes_0_valid: in     vl_logic;
+        io_writes_0_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_writes_0_payload_robId: in     vl_logic_vector(4 downto 0);
+        io_writes_1_valid: in     vl_logic;
+        io_writes_1_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_writes_1_payload_robId: in     vl_logic_vector(4 downto 0);
+        io_commits_0_valid: in     vl_logic;
+        io_commits_0_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_commits_1_valid: in     vl_logic;
+        io_commits_1_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_commits_2_valid: in     vl_logic;
+        io_commits_2_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_commits_3_valid: in     vl_logic;
+        io_commits_3_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_commits_4_valid: in     vl_logic;
+        io_commits_4_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_commits_5_valid: in     vl_logic;
+        io_commits_5_payload_physical: in     vl_logic_vector(5 downto 0);
+        io_reads_0_cmd_valid: in     vl_logic;
+        io_reads_0_cmd_payload: in     vl_logic_vector(5 downto 0);
+        io_reads_0_rsp_valid: out    vl_logic;
+        io_reads_0_rsp_payload_enable: out    vl_logic;
+        io_reads_0_rsp_payload_rob: out    vl_logic_vector(4 downto 0);
+        io_reads_1_cmd_valid: in     vl_logic;
+        io_reads_1_cmd_payload: in     vl_logic_vector(5 downto 0);
+        io_reads_1_rsp_valid: out    vl_logic;
+        io_reads_1_rsp_payload_enable: out    vl_logic;
+        io_reads_1_rsp_payload_rob: out    vl_logic_vector(4 downto 0);
+        io_reads_2_cmd_valid: in     vl_logic;
+        io_reads_2_cmd_payload: in     vl_logic_vector(5 downto 0);
+        io_reads_2_rsp_valid: out    vl_logic;
+        io_reads_2_rsp_payload_enable: out    vl_logic;
+        io_reads_2_rsp_payload_rob: out    vl_logic_vector(4 downto 0);
+        io_reads_3_cmd_valid: in     vl_logic;
+        io_reads_3_cmd_payload: in     vl_logic_vector(5 downto 0);
+        io_reads_3_rsp_valid: out    vl_logic;
+        io_reads_3_rsp_payload_enable: out    vl_logic;
+        io_reads_3_rsp_payload_rob: out    vl_logic_vector(4 downto 0);
+        clk             : in     vl_logic;
+        reset           : in     vl_logic
+    );
+end DependencyStorage;

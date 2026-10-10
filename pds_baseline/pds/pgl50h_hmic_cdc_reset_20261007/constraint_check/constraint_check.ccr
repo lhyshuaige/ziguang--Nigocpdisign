@@ -1,0 +1,242 @@
+##### Written on 2026/10/07 10:47:06 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL50H-6FBG484
+
+Top Module : 
+	pgl50h_top
+
+Constraint File(s) : 
+	D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc
+	D:/PDS/project/NAX/constraints/pgl50h_soc_timing.fdc
+	D:/PDS/project/NAX/pds/pgl50h_hmic_cdc_reset_20261007/pgl50h_hmic_soc_clockgroup_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 170 critical warning(s), 1 warning(s), out of 653 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:clk_50m} {PAP_IO_DIRECTION} {INPUT}
+	W: ConstraintEditor-4026: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 121)] PAP_IO_DIRECTION is already defined in p:clk_50m, new value INPUT will overwrite the current value.
+
+define_attribute {p:key_n[0]} {PAP_IO_LOC} {U6}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 10)] | Port key_n[0] has been placed at location U6, whose type is share pin.
+
+define_attribute {p:key_n[1]} {PAP_IO_LOC} {T7}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 11)] | Port key_n[1] has been placed at location T7, whose type is share pin.
+
+define_attribute {p:key_n[2]} {PAP_IO_LOC} {W9}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 12)] | Port key_n[2] has been placed at location W9, whose type is share pin.
+
+define_attribute {p:key_n[3]} {PAP_IO_LOC} {Y8}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 13)] | Port key_n[3] has been placed at location Y8, whose type is share pin.
+
+define_attribute {p:key_n[6]} {PAP_IO_LOC} {AA6}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 16)] | Port key_n[6] has been placed at location AA6, whose type is share pin.
+
+define_attribute {p:key_n[7]} {PAP_IO_LOC} {AB6}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 17)] | Port key_n[7] has been placed at location AB6, whose type is share pin.
+
+define_attribute {p:qspi_cs_n} {PAP_IO_LOC} {AA3}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 27)] | Port qspi_cs_n has been placed at location AA3, whose type is share pin.
+
+define_attribute {p:qspi_sck} {PAP_IO_LOC} {Y20}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 28)] | Port qspi_sck has been placed at location Y20, whose type is share pin.
+
+define_attribute {p:qspi_dq[0]} {PAP_IO_LOC} {AB20}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 29)] | Port qspi_dq[0] has been placed at location AB20, whose type is share pin.
+
+define_attribute {p:qspi_dq[1]} {PAP_IO_LOC} {AA20}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 30)] | Port qspi_dq[1] has been placed at location AA20, whose type is share pin.
+
+define_attribute {p:qspi_dq[2]} {PAP_IO_LOC} {R13}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 31)] | Port qspi_dq[2] has been placed at location R13, whose type is share pin.
+
+define_attribute {p:qspi_dq[3]} {PAP_IO_LOC} {T14}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 32)] | Port qspi_dq[3] has been placed at location T14, whose type is share pin.
+
+define_attribute {p:ddr3_dq[0]} {PAP_IO_LOC} {M1}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 82)] | Port ddr3_dq[0] has been placed at location M1, whose type is share pin.
+
+define_attribute {p:ddr3_dq[2]} {PAP_IO_LOC} {M2}
+	C: ConstraintEditor-2002: [D:/PDS/project/NAX/constraints/pgl50h_top_pins.fdc(line number: 84)] | Port ddr3_dq[2] has been placed at location M2, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+C: ConstraintEditor-2009: p:led[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[3] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[3] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[4] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[4] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[5] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[5] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[6] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[6] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:led[7] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:led[7] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_cs_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:qspi_cs_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_sck is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2029: p:qspi_sck is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_dq[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2009: p:qspi_dq[0] is lack of PAP_IO_SLEW, OUTPUT or INOUT PORT had better set PAP_IO_SLEW, the optional value is {SLOW, FAST}.
+C: ConstraintEditor-2029: p:qspi_dq[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLDW, PULLUP, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_dq[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2009: p:qspi_dq[1] is lack of PAP_IO_SLEW, OUTPUT or INOUT PORT had better set PAP_IO_SLEW, the optional value is {SLOW, FAST}.
+C: ConstraintEditor-2029: p:qspi_dq[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLDW, PULLUP, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_dq[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2009: p:qspi_dq[2] is lack of PAP_IO_SLEW, OUTPUT or INOUT PORT had better set PAP_IO_SLEW, the optional value is {SLOW, FAST}.
+C: ConstraintEditor-2029: p:qspi_dq[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLDW, PULLUP, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:qspi_dq[3] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {8, 4, 12, 16, 24}.
+C: ConstraintEditor-2009: p:qspi_dq[3] is lack of PAP_IO_SLEW, OUTPUT or INOUT PORT had better set PAP_IO_SLEW, the optional value is {SLOW, FAST}.
+C: ConstraintEditor-2029: p:qspi_dq[3] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLDW, PULLUP, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[3] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[3] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[4] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[4] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[5] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[5] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[6] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[6] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[7] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[7] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[8] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[8] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[9] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[9] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[10] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[10] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[11] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[11] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[12] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[12] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[13] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[13] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[14] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[14] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_addr[15] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_addr[15] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_ba[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_ba[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_ba[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_ba[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_ba[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_ba[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_cas_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_cas_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_ras_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_ras_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_we_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_we_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_cke is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_cke is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_cs_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_cs_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_odt is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_odt is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_reset_n is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_reset_n is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dm[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dm[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dm[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dm[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dm[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dm[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dm[3] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dm[3] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[0] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[0] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[1] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[1] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[2] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[2] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[3] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[3] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[4] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[4] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[5] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[5] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[6] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[6] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[7] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[7] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[8] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[8] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[9] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[9] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[10] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[10] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[11] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[11] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[12] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[12] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[13] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[13] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[14] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[14] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[15] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[15] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[16] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[16] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[17] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[17] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[18] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[18] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[19] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[19] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[20] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[20] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[21] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[21] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[22] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[22] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[23] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[23] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[24] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[24] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[25] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[25] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[26] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[26] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[27] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[27] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[28] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[28] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[29] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[29] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[30] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[30] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+C: ConstraintEditor-2009: p:ddr3_dq[31] is lack of PAP_IO_DRIVE, OUTPUT or INOUT PORT had better set PAP_IO_DRIVE, the optional value is {7.5}.
+C: ConstraintEditor-2029: p:ddr3_dq[31] is lack of BUS_KEEPER, PORT had better set BUS_KEEPER, the optional value is {NONE, PULLUP, PULLDW, KPR, UNUSED}.
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

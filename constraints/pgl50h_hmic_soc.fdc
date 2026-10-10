@@ -1,0 +1,80 @@
+### PGL50H full HMIC/DDR3 timing constraints for pgl50h_top.
+###
+### The original HMIC example is a standalone design whose input port is
+### ref_clk and whose generated hierarchy starts at I_ipsxb_ddr_top.  In the
+### SoC the HMIC instance is nested below:
+###   pgl50h_top/u_ddr3/u_pds_ddr3/u_hmic
+### Keep this file separate from the board pin file so that the generated
+### clocks can be reviewed independently of the final PCB pin assignment.
+
+###==== Primary input clock
+### clk_50m is declared by pgl50h_soc_timing.fdc.  Keep one authoritative
+### primary-clock definition to avoid duplicate-clock import errors.
+
+###==== PDS 50 MHz -> 100 MHz PLL used by the clock/reset boundary
+create_generated_clock -name {pll_clk_sys} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_clock_reset.u_pgl50h_pll.u_generated_pll/clkout0}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {2} -divide_by {1}
+
+###==== HMIC_S generated clocks
+### 50 MHz * 16 / 8 = 100 MHz user/controller clock.
+create_generated_clock -name {ddrphy_clkin} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_ddr3.u_pds_ddr3.u_hmic.I_GTP_CLKDIV/CLKDIVOUT}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {16} -divide_by {8}
+
+### Keep the HMIC-generated divider output as the single timing root for the
+### DDR controller/user-port side.  CPU, AXI, AI and DMA use pll_clk_sys and
+### cross into this domain only through pgl50h_axi_hmic_cdc.
+
+### 50 MHz * 16 / 2 = 400 MHz DDR IO clocks.  Bank3 CA spans
+### regions 0 and 2, so REGION_NUM=3 instantiates one regional buffer per
+### region (including the central region used by the four DQS groups).
+create_generated_clock -name {ioclk0} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_ddr3.u_pds_ddr3.u_hmic.I_GTP_IOCLKBUF_0/CLKOUT}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {16} -divide_by {2}
+
+create_generated_clock -name {ioclk1} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_ddr3.u_pds_ddr3.u_hmic.I_GTP_IOCLKBUF_1/CLKOUT}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {16} -divide_by {2}
+
+create_generated_clock -name {ioclk2} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_ddr3.u_pds_ddr3.u_hmic.I_GTP_IOCLKBUF_2/CLKOUT}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {16} -divide_by {2}
+
+### Gated 100 MHz clock used by the PHY training logic.
+create_generated_clock -name {ioclk_gate_clk} \
+  -source [get_ports {clk_50m}] \
+  [get_pins {u_ddr3.u_pds_ddr3.u_hmic.u_clkbufg_gate/CLKOUT}] \
+  -master_clock [get_clocks {clk_50m}] -multiply_by {16} -divide_by {8}
+
+### The PHY IO clock and training gate are separate timing domains.  The
+### controller clock remains related to clk_50m through the generated-clock
+### definitions above.
+set_clock_groups -name {hmic_ioclk_async} -asynchronous \
+  -group [get_clocks {ioclk0 ioclk1 ioclk2}] \
+  -group [get_clocks {clk_50m pll_clk_sys ddrphy_clkin ioclk_gate_clk}]
+
+### The SoC fabric runs from the PLL clock while the HMIC user port runs from
+### the HMIC divider clock.  They are intentionally bridged by the toggle
+### mailbox in pgl50h_axi_hmic_cdc; treat the two domains as asynchronous so
+### PDS does not time the held payload bus as a same-cycle synchronous path.
+set_clock_groups -name {soc_hmic_cdc_async} -asynchronous \
+  -group [get_clocks {pll_clk_sys}] \
+  -group [get_clocks {ddrphy_clkin}]
+
+set_clock_uncertainty {0.200} [get_clocks {ddrphy_clkin}] -setup -hold
+set_clock_uncertainty {0.200} [get_clocks {ioclk0}] -setup -hold
+set_clock_uncertainty {0.200} [get_clocks {ioclk1}] -setup -hold
+set_clock_uncertainty {0.200} [get_clocks {ioclk2}] -setup -hold
+set_false_path -from [get_ports {reset_n}]
+
+### HMIC hard resources.  These paths follow the generated PGL50H HMIC
+### example after nesting it under pgl50h_top/u_ddr3/u_pds_ddr3/u_hmic.
+define_attribute {i:u_ddr3.u_pds_ddr3.u_hmic.u_ipsxb_ddrphy_pll_0.u_pll_e3} {PAP_LOC} {PLL_158_199}
+define_attribute {i:u_ddr3.u_pds_ddr3.u_hmic.u_ipsxb_ddrphy_pll_1.u_pll_e3} {PAP_LOC} {PLL_158_179}
+define_attribute {i:u_ddr3.u_pds_ddr3.u_hmic.u_ddrphy_top.ddrphy_reset_ctrl.ddrphy_ioclk_gate} {PAP_LOC} {CLMA_150_192:FF3}

@@ -1,0 +1,66 @@
+library verilog;
+use verilog.vl_types.all;
+entity pgl50h_native_axi_bridge is
+    generic(
+        AXI_ADDR_WIDTH  : integer := 28;
+        AXI_DATA_WIDTH  : integer := 256;
+        CPU_MEM_BASE    : vl_logic_vector(31 downto 0) := (Hi1, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0);
+        HMIC_ADDR_SHIFT : integer := 3
+    );
+    port(
+        clk             : in     vl_logic;
+        reset           : in     vl_logic;
+        init_done       : in     vl_logic;
+        if_cmd_valid    : in     vl_logic;
+        if_cmd_ready    : out    vl_logic;
+        if_cmd_address  : in     vl_logic_vector(31 downto 0);
+        if_rsp_valid    : out    vl_logic;
+        if_rsp_ready    : in     vl_logic;
+        if_rsp_data     : out    vl_logic_vector(63 downto 0);
+        if_rsp_error    : out    vl_logic;
+        d_read_cmd_valid: in     vl_logic;
+        d_read_cmd_ready: out    vl_logic;
+        d_read_cmd_id   : in     vl_logic_vector(0 downto 0);
+        d_read_cmd_address: in     vl_logic_vector(31 downto 0);
+        d_read_rsp_valid: out    vl_logic;
+        d_read_rsp_ready: in     vl_logic;
+        d_read_rsp_id   : out    vl_logic_vector(0 downto 0);
+        d_read_rsp_data : out    vl_logic_vector(63 downto 0);
+        d_read_rsp_error: out    vl_logic;
+        d_write_cmd_valid: in     vl_logic;
+        d_write_cmd_ready: out    vl_logic;
+        d_write_cmd_last: in     vl_logic;
+        d_write_cmd_address: in     vl_logic_vector(31 downto 0);
+        d_write_cmd_data: in     vl_logic_vector(63 downto 0);
+        d_write_cmd_id  : in     vl_logic_vector(0 downto 0);
+        d_write_rsp_valid: out    vl_logic;
+        d_write_rsp_id  : out    vl_logic_vector(0 downto 0);
+        d_write_rsp_error: out    vl_logic;
+        axi_awaddr      : out    vl_logic_vector;
+        axi_awuser_ap   : out    vl_logic;
+        axi_awuser_id   : out    vl_logic_vector(3 downto 0);
+        axi_awlen       : out    vl_logic_vector(3 downto 0);
+        axi_awready     : in     vl_logic;
+        axi_awvalid     : out    vl_logic;
+        axi_wdata       : out    vl_logic_vector;
+        axi_wstrb       : out    vl_logic_vector;
+        axi_wready      : in     vl_logic;
+        axi_wusero_id   : in     vl_logic_vector(3 downto 0);
+        axi_wusero_last : in     vl_logic;
+        axi_araddr      : out    vl_logic_vector;
+        axi_aruser_ap   : out    vl_logic;
+        axi_aruser_id   : out    vl_logic_vector(3 downto 0);
+        axi_arlen       : out    vl_logic_vector(3 downto 0);
+        axi_arready     : in     vl_logic;
+        axi_arvalid     : out    vl_logic;
+        axi_rdata       : in     vl_logic_vector;
+        axi_rid         : in     vl_logic_vector(3 downto 0);
+        axi_rlast       : in     vl_logic;
+        axi_rvalid      : in     vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of AXI_ADDR_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of AXI_DATA_WIDTH : constant is 2;
+    attribute mti_svvh_generic_type of CPU_MEM_BASE : constant is 2;
+    attribute mti_svvh_generic_type of HMIC_ADDR_SHIFT : constant is 2;
+end pgl50h_native_axi_bridge;

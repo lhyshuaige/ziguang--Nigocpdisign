@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity RegFileAsync is
+    port(
+        io_writes_0_valid: in     vl_logic;
+        io_writes_0_address: in     vl_logic_vector(5 downto 0);
+        io_writes_0_data: in     vl_logic_vector(31 downto 0);
+        io_writes_0_robId: in     vl_logic_vector(4 downto 0);
+        io_writes_1_valid: in     vl_logic;
+        io_writes_1_address: in     vl_logic_vector(5 downto 0);
+        io_writes_1_data: in     vl_logic_vector(31 downto 0);
+        io_writes_1_robId: in     vl_logic_vector(4 downto 0);
+        io_writes_2_valid: in     vl_logic;
+        io_writes_2_address: in     vl_logic_vector(5 downto 0);
+        io_writes_2_data: in     vl_logic_vector(31 downto 0);
+        io_writes_2_robId: in     vl_logic_vector(4 downto 0);
+        io_writes_3_valid: in     vl_logic;
+        io_writes_3_address: in     vl_logic_vector(5 downto 0);
+        io_writes_3_data: in     vl_logic_vector(31 downto 0);
+        io_writes_3_robId: in     vl_logic_vector(4 downto 0);
+        io_reads_0_valid: in     vl_logic;
+        io_reads_0_address: in     vl_logic_vector(5 downto 0);
+        io_reads_0_data : out    vl_logic_vector(31 downto 0);
+        io_reads_1_valid: in     vl_logic;
+        io_reads_1_address: in     vl_logic_vector(5 downto 0);
+        io_reads_1_data : out    vl_logic_vector(31 downto 0);
+        io_reads_2_valid: in     vl_logic;
+        io_reads_2_address: in     vl_logic_vector(5 downto 0);
+        io_reads_2_data : out    vl_logic_vector(31 downto 0);
+        io_reads_3_valid: in     vl_logic;
+        io_reads_3_address: in     vl_logic_vector(5 downto 0);
+        io_reads_3_data : out    vl_logic_vector(31 downto 0);
+        io_reads_4_valid: in     vl_logic;
+        io_reads_4_address: in     vl_logic_vector(5 downto 0);
+        io_reads_4_data : out    vl_logic_vector(31 downto 0);
+        io_reads_5_valid: in     vl_logic;
+        io_reads_5_address: in     vl_logic_vector(5 downto 0);
+        io_reads_5_data : out    vl_logic_vector(31 downto 0);
+        clk             : in     vl_logic;
+        reset           : in     vl_logic
+    );
+end RegFileAsync;

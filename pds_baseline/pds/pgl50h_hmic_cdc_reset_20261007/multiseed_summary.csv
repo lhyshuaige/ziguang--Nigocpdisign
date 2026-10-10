@@ -1,0 +1,38 @@
+version,2022.2-SP6.7.1<build 188940>
+project name,pgl50h_soc_hmic_clockgroup_PGL50H.pds
+
+Single Seed:
+Seed,State,Convergence,Setup(Slow),Setup(Fast),Hold(Slow),Hold(Fast),Recovery(Slow),Recovery(Fast),Removal(Slow),Removal(Fast),PBM-GP,PBM-PreGP,PBM-PostGP,LP,Total Placement Cpu Time,Detailed routing,Total Routing Cpu Time,Wire Length After Post-GP,Wire Length After LP,Wire Length After DP,Routing Arc Length,Worst Slack After GP Timing,Worst Slack After LP Timing,Worst Slack Before RP,Worst Slack Before DP,Worst Slack After DP,Worst Slack After Placement,Worst Slack After TA By Preroute,TNS After DP,TNS Before Route,Setup(Slow) Total Failing TNS,Setup(Slow) Total Failing Endpoints,Hold(Slow) Total Failing THS,Hold(Slow) Total Failing Endpoints,Power
+single,OK,OK,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,4.05,76.28,251.39,281.66,NA,NA,NA,432055,NA,NA,-1235,NA,NA,986,NA,NA,0,NA,NA,NA,NA,NA
+Pass Rate/Convergence Rate,100.00%,100.00%
+
+Synthesize:
+control_set,NA
+Synthesize Performance Summary:
+slack category,Synthesize Setup WNS,Synthesize Setup TNS,Synthesize Recovery WNS,Synthesize Recovery TNS
+slack value,-0.288,-46.350,4.991,0.000
+Synthesize Process Cpu Time,0h:1m:27s
+
+Device Map:
+Device Map Resource Usage Summary:
+Logic Utilization,LUT,FF,DRM,APM,Distributed RAM,HSSTHP,USCM,HCKB,RCKB
+Used,21238,16975,35.5,14,1922,NA,4,NA,0
+Available,42800,64200,134,84,17000,NA,30,NA,24
+Utilization(%),50%,27%,27%,17%,12%,NA,14%,NA,0%
+Device Map Process Cpu Time,0h:0m:13s
+
+Project Configurations:
+top module,pgl50h_top
+compile," -force_to_run 
+ -top_module {pgl50h_top} "
+synthesize," -force_to_run 
+ -ads "
+device map," -force_to_run "
+place & route," -force_to_run 
+ -optimize_multi_corner_timing 
+ -fix_hold_violation 
+ -report_timing "
+
+Test Parameters Configurations:
+testparam,
+

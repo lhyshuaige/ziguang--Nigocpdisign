@@ -1,0 +1,4 @@
+create_generated_clock -name {sys100} -source [get_ports {clk_125m_p}] [get_pins {u_system_pll.u_gpll/CLKOUT1}] -master_clock [get_clocks {ref_clk}] -multiply_by {4} -divide_by {5}
+set_clock_uncertainty {0.200} [get_clocks {sys100}] -setup -hold
+set_false_path -from [get_ports {reset_n}]
+set_false_path -to [get_ports {led[*]}]

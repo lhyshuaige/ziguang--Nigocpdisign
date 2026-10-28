@@ -1,0 +1,18 @@
+# Local PDS products and generated caches
+
+/build/
+/pds_runs/
+/out/
+__pycache__/
+*.pyc
+*.vcd
+*.fst
+*.log
+*.lic
+license.dat
+.env
+.env.*
+*.pem
+*.pfx
+.DS_Store
+Thumbs.db

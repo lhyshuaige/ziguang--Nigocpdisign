@@ -1,0 +1,373 @@
+{
+  "run": "D:\\PDS\\project\\Nigo-LG100\\build\\mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on",
+  "whole_SoC_status": "TIMING_FAILED",
+  "setup_slow": {
+    "worst_ns": 0.146,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "setup_fast": {
+    "worst_ns": 0.269,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_slow": {
+    "worst_ns": 0.049,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_fast": {
+    "worst_ns": -0.033,
+    "failing_endpoints": 5,
+    "total_negative_ns": -0.11
+  },
+  "negative_inventory_coverage": {
+    "setup_slow": {
+      "reported_unique_endpoints": 0,
+      "expected_count": 0,
+      "complete": true
+    },
+    "setup_fast": {
+      "reported_unique_endpoints": 0,
+      "expected_count": 0,
+      "complete": true
+    },
+    "hold_slow": {
+      "reported_unique_endpoints": 0,
+      "expected_count": 0,
+      "complete": true
+    },
+    "hold_fast": {
+      "reported_unique_endpoints": 5,
+      "expected_count": 5,
+      "complete": true
+    }
+  },
+  "unique_hold_endpoints": 5,
+  "sys100": {
+    "setup_slow": {
+      "worst_ns": 0.181,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "setup_fast": {
+      "worst_ns": 2.526,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "hold_slow": {
+      "worst_ns": 0.049,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "hold_fast": {
+      "worst_ns": -0.033,
+      "total_negative_ns": -0.11,
+      "failing_endpoints": 5
+    }
+  },
+  "DDR_all_groups_corners_pass": true,
+  "RGMII_TX": {
+    "setup_slow": {
+      "worst_ns": 0.429,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "setup_fast": {
+      "worst_ns": 0.269,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "hold_slow": {
+      "worst_ns": 0.228,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    },
+    "hold_fast": {
+      "worst_ns": 0.112,
+      "total_negative_ns": 0.0,
+      "failing_endpoints": 0
+    }
+  },
+  "final_restored_exact_atoms": 12,
+  "final_restored_site_mismatches": 0,
+  "final_DB_SHA256": "fd5e0f609cc2ac83edbdac6b11894ec31eb87124573bbd0c8685f8c5b4cb85f8",
+  "status": "TARGETED_OLD_CPU_REUSE_PAIRED_VALIDATION_COMPLETE",
+  "automatic_hold_repair": true,
+  "in_router_hold_repair_iterations": [
+    6
+  ],
+  "post_route_hold_repair_iterations": [
+    3
+  ],
+  "restored_old_CPU_groups": 3,
+  "restored_old_CPU_atoms": 12,
+  "same_A29_map_PLC_and_constraints": true,
+  "paired_detailed_routing_convergence_trace_matches": true,
+  "original_two_CPU_hold_endpoints": {
+    "u_soc_core/u_cpu/DispatchPlugin_logic_queue/lines_7_ways_1_context_euCtx_1[0]/opit_0_srl/D": {
+      "min (slow corner)": {
+        "slack_ns": 0.311,
+        "startpoint": "u_soc_core/u_cpu/DispatchPlugin_logic_queue/lines_9_ways_1_context_euCtx_1[0]/opit_0_srl/CLK",
+        "data_path_delay_ns": 0.584
+      },
+      "min (fast corner)": {
+        "slack_ns": 0.174,
+        "startpoint": "u_soc_core/u_cpu/DispatchPlugin_logic_queue/lines_9_ways_1_context_euCtx_1[0]/opit_0_srl/CLK",
+        "data_path_delay_ns": 0.418
+      }
+    },
+    "u_soc_core/u_cpu/integer_RfTranslationPlugin_logic_impl/writes_ram/ram_11_0/ram32x2d/WADDR[0]": {
+      "min (slow corner)": {
+        "slack_ns": 1.246,
+        "startpoint": "u_soc_core/u_cpu/FrontendPlugin_serialized_ARCH_RD_1[0]/opit_0/CLK",
+        "data_path_delay_ns": 1.884
+      },
+      "min (fast corner)": {
+        "slack_ns": 0.745,
+        "startpoint": "u_soc_core/u_cpu/FrontendPlugin_serialized_ARCH_RD_1[0]/opit_0/CLK",
+        "data_path_delay_ns": 1.258
+      }
+    }
+  },
+  "RTL_changed": false,
+  "new_timing_exceptions": false,
+  "promoted": false,
+  "native_jobs_running": false,
+  "comparisons": {
+    "A24": {
+      "setup_slow": {
+        "worst_ns": -0.52,
+        "failing_endpoints": 2,
+        "total_negative_ns": -0.757
+      },
+      "setup_fast": {
+        "worst_ns": 0.269,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "hold_slow": {
+        "worst_ns": -0.026,
+        "failing_endpoints": 1,
+        "total_negative_ns": -0.026
+      },
+      "hold_fast": {
+        "worst_ns": -0.083,
+        "failing_endpoints": 9,
+        "total_negative_ns": -0.288
+      },
+      "unique_hold_endpoints": 9,
+      "sys100": {
+        "setup_slow": {
+          "worst_ns": -0.52,
+          "total_negative_ns": -0.757,
+          "failing_endpoints": 2
+        },
+        "setup_fast": {
+          "worst_ns": 2.462,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "hold_slow": {
+          "worst_ns": -0.026,
+          "total_negative_ns": -0.026,
+          "failing_endpoints": 1
+        },
+        "hold_fast": {
+          "worst_ns": -0.083,
+          "total_negative_ns": -0.288,
+          "failing_endpoints": 9
+        }
+      }
+    },
+    "A25": {
+      "setup_slow": {
+        "worst_ns": 0.146,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "setup_fast": {
+        "worst_ns": 0.269,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "hold_slow": {
+        "worst_ns": -0.803,
+        "failing_endpoints": 927,
+        "total_negative_ns": -196.829
+      },
+      "hold_fast": {
+        "worst_ns": -0.814,
+        "failing_endpoints": 2240,
+        "total_negative_ns": -336.565
+      },
+      "unique_hold_endpoints": 2242,
+      "sys100": {
+        "setup_slow": {
+          "worst_ns": 0.259,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "setup_fast": {
+          "worst_ns": 2.462,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "hold_slow": {
+          "worst_ns": -0.234,
+          "total_negative_ns": -14.263,
+          "failing_endpoints": 221
+        },
+        "hold_fast": {
+          "worst_ns": -0.223,
+          "total_negative_ns": -40.527,
+          "failing_endpoints": 972
+        }
+      }
+    },
+    "A29": {
+      "setup_slow": {
+        "worst_ns": 0.146,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "setup_fast": {
+        "worst_ns": 0.269,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "hold_slow": {
+        "worst_ns": -0.903,
+        "failing_endpoints": 985,
+        "total_negative_ns": -201.227
+      },
+      "hold_fast": {
+        "worst_ns": -0.841,
+        "failing_endpoints": 2277,
+        "total_negative_ns": -345.603
+      },
+      "unique_hold_endpoints": 2278,
+      "sys100": {
+        "setup_slow": {
+          "worst_ns": 0.204,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "setup_fast": {
+          "worst_ns": 2.526,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "hold_slow": {
+          "worst_ns": -0.214,
+          "total_negative_ns": -16.78,
+          "failing_endpoints": 253
+        },
+        "hold_fast": {
+          "worst_ns": -0.21,
+          "total_negative_ns": -44.709,
+          "failing_endpoints": 1028
+        }
+      }
+    },
+    "A30": {
+      "setup_slow": {
+        "worst_ns": 0.146,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "setup_fast": {
+        "worst_ns": 0.269,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "hold_slow": {
+        "worst_ns": 0.049,
+        "failing_endpoints": 0,
+        "total_negative_ns": 0.0
+      },
+      "hold_fast": {
+        "worst_ns": -0.033,
+        "failing_endpoints": 5,
+        "total_negative_ns": -0.11
+      },
+      "unique_hold_endpoints": 5,
+      "sys100": {
+        "setup_slow": {
+          "worst_ns": 0.181,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "setup_fast": {
+          "worst_ns": 2.526,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "hold_slow": {
+          "worst_ns": 0.049,
+          "total_negative_ns": 0.0,
+          "failing_endpoints": 0
+        },
+        "hold_fast": {
+          "worst_ns": -0.033,
+          "total_negative_ns": -0.11,
+          "failing_endpoints": 5
+        }
+      }
+    }
+  },
+  "final_negative_paths": [
+    {
+      "startpoint": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_bias_q[142]/opit_0/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_biased_q[146]/opit_0_AQ_perm/I5",
+      "clock": "sys100",
+      "type": "min (fast corner)",
+      "slack_ns": -0.033,
+      "core": true,
+      "data_path_delay_ns": 0.298,
+      "excerpt": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_bias_q[142]/opit_0/CLK\nEndpoint    : u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_biased_q[146]/opit_0_AQ_perm/I5\nPath Group  : sys100\nPath Type   : min (fast corner)\nPath Class  : sequential timing path\nClock Skew  :    0.141  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)\n  Capture Clock Delay     :  3.406\n  Launch Clock Delay      :  2.843\n  Clock Pessimism Removal :  -0.422\n\n Location                          Delay Type             Incr        Path         Logical Resource \n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.479       0.589 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.589         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.073       0.662 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.351       1.013         ref125           \n HCKB_213_466/CLKOUT               td                    0.195       1.208 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.301       1.509         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.031       1.540 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.420       1.960         clk_sys          \n USCM_215_579/CLKOUT               td                    0.097       2.057 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.328       2.385         ntclkbufg_0      \n HCKB_213_516/CLKOUT               td                    0.195       2.580 r       HCKBROUTE_0/CLKOUT\n                                   net (fanout=5041)     0.263       2.843         ntR13707         \n CLMS_207_613/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_bias_q[142]/opit_0/CLK\n\n CLMS_207_613/Q0                   tco                   0.109       2.952 f       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_bias_q[142]/opit_0/Q\n                                   net (fanout=2)        0.189       3.141         u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_bias_q [142]\n CLMA_219_618/C5                                                           f       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_biased_q[146]/opit_0_AQ_perm/I5\n\n Data arrival time                                                   3.141         Logic Levels: 0  \n                                                                                   Logic: 0.109ns(36.577%), Route: 0.189ns(63.423%)\n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.562       0.672 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.672         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.087       0.759 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.429       1.188         ref125           \n HCKB_213_466/CLKOUT               td                    0.233       1.421 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.377       1.798         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.065       1.863 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.501       2.364         clk_sys          \n USCM_215_579/CLKOUT               td                    0.115       2.479 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.385       2.864         ntclkbufg_0      \n HCKB_213_535/CLKOUT               td                    0.233       3.097 r       HCKBROUTE_5/CLKOUT\n                                   net (fanout=4608)     0.309       3.406         ntR13713         \n CLMA_219_618/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/psum_legacy_biased_q[147]/opit_0_AQ_perm/CLK\n clock pessimism                                        -0.422       2.984                          \n clock uncertainty                                       0.200       3.184                          \n\n Hold time                                              -0.010       3.174                          \n\n Data required time                                                  3.174                          \n----------------------------------------------------------------------------------------------------\n Data required time                                                  3.174                          \n Data arrival time                                                   3.141                          \n----------------------------------------------------------------------------------------------------\n Slack (VIOLATED)                                                   -0.033                          \n"
+    },
+    {
+      "startpoint": "u_soc_core/g_axi_fabric.u_ai_engine/staging[6][31]/opit_0/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/desc_accept_q[223]/opit_0/D",
+      "clock": "sys100",
+      "type": "min (fast corner)",
+      "slack_ns": -0.031,
+      "core": true,
+      "data_path_delay_ns": 0.16,
+      "excerpt": "u_soc_core/g_axi_fabric.u_ai_engine/staging[6][31]/opit_0/CLK\nEndpoint    : u_soc_core/g_axi_fabric.u_ai_engine/executor_i/desc_accept_q[223]/opit_0/D\nPath Group  : sys100\nPath Type   : min (fast corner)\nPath Class  : sequential timing path\nClock Skew  :    0.016  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)\n  Capture Clock Delay     :  3.398\n  Launch Clock Delay      :  2.832\n  Clock Pessimism Removal :  -0.550\n\n Location                          Delay Type             Incr        Path         Logical Resource \n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.479       0.589 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.589         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.073       0.662 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.351       1.013         ref125           \n HCKB_213_466/CLKOUT               td                    0.195       1.208 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.301       1.509         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.031       1.540 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.420       1.960         clk_sys          \n USCM_215_579/CLKOUT               td                    0.097       2.057 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.328       2.385         ntclkbufg_0      \n HCKB_213_486/CLKOUT               td                    0.195       2.580 r       HCKBROUTE_1/CLKOUT\n                                   net (fanout=4706)     0.252       2.832         ntR13708         \n CLMA_273_486/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/staging[6][31]/opit_0/CLK\n\n CLMA_273_486/Q3                   tco                   0.103       2.935 r       u_soc_core/g_axi_fabric.u_ai_engine/staging[6][31]/opit_0/Q\n                                   net (fanout=2)        0.057       2.992         u_soc_core/g_axi_fabric.u_ai_engine/descriptor [223]\n CLMA_273_487/M0                                                           r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/desc_accept_q[223]/opit_0/D\n\n Data arrival time                                                   2.992         Logic Levels: 0  \n                                                                                   Logic: 0.103ns(64.375%), Route: 0.057ns(35.625%)\n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.562       0.672 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.672         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.087       0.759 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.429       1.188         ref125           \n HCKB_213_466/CLKOUT               td                    0.233       1.421 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.377       1.798         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.065       1.863 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.501       2.364         clk_sys          \n USCM_215_579/CLKOUT               td                    0.115       2.479 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.385       2.864         ntclkbufg_0      \n HCKB_213_486/CLKOUT               td                    0.233       3.097 r       HCKBROUTE_1/CLKOUT\n                                   net (fanout=4706)     0.301       3.398         ntR13708         \n CLMA_273_487/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/desc_accept_q[223]/opit_0/CLK\n clock pessimism                                        -0.550       2.848                          \n clock uncertainty                                       0.200       3.048                          \n\n Hold time                                              -0.025       3.023                          \n\n Data required time                                                  3.023                          \n----------------------------------------------------------------------------------------------------\n Data required time                                                  3.023                          \n Data arrival time                                                   2.992                          \n----------------------------------------------------------------------------------------------------\n Slack (VIOLATED)                                                   -0.031                          \n"
+    },
+    {
+      "startpoint": "u_soc_core/g_axi_fabric.u_axi4_hmic/wr_data_reg[122]/opit_0/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_axi_hmic_cdc/cmd_wdata_src[122]/opit_0/D",
+      "clock": "sys100",
+      "type": "min (fast corner)",
+      "slack_ns": -0.031,
+      "core": true,
+      "data_path_delay_ns": 0.159,
+      "excerpt": "u_soc_core/g_axi_fabric.u_axi4_hmic/wr_data_reg[122]/opit_0/CLK\nEndpoint    : u_soc_core/g_axi_fabric.u_axi_hmic_cdc/cmd_wdata_src[122]/opit_0/D\nPath Group  : sys100\nPath Type   : min (fast corner)\nPath Class  : sequential timing path\nClock Skew  :    0.015  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)\n  Capture Clock Delay     :  3.381\n  Launch Clock Delay      :  2.816\n  Clock Pessimism Removal :  -0.550\n\n Location                          Delay Type             Incr        Path         Logical Resource \n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.479       0.589 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.589         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.073       0.662 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.351       1.013         ref125           \n HCKB_213_466/CLKOUT               td                    0.195       1.208 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.301       1.509         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.031       1.540 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.420       1.960         clk_sys          \n USCM_215_579/CLKOUT               td                    0.097       2.057 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.328       2.385         ntclkbufg_0      \n HCKB_213_535/CLKOUT               td                    0.195       2.580 r       HCKBROUTE_5/CLKOUT\n                                   net (fanout=4608)     0.236       2.816         ntR13713         \n CLMA_225_798/CLK                                                          r       u_soc_core/g_axi_fabric.u_axi4_hmic/wr_data_reg[122]/opit_0/CLK\n\n CLMA_225_798/Q1                   tco                   0.103       2.919 r       u_soc_core/g_axi_fabric.u_axi4_hmic/wr_data_reg[122]/opit_0/Q\n                                   net (fanout=1)        0.056       2.975         u_soc_core/g_axi_fabric.hmic_wdata [122]\n CLMS_225_799/M2                                                           r       u_soc_core/g_axi_fabric.u_axi_hmic_cdc/cmd_wdata_src[122]/opit_0/D\n\n Data arrival time                                                   2.975         Logic Levels: 0  \n                                                                                   Logic: 0.103ns(64.780%), Route: 0.056ns(35.220%)\n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.562       0.672 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.672         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.087       0.759 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.429       1.188         ref125           \n HCKB_213_466/CLKOUT               td                    0.233       1.421 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.377       1.798         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.065       1.863 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.501       2.364         clk_sys          \n USCM_215_579/CLKOUT               td                    0.115       2.479 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.385       2.864         ntclkbufg_0      \n HCKB_213_535/CLKOUT               td                    0.233       3.097 r       HCKBROUTE_5/CLKOUT\n                                   net (fanout=4608)     0.284       3.381         ntR13713         \n CLMS_225_799/CLK                                                          r       u_soc_core/g_axi_fabric.u_axi_hmic_cdc/cmd_wdata_src[122]/opit_0/CLK\n clock pessimism                                        -0.550       2.831                          \n clock uncertainty                                       0.200       3.031                          \n\n Hold time                                              -0.025       3.006                          \n\n Data required time                                                  3.006                          \n----------------------------------------------------------------------------------------------------\n Data required time                                                  3.006                          \n Data arrival time                                                   2.975                          \n----------------------------------------------------------------------------------------------------\n Slack (VIOLATED)                                                   -0.031                          \n"
+    },
+    {
+      "startpoint": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/post_raw_q[69]/opit_0/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/result_raw_q[69]/opit_0/D",
+      "clock": "sys100",
+      "type": "min (fast corner)",
+      "slack_ns": -0.014,
+      "core": true,
+      "data_path_delay_ns": 0.22699999999999998,
+      "excerpt": "u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/post_raw_q[69]/opit_0/CLK\nEndpoint    : u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/result_raw_q[69]/opit_0/D\nPath Group  : sys100\nPath Type   : min (fast corner)\nPath Class  : sequential timing path\nClock Skew  :    0.015  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)\n  Capture Clock Delay     :  3.404\n  Launch Clock Delay      :  2.839\n  Clock Pessimism Removal :  -0.550\n\n Location                          Delay Type             Incr        Path         Logical Resource \n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.479       0.589 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.589         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.073       0.662 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.351       1.013         ref125           \n HCKB_213_466/CLKOUT               td                    0.195       1.208 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.301       1.509         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.031       1.540 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.420       1.960         clk_sys          \n USCM_215_579/CLKOUT               td                    0.097       2.057 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.328       2.385         ntclkbufg_0      \n HCKB_213_535/CLKOUT               td                    0.195       2.580 r       HCKBROUTE_5/CLKOUT\n                                   net (fanout=4608)     0.259       2.839         ntR13713         \n CLMA_267_678/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/post_raw_q[69]/opit_0/CLK\n\n CLMA_267_678/Q2                   tco                   0.103       2.942 r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/post_raw_q[69]/opit_0/Q\n                                   net (fanout=1)        0.124       3.066         u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/post_raw_q [69]\n CLMA_261_673/M3                                                           r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/result_raw_q[69]/opit_0/D\n\n Data arrival time                                                   3.066         Logic Levels: 0  \n                                                                                   Logic: 0.103ns(45.374%), Route: 0.124ns(54.626%)\n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.562       0.672 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.672         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.087       0.759 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.429       1.188         ref125           \n HCKB_213_466/CLKOUT               td                    0.233       1.421 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.377       1.798         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.065       1.863 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.501       2.364         clk_sys          \n USCM_215_579/CLKOUT               td                    0.115       2.479 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.385       2.864         ntclkbufg_0      \n HCKB_213_535/CLKOUT               td                    0.233       3.097 r       HCKBROUTE_5/CLKOUT\n                                   net (fanout=4608)     0.307       3.404         ntR13713         \n CLMA_261_673/CLK                                                          r       u_soc_core/g_axi_fabric.u_ai_engine/executor_i/core_i/result_raw_q[69]/opit_0/CLK\n clock pessimism                                        -0.550       2.854                          \n clock uncertainty                                       0.200       3.054                          \n\n Hold time                                               0.026       3.080                          \n\n Data required time                                                  3.080                          \n----------------------------------------------------------------------------------------------------\n Data required time                                                  3.080                          \n Data arrival time                                                   3.066                          \n----------------------------------------------------------------------------------------------------\n Slack (VIOLATED)                                                   -0.014                          \n"
+    },
+    {
+      "startpoint": "u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/CLK",
+      "endpoint": "u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/I3",
+      "clock": "sys100",
+      "type": "min (fast corner)",
+      "slack_ns": -0.001,
+      "core": true,
+      "data_path_delay_ns": 0.178,
+      "excerpt": "u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/CLK\nEndpoint    : u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/I3\nPath Group  : sys100\nPath Type   : min (fast corner)\nPath Class  : sequential timing path\nClock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)\n  Capture Clock Delay     :  3.438\n  Launch Clock Delay      :  2.870\n  Clock Pessimism Removal :  -0.568\n\n Location                          Delay Type             Incr        Path         Logical Resource \n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.479       0.589 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.589         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.073       0.662 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.351       1.013         ref125           \n HCKB_213_466/CLKOUT               td                    0.195       1.208 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.301       1.509         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.031       1.540 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.420       1.960         clk_sys          \n USCM_215_579/CLKOUT               td                    0.097       2.057 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.336       2.393         ntclkbufg_0      \n HCKB_213_1084/CLKOUT              td                    0.195       2.588 r       HCKBROUTE_2/CLKOUT\n                                   net (fanout=2463)     0.282       2.870         ntR13709         \n CLMA_99_918/CLK                                                           r       u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/CLK\n\n CLMA_99_918/CR0                   tco                   0.122       2.992 r       u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/L5Q\n                                   net (fanout=3)        0.056       3.048         u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports [31]\n CLMA_99_918/A3                                                            r       u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/I3\n\n Data arrival time                                                   3.048         Logic Levels: 0  \n                                                                                   Logic: 0.122ns(68.539%), Route: 0.056ns(31.461%)\n----------------------------------------------------------------------------------------------------\n\n Clock sys100 (rising edge)                              0.000       0.000 r                        \n N3                                                      0.000       0.000 r       clk_125m_p (port)\n                                   net (fanout=1)        0.110       0.110         clk_125m_p       \n IOBD_372_468/DIN                  td                    0.562       0.672 r       u_reference/opit_0/O\n                                   net (fanout=1)        0.000       0.672         u_reference/ntD  \n IOLHR_364_468/DI_TO_CLK           td                    0.087       0.759 r       u_reference/opit_2/DI_TO_CLK\n                                   net (fanout=3)        0.429       1.188         ref125           \n HCKB_213_466/CLKOUT               td                    0.233       1.421 r       HCKBROUTE_11/CLKOUT\n                                   net (fanout=2)        0.377       1.798         ntR13703         \n GPLL_7_463/CLKOUT1                td                    0.065       1.863 r       u_system_pll/u_gpll/gpll_inst/CLKOUT1\n                                   net (fanout=1)        0.501       2.364         clk_sys          \n USCM_215_579/CLKOUT               td                    0.115       2.479 r       clkbufg_0/gopclkbufg/CLKOUT\n                                   net (fanout=8)        0.395       2.874         ntclkbufg_0      \n HCKB_213_1084/CLKOUT              td                    0.233       3.107 r       HCKBROUTE_2/CLKOUT\n                                   net (fanout=2463)     0.331       3.438         ntR13709         \n CLMA_99_918/CLK                                                           r       u_ethernet/u_endpoint/u_board/u_core/u_regs/tx_ports[31]/opit_0_L6QL5Q_perm/CLK\n clock pessimism                                        -0.568       2.870                          \n clock uncertainty                                       0.200       3.070                          \n\n Hold time                                              -0.021       3.049                          \n\n Data required time                                                  3.049                          \n----------------------------------------------------------------------------------------------------\n Data required time                                                  3.049                          \n Data arrival time                                                   3.048                          \n----------------------------------------------------------------------------------------------------\n Slack (VIOLATED)                                                   -0.001                          \n"
+    }
+  ],
+  "original_A15_A24_A29_DBs_unchanged": true,
+  "report": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\OLD_CPU_CONSTRAINT_ACTUAL_REUSE_20261027.md"
+}

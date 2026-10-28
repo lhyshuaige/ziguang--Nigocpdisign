@@ -1,0 +1,96 @@
+`timescale 1ns/1ps
+`default_nettype none
+// Complete board Ethernet IP + image packetization + generic AI/result source.
+// Image input is WORD32 pixel, TLAST=EOL, TUSER=SOF. Result/RX TLAST=UDP end.
+module ethernet_visual_endpoint(
+ input wire clk_125m_p,clk_125m_n,async_reset,
+ input wire rgmii_rxc,rgmii_rx_ctl,input wire [3:0] rgmii_rxd,
+ output wire rgmii_txc,rgmii_tx_ctl,output wire [3:0] rgmii_txd,
+ output wire phy_rstn,mdc,inout wire mdio,
+ output wire sys_clk,sys_reset,pll_locked,
+ input wire [11:0] s_axil_awaddr,input wire s_axil_awvalid,output wire s_axil_awready,
+ input wire [31:0] s_axil_wdata,input wire [3:0] s_axil_wstrb,input wire s_axil_wvalid,output wire s_axil_wready,
+ output wire [1:0] s_axil_bresp,output wire s_axil_bvalid,input wire s_axil_bready,
+ input wire [11:0] s_axil_araddr,input wire s_axil_arvalid,output wire s_axil_arready,
+ output wire [31:0] s_axil_rdata,output wire [1:0] s_axil_rresp,output wire s_axil_rvalid,input wire s_axil_rready,
+ output wire irq,ready,
+ input wire image_start_valid,image_abort,output wire image_start_ready,
+ input wire [15:0] image_width,image_height,input wire image_rgb565,
+ input wire [31:0] image_frame_id,image_frame_bytes,image_timestamp,image_peer_ip,
+ input wire [31:0] image_tdata,input wire [3:0] image_tkeep,input wire image_tvalid,output wire image_tready,input wire image_tlast,image_tuser,
+ output wire image_done,image_error,output wire [31:0] image_packets,
+ input wire [79:0] result_desc,input wire result_desc_valid,output wire result_desc_ready,
+ input wire [31:0] result_tdata,input wire [3:0] result_tkeep,input wire result_tvalid,output wire result_tready,input wire result_tlast,result_tuser,
+ output wire [79:0] m_rx_desc,output wire m_rx_desc_valid,input wire m_rx_desc_ready,
+ output wire [31:0] m_rx_tdata,output wire [3:0] m_rx_tkeep,output wire m_rx_tvalid,input wire m_rx_tready,output wire m_rx_tlast,m_rx_tuser
+);
+ wire [79:0] image_desc,s_tx_desc;wire image_dv,image_dr,s_tx_desc_valid,s_tx_desc_ready;
+ wire [31:0] packet_data,s_tx_tdata;wire [3:0] packet_keep,s_tx_tkeep;
+ wire packet_valid,packet_ready,packet_last,packet_bad,s_tx_tvalid,s_tx_tready,s_tx_tlast,s_tx_tuser;
+ wire packet_start_ready;wire application_reset=sys_reset || !ready;
+ assign image_start_ready=packet_start_ready && ready;
+ ethernet_image_packetizer u_image(.clk(sys_clk),.reset(application_reset),.abort(image_abort),.start_valid(image_start_valid && ready),.start_ready(packet_start_ready),
+  .image_width(image_width),.image_height(image_height),.format_rgb565(image_rgb565),.frame_id(image_frame_id),.frame_bytes(image_frame_bytes),.timestamp(image_timestamp),
+  .peer_ip(image_peer_ip),.source_port(16'd5000),.dest_port(16'd5000),
+  .s_tdata(image_tdata),.s_tkeep(image_tkeep),.s_tvalid(image_tvalid),.s_tready(image_tready),.s_tlast(image_tlast),.s_tuser(image_tuser),
+  .m_desc(image_desc),.m_desc_valid(image_dv),.m_desc_ready(image_dr),.m_tdata(packet_data),.m_tkeep(packet_keep),.m_tvalid(packet_valid),.m_tready(packet_ready),.m_tlast(packet_last),.m_tuser(packet_bad),
+  .frame_done(image_done),.frame_error(image_error),.packets_sent(image_packets));
+ ethernet_packet_arbiter u_application_arb(.clk(sys_clk),.reset(application_reset),
+  .a_desc(image_desc),.a_desc_valid(image_dv),.a_desc_ready(image_dr),.a_data(packet_data),.a_keep(packet_keep),.a_valid(packet_valid),.a_ready(packet_ready),.a_last(packet_last),.a_bad(packet_bad),
+  .b_desc(result_desc),.b_desc_valid(result_desc_valid && ready),.b_desc_ready(result_desc_ready),.b_data(result_tdata),.b_keep(result_tkeep),.b_valid(result_tvalid),.b_ready(result_tready),.b_last(result_tlast),.b_bad(result_tuser),
+  .m_desc(s_tx_desc),.m_desc_valid(s_tx_desc_valid),.m_desc_ready(s_tx_desc_ready),.m_data(s_tx_tdata),.m_keep(s_tx_tkeep),.m_valid(s_tx_tvalid),.m_ready(s_tx_tready),.m_last(s_tx_tlast),.m_bad(s_tx_tuser));
+ ethernet_mes2l676_top u_board(
+.clk_125m_p(clk_125m_p),
+.clk_125m_n(clk_125m_n),
+.async_reset(async_reset),
+.rgmii_rxc(rgmii_rxc),
+.rgmii_rx_ctl(rgmii_rx_ctl),
+.rgmii_rxd(rgmii_rxd),
+.rgmii_txc(rgmii_txc),
+.rgmii_tx_ctl(rgmii_tx_ctl),
+.rgmii_txd(rgmii_txd),
+.phy_rstn(phy_rstn),
+.mdc(mdc),
+.mdio(mdio),
+.sys_clk(sys_clk),
+.sys_reset(sys_reset),
+.pll_locked(pll_locked),
+.s_axil_awaddr(s_axil_awaddr),
+.s_axil_awvalid(s_axil_awvalid),
+.s_axil_awready(s_axil_awready),
+.s_axil_wdata(s_axil_wdata),
+.s_axil_wstrb(s_axil_wstrb),
+.s_axil_wvalid(s_axil_wvalid),
+.s_axil_wready(s_axil_wready),
+.s_axil_bresp(s_axil_bresp),
+.s_axil_bvalid(s_axil_bvalid),
+.s_axil_bready(s_axil_bready),
+.s_axil_araddr(s_axil_araddr),
+.s_axil_arvalid(s_axil_arvalid),
+.s_axil_arready(s_axil_arready),
+.s_axil_rdata(s_axil_rdata),
+.s_axil_rresp(s_axil_rresp),
+.s_axil_rvalid(s_axil_rvalid),
+.s_axil_rready(s_axil_rready),
+.irq(irq),
+.ready(ready),
+.s_tx_desc(s_tx_desc),
+.s_tx_desc_valid(s_tx_desc_valid),
+.s_tx_desc_ready(s_tx_desc_ready),
+.s_tx_tdata(s_tx_tdata),
+.s_tx_tkeep(s_tx_tkeep),
+.s_tx_tvalid(s_tx_tvalid),
+.s_tx_tready(s_tx_tready),
+.s_tx_tlast(s_tx_tlast),
+.s_tx_tuser(s_tx_tuser),
+.m_rx_desc(m_rx_desc),
+.m_rx_desc_valid(m_rx_desc_valid),
+.m_rx_desc_ready(m_rx_desc_ready),
+.m_rx_tdata(m_rx_tdata),
+.m_rx_tkeep(m_rx_tkeep),
+.m_rx_tvalid(m_rx_tvalid),
+.m_rx_tready(m_rx_tready),
+.m_rx_tlast(m_rx_tlast),
+.m_rx_tuser(m_rx_tuser));
+endmodule
+`default_nettype wire

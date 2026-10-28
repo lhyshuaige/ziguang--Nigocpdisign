@@ -1,0 +1,20 @@
+# Official UCE hierarchy uses dots; targets are real primitive pins.
+create_clock -name {rx125} [get_ports {rgmii_rxc}] -period {8.000} -waveform {0 4}
+create_generated_clock -name {net125} -source [get_ports {clk_125m_p}] [get_pins {u_system_pll.u_gpll/CLKOUT0}] -master_clock [get_clocks {ref_clk}] -divide_by {1}
+# This clock models the REMOTE PHY sampling edge after its nominal 2 ns TX delay.
+# FPGA PLL and forwarded clock remain zero phase. Not a measured PCB/PVT signoff.
+create_generated_clock -name {phy_tx_capture} -source [get_pins {u_system_pll.u_gpll/CLKOUT0}] [get_ports {rgmii_txc}] -master_clock [get_clocks {net125}] -edges {1 2 3} -edge_shift {2 2 2}
+set_clock_uncertainty {0.200} [get_clocks {net125 rx125 phy_tx_capture}] -setup -hold
+# RX: associate data transition with PREVIOUS half-cycle clock launch.
+# Table60 setup/hold >=1.2ns -> delay [1.2, 4-1.2]; add +/-0.1ns board skew.
+set_input_delay -clock {rx125} -max {2.900} [get_ports {rgmii_rxd[*] rgmii_rx_ctl}]
+set_input_delay -clock {rx125} -min {1.100} [get_ports {rgmii_rxd[*] rgmii_rx_ctl}]
+set_input_delay -clock {rx125} -clock_fall -add_delay -max {2.900} [get_ports {rgmii_rxd[*] rgmii_rx_ctl}]
+set_input_delay -clock {rx125} -clock_fall -add_delay -min {1.100} [get_ports {rgmii_rxd[*] rgmii_rx_ctl}]
+# TX: 1ns receiver setup/hold plus 0.1ns provisional differential board skew.
+set_output_delay -clock {phy_tx_capture} -max {1.100} [get_ports {rgmii_txd[*] rgmii_tx_ctl}]
+set_output_delay -clock {phy_tx_capture} -min {-1.100} [get_ports {rgmii_txd[*] rgmii_tx_ctl}]
+set_output_delay -clock {phy_tx_capture} -clock_fall -add_delay -max {1.100} [get_ports {rgmii_txd[*] rgmii_tx_ctl}]
+set_output_delay -clock {phy_tx_capture} -clock_fall -add_delay -min {-1.100} [get_ports {rgmii_txd[*] rgmii_tx_ctl}]
+# LEDs and asynchronous PHY reset are not sampled data interfaces.
+set_false_path -to [get_ports {phy_rstn}]

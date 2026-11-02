@@ -1,0 +1,38 @@
+{
+  "upstream": "https://github.com/eembc/coremark",
+  "commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "core_sha256": {
+    "core_main.c": "c240afdd1bda84af55643ca812fcbb0dd52063a7bae2ebf12f5fc12e487328ff",
+    "core_list_join.c": "cb85efa5ca7e8537ce90fdce8c13fc01de0457a162fc44ceba5e300e97306418",
+    "core_matrix.c": "247761a5bfd88868e4fba4b56646512f03a74ba6d35011b9bf902854f078e98b",
+    "core_state.c": "b3e36c4dee73824c36261dd2f405bbd4e49f9eb94dd5bc2dfbd0e17ab3b3c028",
+    "core_util.c": "166e9bf09afd290adffe2c6681d913c18373f77e457fae258499fbaad10b04fc",
+    "coremark.h": "0c6655620a7fb984a0f9a69b90e6fb0626694535971abfb3ca0eb88422cbeab0"
+  },
+  "platform_base": {
+    "start.S": {
+      "source": "source://soc/candidates/ethernet_bootloader_20261028/application/start.S",
+      "sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3"
+    },
+    "link.ld": {
+      "source": "source://soc/candidates/ethernet_bootloader_20261028/application/link.ld",
+      "sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973"
+    },
+    "ethernet.c": {
+      "source": "source://soc/firmware/ethernet/ethernet.c",
+      "sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed"
+    },
+    "ethernet.h": {
+      "source": "source://soc/firmware/ethernet/ethernet.h",
+      "sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032"
+    },
+    "memory.c": {
+      "source": "source://soc/candidates/ai_ultraface_20261026/firmware/memory.c",
+      "sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6"
+    },
+    "string.h": {
+      "source": "source://soc/candidates/ai_ultraface_20261026/firmware/freestanding/string.h",
+      "sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21"
+    }
+  }
+}

@@ -1,18 +1,28 @@
-# Local PDS products and generated caches
-
+# Generated implementation and local compiler outputs
 /build/
-/pds_runs/
-/out/
+**/build/
+**/obj/
 __pycache__/
-*.pyc
+*.py[cod]
+*.o
+*.a
+*.exe
+*.dll
 *.vcd
 *.fst
+*.adif
+*.rtr
 *.log
-*.lic
-license.dat
+.venv/
+.pytest_cache/
+# Local host sessions and personal input images
+upper/logs/
+upper/assets/mysample/
+upper/service_ack.bin
 .env
 .env.*
-*.pem
-*.pfx
-.DS_Store
+!.env.example
+.vscode/
+.idea/
 Thumbs.db
+.DS_Store

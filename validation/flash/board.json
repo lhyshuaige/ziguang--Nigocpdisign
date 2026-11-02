@@ -1,0 +1,255 @@
+{
+  "status": "FLASH_PINFIX_BOARD_VERIFIED_EXPERIMENTAL_TIMING",
+  "finished_utc": "2026-11-01T13:42:26.053009+00:00",
+  "candidate": "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101",
+  "build": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101",
+  "root_cause": "Original P3 paired each chip select with the other physical NOR MISO; final routed mux selection was corrected.",
+  "physical_mapping": [
+    {
+      "chip": 0,
+      "cs": "P18",
+      "mosi": "R14",
+      "miso": "R15"
+    },
+    {
+      "chip": 1,
+      "cs": "F25",
+      "mosi": "N16",
+      "miso": "N17"
+    }
+  ],
+  "modification": {
+    "instance": "u_flash/u_spi/rx[1]/opit_0_L6QQ_perm/INIT",
+    "old_init": "ffff0000f0f0f0f0",
+    "new_init": "f0f0f0f0ffff0000",
+    "changed_LUT_count": 1,
+    "synthesis": false,
+    "placement": false,
+    "routing": false,
+    "all_other_logic_placement_packing_routing_constraints_unchanged": true
+  },
+  "fpga_sram_bitstream": {
+    "path": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+    "bytes": 3791112,
+    "sha256": "93e57659a60b49832b73235653177f3bf861247d481e9b56e20bba15c13e34ad"
+  },
+  "production_promoted": false,
+  "original_P3_and_production_pointer_preserved": true,
+  "timing": {
+    "setup_slow": {
+      "worst_ns": -0.001,
+      "failing_endpoints": 1,
+      "total_negative_ns": -0.001
+    },
+    "setup_fast": {
+      "worst_ns": 0.269,
+      "failing_endpoints": 0,
+      "total_negative_ns": 0.0
+    },
+    "hold_slow": {
+      "worst_ns": 0.138,
+      "failing_endpoints": 0,
+      "total_negative_ns": 0.0
+    },
+    "hold_fast": {
+      "worst_ns": 0.04,
+      "failing_endpoints": 0,
+      "total_negative_ns": 0.0
+    },
+    "sys100_setup_FDC_ps": 50,
+    "sys100_hold_FDC_ps": 0,
+    "actual_sys100_setup_deduction_ps": 200
+  },
+  "formal_timing_signoff": false,
+  "external_flash_AC_signoff": false,
+  "flash": {
+    "jedec_ids": [
+      "0B4018",
+      "0B4018"
+    ],
+    "spi_hz": 10000000,
+    "read_repeats": 4,
+    "backup_and_full_repeated_reads_verified": true,
+    "application_chip": 1,
+    "application_payload_bytes": 92120,
+    "application_build_id": "946fbc9b",
+    "slots": [
+      {
+        "slot": 0,
+        "generation": 1,
+        "offset": 8388608,
+        "bytes": 94208,
+        "file": "installed_slot0.bin",
+        "sha256": "9d5b8e37cff65648bfa03a485e00f48b133f7246f4dad9f754b706c3ebaac485",
+        "payload_crc32": "64b721e5",
+        "exact_payload_match": true,
+        "header_crc_and_commit_valid": true
+      },
+      {
+        "slot": 1,
+        "generation": 2,
+        "offset": 12582912,
+        "bytes": 94208,
+        "file": "installed_slot1.bin",
+        "sha256": "e4478905e15f634265351bfd874daf3a0ed9bc97f16daf35781ece8a7f7e18fd",
+        "payload_crc32": "64b721e5",
+        "exact_payload_match": true,
+        "header_crc_and_commit_valid": true
+      }
+    ],
+    "configuration_flash_written": false,
+    "configuration_prefix_checks": [
+      0,
+      1
+    ],
+    "cpu_flash_autoboot_verified": true,
+    "proof": "Before the final SRAM configuration DDR was running the independent read-only probe. After configuration, the resident runtime answered with generation 0 without any application upload.",
+    "fpga_flash_configuration_persisted": false
+  },
+  "runtime": {
+    "final_mode": 4,
+    "game": {
+      "received": 90,
+      "dropped": 0,
+      "invalid": 0,
+      "fps": 29.97642303808699,
+      "age": 0.014999999999417923
+    },
+    "face_count": 5,
+    "face_detection": {
+      "frame_id": 3914259450,
+      "timestamp": 2539074163,
+      "sequence": 1,
+      "duration_ms": 4276,
+      "width": 320,
+      "height": 240,
+      "tracked": false,
+      "event": 0,
+      "boxes": [
+        {
+          "track_id": 1,
+          "score": 0.999816888943144,
+          "x1": 140,
+          "y1": 97,
+          "x2": 160,
+          "y2": 123
+        },
+        {
+          "track_id": 2,
+          "score": 0.99969481490524,
+          "x1": 207,
+          "y1": 96,
+          "x2": 227,
+          "y2": 124
+        },
+        {
+          "track_id": 3,
+          "score": 0.999603259376812,
+          "x1": 59,
+          "y1": 104,
+          "x2": 78,
+          "y2": 126
+        },
+        {
+          "track_id": 4,
+          "score": 0.9992370372631001,
+          "x1": 101,
+          "y1": 39,
+          "x2": 118,
+          "y2": 61
+        },
+        {
+          "track_id": 5,
+          "score": 0.9992370372631001,
+          "x1": 180,
+          "y1": 24,
+          "x2": 198,
+          "y2": 43
+        }
+      ],
+      "error": 0,
+      "roundtrip_seconds": 4.702999999994063,
+      "upload_seconds": 0.4220000000059372,
+      "commit_ack": true,
+      "input_sha256": "6d55ee46a26daa9193df40b4fe5ce39e09a7ab7411cb0775ee2777a955249a3e",
+      "result_transport": "UDP 5002",
+      "status_snapshots": [
+        {
+          "model_valid": 1,
+          "runtime_state": 5,
+          "layer": 2,
+          "job": 494,
+          "submitted": 640,
+          "completion_start": 336,
+          "ai_status": 10,
+          "completions": 976,
+          "last_error": 0,
+          "frame_ready": 0,
+          "result_pending": 0,
+          "frame_id": 3914259450,
+          "timestamp": 2539074163,
+          "elapsed_ms": 1004,
+          "result_sequence": 0,
+          "upload_active": 0,
+          "upload_offset": 230400,
+          "reads_low": 94800,
+          "compute_low": 3208371,
+          "busy_low": 4475287,
+          "wait_low": 3949774,
+          "model_crc": 1466725263,
+          "build_id": 2490350747,
+          "state_name": "collecting"
+        },
+        {
+          "model_valid": 1,
+          "runtime_state": 1,
+          "layer": 18,
+          "job": 93,
+          "submitted": 32,
+          "completion_start": 3576,
+          "ai_status": 10,
+          "completions": 3608,
+          "last_error": 0,
+          "frame_ready": 0,
+          "result_pending": 0,
+          "frame_id": 3914259450,
+          "timestamp": 2539074163,
+          "elapsed_ms": 3017,
+          "result_sequence": 0,
+          "upload_active": 0,
+          "upload_offset": 230400,
+          "reads_low": 261240,
+          "compute_low": 8891144,
+          "busy_low": 11726599,
+          "wait_low": 10268362,
+          "model_crc": 1466725263,
+          "build_id": 2490350747,
+          "state_name": "packing"
+        }
+      ]
+    },
+    "mode_switches": [
+      4,
+      1,
+      2,
+      3,
+      4
+    ],
+    "image_rx_pass": true,
+    "coremark_mode_entry_pass": true,
+    "coremark_benchmark_rerun_on_pinfix": false,
+    "prior_full_runtime_regression": "source://upper/validation/runtime_p3_board_20261101_063253/summary.json",
+    "prior_full_regression_bitstream_sha256": "80bf3b900445651a083c99955c51f79990473eb8469496ed1c18b6ffa6474fa7"
+  },
+  "evidence": {
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/result.json": "15576b4621c01a859d809542d66f34fd9b799f635602f61f2a022bbb20731575",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/patch_proof.json": "e6e27c8b289c29c4dc963a947dfb2ef6efc9e09bee2d89abf8d45e61cb7a8f23",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/native_audit.json": "38384d426ce06edeed8529b0f77ae46f5d8bdee3e08404981adb73919a1ed943",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/timing_result.json": "9d319b0345a98838ef5cadfd364b2f2e94cad15029d7a5774213c69227476915",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/bitstream_result.json": "ac21bfd9c67fb2dea8dd3fd20bb1934f7a79bd33581cee8fd55acf22e7c19f65",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/board_validation/readonly/result.json": "559d6c18b45c8164d42988dccdc139b1f59305073363e8c67e4c9cdfae2d9276",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/board_validation/install_verify.json": "da7bd21733ab860a8b179f6719b924f68fe825b41cb8016547ad492d08e92d1d",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/board_validation/flash_boot_runtime.json": "539af5e2df988dd0ee28d51665199ade1059b0d1ff3d80a511f8a4e7aefe0635",
+    "source://upper/validation/runtime_p3_board_20261101_063253/summary.json": "12e41c4c01e0a5a14770f9b04fe82f2e12b847f4b5287abb775480e039171cfd"
+  }
+}

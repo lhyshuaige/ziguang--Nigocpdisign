@@ -1,0 +1,7 @@
+{
+  "old_block": "    (UNCTNT 50\n      (CDBID 1018)\n      (SCUCFEA 1)\n      (CLOCK sys100 )\n      (FID 3)\n      (LN 2)\n    )",
+  "new_block": "    (UNCTNT 25\n      (CDBID 1018)\n      (SCUCFEA 1)\n      (CLOCK sys100 )\n      (FID 3)\n      (LN 2)\n    )",
+  "source_adif_sha256": "2d8bafb10d0ac7861aec7ee148a213370eec592ac84d10f3e0d444956fc49658",
+  "changed_adif_sha256": "4897c062d2f164cc37141455f1ab23e5f549f3a9ec6e8c6299dbae906955eb14",
+  "all_bytes_outside_one_constraint_unchanged": true
+}

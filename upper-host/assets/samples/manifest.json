@@ -1,0 +1,171 @@
+{
+  "sample0": {
+    "source_quantized": "source://accelerator/sim/ultraface_slim320/sample0/input.bin",
+    "reference": "source://soc/candidates/ai_ultraface_20261026/optimizations/late_hold/cpu_model/sample0/detections.json",
+    "input_sha256": "6d55ee46a26daa9193df40b4fe5ce39e09a7ab7411cb0775ee2777a955249a3e",
+    "png_sha256": "4092a9bf5844cc741cc46bcc536e045916025965270bce64e1c68c216ea9c5f5",
+    "reference_boxes_normalized": [
+      [
+        0.438622,
+        0.404826,
+        0.500637,
+        0.514186,
+        0.999816
+      ],
+      [
+        0.646498,
+        0.399445,
+        0.70921,
+        0.515094,
+        0.999685
+      ],
+      [
+        0.185366,
+        0.432105,
+        0.244667,
+        0.525615,
+        0.999603
+      ],
+      [
+        0.316128,
+        0.161384,
+        0.367259,
+        0.252565,
+        0.999238
+      ],
+      [
+        0.561338,
+        0.0984228,
+        0.619813,
+        0.179956,
+        0.999238
+      ]
+    ],
+    "reference_scope": "host-executed C firmware + native CSR bridge + RTL, not prior physical-board evidence"
+  },
+  "sample1": {
+    "source_quantized": "source://accelerator/sim/ultraface_slim320/sample1/input.bin",
+    "reference": "source://soc/candidates/ai_ultraface_20261026/optimizations/late_hold/cpu_model/sample1/detections.json",
+    "input_sha256": "3a82919d2e6a3a656e43c13b508f66cf0ca9348dff6aa3c0032c07b3155e51d7",
+    "png_sha256": "0303c08feb946ca6b82cb5147c0b55638af0247bdcda7ef8970c25ed2d6be0c3",
+    "reference_boxes_normalized": [
+      [
+        0.602885,
+        0.395208,
+        0.884388,
+        0.75242,
+        0.999864
+      ],
+      [
+        0.259532,
+        0.148674,
+        0.527441,
+        0.479155,
+        0.999864
+      ]
+    ],
+    "reference_scope": "host-executed C firmware + native CSR bridge + RTL, not prior physical-board evidence"
+  },
+  "sample2": {
+    "source_quantized": "source://accelerator/sim/ultraface_slim320/sample2/input.bin",
+    "reference": "source://soc/candidates/ai_ultraface_20261026/optimizations/late_hold/cpu_model/sample2/detections.json",
+    "input_sha256": "d87b717ee1caed0d77be29f50b51e6a634bf1149df2044e7cdac8245195d8043",
+    "png_sha256": "d610cb01a94dcaa1405653f084a1b955bad24830c60fc9ab21063b529fd41710",
+    "reference_boxes_normalized": [
+      [
+        0.16092,
+        0.126302,
+        0.299486,
+        0.380008,
+        0.999987
+      ],
+      [
+        0.664807,
+        0.0822776,
+        0.780733,
+        0.296645,
+        0.999977
+      ],
+      [
+        0.475838,
+        0.149103,
+        0.568215,
+        0.314921,
+        0.99976
+      ]
+    ],
+    "reference_scope": "host-executed C firmware + native CSR bridge + RTL, not prior physical-board evidence"
+  },
+  "sample3": {
+    "source_quantized": "source://accelerator/sim/ultraface_slim320/sample3/input.bin",
+    "reference": "source://soc/candidates/ai_ultraface_20261026/optimizations/late_hold/cpu_model/sample3/detections.json",
+    "input_sha256": "6a92ed44b24086057da85f84efc66ee37d0ffcc1ba29182129f85213abfe4f65",
+    "png_sha256": "cad667d65a033a9683a54e432374214bb87c788ff99931443078e50f0fe21040",
+    "reference_boxes_normalized": [
+      [
+        0.543732,
+        0.136136,
+        0.663156,
+        0.368192,
+        0.999924
+      ],
+      [
+        0.756657,
+        0.0563111,
+        0.902263,
+        0.384588,
+        0.999887
+      ],
+      [
+        0.213856,
+        0.394563,
+        0.268693,
+        0.515502,
+        0.998295
+      ],
+      [
+        0.307822,
+        0.301899,
+        0.370534,
+        0.46365,
+        0.996041
+      ],
+      [
+        0.402439,
+        0.293191,
+        0.4877,
+        0.479786,
+        0.992239
+      ],
+      [
+        0.0732806,
+        0.209455,
+        0.125718,
+        0.31403,
+        0.983195
+      ],
+      [
+        0.0396236,
+        0.400322,
+        0.074193,
+        0.488494,
+        0.938518
+      ],
+      [
+        0.146193,
+        0.41659,
+        0.206161,
+        0.544485,
+        0.888247
+      ],
+      [
+        0.0132364,
+        0.786452,
+        0.0810551,
+        0.915785,
+        0.872073
+      ]
+    ],
+    "reference_scope": "host-executed C firmware + native CSR bridge + RTL, not prior physical-board evidence"
+  }
+}

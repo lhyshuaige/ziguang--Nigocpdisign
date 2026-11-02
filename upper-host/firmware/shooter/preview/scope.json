@@ -1,0 +1,7 @@
+{
+  "kind": "PC_NATIVE_C_PREVIEW",
+  "scripted_scenes": true,
+  "board_rendering": false,
+  "RTL_rendering": false,
+  "interactive_command": "python preview.py"
+}

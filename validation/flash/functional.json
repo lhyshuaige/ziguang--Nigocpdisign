@@ -1,0 +1,598 @@
+{
+  "status": "PASS",
+  "fpga_bitstream": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+  "fpga_bitstream_sha256": "93e57659a60b49832b73235653177f3bf861247d481e9b56e20bba15c13e34ad",
+  "download_evidence": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/board_validation/program_4.json",
+  "test_firmware": {
+    "status": "PASS",
+    "ngb_bytes": 9264,
+    "ngb_sha256": "708e1c8f5756976c99ee9d4e36c7ae394d949621def962be36a97dea4cfe2615",
+    "sources": {
+      "source://upper/firmware/coremark/platform/start.S": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3",
+      "source://upper/firmware/coremark/platform/memory.c": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6",
+      "source://upper/firmware/coremark/platform/ethernet.c": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed",
+      "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/main.c": "b9727b78f5b701a1858ed818da7ed05466eafb5d277d0e8c8f3f7edd5f5799e9",
+      "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/rpc.c": "d23df1eb4430f70f879c8633a326c941cc4093d89975a4b0f4a34586fdf57cf3",
+      "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/selftest.c": "e984b0dd5b71d8988edfc34b679e64b11ca9f006bbeb0e982a6bce2b0e22bb8b",
+      "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash.c": "fe7320d2a296291662dcac16f10b223b74637aa19ae07b36d4172ac7139da628",
+      "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_mmio.c": "5fbf3d9ac2ab10d03f5b38ca3d6fc7a3ca16f1b73c27a51a853a668f90356eb5"
+    },
+    "commands": [
+      [
+        "gcc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/mock_test.c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/rpc.c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/selftest.c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/mock_test"
+      ],
+      [
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/mock_test"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "source://upper/firmware/coremark/platform/start.S",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/0.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "source://upper/firmware/coremark/platform/memory.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/1.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "source://upper/firmware/coremark/platform/ethernet.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/2.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/main.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/3.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/rpc.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/4.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional/selftest.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/5.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/6.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/functional",
+        "-I/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware",
+        "-Isource://upper/firmware/coremark/platform",
+        "-c",
+        "/mnt/d/PDS/project/Nigo-LG100/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_mmio.c",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/7.o"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-gcc",
+        "-march=rv32im_zicsr",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-O2",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/0.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/1.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/2.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/3.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/4.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/5.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/6.o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/7.o",
+        "-nostdlib",
+        "-Wl,-T,source://upper/firmware/coremark/platform/link.ld,--gc-sections,-Map,/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/functional.map",
+        "-lgcc",
+        "-o",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/functional.elf"
+      ],
+      [
+        "source://tools/riscv_ubuntu_workspace/usr/bin/riscv64-unknown-elf-objcopy",
+        "-O",
+        "binary",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/functional.elf",
+        "/mnt/d/PDS/project/Nigo-LG100/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/build/functional.bin"
+      ]
+    ],
+    "scratch_base": 16769024,
+    "scratch_bytes": 8192,
+    "both_chips": true,
+    "host_harness_test": "PASS"
+  },
+  "physical_board": true,
+  "configuration_flash_written": false,
+  "application_flash_written": false,
+  "scratch_writes_requested": true,
+  "regions": [
+    {
+      "chip": 0,
+      "offset": 0,
+      "bytes": 8388608,
+      "kind": "complete_protected_region",
+      "file": "chip0_000000_8388608.bin",
+      "before_sha256": "21bebe3aca8102304bbb47317b028f26410622bc3e0d511768ccb9ba24d9c904",
+      "before_crc32": "c8c1c192",
+      "after_sha256": "21bebe3aca8102304bbb47317b028f26410622bc3e0d511768ccb9ba24d9c904",
+      "unchanged": true
+    },
+    {
+      "chip": 1,
+      "offset": 0,
+      "bytes": 8388608,
+      "kind": "complete_protected_region",
+      "file": "chip1_000000_8388608.bin",
+      "before_sha256": "9f9b02f5ee6cbef5e018c1ee424095fc21a842ea6968c0d36114b5930dab2ba1",
+      "before_crc32": "3de23e27",
+      "after_sha256": "9f9b02f5ee6cbef5e018c1ee424095fc21a842ea6968c0d36114b5930dab2ba1",
+      "unchanged": true
+    },
+    {
+      "chip": 1,
+      "offset": 8388608,
+      "bytes": 94208,
+      "kind": "installed_application",
+      "file": "chip1_800000_94208.bin",
+      "before_sha256": "9d5b8e37cff65648bfa03a485e00f48b133f7246f4dad9f754b706c3ebaac485",
+      "before_crc32": "c5446574",
+      "after_sha256": "9d5b8e37cff65648bfa03a485e00f48b133f7246f4dad9f754b706c3ebaac485",
+      "unchanged": true
+    },
+    {
+      "chip": 1,
+      "offset": 12582912,
+      "bytes": 94208,
+      "kind": "installed_application",
+      "file": "chip1_c00000_94208.bin",
+      "before_sha256": "e4478905e15f634265351bfd874daf3a0ed9bc97f16daf35781ece8a7f7e18fd",
+      "before_crc32": "c37b2f4d",
+      "after_sha256": "e4478905e15f634265351bfd874daf3a0ed9bc97f16daf35781ece8a7f7e18fd",
+      "unchanged": true
+    },
+    {
+      "chip": 0,
+      "offset": 16764928,
+      "bytes": 4096,
+      "kind": "neighbor_sector",
+      "file": "chip0_ffd000_4096.bin",
+      "before_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "before_crc32": "f154670a",
+      "after_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "unchanged": true
+    },
+    {
+      "chip": 1,
+      "offset": 16764928,
+      "bytes": 4096,
+      "kind": "neighbor_sector",
+      "file": "chip1_ffd000_4096.bin",
+      "before_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "before_crc32": "f154670a",
+      "after_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "unchanged": true
+    },
+    {
+      "chip": 0,
+      "offset": 16769024,
+      "bytes": 8192,
+      "kind": "scratch",
+      "file": "chip0_ffe000_8192.bin",
+      "before_sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "before_crc32": "b4293435",
+      "after_sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "unchanged": true
+    },
+    {
+      "chip": 1,
+      "offset": 16769024,
+      "bytes": 8192,
+      "kind": "scratch",
+      "file": "chip1_ffe000_8192.bin",
+      "before_sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "before_crc32": "b4293435",
+      "after_sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "unchanged": true
+    }
+  ],
+  "id_checks": [
+    {
+      "attempt": 0,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 0,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 1,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 1,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 2,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 2,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 3,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 3,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 4,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 4,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 5,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 5,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 6,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 6,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 7,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 7,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 8,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 8,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 9,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 9,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 10,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 10,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 11,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 11,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 12,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 12,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 13,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 13,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 14,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 14,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 15,
+      "chip": 0,
+      "id": "0b4018",
+      "status": "00"
+    },
+    {
+      "attempt": 15,
+      "chip": 1,
+      "id": "0b4018",
+      "status": "00"
+    }
+  ],
+  "scope": "Same P3 hardware: fixed scratch tests on both NORs, with complete protected-region comparison",
+  "bootloader_query": {
+    "entry": 0,
+    "crc": 0
+  },
+  "rpc_write_range_rejections": 2,
+  "hardware_test_words": [
+    0,
+    0,
+    32767,
+    3,
+    0,
+    0,
+    3022599221,
+    3022599221,
+    82378008,
+    82378008,
+    650952983,
+    650952983,
+    3022599221,
+    3022599221,
+    560,
+    0,
+    247454266,
+    247454266,
+    1800705252,
+    1800705252,
+    3,
+    141768778,
+    0,
+    3
+  ],
+  "hardware_test_wall_seconds": 1.4220000000059372,
+  "hardware_test_cycles": 141768778,
+  "duplicate_request_cached_reply": true,
+  "checks_passed": [
+    "JEDEC/SR1 repeat",
+    "two-sector erase/FF readback",
+    "PROGRAM32 auto-increment/carry",
+    "NOR AND programming",
+    "driver rejects 0->1",
+    "256-byte page streams",
+    "different patterns and chip isolation",
+    "full 8-KiB random readback",
+    "masked reprogram",
+    "single-sector erase isolation",
+    "unaligned 513-byte and 257-byte writes across page/sector",
+    "partial page abort",
+    "invalid opcode/length/address/alignment errors",
+    "hardware protected-region rejection",
+    "560 ID commands/ticket wrap",
+    "end-of-capacity repeated read",
+    "restore both scratch backups",
+    "complete lower 8-MiB/chip comparison",
+    "A/B applications unchanged"
+  ],
+  "readback_compared_bytes": 16990208,
+  "limits": [
+    "No power interruption during write",
+    "No forced stuck-busy or WEL refusal on physical NOR",
+    "Not voltage/temperature or SPI AC timing signoff"
+  ]
+}

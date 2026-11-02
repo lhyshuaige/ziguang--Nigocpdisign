@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "kind": "Physical Nigo CPU CoreMark compiler comparison",
+  "baseline": {
+    "profile": "baseline",
+    "build_id": "9700ce2a",
+    "ngb_sha256": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661",
+    "evidence": "results/baseline_20261101T182921Z/summary.json",
+    "iterations_per_group": 11000,
+    "repetitions": 3,
+    "scores": [
+      501.68042967940033,
+      502.4456168131857,
+      502.58706164550097
+    ],
+    "mean": 502.2377027126957,
+    "median": 502.4456168131857,
+    "minimum": 501.68042967940033,
+    "maximum": 502.58706164550097,
+    "stdev": 0.4877669375591322,
+    "coremark_per_mhz_mean": 5.022377027126957
+  },
+  "candidate": {
+    "profile": "candidate",
+    "build_id": "32f1ce51",
+    "ngb_sha256": "0f9be7440b8059ce65a3989ce6f5315a073ba2d500ab3f61cdeb0417ed5b4d48",
+    "evidence": "results/candidate_20261101T183313Z/summary.json",
+    "iterations_per_group": 11000,
+    "repetitions": 3,
+    "scores": [
+      498.5207043908115,
+      501.5489182497865,
+      501.4080648395821
+    ],
+    "mean": 500.49256249339334,
+    "median": 501.4080648395821,
+    "minimum": 498.5207043908115,
+    "maximum": 501.5489182497865,
+    "stdev": 1.7091308327128945,
+    "coremark_per_mhz_mean": 5.004925624933933
+  },
+  "delta_percent": -0.34747296148347484,
+  "selected_release": "9700ce2a",
+  "candidate_image": "images/runtime_32f1ce51.ngb",
+  "board_resident_after_test": "32f1ce51",
+  "flash_written": false,
+  "fpga_programmed": false,
+  "current_rtl_and_published_firmware_unchanged": true,
+  "limitations": "Three sequential runs per image; no EEMBC certification; this is not a clock or RTL change"
+}

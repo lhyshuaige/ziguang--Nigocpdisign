@@ -1,0 +1,20 @@
+{
+  "run_id": 4211035257,
+  "iterations": 11000,
+  "before": {
+    "version": 1,
+    "op": 1,
+    "session": 414888689,
+    "sequence": 159483645,
+    "error": 0,
+    "active": 3,
+    "target": 3,
+    "generation": 1,
+    "busy": 0,
+    "flags": 0,
+    "build_id": 2241914543,
+    "capabilities": 63,
+    "reserved": 0
+  },
+  "started_utc": "2026-11-01T18:51:31.572289+00:00"
+}

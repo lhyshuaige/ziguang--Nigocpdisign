@@ -1,0 +1,33 @@
+=== PERFORMANCE ===
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 21886755
+Total time (secs): 21.886755
+Iterations/Sec   : 502.587067
+Iterations       : 11000
+Compiler version : GCC 13.2.0
+Compiler flags   : -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8
+Memory location  : DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x33ff
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 502.587067 / GCC 13.2.0 -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8 / DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz
+=== VALIDATION ===
+2K validation run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 21944777
+Total time (secs): 21.944777
+Iterations/Sec   : 501.258227
+Iterations       : 11000
+Compiler version : GCC 13.2.0
+Compiler flags   : -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8
+Memory location  : DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz
+seedcrc          : 0x18f2
+[0]crclist       : 0xe3c1
+[0]crcmatrix     : 0x0747
+[0]crcstate      : 0x8d84
+[0]crcfinal      : 0x34c1
+Correct operation validated. See README.md for run and reporting rules.

@@ -1,0 +1,417 @@
+{
+  "status": "PASS_REPORT_GENERATED",
+  "build_id": "9700ce2a",
+  "all_C_functions": 139,
+  "largest_C_frames": [
+    {
+      "object": "017_ultraface_decode",
+      "function": "uf_decode",
+      "bytes": 5936,
+      "kind": "static"
+    },
+    {
+      "object": "011_face",
+      "function": "runtime_face",
+      "bytes": 848,
+      "kind": "static"
+    },
+    {
+      "object": "005_game",
+      "function": "runtime_game",
+      "bytes": 400,
+      "kind": "static"
+    },
+    {
+      "object": "027_receiver",
+      "function": "runtime_receiver",
+      "bytes": 368,
+      "kind": "static"
+    },
+    {
+      "object": "019_coremark",
+      "function": "runtime_coremark",
+      "bytes": 352,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_draw_boss",
+      "bytes": 176,
+      "kind": "static"
+    },
+    {
+      "object": "018_ultraface_runtime",
+      "function": "uf_poll",
+      "bytes": 176,
+      "kind": "static"
+    },
+    {
+      "object": "021_core_portme",
+      "function": "ee_printf",
+      "bytes": 176,
+      "kind": "static"
+    },
+    {
+      "object": "022_core_main",
+      "function": "coremark_main",
+      "bytes": 160,
+      "kind": "static"
+    },
+    {
+      "object": "025_core_state",
+      "function": "core_bench_state",
+      "bytes": 144,
+      "kind": "static"
+    },
+    {
+      "object": "029_ethernet_rx_service",
+      "function": "nigo_rx_service_poll",
+      "bytes": 144,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_poll",
+      "bytes": 128,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_render",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "008_protocol",
+      "function": "arcade_request",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_render",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "013_face_events",
+      "function": "face_events_update",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "020_service",
+      "function": "cm_request",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "004_mode",
+      "function": "mode_request",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "hud",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "menu_art",
+      "bytes": 96,
+      "kind": "static"
+    }
+  ],
+  "game_and_common_frames": [
+    {
+      "object": "001_memory",
+      "function": "memcpy",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "001_memory",
+      "function": "memset",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "001_memory",
+      "function": "memcmp",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "002_ethernet",
+      "function": "nigo_eth_open",
+      "bytes": 16,
+      "kind": "static"
+    },
+    {
+      "object": "002_ethernet",
+      "function": "nigo_eth_ready",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "002_ethernet",
+      "function": "nigo_eth_configure",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "002_ethernet",
+      "function": "nigo_eth_service",
+      "bytes": 80,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_pending",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_application_rx_ready",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_peer",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_mode_changed",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "runtime_poll",
+      "bytes": 128,
+      "kind": "static"
+    },
+    {
+      "object": "003_main",
+      "function": "nigo_application_main",
+      "bytes": 64,
+      "kind": "static"
+    },
+    {
+      "object": "004_mode",
+      "function": "mode_request",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "004_mode",
+      "function": "mode_commit",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "005_game",
+      "function": "send",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "005_game",
+      "function": "runtime_game",
+      "bytes": 400,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "fits",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "food",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "lock_piece",
+      "bytes": 48,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "gx_tile",
+      "bytes": 16,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "gx_panel",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "hud",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "menu_art",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "breakout_view",
+      "bytes": 48,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_enter",
+      "bytes": 32,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_init",
+      "bytes": 16,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_step",
+      "bytes": 32,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_render",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_encode",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "006_arcade",
+      "function": "arcade_crc",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "007_draw",
+      "function": "arcade_rect",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "007_draw",
+      "function": "arcade_text",
+      "bytes": 80,
+      "kind": "static"
+    },
+    {
+      "object": "007_draw",
+      "function": "arcade_number",
+      "bytes": 96,
+      "kind": "static"
+    },
+    {
+      "object": "008_protocol",
+      "function": "arcade_request",
+      "bytes": 112,
+      "kind": "static"
+    },
+    {
+      "object": "008_protocol",
+      "function": "arcade_packet",
+      "bytes": 48,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "burst",
+      "bytes": 16,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "game_init",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "game_start",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "game_step",
+      "bytes": 80,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "game_hash",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "009_game",
+      "function": "game_state_hash",
+      "bytes": 0,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "gx_panel",
+      "bytes": 16,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_draw_player",
+      "bytes": 48,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_draw_enemy",
+      "bytes": 64,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_draw_boss",
+      "bytes": 176,
+      "kind": "static"
+    },
+    {
+      "object": "010_render",
+      "function": "game_render",
+      "bytes": 112,
+      "kind": "static"
+    }
+  ],
+  "game_and_common_static_frame_sum": 2128,
+  "dynamic_frames": [],
+  "linked_bss_end": "0x828040b0",
+  "linked_stack_top": "0x82820000",
+  "bytes_between_bss_and_stack_top": 114512,
+  "note": "Compiler frame sizes; not a measured runtime stack high-water mark. Interrupts disabled; library/assembly frames need separate consideration."
+}

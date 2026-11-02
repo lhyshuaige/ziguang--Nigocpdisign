@@ -1,0 +1,38 @@
+{
+  "status": "GAME_FUNCTIONAL_SIMULATION_PASS",
+  "processor": "Nigo CPU",
+  "game": "Nigo Starfall",
+  "native_tests": "PASS",
+  "native_soak_steps": 30000,
+  "CPU": {
+    "status": "PASS",
+    "processor": "Nigo CPU",
+    "cycles": 7455029,
+    "application_cycles": 4510355,
+    "gpio_combinations": 8,
+    "state_checks": 12,
+    "frame_checks": 4,
+    "pixels_compared": 307200,
+    "DDR_code_preloaded": false,
+    "boot": "existing P3 ROM reading serial NOR model",
+    "DDR": "behavioral HMIC user port",
+    "timing_grade": "functional RTL simulation, not board FPS",
+    "MAC_PHY_tested": false,
+    "display_transport_tested": false,
+    "wall_seconds": 20.234,
+    "original_model_preserved": true,
+    "binary_sha256": "5b81cf23528a2052f318e1c4a98193e70b242852c1ba09342feaf068cccc61a1"
+  },
+  "simulation_binary_bytes": 11440,
+  "interactive_preview": "D:\\PDS\\project\\upper\\firmware\\shooter\\play.cmd",
+  "board_game_ready": false,
+  "board_FPS_measured": false,
+  "RTL_changed": false,
+  "FPGA_bitstream_changed": false,
+  "board_programmed": false,
+  "limitations": [
+    "Scripted RTL test scenes, not complete real-time gameplay over Ethernet",
+    "Behavioral DDR and serial NOR; no MAC/PHY or external timing qualification",
+    "Board game firmware and host video transport remain to be implemented"
+  ]
+}

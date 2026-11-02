@@ -1,0 +1,82 @@
+{
+  "src/face_events.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\face_events.c",
+    "sha256": "4863e5bcc3d28ef1821d1a9e6d2af8f9ac2c68805bab7f019315b8d39868bc99"
+  },
+  "src/face_events.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\face_events.h",
+    "sha256": "1960815a63d24c867a98cfed7c9900e861fde6b78573bc57b557adf4c961ea0b"
+  },
+  "src/main.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\main.c",
+    "sha256": "8ba7b75d515089c1f45666f2be437f925c1ae68e6b6e85e0746f5c55a7f78033"
+  },
+  "src/memory.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\memory.c",
+    "sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6"
+  },
+  "src/ngu_upload.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\ngu_upload.c",
+    "sha256": "b6f5a5edf02be71262cd3b1889e6bc290b3ba73b2c04e4ef03859862ffc3ca25"
+  },
+  "src/ngu_upload.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\ngu_upload.h",
+    "sha256": "451a59bc2077918a41511ae0a14fba2850757f90609fa2369c0d802b6cdc50c3"
+  },
+  "src/nigo_ai.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\nigo_ai.c",
+    "sha256": "8b05a37de787ed879edf584641c4888368128b662931e90dabf6b5976c35877b"
+  },
+  "src/nigo_ai.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\nigo_ai.h",
+    "sha256": "c80f795d8df336e5b82cd5669872521e79bdb8fa3cefe180af727f88c5f8b647"
+  },
+  "src/ultraface_decode.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\ultraface_decode.c",
+    "sha256": "278dac011e7311f438834d578986421d1d242605605a5c1067068236071e14a9"
+  },
+  "src/ultraface_runtime.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\ultraface_runtime.c",
+    "sha256": "82001c2069e1a0b4aeafd1b44852b513d177587e4efc68f53971a771b6c8fee4"
+  },
+  "src/ultraface_runtime.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\ultraface_runtime.h",
+    "sha256": "ceedea8bc65cd1f0a1a8bc729208b415e60271aa448370de0c70e553b07e7394"
+  },
+  "src/freestanding/string.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\firmware\\freestanding\\string.h",
+    "sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21"
+  },
+  "src/start.S": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_bootloader_20261028\\application\\start.S",
+    "sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3"
+  },
+  "src/link.ld": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_bootloader_20261028\\application\\link.ld",
+    "sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973"
+  },
+  "src/model_asset.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\assets\\model_asset.h",
+    "sha256": "ec2ef84d785c16eddb2e85f9b08fb31e1dd22207c69afc508e31528bbbf51644"
+  },
+  "src/ethernet.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\firmware\\ethernet\\ethernet.c",
+    "sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed"
+  },
+  "src/ethernet.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\firmware\\ethernet\\ethernet.h",
+    "sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032"
+  },
+  "src/ethernet_soc.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\firmware\\ethernet\\ethernet_soc.c",
+    "sha256": "6ce085dc546861cb3d79f4964f48bf26351e1d660ac56c7f091e57616824f2c3"
+  },
+  "src/ethernet_soc.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\firmware\\ethernet\\ethernet_soc.h",
+    "sha256": "3d8d00322b2567c03531dfb617ff1cc438b3d0f351e1621e975d7d1458e7333c"
+  },
+  "tests/software_test.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ai_ultraface_20261026\\verification\\software_test.c",
+    "sha256": "14c9e7a555a11a8212f60ebc360f46eb83c82890e676851effcb257d0a7c0d4b"
+  }
+}

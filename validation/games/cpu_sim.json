@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "processor": "Nigo CPU",
+  "cycles": 28182874,
+  "frame_count": 5,
+  "snake_frames": 2,
+  "GPIO_menu_selection": true,
+  "Ethernet_mailbox_TX_RX": true,
+  "TX_backpressure": true,
+  "DDR_code_preloaded": false,
+  "boot": "existing P3 ROM and serial NOR model",
+  "MAC_PHY_tested": false,
+  "board_FPS_measured": false,
+  "original_model_preserved": true,
+  "binary_sha256": "8f04ba8df929ea1cbb5359e18361e179b8a1cbbb79070921a033e2026d241d51",
+  "wall_seconds": 89.188,
+  "host_decoded_frames": 5,
+  "menu_reference_pixel_matches": 153600,
+  "frame_CRCs_verified": true,
+  "candidate_binary": true,
+  "game_content_frames": 1
+}

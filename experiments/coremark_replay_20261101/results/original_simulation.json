@@ -1,0 +1,68 @@
+{
+  "profile": "r2_a14",
+  "run": "r2_a14_n100",
+  "status": "SHORT_REGRESSION_PASS",
+  "official_reportable": false,
+  "iterations": 100,
+  "validation": false,
+  "cpu_hz": 100000000,
+  "elapsed_cpu_cycles": 19190862,
+  "coremark_per_mhz": 5.21081335481439,
+  "crc": {
+    "seedcrc": "0xe9f5",
+    "crclist": "0xe714",
+    "crcmatrix": "0x1fd7",
+    "crcstate": "0x8e3a",
+    "crcfinal": "0x988c"
+  },
+  "expected_crc": {
+    "seedcrc": "0xe9f5",
+    "crclist": "0xe714",
+    "crcmatrix": "0x1fd7",
+    "crcstate": "0x8e3a",
+    "crcfinal": "0x988c"
+  },
+  "counters": {
+    "timed_cycles": 19190862,
+    "retired": 35325668,
+    "branches": 5390116,
+    "mispredicts": 276327,
+    "frontend_empty": 1569833,
+    "dispatch_blocked": 2817751,
+    "if_misses": 4156,
+    "d_misses": 11
+  },
+  "flags": [
+    "-O3",
+    "-fno-common",
+    "-funroll-loops",
+    "-finline-functions",
+    "-falign-functions=16",
+    "-falign-jumps=4",
+    "-falign-loops=4",
+    "-finline-limit=1000",
+    "-fno-if-conversion2",
+    "-fselective-scheduling",
+    "-fno-crossjumping",
+    "-freorder-blocks-and-partition",
+    "-mtune=sifive-7-series",
+    "-funroll-all-loops",
+    "-falign-functions=8",
+    "-falign-loops=8",
+    "-falign-jumps=8",
+    "-falign-functions=32",
+    "-falign-loops=4",
+    "-falign-jumps=8"
+  ],
+  "compiler": "riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0",
+  "elf_sha256": "d5c55e745853e86b57b087db3df4bb73e3de58ed7f25c200a820e88cbe71c4c4",
+  "memh_sha256": "c0ec286e2dc245343226f543631210d8cad117ec9a38efbdf13eec4c66acbf44",
+  "simulator_sha256": "3377b135c503abe7422e578d3c0bda8e830f8c27d24e2b542c86a63533bfda78",
+  "executable_section_bytes": 39728,
+  "official_revision": "1f483d5b8316753a742cbf5590caf5bd0a4e4777",
+  "log_errors": [
+    "ERROR! Must execute for at least 10 secs for a valid result!",
+    "Errors detected"
+  ],
+  "wall_seconds": 57.125
+}

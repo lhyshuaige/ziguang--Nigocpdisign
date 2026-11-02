@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "profile": "candidate",
+  "build_id": "32f1ce51",
+  "iterations": 11000,
+  "repetitions": 3,
+  "cpu_hz": 100000000,
+  "ngb_sha256": "0f9be7440b8059ce65a3989ce6f5315a073ba2d500ab3f61cdeb0417ed5b4d48",
+  "results": [
+    {
+      "index": 1,
+      "coremark": 498.5207043908115,
+      "coremark_per_mhz": 4.985207043908115,
+      "runs": [
+        {
+          "name": "performance",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 22.06528215,
+          "raw_timer_ticks": 2206528215,
+          "crc": [
+            "e9f5",
+            "e714",
+            "1fd7",
+            "8e3a"
+          ],
+          "iterations_per_second": 498.5207043908115
+        },
+        {
+          "name": "validation",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 21.93536994,
+          "raw_timer_ticks": 2193536994,
+          "crc": [
+            "18f2",
+            "e3c1",
+            "0747",
+            "8d84"
+          ],
+          "iterations_per_second": 501.4731928428101
+        }
+      ],
+      "run_id": 83493323
+    },
+    {
+      "index": 2,
+      "coremark": 501.5489182497865,
+      "coremark_per_mhz": 5.0154891824978645,
+      "runs": [
+        {
+          "name": "performance",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 21.93205807,
+          "raw_timer_ticks": 2193205807,
+          "crc": [
+            "e9f5",
+            "e714",
+            "1fd7",
+            "8e3a"
+          ],
+          "iterations_per_second": 501.5489182497865
+        },
+        {
+          "name": "validation",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 21.93951184,
+          "raw_timer_ticks": 2193951184,
+          "crc": [
+            "18f2",
+            "e3c1",
+            "0747",
+            "8d84"
+          ],
+          "iterations_per_second": 501.3785211002215
+        }
+      ],
+      "run_id": 274193925
+    },
+    {
+      "index": 3,
+      "coremark": 501.4080648395821,
+      "coremark_per_mhz": 5.014080648395821,
+      "runs": [
+        {
+          "name": "performance",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 21.93821913,
+          "raw_timer_ticks": 2193821913,
+          "crc": [
+            "e9f5",
+            "e714",
+            "1fd7",
+            "8e3a"
+          ],
+          "iterations_per_second": 501.4080648395821
+        },
+        {
+          "name": "validation",
+          "valid": true,
+          "iterations": 11000,
+          "seconds": 21.93895524,
+          "raw_timer_ticks": 2193895524,
+          "crc": [
+            "18f2",
+            "e3c1",
+            "0747",
+            "8d84"
+          ],
+          "iterations_per_second": 501.39124127225307
+        }
+      ],
+      "run_id": 2330301373
+    }
+  ],
+  "fpga_programmed": false,
+  "physical_flash_written": false,
+  "explicit_peripheral_disable": false,
+  "workload": "Unified runtime mode 3, no network polling in measured region",
+  "initial_mode": {
+    "version": 1,
+    "op": 1,
+    "session": 3453865744,
+    "sequence": 2074958196,
+    "error": 0,
+    "active": 0,
+    "target": 0,
+    "generation": 0,
+    "busy": 0,
+    "flags": 0,
+    "build_id": 854707793,
+    "capabilities": 63,
+    "reserved": 0
+  },
+  "selected_mode": {
+    "version": 1,
+    "op": 1,
+    "session": 3453865744,
+    "sequence": 2074958199,
+    "error": 0,
+    "active": 3,
+    "target": 3,
+    "generation": 1,
+    "busy": 0,
+    "flags": 0,
+    "build_id": 854707793,
+    "capabilities": 63,
+    "reserved": 0
+  },
+  "mean": 500.49256249339334,
+  "median": 501.4080648395821,
+  "minimum": 498.5207043908115,
+  "maximum": 501.5489182497865
+}

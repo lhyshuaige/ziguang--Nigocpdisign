@@ -1,0 +1,9 @@
+{
+  "member": "pg2l100h_soc_p3_top_pnr.adf",
+  "sha256": "4e73199937552aa26b0c4e0dd0bf82c23fee234cf7bdafed96996107fa63054f",
+  "bytes": 46953713,
+  "archive_sha256": "a88203ac6cf1656f13217d3df79adb63f8fb4759b007c8975eb7869217077da8",
+  "native_source": "PDS 2022.2-SP6.7.1 build 188940",
+  "device": "PG2L100H-6 FBG676",
+  "physical_design": "P3 N188 local repair + Flash mux LUT INIT ECO + setup25 constraint"
+}

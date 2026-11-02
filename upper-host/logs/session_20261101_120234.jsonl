@@ -1,0 +1,7 @@
+{"time": "2026-11-01T12:02:34-0600", "action": "启动", "details": {"note": "未自动连接或切换板端应用"}}
+{"time": "2026-11-01T12:02:35-0600", "action": "切换到 游戏开始", "details": {"board": "192.168.1.50", "local": "192.168.1.100"}}
+{"time": "2026-11-01T12:02:35-0600", "action": "切换到 游戏完成", "details": {"active": 4, "target": 4, "generation": 1, "build_id": 123, "flags": 0}}
+{"time": "2026-11-01T12:02:35-0600", "action": "游戏显示连接", "details": {"board": "192.168.1.50", "local": "192.168.1.100", "port": 5003}}
+{"time": "2026-11-01T12:02:35-0600", "action": "游戏显示停止", "details": {"received": 0, "dropped": 0, "invalid": 0, "fps": 0, "age": null}}
+{"time": "2026-11-01T12:02:35-0600", "action": "切换到 人脸检测开始", "details": {"board": "192.168.1.50", "local": "192.168.1.100"}}
+{"time": "2026-11-01T12:02:35-0600", "action": "切换到 人脸检测完成", "details": {"active": 2, "target": 2, "generation": 2, "build_id": 123, "flags": 1}}

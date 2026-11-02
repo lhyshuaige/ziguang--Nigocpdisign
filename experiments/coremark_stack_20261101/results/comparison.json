@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "baseline": {
+    "memory_method": "MEM_STATIC",
+    "build_id": "32f1ce51",
+    "scores": [
+      4.985207043908115,
+      5.0154891824978645,
+      5.014080648395821
+    ],
+    "mean": 5.004925624933934,
+    "median": 5.014080648395821,
+    "evidence": "../coremark_align32_20261101/results/candidate_20261101T183313Z/summary.json"
+  },
+  "candidate": {
+    "memory_method": "MEM_STACK",
+    "build_id": "85a0e6af",
+    "scores": [
+      5.010463478421057,
+      5.014433506657668,
+      5.011277198256548
+    ],
+    "mean": 5.012058061111758,
+    "median": 5.011277198256548,
+    "evidence": "results/candidate_20261101T185045Z/summary.json"
+  },
+  "delta_percent": 0.14250833503481886,
+  "median_delta_percent": -0.055911548614007156,
+  "iterations_per_group": 11000,
+  "repetitions": 3,
+  "baseline_reused_from_previous_experiment": true,
+  "compiler_flags_unchanged": true,
+  "work_area_bytes": 2000,
+  "work_area_backing_memory": "DDR in both cases",
+  "rtl_modified": false,
+  "flash_written": false,
+  "release_firmware": "9700ce2a",
+  "board_resident_at_test_end": "85a0e6af",
+  "candidate_image": "images/runtime_85a0e6af.ngb"
+}

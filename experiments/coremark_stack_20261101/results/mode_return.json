@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "CoreMark returns to dispatcher and re-enters after all three runs",
+  "states": [
+    {
+      "version": 1,
+      "op": 1,
+      "session": 458877155,
+      "sequence": 1957536550,
+      "error": 0,
+      "active": 3,
+      "target": 3,
+      "generation": 1,
+      "busy": 0,
+      "flags": 0,
+      "build_id": 2241914543,
+      "capabilities": 63,
+      "reserved": 0
+    },
+    {
+      "version": 1,
+      "op": 1,
+      "session": 458877155,
+      "sequence": 1957536553,
+      "error": 0,
+      "active": 0,
+      "target": 0,
+      "generation": 2,
+      "busy": 0,
+      "flags": 0,
+      "build_id": 2241914543,
+      "capabilities": 63,
+      "reserved": 0
+    },
+    {
+      "version": 1,
+      "op": 1,
+      "session": 458877155,
+      "sequence": 1957536556,
+      "error": 0,
+      "active": 3,
+      "target": 3,
+      "generation": 3,
+      "busy": 0,
+      "flags": 0,
+      "build_id": 2241914543,
+      "capabilities": 63,
+      "reserved": 0
+    }
+  ],
+  "retained_coremark": {
+    "version": 1,
+    "op": 1,
+    "sequence": 3546751432,
+    "error": 0,
+    "run_id": 1186550387,
+    "state": 2,
+    "log_length": 2546,
+    "offset": 0,
+    "chunk": 0,
+    "iterations_requested": 11000,
+    "cpu_hz": 100000000,
+    "timer_hz": 100000000,
+    "log_crc": 176391636,
+    "flags": 0,
+    "build_id": 2241914543,
+    "performance_ticks": 2195049199,
+    "validation_ticks": 2195713931
+  }
+}

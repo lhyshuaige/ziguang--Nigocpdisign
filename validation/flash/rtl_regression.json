@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "sources": {
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/rtl/flash_controller.sv": "cecc27a1eab0342269872986de28d49e374b15a6f9383a6eb61bd15663314926",
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/rtl/spi_transfer.sv": "f032b3f5b9aec0803b70619a4fb0e6d51f149525ddb662246ecdca0f6ecf293f",
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/tb/spi_nor_model.sv": "17cd11007dfe93b4bab7e043220cb7acab8b13d86310e908e03c352f87cf585e",
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/rtl/pg2l100h_flash_pads.sv": "d989eea28779946275c5dbc1056636077177fb5d60da1c2e990d0c34d5f203b1",
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/cfgclk_stub.sv": "f79f8ac1bd95a75556977daac911f6af224c0a9c76629b19849d24fd325da8c4",
+    "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/flash_tb.sv": "fe208fee0294f7a94b5edf43d3d77bb155946d8037c5c72f19998bde26deedc5"
+  },
+  "physical_wiring_from": "flash_matrix_diag/capture_20261101_070548.json",
+  "commands": [
+    [
+      "source://workspace/Verilator/bin/verilator.exe",
+      "--cc",
+      "--exe",
+      "--main",
+      "--timing",
+      "--assert",
+      "-Wno-fatal",
+      "--top-module",
+      "flash_tb",
+      "--Mdir",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/obj",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/rtl/flash_controller.sv",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/rtl/spi_transfer.sv",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_20261030/tb/spi_nor_model.sv",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/rtl/pg2l100h_flash_pads.sv",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/cfgclk_stub.sv",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/flash_tb.sv"
+    ],
+    [
+      "source://workspace/w64devkit/w64devkit/bin/make.exe",
+      "-C",
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/obj",
+      "-f",
+      "Vflash_tb.mk",
+      "-j",
+      "4",
+      "CXX=g++",
+      "LINK=g++",
+      "AR=ar"
+    ],
+    [
+      "source://soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/obj/Vflash_tb.exe",
+      "+seed=23"
+    ]
+  ],
+  "truth_table_entries_verified": 64,
+  "random_and_reset_readbacks_compared": 137
+}

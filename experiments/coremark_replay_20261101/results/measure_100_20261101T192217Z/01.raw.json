@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "op": 1,
+  "sequence": 1360635800,
+  "error": 0,
+  "build_id": 1456590252,
+  "state": 2,
+  "run_id": 147016590,
+  "iterations": 100,
+  "completed": 3,
+  "cpu_hz": 100000000,
+  "audit_errors": 0,
+  "network_before": 0,
+  "network_after": 0,
+  "boot_sample": 0,
+  "results": [
+    {
+      "iterations": 100,
+      "ticks": 19484266,
+      "size": 666,
+      "seedcrc": 59893,
+      "crclist": 59156,
+      "crcmatrix": 8151,
+      "crcstate": 36410,
+      "crcfinal": 39052,
+      "errors": 0,
+      "seed1": 0,
+      "seed2": 0,
+      "work_address": 2181298144,
+      "result_address": 2181298076
+    },
+    {
+      "iterations": 100,
+      "ticks": 19419447,
+      "size": 666,
+      "seedcrc": 6386,
+      "crclist": 58305,
+      "crcmatrix": 1863,
+      "crcstate": 36228,
+      "crcfinal": 33869,
+      "errors": 0,
+      "seed1": 13333,
+      "seed2": 13333,
+      "work_address": 2181298144,
+      "result_address": 2181298076
+    }
+  ],
+  "packet_hex": "4e43525000000001000000015119a7980000000056d1cdac0000000208c34b8e000000640000000305f5e100000000000000000000000000000000000000006401294e6a0000029a0000e9f50000e71400001fd700008e3a0000988c0000000000000000000000008203f7e08203f79c00000064012851370000029a000018f20000e3c10000074700008d840000844d0000000000003415000034158203f7e08203f79c2b0cf5fd"
+}

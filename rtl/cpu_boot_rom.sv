@@ -2,7 +2,7 @@
 // Each accepted request returns eight 64-bit words, in order. Only the
 // 0x80000000..0x80007fff read window is selected by the enclosing mux.
 module cpu_boot_rom #(
-  parameter INIT_FILE = "firmware/build/boot64.hex"
+  parameter INIT_FILE = "firmware/bootloader/boot64.hex"
 ) (
   input wire clk, reset,
   input wire i_cmd_valid, output wire i_cmd_ready, input wire [31:0] i_cmd_address,

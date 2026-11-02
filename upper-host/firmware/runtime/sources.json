@@ -1,0 +1,30 @@
+{
+  "vendor\\rx\\ethernet_rx.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_rx_dma_p2_20261029\\firmware\\ethernet_rx.c",
+    "sha256": "ec96c648a1120c78b9644641a9a254888e13fff1ab3f7d1747c70a502d0e280e"
+  },
+  "vendor\\rx\\ethernet_rx.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_rx_dma_p2_20261029\\firmware\\ethernet_rx.h",
+    "sha256": "672039803603734da3899e8de4a80f05dfc3baedd8b3ca3e20593607dc7bf570"
+  },
+  "vendor\\rx\\ethernet_rx_service.c": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_rx_dma_p2_20261029\\firmware\\ethernet_rx_service.c",
+    "sha256": "9362af826ed845e9f993a8b0fcd82ef2c60f9163a82e429ffa4bb9af1e7169c5"
+  },
+  "vendor\\rx\\ethernet_rx_service.h": {
+    "source": "D:\\PDS\\project\\Nigo-LG100\\candidates\\ethernet_rx_dma_p2_20261029\\firmware\\ethernet_rx_service.h",
+    "sha256": "908c4884603ecd49664e08d59f7eefab8398ebff45eac9f8260413721d797f65"
+  },
+  "adapters/game.c": {
+    "source": "D:\\PDS\\project\\upper\\firmware\\arcade\\src\\main.c",
+    "source_sha256": "5ffa748deba55042c8d2775ce4d29d75cf8182b3d3008222a2f60e7f4ac6a89a"
+  },
+  "adapters/coremark.c": {
+    "source": "D:\\PDS\\project\\upper\\firmware\\coremark\\port\\main.c",
+    "source_sha256": "c7809c6bd88e5054a694dcc6573b34f91684a4e8ecab85e687522717e0813314"
+  },
+  "adapters/face.c": {
+    "source": "D:\\PDS\\project\\upper\\firmware\\ultraface\\src\\main.c",
+    "source_sha256": "9f3bb4e1ca45dae63692aea9e2dd34898df73949630ec1545559177f636f0e3d"
+  }
+}

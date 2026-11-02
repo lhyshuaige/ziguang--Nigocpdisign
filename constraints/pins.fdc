@@ -162,3 +162,17 @@ define_attribute {p:rgmii_txd[2]} {PAP_IO_SLEW} {FAST}
 
 define_attribute {p:rgmii_txd[3]} {PAP_IO_DRIVE} {12}
 define_attribute {p:rgmii_txd[3]} {PAP_IO_SLEW} {FAST}
+
+# MES2L676-100HP user KEY2/KEY3/KEY4; KEY0=C22 remains SoC reset.
+define_attribute {p:key2_n} {PAP_IO_LOC} {B22}
+define_attribute {p:key2_n} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:key2_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:key2_n} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:key3_n} {PAP_IO_LOC} {A22}
+define_attribute {p:key3_n} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:key3_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:key3_n} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:key4_n} {PAP_IO_LOC} {B20}
+define_attribute {p:key4_n} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:key4_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:key4_n} {PAP_IO_STANDARD} {LVCMOS33}

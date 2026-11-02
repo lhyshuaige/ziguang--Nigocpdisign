@@ -1,0 +1,9 @@
+# Frozen source recipes and ROM/reference manifests compare exact bytes.
+# Preserve the checked-in line endings on Windows and Linux alike.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.zip binary
+*.sbit binary
+*.bin binary
+*.ngb binary
+*.ngm binary
+*.png binary

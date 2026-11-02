@@ -1,0 +1,8 @@
+{
+  "status": "BIT_EXACT_REBUILD_PASS",
+  "packaged_reference_only": true,
+  "build_id": "56d1cdac",
+  "elf_sha256": "d233d8146ab3a43e166f804372f72302c0cb8713719730af462e2a6ab4ea01a5",
+  "ngb_sha256": "b29348ad2891fc1ba3c12397eef9a4c5fb01187e56c1ea02fc4269f3f5a603a1",
+  "memh_sha256": "d44257dfb08fec2ed590e4f4db78166c4e21e356d980a7aea68ef13d1eb2b437"
+}

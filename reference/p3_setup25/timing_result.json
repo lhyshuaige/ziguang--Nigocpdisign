@@ -1,0 +1,1034 @@
+{
+  "status": "PASS_AT_USER_SELECTED_BUDGET",
+  "all_constrained_checks_pass": true,
+  "created_utc": "2026-11-01T16:09:28.022008+00:00",
+  "run": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101",
+  "routed_db": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/place_route/pg2l100h_soc_p3_top_pnr.adf",
+  "routed_db_sha256": "4e73199937552aa26b0c4e0dd0bf82c23fee234cf7bdafed96996107fa63054f",
+  "source_run": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101",
+  "clock_summaries": {
+    "rst_clk -> rst_clk": {
+      "setup_slow": {
+        "worst_ns": 4.539,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 5.899,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.182,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.124,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "ddrphy_sysclk -> ddrphy_sysclk": {
+      "setup_slow": {
+        "worst_ns": 0.416,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.279,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.138,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "phy_dq_sysclk_1 -> ddrphy_sysclk": {
+      "setup_slow": {
+        "worst_ns": 1.767,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.678,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.521,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.12,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "sys100 -> ddrphy_sysclk": {
+      "setup_slow": {
+        "worst_ns": 5.296,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 6.272,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "phy_dq_sysclk_0 -> ddrphy_sysclk": {
+      "setup_slow": {
+        "worst_ns": 3.977,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 5.194,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.824,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.303,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "ddrphy_sysclk -> phy_dq_sysclk_0": {
+      "setup_slow": {
+        "worst_ns": 0.54,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.008,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.463,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.117,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "ddrphy_sysclk -> phy_dq_sysclk_1": {
+      "setup_slow": {
+        "worst_ns": 0.328,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 2.991,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.487,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.112,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "sys100 -> sys100": {
+      "setup_slow": {
+        "worst_ns": 0.024,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 2.508,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.138,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "ddrphy_sysclk -> sys100": {
+      "setup_slow": {
+        "worst_ns": 5.933,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 6.721,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "net125 -> sys100": {
+      "setup_slow": {
+        "worst_ns": 2.718,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.277,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "rx125 -> rx125": {
+      "setup_slow": {
+        "worst_ns": 0.146,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 0.386,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.212,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "net125 -> rx125": {
+      "setup_slow": {
+        "worst_ns": 3.03,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.447,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "net125 -> net125": {
+      "setup_slow": {
+        "worst_ns": 0.835,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.384,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.147,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.04,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "sys100 -> net125": {
+      "setup_slow": {
+        "worst_ns": 2.876,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 3.365,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "rx125 -> net125": {
+      "setup_slow": {
+        "worst_ns": 6.43,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 7.062,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    },
+    "net125 -> phy_tx_capture": {
+      "setup_slow": {
+        "worst_ns": 0.429,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "setup_fast": {
+        "worst_ns": 0.269,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_slow": {
+        "worst_ns": 0.228,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      },
+      "hold_fast": {
+        "worst_ns": 0.112,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0
+      }
+    }
+  },
+  "additional_timing_summaries": {
+    "Setup Slow": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 4.539,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 427
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 0.416,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 15283
+      },
+      {
+        "clocks": "phy_dq_sysclk_1 -> ddrphy_sysclk",
+        "worst_ns": 1.767,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 260
+      },
+      {
+        "clocks": "sys100 -> ddrphy_sysclk",
+        "worst_ns": 5.296,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 320
+      },
+      {
+        "clocks": "phy_dq_sysclk_0 -> ddrphy_sysclk",
+        "worst_ns": 3.977,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 1
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_0",
+        "worst_ns": 0.54,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 196
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_1",
+        "worst_ns": 0.328,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 420
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 0.024,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 131763
+      },
+      {
+        "clocks": "ddrphy_sysclk -> sys100",
+        "worst_ns": 5.933,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 264
+      },
+      {
+        "clocks": "net125 -> sys100",
+        "worst_ns": 2.718,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 220
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.146,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 613
+      },
+      {
+        "clocks": "net125 -> rx125",
+        "worst_ns": 3.03,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 14
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 0.835,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 13018
+      },
+      {
+        "clocks": "sys100 -> net125",
+        "worst_ns": 2.876,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 172
+      },
+      {
+        "clocks": "rx125 -> net125",
+        "worst_ns": 6.43,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 16
+      },
+      {
+        "clocks": "net125 -> phy_tx_capture",
+        "worst_ns": 0.429,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      }
+    ],
+    "Recovery Slow": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 4.832,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 99
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 3.504,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3930
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 2.097,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 11317
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 6.266,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 1.319,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 6
+      }
+    ],
+    "Minimum Pulse Width Slow": [
+      {
+        "clocks": "rst_clk",
+        "worst_ns": 3.8,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 100
+      },
+      {
+        "clocks": "ddrphy_sysclk",
+        "worst_ns": 3.8,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3956
+      },
+      {
+        "clocks": "phy_dq_clk_0",
+        "worst_ns": 0.035,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 35
+      },
+      {
+        "clocks": "phy_dq_sysclk_0",
+        "worst_ns": 1.85,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 35
+      },
+      {
+        "clocks": "phy_dq_clk_1",
+        "worst_ns": 0.035,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 84
+      },
+      {
+        "clocks": "phy_dq_sysclk_1",
+        "worst_ns": 2.4,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 84
+      },
+      {
+        "clocks": "sys100",
+        "worst_ns": 3.655,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 30003
+      },
+      {
+        "clocks": "rx125",
+        "worst_ns": 3.04,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 158
+      },
+      {
+        "clocks": "net125",
+        "worst_ns": 3.04,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3609
+      }
+    ],
+    "Setup Fast": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 5.899,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 427
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 3.279,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 15283
+      },
+      {
+        "clocks": "phy_dq_sysclk_1 -> ddrphy_sysclk",
+        "worst_ns": 3.678,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 260
+      },
+      {
+        "clocks": "sys100 -> ddrphy_sysclk",
+        "worst_ns": 6.272,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 320
+      },
+      {
+        "clocks": "phy_dq_sysclk_0 -> ddrphy_sysclk",
+        "worst_ns": 5.194,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 1
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_0",
+        "worst_ns": 3.008,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 196
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_1",
+        "worst_ns": 2.991,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 420
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 2.508,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 131763
+      },
+      {
+        "clocks": "ddrphy_sysclk -> sys100",
+        "worst_ns": 6.721,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 264
+      },
+      {
+        "clocks": "net125 -> sys100",
+        "worst_ns": 3.277,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 220
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.386,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 613
+      },
+      {
+        "clocks": "net125 -> rx125",
+        "worst_ns": 3.447,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 14
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 3.384,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 13018
+      },
+      {
+        "clocks": "sys100 -> net125",
+        "worst_ns": 3.365,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 172
+      },
+      {
+        "clocks": "rx125 -> net125",
+        "worst_ns": 7.062,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 16
+      },
+      {
+        "clocks": "net125 -> phy_tx_capture",
+        "worst_ns": 0.269,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      }
+    ],
+    "Recovery Fast": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 6.058,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 99
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 5.077,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3930
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 3.122,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 11317
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 6.837,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 2.225,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 6
+      }
+    ],
+    "Minimum Pulse Width Fast": [
+      {
+        "clocks": "rst_clk",
+        "worst_ns": 3.8,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 100
+      },
+      {
+        "clocks": "ddrphy_sysclk",
+        "worst_ns": 3.8,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3956
+      },
+      {
+        "clocks": "phy_dq_clk_0",
+        "worst_ns": 0.035,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 35
+      },
+      {
+        "clocks": "phy_dq_sysclk_0",
+        "worst_ns": 1.85,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 35
+      },
+      {
+        "clocks": "phy_dq_clk_1",
+        "worst_ns": 0.035,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 84
+      },
+      {
+        "clocks": "phy_dq_sysclk_1",
+        "worst_ns": 2.4,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 84
+      },
+      {
+        "clocks": "sys100",
+        "worst_ns": 4.202,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 30003
+      },
+      {
+        "clocks": "rx125",
+        "worst_ns": 3.43,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 158
+      },
+      {
+        "clocks": "net125",
+        "worst_ns": 3.43,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3609
+      }
+    ],
+    "Hold Slow": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 0.182,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 427
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 0.138,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 15283
+      },
+      {
+        "clocks": "phy_dq_sysclk_1 -> ddrphy_sysclk",
+        "worst_ns": 0.521,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 260
+      },
+      {
+        "clocks": "phy_dq_sysclk_0 -> ddrphy_sysclk",
+        "worst_ns": 0.824,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 1
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_0",
+        "worst_ns": 0.463,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 196
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_1",
+        "worst_ns": 0.487,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 420
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 0.138,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 131763
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.212,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 613
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 0.147,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 13018
+      },
+      {
+        "clocks": "net125 -> phy_tx_capture",
+        "worst_ns": 0.228,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      }
+    ],
+    "Removal Slow": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 0.434,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 99
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 0.337,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3930
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 0.346,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 11317
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.238,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 0.758,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 6
+      }
+    ],
+    "Hold Fast": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 0.124,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 427
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 15283
+      },
+      {
+        "clocks": "phy_dq_sysclk_1 -> ddrphy_sysclk",
+        "worst_ns": 0.12,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 260
+      },
+      {
+        "clocks": "phy_dq_sysclk_0 -> ddrphy_sysclk",
+        "worst_ns": 0.303,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 1
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_0",
+        "worst_ns": 0.117,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 196
+      },
+      {
+        "clocks": "ddrphy_sysclk -> phy_dq_sysclk_1",
+        "worst_ns": 0.112,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 420
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 131763
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.101,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 613
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 0.04,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 13018
+      },
+      {
+        "clocks": "net125 -> phy_tx_capture",
+        "worst_ns": 0.112,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      }
+    ],
+    "Removal Fast": [
+      {
+        "clocks": "rst_clk -> rst_clk",
+        "worst_ns": 0.308,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 99
+      },
+      {
+        "clocks": "ddrphy_sysclk -> ddrphy_sysclk",
+        "worst_ns": 0.231,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 3930
+      },
+      {
+        "clocks": "sys100 -> sys100",
+        "worst_ns": 0.233,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 11317
+      },
+      {
+        "clocks": "rx125 -> rx125",
+        "worst_ns": 0.133,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 5
+      },
+      {
+        "clocks": "net125 -> net125",
+        "worst_ns": 0.45,
+        "total_negative_ns": 0.0,
+        "failing_endpoints": 0,
+        "total_endpoints": 6
+      }
+    ]
+  },
+  "physical_path_metrics_checked": {
+    "setup": 36084,
+    "hold": 34064
+  },
+  "reported_sys100_uncertainty_ns": {
+    "setup": [
+      -0.175
+    ],
+    "hold": [
+      0.0
+    ]
+  },
+  "sys100_setup_FDC_ps": 25,
+  "sys100_hold_FDC_ps": 0,
+  "actual_sys100_setup_deduction_ps": 175,
+  "original_failing_path": {
+    "before": {
+      "startpoint": "u_soc_core/u_cpu/DataCachePlugin_logic_cache/refill_slots_1_writebackHazards[1]/opit_0_L6Q_perm/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_cpu_axi_adapter/d_write_data_reg[104]/opit_0_L6QL5Q_perm/I4",
+      "type": "max (slow corner)",
+      "clock": "sys100",
+      "slack_ns": -0.001,
+      "data_path_delay_ns": 9.459999999999999,
+      "skew_ns": -0.202,
+      "logic_ns": 1.372,
+      "route_ns": 8.088,
+      "uncertainty_ns": -0.2,
+      "library_hold_ns": null,
+      "launch_clock_leaf": "HCKB_213_469",
+      "capture_clock_leaf": "HCKB_213_1084"
+    },
+    "after": {
+      "startpoint": "u_soc_core/u_cpu/DataCachePlugin_logic_cache/refill_slots_1_writebackHazards[1]/opit_0_L6Q_perm/CLK",
+      "endpoint": "u_soc_core/g_axi_fabric.u_cpu_axi_adapter/d_write_data_reg[104]/opit_0_L6QL5Q_perm/I4",
+      "type": "max (slow corner)",
+      "clock": "sys100",
+      "slack_ns": 0.024,
+      "data_path_delay_ns": 9.459999999999999,
+      "skew_ns": -0.202,
+      "logic_ns": 1.372,
+      "route_ns": 8.088,
+      "uncertainty_ns": -0.175,
+      "library_hold_ns": null,
+      "launch_clock_leaf": "HCKB_213_469",
+      "capture_clock_leaf": "HCKB_213_1084"
+    }
+  },
+  "same_physical_implementation": true,
+  "RTL_changed": false,
+  "new_PNR": false,
+  "all_hold_groups_unchanged": true,
+  "original_versions_preserved": true,
+  "timing_exceptions_added": false,
+  "signoff_scope": "All constrained clock groups, slow/fast setup, hold, recovery, removal and pulse-width, at user-selected sys100 setup25/hold0 budget",
+  "Flash_external_IO_signoff": false,
+  "full_board_electrical_signoff": false,
+  "limitations": [
+    "External SPI AC and board-level clock jitter are not independently characterized by this STA."
+  ],
+  "setup_slow": {
+    "worst_ns": 0.024,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "setup_fast": {
+    "worst_ns": 0.269,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_slow": {
+    "worst_ns": 0.138,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_fast": {
+    "worst_ns": 0.04,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  }
+}

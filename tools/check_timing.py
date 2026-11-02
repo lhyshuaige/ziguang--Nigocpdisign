@@ -1,62 +1,37 @@
-"""Check A30's archived STA summaries or freshly generated PDS reports."""
-import argparse
-import json
-import re
+"""Check every archived or freshly generated PDS timing summary against P3."""
+import argparse,json,re
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / 'a30/evidence'
-
-
+ROOT=Path(__file__).resolve().parents[1]
 def header(path):
-    lines = []
-    with Path(path).open(encoding='utf-8-sig', errors='replace') as stream:
-        for line in stream:
-            if line.startswith('Startpoint  : '):
-                break
+    lines=[]
+    with path.open(encoding='utf-8-sig',errors='replace') as f:
+        for line in f:
+            if line.startswith('Startpoint  : '):break
             lines.append(line)
     return ''.join(lines)
-
-
-def section(text, kind, corner):
-    title = f'{kind} Summary({corner} Corner):'
-    assert title in text, (title, 'not in report')
-    body = text.split(title, 1)[1].split('================================', 1)[0]
-    rows = []
-    for m in re.finditer(r'^\s*(\w+)\s+(\w+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(\d+)\s+(\d+)\s*$', body, re.M):
-        rows.append({'launch': m[1], 'capture': m[2], 'worst_ns': float(m[3]),
-                     'tns_ns': float(m[4]), 'failing_endpoints': int(m[5])})
-    assert rows, (title, 'has no timing rows')
-    return {'worst_ns': min(x['worst_ns'] for x in rows),
-            'failing_endpoints': sum(x['failing_endpoints'] for x in rows),
-            'tns_ns': round(sum(x['tns_ns'] for x in rows), 3), 'groups': rows}
-
-
+def checks(text):
+    result={};section=None
+    for line in text.splitlines():
+        match=re.match(r'(Setup|Hold|Recovery|Removal|Minimum Pulse Width) Summary\((Slow|Fast) Corner\):',line)
+        if match:section=match[1]+' '+match[2];result.setdefault(section,[]);continue
+        if not section:continue
+        parts=line.split()
+        if len(parts) not in (5,6):continue
+        try:w,t=float(parts[-4]),float(parts[-3]);f,n=int(parts[-2]),int(parts[-1])
+        except ValueError:continue
+        result[section].append(dict(clocks=' -> '.join(parts[:-4]),worst_ns=w,total_negative_ns=t,failing_endpoints=f,total_endpoints=n))
+    return {k:v for k,v in result.items() if v}
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument('--setup', type=Path, default=EVIDENCE / 'setup_summary.txt')
-    ap.add_argument('--hold', type=Path, default=EVIDENCE / 'hold_summary.txt')
-    ap.add_argument('--expect-a30', action='store_true', help='require the recorded A30 endpoint counts and WNS/WHS')
-    args = ap.parse_args()
-    setup, hold = header(args.setup), header(args.hold)
-    result = {}
-    for corner in ('Slow', 'Fast'):
-        result[f'setup_{corner.lower()}'] = section(setup, 'Setup', corner)
-        result[f'hold_{corner.lower()}'] = section(hold, 'Hold', corner)
-    if args.expect_a30:
-        expected = json.loads((EVIDENCE / 'timing_result.json').read_text(encoding='utf-8'))
-        for key, row in result.items():
-            old = expected[key]
-            assert abs(row['worst_ns'] - old['worst_ns']) < 0.0005, (key, row, old)
-            assert row['failing_endpoints'] == old['failing_endpoints'], (key, row, old)
-        negatives = json.loads((EVIDENCE / 'all_negative_paths.json').read_text(encoding='utf-8'))
-        fast = {(p['clock'], p['endpoint']) for p in negatives if p['type'] == 'min (fast corner)'}
-        assert len(fast) == result['hold_fast']['failing_endpoints'] == 5
-    for key, row in result.items():
-        print(f"{key:12s} worst={row['worst_ns']:+.3f} ns  failing_endpoints={row['failing_endpoints']}  TNS={row['tns_ns']:+.3f} ns")
-    if args.expect_a30:
-        print('A30_TIMING_EVIDENCE_PASS')
-
-
-if __name__ == '__main__':
-    main()
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('directory',nargs='?',type=Path,default=ROOT/'reference/p3_setup25');a=ap.parse_args()
+    actual={}
+    for name in ['setup','hold']:
+        path=a.directory/(name+'.rtr')
+        if not path.exists():path=a.directory/(name+'_summary.txt')
+        actual.update(checks(header(path)))
+    expected=json.loads((ROOT/'reference/p3_setup25/timing_result.json').read_text())['additional_timing_summaries']
+    assert actual.keys()==expected.keys(),('Missing timing check',actual.keys(),expected.keys())
+    assert all(row['failing_endpoints']==0 and row['worst_ns']>=0 for rows in actual.values() for row in rows),'Timing violation'
+    assert actual==expected,'Full timing summaries differ from the frozen reference'
+    for section,rows in actual.items():print(section, 'worst_ns=',min(x['worst_ns'] for x in rows),'failing_endpoints=',sum(x['failing_endpoints'] for x in rows))
+    print('P3_FULL_SUMMARY_MATCH_PASS')
+if __name__=='__main__':main()

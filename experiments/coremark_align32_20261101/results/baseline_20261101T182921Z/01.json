@@ -1,0 +1,41 @@
+{
+  "valid": true,
+  "coremark": 501.68042967940033,
+  "coremark_per_mhz": 5.016804296794003,
+  "cpu_mhz": 100.0,
+  "timer_hz": 100000000,
+  "run_id": 1230821642,
+  "build_id": "9700ce2a",
+  "runs": [
+    {
+      "name": "performance",
+      "valid": true,
+      "iterations": 11000,
+      "seconds": 21.92630876,
+      "raw_timer_ticks": 2192630876,
+      "crc": [
+        "e9f5",
+        "e714",
+        "1fd7",
+        "8e3a"
+      ],
+      "iterations_per_second": 501.68042967940033
+    },
+    {
+      "name": "validation",
+      "valid": true,
+      "iterations": 11000,
+      "seconds": 21.94436783,
+      "raw_timer_ticks": 2194436783,
+      "crc": [
+        "18f2",
+        "e3c1",
+        "0747",
+        "8d84"
+      ],
+      "iterations_per_second": 501.26757285584563
+    }
+  ],
+  "raw_log": "=== PERFORMANCE ===\n2K performance run parameters for coremark.\nCoreMark Size    : 666\nTotal ticks      : 21926308\nTotal time (secs): 21.926308\nIterations/Sec   : 501.680447\nIterations       : 11000\nCompiler version : GCC 13.2.0\nCompiler flags   : -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8\nMemory location  : DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz\nseedcrc          : 0xe9f5\n[0]crclist       : 0xe714\n[0]crcmatrix     : 0x1fd7\n[0]crcstate      : 0x8e3a\n[0]crcfinal      : 0x33ff\nCorrect operation validated. See README.md for run and reporting rules.\nCoreMark 1.0 : 501.680447 / GCC 13.2.0 -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8 / DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz\n=== VALIDATION ===\n2K validation run parameters for coremark.\nCoreMark Size    : 666\nTotal ticks      : 21944367\nTotal time (secs): 21.944367\nIterations/Sec   : 501.267592\nIterations       : 11000\nCompiler version : GCC 13.2.0\nCompiler flags   : -march=rv32im_zicsr -mabi=ilp32 -mcmodel=medany -ffreestanding -fno-builtin -ffunction-sections -fdata-sections -Wall -Wextra -Werror -Wno-misleading-indentation -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8\nMemory location  : DDR code@0x82000000 data/stack@0x82800000; caches enabled; CPU100/DDRuser125MHz\nseedcrc          : 0x18f2\n[0]crclist       : 0xe3c1\n[0]crcmatrix     : 0x0747\n[0]crcstate      : 0x8d84\n[0]crcfinal      : 0x34c1\nCorrect operation validated. See README.md for run and reporting rules.\n",
+  "note": "实板运行；非 EEMBC 认证成绩"
+}

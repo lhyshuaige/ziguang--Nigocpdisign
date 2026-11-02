@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "op": 1,
+  "sequence": 398009965,
+  "error": 0,
+  "run_id": 1230821642,
+  "state": 2,
+  "log_length": 2630,
+  "offset": 0,
+  "chunk": 0,
+  "iterations_requested": 11000,
+  "cpu_hz": 100000000,
+  "timer_hz": 100000000,
+  "log_crc": 739669217,
+  "flags": 0,
+  "build_id": 2533412394,
+  "performance_ticks": 2192630876,
+  "validation_ticks": 2194436783
+}

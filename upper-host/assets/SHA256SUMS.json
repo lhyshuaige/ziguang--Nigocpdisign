@@ -1,0 +1,18 @@
+{
+  "assets/firmware/arcade.ngb": "451996c8e1f96be391940a4596b1fef89e05990f765a5f1e356f722c1acd7c1a",
+  "assets/firmware/coremark.ngb": "c014428df25328eea26e32fe5a3c74037f36f2b6a48a8beee40b0e46a9e136bb",
+  "assets/firmware/keys_led.ngb": "2929a1cc2ba8b526a418d56f1ba1eaa555fc2c6d2df199789e5483b6a8c9bd29",
+  "assets/firmware/receiver.ngb": "7d8b54347fa18c0a4990eddf73a7afdadeb8a8ac56b30cf3c2c90cfb4817994d",
+  "assets/firmware/runtime.json": "549a6adf32516263ed804d0b54499299e1dbbc705e99292c19abde30690907b7",
+  "assets/firmware/runtime.ngb": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661",
+  "assets/firmware/ultraface.ngb": "2e8b44c628a245fe75d0d72a2d6070da88d282452381ce44a2ad4cbd880fb5e6",
+  "assets/firmware/ultraface_legacy_20261028.ngb": "8793af36863c402e2f346fa3fe81ef990e870bf6ca849201632cb290a2dd763b",
+  "assets/model/ultraface.ngm": "569f94b78e7088348ce4f4c693584757bef516a284007884d3e74d540fd506cf",
+  "assets/model/upstream_source_manifest.json": "6d3b83a253b1e697ab70dcd0c440c66dc4a5e4f2d7a09698b7034902d844ac78",
+  "assets/samples/manifest.json": "e0ecf4dccfaa64db9c9c4a9648e02eb7272496f9c035f5af3b92b7c8baabda36",
+  "assets/samples/sample0.png": "4092a9bf5844cc741cc46bcc536e045916025965270bce64e1c68c216ea9c5f5",
+  "assets/samples/sample1.png": "0303c08feb946ca6b82cb5147c0b55638af0247bdcda7ef8970c25ed2d6be0c3",
+  "assets/samples/sample2.png": "d610cb01a94dcaa1405653f084a1b955bad24830c60fc9ab21063b529fd41710",
+  "assets/samples/sample3.png": "cad667d65a033a9683a54e432374214bb87c788ff99931443078e50f0fe21040",
+  "assets/firmware/legacy/runtime_946fbc9b.ngb": "6b9644f9525adbf9f18de777fc8719dc501b3464351813e6a3389b17fe196928"
+}

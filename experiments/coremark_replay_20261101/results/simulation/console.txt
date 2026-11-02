@@ -1,0 +1,18 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 19191137
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 100
+Compiler version : GCC 13.2.0
+Compiler flags   : -O3 -fno-common -funroll-loops -finline-functions -falign-functions=16 -falign-jumps=4 -falign-loops=4 -finline-limit=1000 -fno-if-conversion2 -fselective-scheduling -fno-crossjumping -freorder-blocks-and-partition -mtune=sifive-7-series -funroll-all-loops -falign-functions=8 -falign-loops=8 -falign-jumps=8 -falign-functions=32 -falign-loops=4 -falign-jumps=8
+Memory location  : STACK in modeled DDR; I/D caches enabled
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x988c
+Errors detected
+PORT_DONE
+COREMARK_SOC_PASS cycles=19219932 hmic_reads=8820 hmic_writes=48
+PROFILE timed_cycles=19191137 retired=35326838 branches=5390095 mispredicts=276302 frontend_empty=1569841 dispatch_blocked=2818020 if_misses=4156 d_misses=11

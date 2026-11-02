@@ -1,0 +1,1886 @@
+{
+  "hardware_revision": "P3 Flash pinfix setup25 hold0",
+  "runtime_build_id": "9700ce2a",
+  "sources": {
+    "rtl/pgl50h_interrupt_aggregator.v": {
+      "source": "soc/rtl/pgl50h_interrupt_aggregator.v",
+      "source_sha256": "527e3eadcc081a1e256917ed7bcdaa5070382a8ac3cd734e9c1aed882cdb8599",
+      "packaged_sha256": "527e3eadcc081a1e256917ed7bcdaa5070382a8ac3cd734e9c1aed882cdb8599"
+    },
+    "rtl/pgl50h_csr_fabric.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/pgl50h_csr_fabric.v",
+      "source_sha256": "f03b720a77f255bf6b6c73f82702de4df3171e1501aad3f4b5ec36a39b2cfbea",
+      "packaged_sha256": "f03b720a77f255bf6b6c73f82702de4df3171e1501aad3f4b5ec36a39b2cfbea"
+    },
+    "rtl/pgl50h_peripherals.v": {
+      "source": "soc/rtl/pgl50h_peripherals.v",
+      "source_sha256": "8bec3ba3bab5ed2fa91aace4fcfa5157e90f9406bdf3d1a65007addbff10639b",
+      "packaged_sha256": "8bec3ba3bab5ed2fa91aace4fcfa5157e90f9406bdf3d1a65007addbff10639b"
+    },
+    "rtl/pgl50h_camera_dma.v": {
+      "source": "soc/rtl/pgl50h_camera_dma.v",
+      "source_sha256": "ef4366b4ebcef937e6c28ca041940527ed03ab1ba114f8b7dc53c1bc89e6a330",
+      "packaged_sha256": "ef4366b4ebcef937e6c28ca041940527ed03ab1ba114f8b7dc53c1bc89e6a330"
+    },
+    "rtl/pgl50h_camera_dma_stream.v": {
+      "source": "soc/candidates/dma_prefetch_p1_20261022/rtl/pgl50h_camera_dma_stream.v",
+      "source_sha256": "fe5cdf32d4f29da9b1ba709cb8bedc74a70f5335291074de0afcfa24c214a84d",
+      "packaged_sha256": "fe5cdf32d4f29da9b1ba709cb8bedc74a70f5335291074de0afcfa24c214a84d"
+    },
+    "rtl/camera/camera_rx_dvp.sv": {
+      "source": "soc/rtl/camera/camera_rx_dvp.sv",
+      "source_sha256": "d543700397f67aeb1e77b2677902076ab321885dbe053fb411aa499d12a56e66",
+      "packaged_sha256": "d543700397f67aeb1e77b2677902076ab321885dbe053fb411aa499d12a56e66"
+    },
+    "rtl/camera/camera_async_fifo.sv": {
+      "source": "soc/rtl/camera/camera_async_fifo.sv",
+      "source_sha256": "5878ad7ade581d9d59d11b5b81e005c3c4be5c55a95525e23dc79dd7c1d49627",
+      "packaged_sha256": "5878ad7ade581d9d59d11b5b81e005c3c4be5c55a95525e23dc79dd7c1d49627"
+    },
+    "rtl/camera/camera_stream_adapter.sv": {
+      "source": "soc/rtl/camera/camera_stream_adapter.sv",
+      "source_sha256": "a23ffe192ce394adc9280755774a8d79f25b9e5038386e10beeea0566d1927f8",
+      "packaged_sha256": "a23ffe192ce394adc9280755774a8d79f25b9e5038386e10beeea0566d1927f8"
+    },
+    "rtl/camera/camera_rx_subsystem.sv": {
+      "source": "soc/rtl/camera/camera_rx_subsystem.sv",
+      "source_sha256": "aa01c4b98b01377a521624ac57e7fa3d7ef100dd3727fcbc5d53a28baf45c6ed",
+      "packaged_sha256": "aa01c4b98b01377a521624ac57e7fa3d7ef100dd3727fcbc5d53a28baf45c6ed"
+    },
+    "rtl/camera/camera_sensor_ctrl.sv": {
+      "source": "soc/rtl/camera/camera_sensor_ctrl.sv",
+      "source_sha256": "3352c17cb0ba322f505d861cbba922eb5c0b4936d0d7c3c8d060c01ad4ae9c02",
+      "packaged_sha256": "3352c17cb0ba322f505d861cbba922eb5c0b4936d0d7c3c8d060c01ad4ae9c02"
+    },
+    "rtl/camera/camera_regs.sv": {
+      "source": "soc/rtl/camera/camera_regs.sv",
+      "source_sha256": "6c3403a9e00437a1df99be61b4a07b49d97981f3582b80c457c23a00e75a5459",
+      "packaged_sha256": "6c3403a9e00437a1df99be61b4a07b49d97981f3582b80c457c23a00e75a5459"
+    },
+    "rtl/vision/vision_pipeline_top.sv": {
+      "source": "soc/rtl/vision/vision_pipeline_top.sv",
+      "source_sha256": "f9e3ca5add929f222eb72af400342e61bdd624d27185927d57085d896d78d8e9",
+      "packaged_sha256": "f9e3ca5add929f222eb72af400342e61bdd624d27185927d57085d896d78d8e9"
+    },
+    "rtl/vision/vision_input_mux.sv": {
+      "source": "soc/rtl/vision/vision_input_mux.sv",
+      "source_sha256": "57b86faf623bf32b71b9c71a37cf50355aaf8d923a9cf0f6e477912ba98c3c64",
+      "packaged_sha256": "57b86faf623bf32b71b9c71a37cf50355aaf8d923a9cf0f6e477912ba98c3c64"
+    },
+    "rtl/vision/line_buffer.sv": {
+      "source": "soc/rtl/vision/line_buffer.sv",
+      "source_sha256": "54a2dbb6eef236d7458a18f2c65a6d493f7538f962cc339e9bc9190a7fba72d2",
+      "packaged_sha256": "54a2dbb6eef236d7458a18f2c65a6d493f7538f962cc339e9bc9190a7fba72d2"
+    },
+    "rtl/vision/window_generator.sv": {
+      "source": "soc/rtl/vision/window_generator.sv",
+      "source_sha256": "996578daaa24f670189f9e6e28fb305f8b65ded131f3e491c1559eb55a561abc",
+      "packaged_sha256": "996578daaa24f670189f9e6e28fb305f8b65ded131f3e491c1559eb55a561abc"
+    },
+    "rtl/operators/rgb2gray.sv": {
+      "source": "soc/rtl/operators/rgb2gray.sv",
+      "source_sha256": "f47a98831a5f903ec21e03643ebb3f223e47a70b8af868924992c076f8bf61dc",
+      "packaged_sha256": "f47a98831a5f903ec21e03643ebb3f223e47a70b8af868924992c076f8bf61dc"
+    },
+    "rtl/operators/gaussian_filter.sv": {
+      "source": "soc/rtl/operators/gaussian_filter.sv",
+      "source_sha256": "d826165951f00fcc4150ce990c614d08397fc1949f40b2a2ab1c084691597975",
+      "packaged_sha256": "d826165951f00fcc4150ce990c614d08397fc1949f40b2a2ab1c084691597975"
+    },
+    "rtl/operators/resize_engine.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/operators/resize_engine.sv",
+      "source_sha256": "0495672ed8523b134ef87c5cbdff7ace47236c6894f26a7a387ede883b1307a2",
+      "packaged_sha256": "0495672ed8523b134ef87c5cbdff7ace47236c6894f26a7a387ede883b1307a2"
+    },
+    "rtl/pgl50h_mem_fabric_pds.v": {
+      "source": "soc/rtl/pgl50h_mem_fabric_pds.v",
+      "source_sha256": "a9b408eee2edc02c4d028e1d08dce9cd4013b723c2c25873a12b93b109eee3b7",
+      "packaged_sha256": "a9b408eee2edc02c4d028e1d08dce9cd4013b723c2c25873a12b93b109eee3b7"
+    },
+    "rtl/pgl50h_ai_accel_stub.v": {
+      "source": "soc/rtl/pgl50h_ai_accel_stub.v",
+      "source_sha256": "e00b40fda5f7d925c0bcce465b9379b8dca3dd0a4021c839010198289885d26e",
+      "packaged_sha256": "e00b40fda5f7d925c0bcce465b9379b8dca3dd0a4021c839010198289885d26e"
+    },
+    "rtl/pgl50h_cpu_axi_adapter.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/pgl50h_cpu_axi_adapter.v",
+      "source_sha256": "5aacffb420a37b372a29b3873edc68265a5bbfccd9e6812e3c1bf9eeada636a9",
+      "packaged_sha256": "5aacffb420a37b372a29b3873edc68265a5bbfccd9e6812e3c1bf9eeada636a9"
+    },
+    "rtl/pgl50h_axi4_hmic_adapter.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/pgl50h_axi4_hmic_adapter.v",
+      "source_sha256": "544aa570e6e4eae0bc94dd7ac33061eb04f396f510b6fb367e019d8c710a27bc",
+      "packaged_sha256": "544aa570e6e4eae0bc94dd7ac33061eb04f396f510b6fb367e019d8c710a27bc"
+    },
+    "rtl/pgl50h_axi_hmic_cdc.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/pgl50h_axi_hmic_cdc.v",
+      "source_sha256": "a50ce068a340b09ea3a0e0cd484f5e611fb8e2b126fc30274d78d5e3277a0b08",
+      "packaged_sha256": "a50ce068a340b09ea3a0e0cd484f5e611fb8e2b126fc30274d78d5e3277a0b08"
+    },
+    "rtl/pgl50h_native_axi_bridge.v": {
+      "source": "soc/rtl/pgl50h_native_axi_bridge.v",
+      "source_sha256": "09894106d16adeab73e910d52fad21c896bf7f4e5299d108bcf09cc201041416",
+      "packaged_sha256": "09894106d16adeab73e910d52fad21c896bf7f4e5299d108bcf09cc201041416"
+    },
+    "rtl/pgl50h_axi4_mem_fabric.v": {
+      "source": "soc/rtl/pgl50h_axi4_mem_fabric.v",
+      "source_sha256": "d044104f529ff4e2fb04d909568ea1063a104962b07352944502ee81c7ae5ef2",
+      "packaged_sha256": "d044104f529ff4e2fb04d909568ea1063a104962b07352944502ee81c7ae5ef2"
+    },
+    "rtl/NaxRiscvContest.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/NaxRiscvContest.v",
+      "source_sha256": "1629bdcb68fb48b359e6597174152c7de2141515c3f0bdb347635802ade83a0e",
+      "packaged_sha256": "1629bdcb68fb48b359e6597174152c7de2141515c3f0bdb347635802ade83a0e"
+    },
+    "rtl/pg2l100h_ddr3_wrapper.v": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/pg2l100h_ddr3_wrapper.v",
+      "source_sha256": "b3e784d4cbd04a69b2c5c450c2ad28d5ee60720647115a8d901306f1f5ba006c",
+      "packaged_sha256": "b3e784d4cbd04a69b2c5c450c2ad28d5ee60720647115a8d901306f1f5ba006c"
+    },
+    "rtl/pg2l100h_soc_core_rx.v": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/pg2l100h_soc_core_rx.v",
+      "source_sha256": "c999f3d4982fdb1581d0dcd0d586c94962df7c8221ee6d0cc7d7bf6645bfdeeb",
+      "adaptation": "Only boot ROM filename made repository-relative; ROM bytes unchanged",
+      "packaged_sha256": "6857bf86d19c199c5888dbfdca603bf37de32854d2017b6e03e61c5f8042e1ae"
+    },
+    "rtl/pg2l100h_soc_rx_top.v": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/pg2l100h_soc_rx_top.v",
+      "source_sha256": "bb675f9fd9dea8bfabcde25e1c338a5794f89cbc2dd8f0a210d7ca7bc9b3fd16",
+      "adaptation": "Only boot ROM filename made repository-relative; ROM bytes unchanged",
+      "packaged_sha256": "1481c1a07725bf99b3adf29f4bfa3bc6404def81f24fca5bc24c8b628b72afce"
+    },
+    "ip/ethernet_mes2l676_pll/pg2l100h_ethernet_pll.v": {
+      "source": "soc/ip/ethernet_mes2l676_pll/pg2l100h_ethernet_pll.v",
+      "source_sha256": "81fbc7a8136b8e3cecce2bcd15b5793a0ab3df40bef37ab52bc6d94198eeb5de",
+      "packaged_sha256": "81fbc7a8136b8e3cecce2bcd15b5793a0ab3df40bef37ab52bc6d94198eeb5de"
+    },
+    "ip/ddr3_mes2l676/rtl/ips2l_rst_sync_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ips2l_rst_sync_v1_3.vp",
+      "source_sha256": "64b8d83f15f2ff373e6b1040405c42051d8761bd1857dec719c884c2eb59361a",
+      "packaged_sha256": "64b8d83f15f2ff373e6b1040405c42051d8761bd1857dec719c884c2eb59361a"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wrlvl_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wrlvl_v1_0.vp",
+      "source_sha256": "00c086bd729be3ab8287f6eb786cfb3549c97aa92f8465c608b8fc2477df3edc",
+      "packaged_sha256": "00c086bd729be3ab8287f6eb786cfb3549c97aa92f8465c608b8fc2477df3edc"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wrcal_v1_7.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wrcal_v1_7.vp",
+      "source_sha256": "0a8cb0bb70bd40809260c50bcb85d092c16fea5d9ab2e4fbbe647ccbd1bfb1b0",
+      "packaged_sha256": "0a8cb0bb70bd40809260c50bcb85d092c16fea5d9ab2e4fbbe647ccbd1bfb1b0"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wdata_path_adj_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_wdata_path_adj_v1_10.vp",
+      "source_sha256": "85f625ed4a09964442e8616074eea9e4757e43b4217589bb9e2f289c9748b272",
+      "packaged_sha256": "85f625ed4a09964442e8616074eea9e4757e43b4217589bb9e2f289c9748b272"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_upcal_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_upcal_v1_0.vp",
+      "source_sha256": "afbca3503da609f7951ad7fbef386bd007f403c89f52377211ba521967c94455",
+      "packaged_sha256": "afbca3503da609f7951ad7fbef386bd007f403c89f52377211ba521967c94455"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_training_ctrl_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_training_ctrl_v1_0.vp",
+      "source_sha256": "777e8ee9d8d819fdcf04b39b5a5d6086c52369a7f19f04dbd0d06f7a7d3d6110",
+      "packaged_sha256": "777e8ee9d8d819fdcf04b39b5a5d6086c52369a7f19f04dbd0d06f7a7d3d6110"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_slice_rddata_align_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_slice_rddata_align_v1_0.vp",
+      "source_sha256": "befb44f07d851524109a6dc8e17c5b8062694aa274ed8dbc4f7326b8fe1c443e",
+      "packaged_sha256": "befb44f07d851524109a6dc8e17c5b8062694aa274ed8dbc4f7326b8fe1c443e"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_reset_ctrl_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_reset_ctrl_v1_3.vp",
+      "source_sha256": "17189b59ed5307c4a27ec35485b33af5c98a89e6ee7f9c5d85aaed9c03a77163",
+      "packaged_sha256": "17189b59ed5307c4a27ec35485b33af5c98a89e6ee7f9c5d85aaed9c03a77163"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rdcal_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rdcal_v1_10.vp",
+      "source_sha256": "6b4c7f3c24a4750ac69b4e7882617105c6e31f02da712aaa87932b8561ccea2b",
+      "packaged_sha256": "6b4c7f3c24a4750ac69b4e7882617105c6e31f02da712aaa87932b8561ccea2b"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_main_ctrl_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_main_ctrl_v1_10.vp",
+      "source_sha256": "39d5024d7364b441340b131d265d0648d8b7c1f92cc417424d7c584413c5f4a6",
+      "packaged_sha256": "39d5024d7364b441340b131d265d0648d8b7c1f92cc417424d7c584413c5f4a6"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_init_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_init_v1_0.vp",
+      "source_sha256": "817f9f32b2260a4c35af446e89ff4c2d4b065381b25cb2020c538d22b4a45088",
+      "packaged_sha256": "817f9f32b2260a4c35af446e89ff4c2d4b065381b25cb2020c538d22b4a45088"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_info_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_info_v1_0.vp",
+      "source_sha256": "0794201be97885e7695a16b6c35848655b08c4bf191405d26417126512ce4aa8",
+      "packaged_sha256": "0794201be97885e7695a16b6c35848655b08c4bf191405d26417126512ce4aa8"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gatecal_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gatecal_v1_10.vp",
+      "source_sha256": "b6859250ca098e81ff05bcab08dfe8ffee77648218e90c040a1dd3838a0671f2",
+      "packaged_sha256": "b6859250ca098e81ff05bcab08dfe8ffee77648218e90c040a1dd3838a0671f2"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gate_update_ctrl_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gate_update_ctrl_v1_3.vp",
+      "source_sha256": "ce20eb3b9cbe3b392d8be0aa1d6787247bc7b2d91af36a1f734f35c9eb03d642",
+      "packaged_sha256": "ce20eb3b9cbe3b392d8be0aa1d6787247bc7b2d91af36a1f734f35c9eb03d642"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_eyecal_v1_5.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_eyecal_v1_5.vp",
+      "source_sha256": "31977dd34339d163ecbd8b9949ac4b65f0eaa6fbcd9a75d787400ae73f7f51d2",
+      "packaged_sha256": "31977dd34339d163ecbd8b9949ac4b65f0eaa6fbcd9a75d787400ae73f7f51d2"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_drift_ctrl_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_drift_ctrl_v1_0.vp",
+      "source_sha256": "8ea99ac6decf6fe14c0585b4f121d7a1acc17290d7a1c68725d984e704e277bc",
+      "packaged_sha256": "8ea99ac6decf6fe14c0585b4f121d7a1acc17290d7a1c68725d984e704e277bc"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqsi_rdel_cal_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqsi_rdel_cal_v1_3.vp",
+      "source_sha256": "ef7e57755ab7558b1b518aa73999384368f349efe7077cf9283e0911e711ac1a",
+      "packaged_sha256": "ef7e57755ab7558b1b518aa73999384368f349efe7077cf9283e0911e711ac1a"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqs_rddata_align_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqs_rddata_align_v1_10.vp",
+      "source_sha256": "c0cab4287a7a7b6b720977c1c5f9259c5f48f8da18e9a3ca1173a073b1ccf025",
+      "packaged_sha256": "c0cab4287a7a7b6b720977c1c5f9259c5f48f8da18e9a3ca1173a073b1ccf025"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqs_gate_coarse_cal_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dqs_gate_coarse_cal_v1_0.vp",
+      "source_sha256": "950a0010929854894c2c92d9f3f8e9dce0fee6985fee70d4160540a058853ede",
+      "packaged_sha256": "950a0010929854894c2c92d9f3f8e9dce0fee6985fee70d4160540a058853ede"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dll_update_ctrl_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dll_update_ctrl_v1_3.vp",
+      "source_sha256": "bc4e8f402d2fb98920e050a3c1514d44ec959877217d7865a30b22b7da73cac6",
+      "packaged_sha256": "bc4e8f402d2fb98920e050a3c1514d44ec959877217d7865a30b22b7da73cac6"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dfi_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_dfi_v1_3.vp",
+      "source_sha256": "9828a1ef43a864d287a7a317910fe330bfc904f44e8f60c8773aafa1d8c1534e",
+      "packaged_sha256": "9828a1ef43a864d287a7a317910fe330bfc904f44e8f60c8773aafa1d8c1534e"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gpll_phase_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_gpll_phase_v1_0.vp",
+      "source_sha256": "ef8ebe3742d23848bd2a1492d4901f886ce49aa98dbc295873b67e4116ba8524",
+      "packaged_sha256": "ef8ebe3742d23848bd2a1492d4901f886ce49aa98dbc295873b67e4116ba8524"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_wrlvl_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_wrlvl_v1_10.vp",
+      "source_sha256": "871874f4af0f068571416916898f83eb07052e6e015c5800ffdf65d67620cf7e",
+      "packaged_sha256": "871874f4af0f068571416916898f83eb07052e6e015c5800ffdf65d67620cf7e"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_wrcal_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_wrcal_v1_10.vp",
+      "source_sha256": "b7a9757c252f74c4b57eb0fb74738c57e4eed3e669ddd7ffeeca1acedd330b2e",
+      "packaged_sha256": "b7a9757c252f74c4b57eb0fb74738c57e4eed3e669ddd7ffeeca1acedd330b2e"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_v1_10.vp",
+      "source_sha256": "e13e33d97ecbfea1838c4dd28e7f9f1c57dcb974606179523be46bba75344d50",
+      "packaged_sha256": "e13e33d97ecbfea1838c4dd28e7f9f1c57dcb974606179523be46bba75344d50"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_dqs_gate_cal_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_data_slice_dqs_gate_cal_v1_10.vp",
+      "source_sha256": "8764275d4eeb8d1765b3a09aba527d6d3bf3e46f5e1d17eefc685d7e0dbe1520",
+      "packaged_sha256": "8764275d4eeb8d1765b3a09aba527d6d3bf3e46f5e1d17eefc685d7e0dbe1520"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_cpd_ctrl_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_cpd_ctrl_v1_3.vp",
+      "source_sha256": "56f52683adbe720c7d43da1a9f199f4ab3add3f3b5960e3f687f87f60267c161",
+      "packaged_sha256": "56f52683adbe720c7d43da1a9f199f4ab3add3f3b5960e3f687f87f60267c161"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_cpd_lock_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_cpd_lock_v1_0.vp",
+      "source_sha256": "a6696f8e79e2d132a6e76ad4997d5366d6c9cf8f05c60f77feff1b47b50d0090",
+      "packaged_sha256": "a6696f8e79e2d132a6e76ad4997d5366d6c9cf8f05c60f77feff1b47b50d0090"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_control_path_adj_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_control_path_adj_v1_10.vp",
+      "source_sha256": "8cdd7b9ec01c143882217b038cbf840d77e52ee3037e629e75e10b03fc223a38",
+      "packaged_sha256": "8cdd7b9ec01c143882217b038cbf840d77e52ee3037e629e75e10b03fc223a38"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_calib_top_v1_10.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_calib_top_v1_10.vp",
+      "source_sha256": "04faf434cef120b5d712911dfc97c8f498901b0679fba720b806f596d688bded",
+      "packaged_sha256": "04faf434cef120b5d712911dfc97c8f498901b0679fba720b806f596d688bded"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_calib_mux_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_calib_mux_v1_0.vp",
+      "source_sha256": "676e36319e7ce80b93e3543e255d53708d9fc71606587a6e692eab1ec82ecaed",
+      "packaged_sha256": "676e36319e7ce80b93e3543e255d53708d9fc71606587a6e692eab1ec82ecaed"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rst_debounce_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rst_debounce_v1_0.vp",
+      "source_sha256": "bff7ed95c8d305dfb88e6002c6de8453a21c72c03a5a0521a76ddd105598dc4d",
+      "packaged_sha256": "bff7ed95c8d305dfb88e6002c6de8453a21c72c03a5a0521a76ddd105598dc4d"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rst_clk_phase_adj_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/ips2l_ddrphy_rst_clk_phase_adj_v1_0.vp",
+      "source_sha256": "dd1dbae71726d968df475fe7fbb2b7321411fa67786092c0dc2e065edcf39382",
+      "packaged_sha256": "dd1dbae71726d968df475fe7fbb2b7321411fa67786092c0dc2e065edcf39382"
+    },
+    "ip/ddr3_mes2l676/rtl/pll/ips2l_ddrphy_gpll_v1_3.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/pll/ips2l_ddrphy_gpll_v1_3.vp",
+      "source_sha256": "3fecc367573a4b5bd158e1a8ff106c5c401c5f180143e8e5abe6bb068e5078d2",
+      "packaged_sha256": "3fecc367573a4b5bd158e1a8ff106c5c401c5f180143e8e5abe6bb068e5078d2"
+    },
+    "ip/ddr3_mes2l676/rtl/pll/ips2l_ddrphy_ppll_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/pll/ips2l_ddrphy_ppll_v1_0.vp",
+      "source_sha256": "34bb46106b84eab147f130bd7526f1486d35caeb40b0258cd59656e50d19dddd",
+      "packaged_sha256": "34bb46106b84eab147f130bd7526f1486d35caeb40b0258cd59656e50d19dddd"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_apb_cross_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_apb_cross_v1_2.vp",
+      "source_sha256": "62f7d55354a8afe4d02bc6f6d6dc30fc8e9960d3b21709988b887acc99d09cf5",
+      "packaged_sha256": "62f7d55354a8afe4d02bc6f6d6dc30fc8e9960d3b21709988b887acc99d09cf5"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_calib_delay_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_calib_delay_v1_2.vp",
+      "source_sha256": "a52e992b9766b6cb22ed23aa01d1cc5ac9b6a429a8e49de7a13ac51dd70e9784",
+      "packaged_sha256": "a52e992b9766b6cb22ed23aa01d1cc5ac9b6a429a8e49de7a13ac51dd70e9784"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_cfg_apb_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_cfg_apb_v1_2.vp",
+      "source_sha256": "482cb280a614f70209f1d07892fdd773a259d2ca0f23e8f38b85a9faf00513b9",
+      "packaged_sha256": "482cb280a614f70209f1d07892fdd773a259d2ca0f23e8f38b85a9faf00513b9"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_bm_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_bm_v1_2.vp",
+      "source_sha256": "bfbd472dd8b427fe6b003dd510f73db89f915ac92d31fe8a779c40f9d4e56bee",
+      "packaged_sha256": "bfbd472dd8b427fe6b003dd510f73db89f915ac92d31fe8a779c40f9d4e56bee"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_rowaddr_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_rowaddr_v1_2.vp",
+      "source_sha256": "4ac4721747b13020e1895be6265e55df90968f05beb8056279589039394bb9be",
+      "packaged_sha256": "4ac4721747b13020e1895be6265e55df90968f05beb8056279589039394bb9be"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_sm_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_sm_v1_2.vp",
+      "source_sha256": "d7e710e3ed4d1807fb0bdd4d84c264817247a4da41123c72439c555573821f49",
+      "packaged_sha256": "d7e710e3ed4d1807fb0bdd4d84c264817247a4da41123c72439c555573821f49"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_top_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcd_top_v1_2.vp",
+      "source_sha256": "26ab4e142f555602c023f62b19df52056c6d51da5052401254066cae0655ddaa",
+      "packaged_sha256": "26ab4e142f555602c023f62b19df52056c6d51da5052401254066cae0655ddaa"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_back_ctrl_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_back_ctrl_v1_2.vp",
+      "source_sha256": "fe7b340b41d80ec7428cc38329a41864bcf5c209a6310610d09c7bc8579e541f",
+      "packaged_sha256": "fe7b340b41d80ec7428cc38329a41864bcf5c209a6310610d09c7bc8579e541f"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_buf_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_buf_v1_2.vp",
+      "source_sha256": "dab35fa172243ecbb5426a8ebccc2c168368ea0a6ea0558c909b815d781b17d6",
+      "packaged_sha256": "dab35fa172243ecbb5426a8ebccc2c168368ea0a6ea0558c909b815d781b17d6"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_out_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_out_v1_2.vp",
+      "source_sha256": "9471082e23170b144dc619f7f7e08c94b8a03378f72da388f744d6acb728928b",
+      "packaged_sha256": "9471082e23170b144dc619f7f7e08c94b8a03378f72da388f744d6acb728928b"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_top_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dcp_top_v1_2.vp",
+      "source_sha256": "21b1f0e3b4660e1078b47000bfe50022346414f5d5e713ac9e522a4f39f76548",
+      "packaged_sha256": "21b1f0e3b4660e1078b47000bfe50022346414f5d5e713ac9e522a4f39f76548"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dfi_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_dfi_v1_2.vp",
+      "source_sha256": "abf138d692e634fabe5f569b98d897dfece8a8ae66cee1dba830a56d7e255df1",
+      "packaged_sha256": "abf138d692e634fabe5f569b98d897dfece8a8ae66cee1dba830a56d7e255df1"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_lp_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_lp_v1_2.vp",
+      "source_sha256": "7a80ccb1e053e5c9d8f389169359570f256d709ff2e4ad2c51fda7a7a6a4239d",
+      "packaged_sha256": "7a80ccb1e053e5c9d8f389169359570f256d709ff2e4ad2c51fda7a7a6a4239d"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_mrs_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_mrs_v1_2.vp",
+      "source_sha256": "f78133bc021a57cf469773daaf102817fc37069447e8accc80afa1f4b20b0ad6",
+      "packaged_sha256": "f78133bc021a57cf469773daaf102817fc37069447e8accc80afa1f4b20b0ad6"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_prefetch_fifo_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_prefetch_fifo_v1_2.vp",
+      "source_sha256": "ee3aa91e980fb3dd08231cf1806a28edf759f4ea8248adfd44407d607519b9e4",
+      "packaged_sha256": "ee3aa91e980fb3dd08231cf1806a28edf759f4ea8248adfd44407d607519b9e4"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_rdatapath_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_rdatapath_v1_2.vp",
+      "source_sha256": "72dd8ece021f4ee74fd576c1628c4f7d3606ef632f0e68b9569a288a092a6b0f",
+      "packaged_sha256": "72dd8ece021f4ee74fd576c1628c4f7d3606ef632f0e68b9569a288a092a6b0f"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_reg_fifo2_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_reg_fifo2_v1_2.vp",
+      "source_sha256": "bc9cff65e4002a51af0c20c2f0a9b9f17dacde5157b58691bbfb1c44348ee08a",
+      "packaged_sha256": "bc9cff65e4002a51af0c20c2f0a9b9f17dacde5157b58691bbfb1c44348ee08a"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_ui_axi_v1_2a.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_ui_axi_v1_2a.vp",
+      "source_sha256": "145b69395412be2553835f9278cdf1cb1703d3beeb914abf7d985e3c69f817fb",
+      "packaged_sha256": "145b69395412be2553835f9278cdf1cb1703d3beeb914abf7d985e3c69f817fb"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdatapath_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdatapath_v1_2.vp",
+      "source_sha256": "db648e90ff607ca2f9e2b5cca048de417439888d0b906288e0cec7cf038d9dee",
+      "packaged_sha256": "db648e90ff607ca2f9e2b5cca048de417439888d0b906288e0cec7cf038d9dee"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdp_align_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdp_align_v1_2.vp",
+      "source_sha256": "1645e9eb7fac3c9c13cd3e0d7367f132293f9cec16835ce188c6345993d2b730",
+      "packaged_sha256": "1645e9eb7fac3c9c13cd3e0d7367f132293f9cec16835ce188c6345993d2b730"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdp_dcp_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wdp_dcp_v1_2.vp",
+      "source_sha256": "3f30be0f49f78f09915743995c950fa6ff8de5f14598ebc8802e73b5c6d140ee",
+      "packaged_sha256": "3f30be0f49f78f09915743995c950fa6ff8de5f14598ebc8802e73b5c6d140ee"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wrapper_v1_2b.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/ips2l_mcdq_wrapper_v1_2b.vp",
+      "source_sha256": "d35010f49be551fb15ab2655cbeffcaaaa74fdf3ccb0754b033fc979d615e805",
+      "packaged_sha256": "d35010f49be551fb15ab2655cbeffcaaaa74fdf3ccb0754b033fc979d615e805"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_com_timing_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_com_timing_v1_2.vp",
+      "source_sha256": "e3f19c4be6352ab64f07426973387f2876c540ee992f6eac9d3f2d470b3d49c2",
+      "packaged_sha256": "e3f19c4be6352ab64f07426973387f2876c540ee992f6eac9d3f2d470b3d49c2"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_tfaw_timing_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_tfaw_timing_v1_2.vp",
+      "source_sha256": "c632619f042bebb4f059df7f20eee90eb2b51b81210430cb37d01958ad3cd30f",
+      "packaged_sha256": "c632619f042bebb4f059df7f20eee90eb2b51b81210430cb37d01958ad3cd30f"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_tfaw_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_tfaw_v1_2.vp",
+      "source_sha256": "ab87b7718bffc4fb2a2b27765576187f09b5266bbca7fc393c43c6dec96ff379",
+      "packaged_sha256": "ab87b7718bffc4fb2a2b27765576187f09b5266bbca7fc393c43c6dec96ff379"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_act2wr_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_act2wr_pass_v1_2.vp",
+      "source_sha256": "1b3874b059923481f292ba382ad156f7dcdd9ad39da6c86dddd480290ccce498",
+      "packaged_sha256": "1b3874b059923481f292ba382ad156f7dcdd9ad39da6c86dddd480290ccce498"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_act_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_act_pass_v1_2.vp",
+      "source_sha256": "9f32b6936e039c15f7b07b74480179d39d1b3787965e1b90bd067a7ede7fdd4c",
+      "packaged_sha256": "9f32b6936e039c15f7b07b74480179d39d1b3787965e1b90bd067a7ede7fdd4c"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_pre_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_pre_pass_v1_2.vp",
+      "source_sha256": "e40a64caec9725c231cd88dde69973eab3aca38c9d2e66a2c5c0bbddf3103ae0",
+      "packaged_sha256": "e40a64caec9725c231cd88dde69973eab3aca38c9d2e66a2c5c0bbddf3103ae0"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_rd_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_rd_pass_v1_2.vp",
+      "source_sha256": "78b1de719a43ee0fc80e1a5464f7284439d91f1d4b3f83ef2ae5611920293988",
+      "packaged_sha256": "78b1de719a43ee0fc80e1a5464f7284439d91f1d4b3f83ef2ae5611920293988"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_ref_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_ref_pass_v1_2.vp",
+      "source_sha256": "c79dde6f9a682c55aff7bb89c4863f76a069b874fb154dff7d3e4d4a7a88f9d1",
+      "packaged_sha256": "c79dde6f9a682c55aff7bb89c4863f76a069b874fb154dff7d3e4d4a7a88f9d1"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_wr_pass_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_timing_wr_pass_v1_2.vp",
+      "source_sha256": "ea3470ca984554d4908ec950314f9242042417c6c4c6b3fd05ac5d6daab98c90",
+      "packaged_sha256": "ea3470ca984554d4908ec950314f9242042417c6c4c6b3fd05ac5d6daab98c90"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_trc_timing_v1_2.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/syn_mod/ips2l_mcdq_trc_timing_v1_2.vp",
+      "source_sha256": "7234241e5968f91ec6e396794f0bb80f6c7d1bca2038aa004d5078d3937953da",
+      "packaged_sha256": "7234241e5968f91ec6e396794f0bb80f6c7d1bca2038aa004d5078d3937953da"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/ips2l_distributed_fifo_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/ips2l_distributed_fifo_v1_0.vp",
+      "source_sha256": "d6c0b0d8560b0f22128b4883933944fc686fd7597cfea0d6c545cc6af56c0b7a",
+      "packaged_sha256": "d6c0b0d8560b0f22128b4883933944fc686fd7597cfea0d6c545cc6af56c0b7a"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_fifo_ctr_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_fifo_ctr_v1_0.vp",
+      "source_sha256": "fe31c8f44bea653ab20bb1830ad4f8ed41566e9cfef354bd5e2d48c7682f353d",
+      "packaged_sha256": "fe31c8f44bea653ab20bb1830ad4f8ed41566e9cfef354bd5e2d48c7682f353d"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_fifo_v1_0_distributed_fifo_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_fifo_v1_0_distributed_fifo_v1_0.vp",
+      "source_sha256": "867ac91a1485dfe613a81f372d788e784bba8cd4b0497e56986135e92685ba73",
+      "packaged_sha256": "867ac91a1485dfe613a81f372d788e784bba8cd4b0497e56986135e92685ba73"
+    },
+    "ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_sdpram_v1_0_distributed_fifo_v1_0.vp": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/mcdq_ctrl/distributed_fifo/rtl/ips2l_distributed_sdpram_v1_0_distributed_fifo_v1_0.vp",
+      "source_sha256": "3561bbbbd4e4432a538c3d20818d262b4f1e5517c48296f6b1b4cc8afdd19aef",
+      "packaged_sha256": "3561bbbbd4e4432a538c3d20818d262b4f1e5517c48296f6b1b4cc8afdd19aef"
+    },
+    "ip/ddr3_mes2l676/pg2l100h_hmic_ddr3.v": {
+      "source": "soc/ip/ddr3_mes2l676/pg2l100h_hmic_ddr3.v",
+      "source_sha256": "10a18e79b1b6a92aeeaa3cd2b4c1b80d611036e55fa80e24f3685f83ee4a36b6",
+      "packaged_sha256": "10a18e79b1b6a92aeeaa3cd2b4c1b80d611036e55fa80e24f3685f83ee4a36b6"
+    },
+    "ip/ddr3_mes2l676/pg2l100h_hmic_ddr3_ddrphy_top.v": {
+      "source": "soc/ip/ddr3_mes2l676/pg2l100h_hmic_ddr3_ddrphy_top.v",
+      "source_sha256": "0871524427700d3786e5f3de08d19d2357e7bc5669ca785e62e28b0543b2c08c",
+      "packaged_sha256": "0871524427700d3786e5f3de08d19d2357e7bc5669ca785e62e28b0543b2c08c"
+    },
+    "ip/ddr3_mes2l676/rtl/ddrphy/pg2l100h_hmic_ddr3_slice_top_v1_10.v": {
+      "source": "soc/ip/ddr3_mes2l676/rtl/ddrphy/pg2l100h_hmic_ddr3_slice_top_v1_10.v",
+      "source_sha256": "024ae243f2a99854c72ea1956989326271a84e75812970451afd943b6f30f58e",
+      "packaged_sha256": "024ae243f2a99854c72ea1956989326271a84e75812970451afd943b6f30f58e"
+    },
+    "rtl/ethernet/axi/ethernet_dma_job_adapter.sv": {
+      "source": "soc/rtl/ethernet/axi/ethernet_dma_job_adapter.sv",
+      "source_sha256": "1480fa9f356de6618973da9dfd7364c827b7adcaf38e5f85d81342039c1c113f",
+      "packaged_sha256": "1480fa9f356de6618973da9dfd7364c827b7adcaf38e5f85d81342039c1c113f"
+    },
+    "rtl/ethernet/axi/ethernet_packet_arbiter.sv": {
+      "source": "soc/rtl/ethernet/axi/ethernet_packet_arbiter.sv",
+      "source_sha256": "26a58bd4df9711d08f9131c60835d795713184cf9b9043091a9665adfa2e5512",
+      "packaged_sha256": "26a58bd4df9711d08f9131c60835d795713184cf9b9043091a9665adfa2e5512"
+    },
+    "rtl/ethernet/axi/ethernet_packet_cdc.sv": {
+      "source": "soc/rtl/ethernet/axi/ethernet_packet_cdc.sv",
+      "source_sha256": "dd44aee97df5202f9f7f514eb5f3769340c6861d6f3bc1cf7fff8b19d5583ea1",
+      "packaged_sha256": "dd44aee97df5202f9f7f514eb5f3769340c6861d6f3bc1cf7fff8b19d5583ea1"
+    },
+    "rtl/ethernet/axi/ethernet_packet_record.sv": {
+      "source": "soc/rtl/ethernet/axi/ethernet_packet_record.sv",
+      "source_sha256": "777a934a52b1e730bc441d9926d3e80e0898713132051c5dae99341fd6b0dbf8",
+      "packaged_sha256": "777a934a52b1e730bc441d9926d3e80e0898713132051c5dae99341fd6b0dbf8"
+    },
+    "rtl/ethernet/axi/ethernet_rx_router.sv": {
+      "source": "soc/rtl/ethernet/axi/ethernet_rx_router.sv",
+      "source_sha256": "0113eadf840a128585c3a19ab40fdb8dcacaa38b0c6314b9a1f06ca0c2f1b483",
+      "packaged_sha256": "0113eadf840a128585c3a19ab40fdb8dcacaa38b0c6314b9a1f06ca0c2f1b483"
+    },
+    "rtl/ethernet/common/ethernet_config_cdc.sv": {
+      "source": "soc/rtl/ethernet/common/ethernet_config_cdc.sv",
+      "source_sha256": "a1abc391caf3a2ed6f5923345c8c00456c902303ce7d10ae36a1eb970668b11b",
+      "packaged_sha256": "a1abc391caf3a2ed6f5923345c8c00456c902303ce7d10ae36a1eb970668b11b"
+    },
+    "rtl/ethernet/common/ethernet_packet_ram.sv": {
+      "source": "soc/rtl/ethernet/common/ethernet_packet_ram.sv",
+      "source_sha256": "10cfa6a4a39411616eaedf137f3d6895327e3a5759f57a12d51c6c790cb706a8",
+      "packaged_sha256": "10cfa6a4a39411616eaedf137f3d6895327e3a5759f57a12d51c6c790cb706a8"
+    },
+    "rtl/ethernet/common/ethernet_reset_sync.sv": {
+      "source": "soc/rtl/ethernet/common/ethernet_reset_sync.sv",
+      "source_sha256": "f31c09ee1c9e78288d58023a8ef4cb5f333941bb76b27dfd43d6320a43dbec17",
+      "packaged_sha256": "f31c09ee1c9e78288d58023a8ef4cb5f333941bb76b27dfd43d6320a43dbec17"
+    },
+    "rtl/ethernet/common/ethernet_stats_cdc.sv": {
+      "source": "soc/rtl/ethernet/common/ethernet_stats_cdc.sv",
+      "source_sha256": "353f77c35a83d4e9a734cce4e7da3c83d2aa4327a73cf4303f86824662f42fbc",
+      "packaged_sha256": "353f77c35a83d4e9a734cce4e7da3c83d2aa4327a73cf4303f86824662f42fbc"
+    },
+    "rtl/ethernet/compat/axis_adapter.v": {
+      "source": "soc/rtl/ethernet/compat/axis_adapter.v",
+      "source_sha256": "1fe4447400e8d61fd6abccf584929996983561cb99a7d808e5487e1b79188fba",
+      "packaged_sha256": "1fe4447400e8d61fd6abccf584929996983561cb99a7d808e5487e1b79188fba"
+    },
+    "rtl/ethernet/compat/axis_async_fifo.v": {
+      "source": "soc/rtl/ethernet/compat/axis_async_fifo.v",
+      "source_sha256": "f79df81862039d2872c8fca0d52ec35a330b0efb61519ca1b5b38e6faecc1828",
+      "packaged_sha256": "f79df81862039d2872c8fca0d52ec35a330b0efb61519ca1b5b38e6faecc1828"
+    },
+    "rtl/ethernet/compat/axis_fifo.v": {
+      "source": "soc/rtl/ethernet/compat/axis_fifo.v",
+      "source_sha256": "1107a7fb6d796c1ec794ac3562d5d2cbec197bfee982424ad25a8d0c679e05a5",
+      "packaged_sha256": "1107a7fb6d796c1ec794ac3562d5d2cbec197bfee982424ad25a8d0c679e05a5"
+    },
+    "rtl/ethernet/compat/udp_checksum_gen.v": {
+      "source": "soc/rtl/ethernet/compat/udp_checksum_gen.v",
+      "source_sha256": "e0162fcfab252bdd94cb4d891f754bfeaf91fd0945fd01be409c93a7a6456d85",
+      "packaged_sha256": "e0162fcfab252bdd94cb4d891f754bfeaf91fd0945fd01be409c93a7a6456d85"
+    },
+    "rtl/ethernet/control/ethernet_regs.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ethernet/control/ethernet_regs.sv",
+      "source_sha256": "fb4438186e50707aa091a6970e54e05ce9e7036fd7384a7cfbc2e42f1d80d2ea",
+      "packaged_sha256": "fb4438186e50707aa091a6970e54e05ce9e7036fd7384a7cfbc2e42f1d80d2ea"
+    },
+    "rtl/ethernet/ethernet_mes2l676_top.sv": {
+      "source": "soc/rtl/ethernet/ethernet_mes2l676_top.sv",
+      "source_sha256": "7488238608e31bb86b6c0f0356f04b587dc911bf2c19d8b1556e6d52db42e294",
+      "packaged_sha256": "7488238608e31bb86b6c0f0356f04b587dc911bf2c19d8b1556e6d52db42e294"
+    },
+    "rtl/ethernet/ethernet_top.sv": {
+      "source": "soc/rtl/ethernet/ethernet_top.sv",
+      "source_sha256": "31395e7bfd0a1d97cdfb881cc1857accc7d0879f83d3c6293d61e5093cf7433a",
+      "packaged_sha256": "31395e7bfd0a1d97cdfb881cc1857accc7d0879f83d3c6293d61e5093cf7433a"
+    },
+    "rtl/ethernet/ethernet_visual_endpoint.sv": {
+      "source": "soc/rtl/ethernet/ethernet_visual_endpoint.sv",
+      "source_sha256": "cd942f93714fed7d9aa4f57933badb853d5295043bbc8a29a2ec64a05871a530",
+      "packaged_sha256": "cd942f93714fed7d9aa4f57933badb853d5295043bbc8a29a2ec64a05871a530"
+    },
+    "rtl/ethernet/mac/ethernet_mac_wrapper.sv": {
+      "source": "soc/rtl/ethernet/mac/ethernet_mac_wrapper.sv",
+      "source_sha256": "3f99705427aeaa3a81bddd2f9a92277677c7a4c94d725c47eab736bc49f7493a",
+      "packaged_sha256": "3f99705427aeaa3a81bddd2f9a92277677c7a4c94d725c47eab736bc49f7493a"
+    },
+    "rtl/ethernet/phy/ethernet_mdio.sv": {
+      "source": "soc/rtl/ethernet/phy/ethernet_mdio.sv",
+      "source_sha256": "ca445b4a0d1ceb29b429348fef226c1cfdc5d1853fa708dcb4e6bbc4a4b4224e",
+      "packaged_sha256": "ca445b4a0d1ceb29b429348fef226c1cfdc5d1853fa708dcb4e6bbc4a4b4224e"
+    },
+    "rtl/ethernet/phy/rtl8211e_reset.sv": {
+      "source": "soc/rtl/ethernet/phy/rtl8211e_reset.sv",
+      "source_sha256": "a8cfc9bf4f6ea99b3e9fc2f59c1dbdf62b890f7e262569bacd6cfd77edb6df6c",
+      "packaged_sha256": "a8cfc9bf4f6ea99b3e9fc2f59c1dbdf62b890f7e262569bacd6cfd77edb6df6c"
+    },
+    "rtl/ethernet/phy/rtl8211f_probe.sv": {
+      "source": "soc/rtl/ethernet/phy/rtl8211f_probe.sv",
+      "source_sha256": "1848ab6079534ea44b1cb7b457351ddb30bfee4c8354ed37029faa4f0c101487",
+      "packaged_sha256": "1848ab6079534ea44b1cb7b457351ddb30bfee4c8354ed37029faa4f0c101487"
+    },
+    "rtl/ethernet/phy/rtl8211f_reset.sv": {
+      "source": "soc/rtl/ethernet/phy/rtl8211f_reset.sv",
+      "source_sha256": "3500af926ace60916e591be8722150e8776b602053b4bf0fa926c3990fa0d1e1",
+      "packaged_sha256": "3500af926ace60916e591be8722150e8776b602053b4bf0fa926c3990fa0d1e1"
+    },
+    "rtl/ethernet/protocol/ethernet_image_packetizer.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ethernet/protocol/ethernet_image_packetizer.sv",
+      "source_sha256": "9448085f43b17c668f98281ae8562514739c62ac8be46775f7d6d2ae0e2323b1",
+      "packaged_sha256": "9448085f43b17c668f98281ae8562514739c62ac8be46775f7d6d2ae0e2323b1"
+    },
+    "rtl/ethernet/protocol/ethernet_udp_rx_guard.sv": {
+      "source": "soc/rtl/ethernet/protocol/ethernet_udp_rx_guard.sv",
+      "source_sha256": "31712ef18d2b407bfd9f2d97683929e3d54c024ebd3e156e3de350908c233766",
+      "packaged_sha256": "31712ef18d2b407bfd9f2d97683929e3d54c024ebd3e156e3de350908c233766"
+    },
+    "rtl/ethernet/protocol/ethernet_udp_stack.sv": {
+      "source": "soc/rtl/ethernet/protocol/ethernet_udp_stack.sv",
+      "source_sha256": "45cf8cb0613928153ee1a65ed450d813198599268c50395b3705fdcbc54a43e1",
+      "packaged_sha256": "45cf8cb0613928153ee1a65ed450d813198599268c50395b3705fdcbc54a43e1"
+    },
+    "rtl/ethernet/rgmii/pg2l100h_ethernet_clock_wrapper.sv": {
+      "source": "soc/rtl/ethernet/rgmii/pg2l100h_ethernet_clock_wrapper.sv",
+      "source_sha256": "7b571349cb1725cf0dd37fa51cc0d84faf8748fe4a00da79a658ec1fdafc035b",
+      "packaged_sha256": "7b571349cb1725cf0dd37fa51cc0d84faf8748fe4a00da79a658ec1fdafc035b"
+    },
+    "rtl/ethernet/rgmii/pg2l100h_rgmii_io.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ethernet/rgmii/pg2l100h_rgmii_io.sv",
+      "source_sha256": "6e9cea5c3d678181ea283e954a03da74c93107d34d8dfc1e9376b91752f55f05",
+      "packaged_sha256": "6e9cea5c3d678181ea283e954a03da74c93107d34d8dfc1e9376b91752f55f05"
+    },
+    "third_party/verilog-ethernet/example/VCU118/fpga_1g/rtl/mdio_master.v": {
+      "source": "soc/third_party/verilog-ethernet/example/VCU118/fpga_1g/rtl/mdio_master.v",
+      "source_sha256": "63308070f3c1f13bb298f0e971ee5ff9fd161fe4070b5eddd85278f6dd043da3",
+      "packaged_sha256": "63308070f3c1f13bb298f0e971ee5ff9fd161fe4070b5eddd85278f6dd043da3"
+    },
+    "third_party/verilog-ethernet/lib/axis/rtl/arbiter.v": {
+      "source": "soc/third_party/verilog-ethernet/lib/axis/rtl/arbiter.v",
+      "source_sha256": "d54d337db4812f927b2e9b5788dfa39f9bd578ad01b7846c5fa7f2610b0923fa",
+      "packaged_sha256": "d54d337db4812f927b2e9b5788dfa39f9bd578ad01b7846c5fa7f2610b0923fa"
+    },
+    "third_party/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v": {
+      "source": "soc/third_party/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v",
+      "source_sha256": "9dc661b88d459a318e40722df277720fe64ef4309230462e8538b1a44da1d57c",
+      "packaged_sha256": "9dc661b88d459a318e40722df277720fe64ef4309230462e8538b1a44da1d57c"
+    },
+    "third_party/verilog-ethernet/lib/axis/rtl/priority_encoder.v": {
+      "source": "soc/third_party/verilog-ethernet/lib/axis/rtl/priority_encoder.v",
+      "source_sha256": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5",
+      "packaged_sha256": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5"
+    },
+    "third_party/verilog-ethernet/rtl/arp.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/arp.v",
+      "source_sha256": "41e2301695fdfc1cc93252041107574a0ed040ba92c99d57dce73317804f4698",
+      "packaged_sha256": "41e2301695fdfc1cc93252041107574a0ed040ba92c99d57dce73317804f4698"
+    },
+    "third_party/verilog-ethernet/rtl/arp_cache.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/arp_cache.v",
+      "source_sha256": "d8b573a7582c08f67f90aba9316d98e5b0e0c5bbcbcd7a6935d6537e3f4aa2f8",
+      "packaged_sha256": "d8b573a7582c08f67f90aba9316d98e5b0e0c5bbcbcd7a6935d6537e3f4aa2f8"
+    },
+    "third_party/verilog-ethernet/rtl/arp_eth_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/arp_eth_rx.v",
+      "source_sha256": "4113e03df063b91d64be4da8e455ba45d8251cecc8e66ec75cec93c518443bee",
+      "packaged_sha256": "4113e03df063b91d64be4da8e455ba45d8251cecc8e66ec75cec93c518443bee"
+    },
+    "third_party/verilog-ethernet/rtl/arp_eth_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/arp_eth_tx.v",
+      "source_sha256": "88be298ea8f236900416ebd3295aa2fa86a8785acc2b8edca87278afc2338f86",
+      "packaged_sha256": "88be298ea8f236900416ebd3295aa2fa86a8785acc2b8edca87278afc2338f86"
+    },
+    "third_party/verilog-ethernet/rtl/axis_gmii_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/axis_gmii_rx.v",
+      "source_sha256": "70d8e8c8ebfd22b8b1ffed7c077864c1944217a3e844f79cd3807cc41cf449d7",
+      "packaged_sha256": "70d8e8c8ebfd22b8b1ffed7c077864c1944217a3e844f79cd3807cc41cf449d7"
+    },
+    "third_party/verilog-ethernet/rtl/axis_gmii_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/axis_gmii_tx.v",
+      "source_sha256": "6803d245a1482269f234f84d00739a23ecdeb4ca06340570454ad78f98550229",
+      "packaged_sha256": "6803d245a1482269f234f84d00739a23ecdeb4ca06340570454ad78f98550229"
+    },
+    "third_party/verilog-ethernet/rtl/eth_arb_mux.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/eth_arb_mux.v",
+      "source_sha256": "5207295c7093e70f16a31497a67abb285f18acdac370d726735e94e89e4cc759",
+      "packaged_sha256": "5207295c7093e70f16a31497a67abb285f18acdac370d726735e94e89e4cc759"
+    },
+    "third_party/verilog-ethernet/rtl/eth_axis_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/eth_axis_rx.v",
+      "source_sha256": "4fb3ab7e0ccafdc85a46f37e533b7fb6e74a7101cfc18757126175ed01354d59",
+      "packaged_sha256": "4fb3ab7e0ccafdc85a46f37e533b7fb6e74a7101cfc18757126175ed01354d59"
+    },
+    "third_party/verilog-ethernet/rtl/eth_axis_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/eth_axis_tx.v",
+      "source_sha256": "5f17bd77f979ca97218bd161d421e4230190c7f0f47d1556c4e3e0ad7166aa3e",
+      "packaged_sha256": "5f17bd77f979ca97218bd161d421e4230190c7f0f47d1556c4e3e0ad7166aa3e"
+    },
+    "third_party/verilog-ethernet/rtl/eth_mac_1g.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/eth_mac_1g.v",
+      "source_sha256": "caacd61ad484d96ff14991100009aa67f16aa66a85d9bd245ed2869926da652c",
+      "packaged_sha256": "caacd61ad484d96ff14991100009aa67f16aa66a85d9bd245ed2869926da652c"
+    },
+    "third_party/verilog-ethernet/rtl/eth_mac_1g_fifo.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/eth_mac_1g_fifo.v",
+      "source_sha256": "a5cf2d9e28a4dc0193634c4530f33bf5c5e8536741c3a0e5b78e3f74219ad868",
+      "packaged_sha256": "a5cf2d9e28a4dc0193634c4530f33bf5c5e8536741c3a0e5b78e3f74219ad868"
+    },
+    "third_party/verilog-ethernet/rtl/ip.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/ip.v",
+      "source_sha256": "ec609c681edf22a1bcf803255dceeffe4b668b541bce00105e7c0cdaec710c42",
+      "packaged_sha256": "ec609c681edf22a1bcf803255dceeffe4b668b541bce00105e7c0cdaec710c42"
+    },
+    "third_party/verilog-ethernet/rtl/ip_arb_mux.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/ip_arb_mux.v",
+      "source_sha256": "ceec7cb7e1d9304c6550cdae183c31cd03a611fdc29641d93e0e650aa7a6b70b",
+      "packaged_sha256": "ceec7cb7e1d9304c6550cdae183c31cd03a611fdc29641d93e0e650aa7a6b70b"
+    },
+    "third_party/verilog-ethernet/rtl/ip_complete.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/ip_complete.v",
+      "source_sha256": "4c0aac8dc73adac3f867f0f15e6bb1abda45f4d7417878e149fea79500791f63",
+      "packaged_sha256": "4c0aac8dc73adac3f867f0f15e6bb1abda45f4d7417878e149fea79500791f63"
+    },
+    "third_party/verilog-ethernet/rtl/ip_eth_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/ip_eth_rx.v",
+      "source_sha256": "f8f4bfb0352872b3e7a52616242e51fd5c6261c93a2569fbf9e0777620e1f8ae",
+      "packaged_sha256": "f8f4bfb0352872b3e7a52616242e51fd5c6261c93a2569fbf9e0777620e1f8ae"
+    },
+    "third_party/verilog-ethernet/rtl/ip_eth_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/ip_eth_tx.v",
+      "source_sha256": "53a1378a6cd5cfa50ece8169f3f83bf4fadd6a66abe04809fe6a995ea224b3ce",
+      "packaged_sha256": "53a1378a6cd5cfa50ece8169f3f83bf4fadd6a66abe04809fe6a995ea224b3ce"
+    },
+    "third_party/verilog-ethernet/rtl/lfsr.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "packaged_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079"
+    },
+    "third_party/verilog-ethernet/rtl/mac_ctrl_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/mac_ctrl_rx.v",
+      "source_sha256": "b5c0eda334c078518adb5fb7db324ae966ebddba0031bc91cedd32b831137fb1",
+      "packaged_sha256": "b5c0eda334c078518adb5fb7db324ae966ebddba0031bc91cedd32b831137fb1"
+    },
+    "third_party/verilog-ethernet/rtl/mac_ctrl_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/mac_ctrl_tx.v",
+      "source_sha256": "48202a9a8f4b4e9688a4a0eac9dfe7492825be9f1f54a77590008db851b391c1",
+      "packaged_sha256": "48202a9a8f4b4e9688a4a0eac9dfe7492825be9f1f54a77590008db851b391c1"
+    },
+    "third_party/verilog-ethernet/rtl/mac_pause_ctrl_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/mac_pause_ctrl_rx.v",
+      "source_sha256": "4b8d5d985fe5e7d3ec28f0c70a8c212fb7b3df6548cbf4dcaac2473a23b24a57",
+      "packaged_sha256": "4b8d5d985fe5e7d3ec28f0c70a8c212fb7b3df6548cbf4dcaac2473a23b24a57"
+    },
+    "third_party/verilog-ethernet/rtl/mac_pause_ctrl_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/mac_pause_ctrl_tx.v",
+      "source_sha256": "c5de52ceae4cf7c048262132191b1e4c366deca15d931e4703f6a05eff789c5a",
+      "packaged_sha256": "c5de52ceae4cf7c048262132191b1e4c366deca15d931e4703f6a05eff789c5a"
+    },
+    "third_party/verilog-ethernet/rtl/udp.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/udp.v",
+      "source_sha256": "750d3cf657463e28cab742eaf2309022840f3d00b45e3b668153b7fd63254cd7",
+      "packaged_sha256": "750d3cf657463e28cab742eaf2309022840f3d00b45e3b668153b7fd63254cd7"
+    },
+    "third_party/verilog-ethernet/rtl/udp_complete.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/udp_complete.v",
+      "source_sha256": "c801c805a1e42ec4f2309ad58c1a0d533ad369993236224b2214c2ee5b8844a7",
+      "packaged_sha256": "c801c805a1e42ec4f2309ad58c1a0d533ad369993236224b2214c2ee5b8844a7"
+    },
+    "third_party/verilog-ethernet/rtl/udp_ip_rx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/udp_ip_rx.v",
+      "source_sha256": "bed1fb03cabe705b9757bfa17e262dfc739ccf48700e04c234ebc276a5f527c1",
+      "packaged_sha256": "bed1fb03cabe705b9757bfa17e262dfc739ccf48700e04c234ebc276a5f527c1"
+    },
+    "third_party/verilog-ethernet/rtl/udp_ip_tx.v": {
+      "source": "soc/third_party/verilog-ethernet/rtl/udp_ip_tx.v",
+      "source_sha256": "c5e3cd5a4e4b418b7315e7c39f6e0124bd0fcec3f4e073d949ae1235a606846c",
+      "packaged_sha256": "c5e3cd5a4e4b418b7315e7c39f6e0124bd0fcec3f4e073d949ae1235a606846c"
+    },
+    "rtl/ethernet/soc/ethernet_axil_split.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_axil_split.sv",
+      "source_sha256": "dc350d41bd55e4f009af514817c318aa91be0ab383e800d0c718115ee4735741",
+      "packaged_sha256": "dc350d41bd55e4f009af514817c318aa91be0ab383e800d0c718115ee4735741"
+    },
+    "rtl/ethernet/soc/ethernet_cmd_axil.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_cmd_axil.sv",
+      "source_sha256": "4d7d4d14e92921ef1652061bbea603c01070a0b0f38451cafa584e9309d3596f",
+      "packaged_sha256": "4d7d4d14e92921ef1652061bbea603c01070a0b0f38451cafa584e9309d3596f"
+    },
+    "rtl/ethernet/soc/ethernet_soc_board.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_soc_board.sv",
+      "source_sha256": "a046809c76b8ec2cedbff2dc21902f2e4a86462afc237e9bd844c16842b9f2ef",
+      "packaged_sha256": "a046809c76b8ec2cedbff2dc21902f2e4a86462afc237e9bd844c16842b9f2ef"
+    },
+    "rtl/ethernet/soc/ethernet_soc_dma_link.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_soc_dma_link.sv",
+      "source_sha256": "e97fc32fe82db1f34bc45cbc2629fc111230c314ab32cda9c357f48208c159aa",
+      "packaged_sha256": "e97fc32fe82db1f34bc45cbc2629fc111230c314ab32cda9c357f48208c159aa"
+    },
+    "rtl/ethernet/soc/ethernet_soc_endpoint.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_soc_endpoint.sv",
+      "source_sha256": "b14bc11bfb928e13a4297b46263cb9ddd71eea2feca4a5f3e8e64ddf7de32eb1",
+      "packaged_sha256": "b14bc11bfb928e13a4297b46263cb9ddd71eea2feca4a5f3e8e64ddf7de32eb1"
+    },
+    "rtl/ethernet/soc/ethernet_soc_job_regs.sv": {
+      "source": "soc/rtl/ethernet/soc/ethernet_soc_job_regs.sv",
+      "source_sha256": "8e65d450ab94573e253d6e1fd313b82c82f0268281dd059cdc4ac5c4c8737707",
+      "packaged_sha256": "8e65d450ab94573e253d6e1fd313b82c82f0268281dd059cdc4ac5c4c8737707"
+    },
+    "rtl/ethernet_soc_subsystem_rx.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_soc_subsystem_rx.sv",
+      "source_sha256": "afd52addcdb09b2ca746dd13443e79642fe469bd0ab17bb37cc972c24a585f80",
+      "packaged_sha256": "afd52addcdb09b2ca746dd13443e79642fe469bd0ab17bb37cc972c24a585f80"
+    },
+    "rtl/vision/stream_adapter.sv": {
+      "source": "soc/rtl/vision/stream_adapter.sv",
+      "source_sha256": "615572ca2543447311118db3d924eb838b3ef9d6d5841ec90c4047c0500d223c",
+      "packaged_sha256": "615572ca2543447311118db3d924eb838b3ef9d6d5841ec90c4047c0500d223c"
+    },
+    "rtl/ai_native_csr_bridge.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_native_csr_bridge.sv",
+      "source_sha256": "c395c0f7aeaa6ed2dd04d6f4c4087d29dd96838986fa26152d1797820c13c8bd",
+      "packaged_sha256": "c395c0f7aeaa6ed2dd04d6f4c4087d29dd96838986fa26152d1797820c13c8bd"
+    },
+    "rtl/ai_accel/ai_tile_buffer_v1c.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_tile_buffer_v1c.sv",
+      "source_sha256": "44874054518c4282118ca419e4074c833b7f6b4d0405f028283984b249c7fc48",
+      "packaged_sha256": "44874054518c4282118ca419e4074c833b7f6b4d0405f028283984b249c7fc48"
+    },
+    "rtl/ai_accel/ai_window3x3_v2.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_window3x3_v2.sv",
+      "source_sha256": "e9817ac07a88ee1daeefed93ed613fb2463a95fee814b83fdda0242b603ec221",
+      "packaged_sha256": "e9817ac07a88ee1daeefed93ed613fb2463a95fee814b83fdda0242b603ec221"
+    },
+    "rtl/ai_accel/ai_postprocess_q24_pc.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_postprocess_q24_pc.sv",
+      "source_sha256": "552e71c1012bdfdbcffb5d4cd32ec42637ed12736363c5a3d2501c7c8a81dddc",
+      "packaged_sha256": "552e71c1012bdfdbcffb5d4cd32ec42637ed12736363c5a3d2501c7c8a81dddc"
+    },
+    "rtl/ai_accel/ai_postprocess_q24_pixel.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_postprocess_q24_pixel.sv",
+      "source_sha256": "0070cca646d7b0fea41edf411b3771d99652ae9bb32f6b5a6056c959877f4cb7",
+      "packaged_sha256": "0070cca646d7b0fea41edf411b3771d99652ae9bb32f6b5a6056c959877f4cb7"
+    },
+    "rtl/ai_accel/ai_postprocess_v1.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_postprocess_v1.sv",
+      "source_sha256": "13d4a88b110f38b2bc85011951270825049a9ee7bc339a26772d98ade482734f",
+      "packaged_sha256": "13d4a88b110f38b2bc85011951270825049a9ee7bc339a26772d98ade482734f"
+    },
+    "rtl/ai_accel/ai_compute_core_v1.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_compute_core_v1.sv",
+      "source_sha256": "45e1d6d803e251e4c734e14da82955987243c26398c695155a9911fb4a09994a",
+      "packaged_sha256": "45e1d6d803e251e4c734e14da82955987243c26398c695155a9911fb4a09994a"
+    },
+    "rtl/ai_accel/ai_stream_tile_executor_v2.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_stream_tile_executor_v2.sv",
+      "source_sha256": "6980b0e41f7f3ae528773581ff3868bc1d9dca1c10baf172c23973a9e3e60911",
+      "packaged_sha256": "6980b0e41f7f3ae528773581ff3868bc1d9dca1c10baf172c23973a9e3e60911"
+    },
+    "rtl/ai_accel/ai_accelerator_top.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/ai_accel/ai_accelerator_top.sv",
+      "source_sha256": "b5d7537277c10b82c9f5c281b873016224666b3761c81ccffac94a13f7d4db3b",
+      "packaged_sha256": "b5d7537277c10b82c9f5c281b873016224666b3761c81ccffac94a13f7d4db3b"
+    },
+    "rtl/cpu_boot_rom.sv": {
+      "source": "soc/build/mes2l676_soc_ai_ultraface_20261027_a30_targeted_hold_on/source_snapshot/rtl/cpu_boot_rom.sv",
+      "source_sha256": "6c30a6bccddbd1debaaac6162340c7a299bea428cf5669d99371ecab2fedcc40",
+      "adaptation": "Only boot ROM filename made repository-relative; ROM bytes unchanged",
+      "packaged_sha256": "f00e98061a83227f7c7689dd4c9078f8f1e9870c97fdd15c7d77f832fc3ec66e"
+    },
+    "rtl/lg100_extra_keys_sync.v": {
+      "source": "soc/build/mes2l676_soc_keys4_20261029/source_snapshot/rtl/lg100_extra_keys_sync.v",
+      "source_sha256": "dc22a9d75bc944774a446ca5cbb2f7c2666a9000cf3317a55d0a2a4423e6c28d",
+      "packaged_sha256": "dc22a9d75bc944774a446ca5cbb2f7c2666a9000cf3317a55d0a2a4423e6c28d"
+    },
+    "rtl/ethernet_image_rx.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_image_rx.sv",
+      "source_sha256": "7c8f636fb81725890781009fa7dbbfa4e3db4198c095fa8d15668193db824e74",
+      "packaged_sha256": "7c8f636fb81725890781009fa7dbbfa4e3db4198c095fa8d15668193db824e74"
+    },
+    "rtl/ethernet_pixel_unpacker.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_pixel_unpacker.sv",
+      "source_sha256": "6a4b671302e14ade495cb097035ecbf4f136dd947a0d293293bbe127584d4765",
+      "packaged_sha256": "6a4b671302e14ade495cb097035ecbf4f136dd947a0d293293bbe127584d4765"
+    },
+    "rtl/ethernet_rx_dma_adapter.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_rx_dma_adapter.sv",
+      "source_sha256": "cfd105440d922c213c7d4367c4a8325c23e6a4e3236e9246f9c35ded84594108",
+      "packaged_sha256": "cfd105440d922c213c7d4367c4a8325c23e6a4e3236e9246f9c35ded84594108"
+    },
+    "rtl/ethernet_rx_frame_reassembler.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_rx_frame_reassembler.sv",
+      "source_sha256": "401e599ee87ea31122c88b4ba5a64cd69daaee28a5eb70a1a848c672f570d54c",
+      "packaged_sha256": "401e599ee87ea31122c88b4ba5a64cd69daaee28a5eb70a1a848c672f570d54c"
+    },
+    "rtl/ethernet_rx_regs.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_rx_regs.sv",
+      "source_sha256": "1fde02537bb566c6ee4e8b1337a8a4e3710599906f11dcba46f19aa12ed9a24f",
+      "packaged_sha256": "1fde02537bb566c6ee4e8b1337a8a4e3710599906f11dcba46f19aa12ed9a24f"
+    },
+    "rtl/ethernet_rx_subsystem.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/ethernet_rx_subsystem.sv",
+      "source_sha256": "c8c24fa44a6e4b698a7a2961eeec55950cf9d70eaab3b944a299d7a3e1f90454",
+      "packaged_sha256": "c8c24fa44a6e4b698a7a2961eeec55950cf9d70eaab3b944a299d7a3e1f90454"
+    },
+    "rtl/frame_buffer_manager.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/frame_buffer_manager.sv",
+      "source_sha256": "7aad6ee6d49f54f373e2fe759872f02555768ca5712e7887471d65572dd08587",
+      "packaged_sha256": "7aad6ee6d49f54f373e2fe759872f02555768ca5712e7887471d65572dd08587"
+    },
+    "rtl/flash_controller.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/flash_controller.sv",
+      "source_sha256": "cecc27a1eab0342269872986de28d49e374b15a6f9383a6eb61bd15663314926",
+      "packaged_sha256": "cecc27a1eab0342269872986de28d49e374b15a6f9383a6eb61bd15663314926"
+    },
+    "rtl/spi_transfer.sv": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/rtl/spi_transfer.sv",
+      "source_sha256": "f032b3f5b9aec0803b70619a4fb0e6d51f149525ddb662246ecdca0f6ecf293f",
+      "packaged_sha256": "f032b3f5b9aec0803b70619a4fb0e6d51f149525ddb662246ecdca0f6ecf293f"
+    },
+    "rtl/pg2l100h_flash_pads.sv": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/rtl/pg2l100h_flash_pads.sv",
+      "source_sha256": "d989eea28779946275c5dbc1056636077177fb5d60da1c2e990d0c34d5f203b1",
+      "packaged_sha256": "d989eea28779946275c5dbc1056636077177fb5d60da1c2e990d0c34d5f203b1"
+    },
+    "constraints/ddr.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/ddr.fdc",
+      "source_sha256": "02bb79d588ab5a52d7900b4ef64b430bcb3db6d3e9f875914ce0f3eca6123280",
+      "packaged_sha256": "02bb79d588ab5a52d7900b4ef64b430bcb3db6d3e9f875914ce0f3eca6123280"
+    },
+    "constraints/pins.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/pins.fdc",
+      "source_sha256": "0ee2c8abc538fcbd71bc98fc8381b4d5cd80b5a8da8dbb8ffee788ca252cf93a",
+      "packaged_sha256": "0ee2c8abc538fcbd71bc98fc8381b4d5cd80b5a8da8dbb8ffee788ca252cf93a"
+    },
+    "constraints/system.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/system.fdc",
+      "source_sha256": "d2fec44397f74ef6522d9a32a7ac11eaef1c2fb8a104beb1c53eb7c77a484efa",
+      "packaged_sha256": "d2fec44397f74ef6522d9a32a7ac11eaef1c2fb8a104beb1c53eb7c77a484efa"
+    },
+    "constraints/ethernet_timing.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/ethernet_timing.fdc",
+      "source_sha256": "6f043548e6ce6b311abf52ffcacdcd4a515e634eb5731c78b93051782162564a",
+      "packaged_sha256": "6f043548e6ce6b311abf52ffcacdcd4a515e634eb5731c78b93051782162564a"
+    },
+    "constraints/cdc.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/cdc.fdc",
+      "source_sha256": "ae49c0966c97c52b888546374c1d71f5211261e6df344fe909f0b39955e0c297",
+      "packaged_sha256": "ae49c0966c97c52b888546374c1d71f5211261e6df344fe909f0b39955e0c297"
+    },
+    "constraints/ethernet_cdc.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/ethernet_cdc.fdc",
+      "source_sha256": "9a47b8995c1f21260c705e3c3879ed1cbbea5ae92f0d6b07c25427ef58b3e690",
+      "packaged_sha256": "9a47b8995c1f21260c705e3c3879ed1cbbea5ae92f0d6b07c25427ef58b3e690"
+    },
+    "constraints/keys_async.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/keys_async.fdc",
+      "source_sha256": "0ea440ce5ed2ec39c6c457372a8f82e7f22faf639c24055889b42d06d99ed33d",
+      "packaged_sha256": "0ea440ce5ed2ec39c6c457372a8f82e7f22faf639c24055889b42d06d99ed33d"
+    },
+    "constraints/flash_pins.fdc": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraints/flash_pins.fdc",
+      "source_sha256": "70b40aab0d982045349beb43b023681e9763514a329659ee3ba93b66917643aa",
+      "packaged_sha256": "70b40aab0d982045349beb43b023681e9763514a329659ee3ba93b66917643aa"
+    },
+    "firmware/bootloader/boot64.hex": {
+      "source": "soc/build/mes2l676_soc_p3_flash_20261031/source_snapshot/firmware/boot64.hex",
+      "source_sha256": "a3c617d8242e5592692afb0496f572cecd5cdeadcebe871825ae756627b94d80",
+      "packaged_sha256": "a3c617d8242e5592692afb0496f572cecd5cdeadcebe871825ae756627b94d80"
+    },
+    "constraints/frozen_sites.pcf": {
+      "source": "soc/build/mes2l676_soc_p3_flash_n188_restore_20261031/frozen_sites.pcf",
+      "source_sha256": "eb118503396263bef239aa39e621956d128ce6c4f98aa14c613912ec526299bc",
+      "packaged_sha256": "eb118503396263bef239aa39e621956d128ce6c4f98aa14c613912ec526299bc"
+    },
+    "upper/app.py": {
+      "source": "upper/app.py",
+      "source_sha256": "05a81b93381c0ed1fc616d2cdbadb6da458aad2e2a3ef06f041c4af09b55f587",
+      "packaged_sha256": "05a81b93381c0ed1fc616d2cdbadb6da458aad2e2a3ef06f041c4af09b55f587"
+    },
+    "upper/requirements.txt": {
+      "source": "upper/requirements.txt",
+      "source_sha256": "5c91563941b3b8ed067006f78deae99ede39183242c82a409a96cf79ff0f9088",
+      "packaged_sha256": "5c91563941b3b8ed067006f78deae99ede39183242c82a409a96cf79ff0f9088"
+    },
+    "upper/run.ps1": {
+      "source": "upper/run.ps1",
+      "source_sha256": "7a48e764e337cdae48a8cf9061dab423b57536672818d089fa5ceac3e0e5d7ca",
+      "packaged_sha256": "7a48e764e337cdae48a8cf9061dab423b57536672818d089fa5ceac3e0e5d7ca"
+    },
+    "upper/start.cmd": {
+      "source": "upper/start.cmd",
+      "source_sha256": "262d46f97a1e9eb99eceac7137284c3183d6bcd31dce0a27c3a9e4c4b70cf71f",
+      "packaged_sha256": "262d46f97a1e9eb99eceac7137284c3183d6bcd31dce0a27c3a9e4c4b70cf71f"
+    },
+    "upper/nigo_host/arcade.py": {
+      "source": "upper/nigo_host/arcade.py",
+      "source_sha256": "b39b41995615feec1d229226f62563725695d8f211c5e5ada5a6730fb3747f48",
+      "packaged_sha256": "b39b41995615feec1d229226f62563725695d8f211c5e5ada5a6730fb3747f48"
+    },
+    "upper/nigo_host/client.py": {
+      "source": "upper/nigo_host/client.py",
+      "source_sha256": "a05f7424a52ef8d4309e3d2970c410813031f4ed04cf26b01dbdda0805ed6c35",
+      "packaged_sha256": "a05f7424a52ef8d4309e3d2970c410813031f4ed04cf26b01dbdda0805ed6c35"
+    },
+    "upper/nigo_host/coremark.py": {
+      "source": "upper/nigo_host/coremark.py",
+      "source_sha256": "c889faf114e740b2751dbe69cf7c8d918f32b9c9215ef4c970bef7a1e85091fe",
+      "packaged_sha256": "c889faf114e740b2751dbe69cf7c8d918f32b9c9215ef4c970bef7a1e85091fe"
+    },
+    "upper/nigo_host/face.py": {
+      "source": "upper/nigo_host/face.py",
+      "source_sha256": "da453f6f9a59b38a62bcb5f5a106375e439690133fafd4d4b1966089c240c35c",
+      "packaged_sha256": "da453f6f9a59b38a62bcb5f5a106375e439690133fafd4d4b1966089c240c35c"
+    },
+    "upper/nigo_host/face_rpc.py": {
+      "source": "upper/nigo_host/face_rpc.py",
+      "source_sha256": "bf373d2ad71d6d7ba1a6faa88790498f782ebeb6faf7b7403da0f41fd9efba34",
+      "packaged_sha256": "bf373d2ad71d6d7ba1a6faa88790498f782ebeb6faf7b7403da0f41fd9efba34"
+    },
+    "upper/nigo_host/modes.py": {
+      "source": "upper/nigo_host/modes.py",
+      "source_sha256": "fb6e36a8502d1a6deb3b676617ca68e387a140f2f332b64e40be43b23b12a8f8",
+      "packaged_sha256": "fb6e36a8502d1a6deb3b676617ca68e387a140f2f332b64e40be43b23b12a8f8"
+    },
+    "upper/nigo_host/program.py": {
+      "source": "upper/nigo_host/program.py",
+      "source_sha256": "ca8efcd160d17a1afbe9fad3b5c982b814f4a8b5b11743dfefd015e2f618805a",
+      "packaged_sha256": "ca8efcd160d17a1afbe9fad3b5c982b814f4a8b5b11743dfefd015e2f618805a"
+    },
+    "upper/nigo_host/protocol.py": {
+      "source": "upper/nigo_host/protocol.py",
+      "source_sha256": "f8919c9a175cd8c6f27489fab77d7a273ea87ac1b39450f78c843f63c692358c",
+      "packaged_sha256": "f8919c9a175cd8c6f27489fab77d7a273ea87ac1b39450f78c843f63c692358c"
+    },
+    "upper/nigo_host/rx.py": {
+      "source": "upper/nigo_host/rx.py",
+      "source_sha256": "fd080b06d92ee677eb84f4ac7a1fbea758104fb46aa86a6103207de38fad0dd3",
+      "packaged_sha256": "fd080b06d92ee677eb84f4ac7a1fbea758104fb46aa86a6103207de38fad0dd3"
+    },
+    "upper/nigo_host/upload.py": {
+      "source": "upper/nigo_host/upload.py",
+      "source_sha256": "ce98a398507fd2a41e4425d88016dc052e907c8520e5b7c3b142c00b6228abc1",
+      "packaged_sha256": "ce98a398507fd2a41e4425d88016dc052e907c8520e5b7c3b142c00b6228abc1"
+    },
+    "upper/nigo_host/__init__.py": {
+      "source": "upper/nigo_host/__init__.py",
+      "source_sha256": "bd4378e7c8cc64636a92de6ab162c0767207315696e5335253011ddea9b3dce6",
+      "packaged_sha256": "bd4378e7c8cc64636a92de6ab162c0767207315696e5335253011ddea9b3dce6"
+    },
+    "upper/tests/test_arcade.py": {
+      "source": "upper/tests/test_arcade.py",
+      "source_sha256": "999bde52c35a1cd7287ba9a6e2d9898e1d6aa7ca09e8f0a59303ab6140869be1",
+      "packaged_sha256": "999bde52c35a1cd7287ba9a6e2d9898e1d6aa7ca09e8f0a59303ab6140869be1"
+    },
+    "upper/tests/test_coremark.py": {
+      "source": "upper/tests/test_coremark.py",
+      "source_sha256": "4bcfe1da5c1c8f75871691c1667ad8907a83b2c43207bd6a90210ce4ccc3f652",
+      "packaged_sha256": "4bcfe1da5c1c8f75871691c1667ad8907a83b2c43207bd6a90210ce4ccc3f652"
+    },
+    "upper/tests/test_coremark_ab.py": {
+      "source": "upper/tests/test_coremark_ab.py",
+      "source_sha256": "d1e704555e211a055513fd4d3210039c7a19012649a57b55e0ab5912f986e417",
+      "packaged_sha256": "90d153f6273a339230577e3a47363f07ba034e60318c0e67281be1c0033ce162",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "upper/tests/test_face.py": {
+      "source": "upper/tests/test_face.py",
+      "source_sha256": "53a73f22f37ff352294421021fffd63b3c6bcdab66c28f7e2621e8d9049ed9c0",
+      "packaged_sha256": "53a73f22f37ff352294421021fffd63b3c6bcdab66c28f7e2621e8d9049ed9c0"
+    },
+    "upper/tests/test_modes.py": {
+      "source": "upper/tests/test_modes.py",
+      "source_sha256": "c06d71eef63a5d9712279e75f23c60a7a7d846df60764e0920731ab8201d1d88",
+      "adaptation": "Validate relocated package assets, replacing historical absolute workstation paths",
+      "packaged_sha256": "da5aa6498d71c8d69a4f2fdb6b307d77d562d44acb4b10e32c8f07a16351543e"
+    },
+    "upper/tests/test_mode_ui.py": {
+      "source": "upper/tests/test_mode_ui.py",
+      "source_sha256": "399bcd2aa0d5373e503a93bb3787c6e4436e7187953760ff58752c3ef0767345",
+      "packaged_sha256": "399bcd2aa0d5373e503a93bb3787c6e4436e7187953760ff58752c3ef0767345"
+    },
+    "upper/tests/test_protocols.py": {
+      "source": "upper/tests/test_protocols.py",
+      "source_sha256": "ab3757a7fe670f48cee7c8a756cb36da0dfac532ae6f01d9caa3b6dd0f3d55cd",
+      "packaged_sha256": "ab3757a7fe670f48cee7c8a756cb36da0dfac532ae6f01d9caa3b6dd0f3d55cd"
+    },
+    "upper/assets/firmware/coremark.ngb": {
+      "source": "upper/assets/firmware/coremark.ngb",
+      "source_sha256": "c014428df25328eea26e32fe5a3c74037f36f2b6a48a8beee40b0e46a9e136bb",
+      "packaged_sha256": "c014428df25328eea26e32fe5a3c74037f36f2b6a48a8beee40b0e46a9e136bb"
+    },
+    "upper/assets/firmware/keys_led.ngb": {
+      "source": "upper/assets/firmware/keys_led.ngb",
+      "source_sha256": "2929a1cc2ba8b526a418d56f1ba1eaa555fc2c6d2df199789e5483b6a8c9bd29",
+      "packaged_sha256": "2929a1cc2ba8b526a418d56f1ba1eaa555fc2c6d2df199789e5483b6a8c9bd29"
+    },
+    "upper/assets/firmware/receiver.ngb": {
+      "source": "upper/assets/firmware/receiver.ngb",
+      "source_sha256": "7d8b54347fa18c0a4990eddf73a7afdadeb8a8ac56b30cf3c2c90cfb4817994d",
+      "packaged_sha256": "7d8b54347fa18c0a4990eddf73a7afdadeb8a8ac56b30cf3c2c90cfb4817994d"
+    },
+    "upper/assets/firmware/runtime.json": {
+      "source": "upper/assets/firmware/runtime.json",
+      "source_sha256": "f241ebc851993d22fae6010807503f99898a75eccf807cb370fcb459dac1c30b",
+      "packaged_sha256": "549a6adf32516263ed804d0b54499299e1dbbc705e99292c19abde30690907b7"
+    },
+    "upper/assets/firmware/ultraface.ngb": {
+      "source": "upper/assets/firmware/ultraface.ngb",
+      "source_sha256": "2e8b44c628a245fe75d0d72a2d6070da88d282452381ce44a2ad4cbd880fb5e6",
+      "packaged_sha256": "2e8b44c628a245fe75d0d72a2d6070da88d282452381ce44a2ad4cbd880fb5e6"
+    },
+    "upper/assets/firmware/ultraface_legacy_20261028.ngb": {
+      "source": "upper/assets/firmware/ultraface_legacy_20261028.ngb",
+      "source_sha256": "8793af36863c402e2f346fa3fe81ef990e870bf6ca849201632cb290a2dd763b",
+      "packaged_sha256": "8793af36863c402e2f346fa3fe81ef990e870bf6ca849201632cb290a2dd763b"
+    },
+    "upper/assets/model/ultraface.ngm": {
+      "source": "upper/assets/model/ultraface.ngm",
+      "source_sha256": "569f94b78e7088348ce4f4c693584757bef516a284007884d3e74d540fd506cf",
+      "packaged_sha256": "569f94b78e7088348ce4f4c693584757bef516a284007884d3e74d540fd506cf"
+    },
+    "upper/assets/samples/manifest.json": {
+      "source": "upper/assets/samples/manifest.json",
+      "source_sha256": "75c8a09ec669c9fd867f7e9cf15fefce6ef64b6cd796efd8556155beab4fe427",
+      "packaged_sha256": "e0ecf4dccfaa64db9c9c4a9648e02eb7272496f9c035f5af3b92b7c8baabda36"
+    },
+    "upper/assets/samples/sample0.png": {
+      "source": "upper/assets/samples/sample0.png",
+      "source_sha256": "4092a9bf5844cc741cc46bcc536e045916025965270bce64e1c68c216ea9c5f5",
+      "packaged_sha256": "4092a9bf5844cc741cc46bcc536e045916025965270bce64e1c68c216ea9c5f5"
+    },
+    "upper/assets/samples/sample1.png": {
+      "source": "upper/assets/samples/sample1.png",
+      "source_sha256": "0303c08feb946ca6b82cb5147c0b55638af0247bdcda7ef8970c25ed2d6be0c3",
+      "packaged_sha256": "0303c08feb946ca6b82cb5147c0b55638af0247bdcda7ef8970c25ed2d6be0c3"
+    },
+    "upper/assets/samples/sample2.png": {
+      "source": "upper/assets/samples/sample2.png",
+      "source_sha256": "d610cb01a94dcaa1405653f084a1b955bad24830c60fc9ab21063b529fd41710",
+      "packaged_sha256": "d610cb01a94dcaa1405653f084a1b955bad24830c60fc9ab21063b529fd41710"
+    },
+    "upper/assets/samples/sample3.png": {
+      "source": "upper/assets/samples/sample3.png",
+      "source_sha256": "cad667d65a033a9683a54e432374214bb87c788ff99931443078e50f0fe21040",
+      "packaged_sha256": "cad667d65a033a9683a54e432374214bb87c788ff99931443078e50f0fe21040"
+    },
+    "upper/assets/firmware/legacy/runtime_946fbc9b.ngb": {
+      "source": "upper/assets/firmware/runtime.ngb",
+      "source_sha256": "6b9644f9525adbf9f18de777fc8719dc501b3464351813e6a3389b17fe196928",
+      "packaged_sha256": "6b9644f9525adbf9f18de777fc8719dc501b3464351813e6a3389b17fe196928"
+    },
+    "upper/firmware/coremark/sources.json": {
+      "source": "upper/firmware/coremark/sources.json",
+      "source_sha256": "2954921cf4ba7af631ac252d15a3097d073f28bf21c45c40be0dae596afaa78b",
+      "packaged_sha256": "7afee76d48510826c6d501a0e7be9f5961f7af4d60ae210cea5319a1a31e376d"
+    },
+    "upper/firmware/coremark/platform/ethernet.c": {
+      "source": "upper/firmware/coremark/platform/ethernet.c",
+      "source_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed",
+      "packaged_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed"
+    },
+    "upper/firmware/coremark/platform/ethernet.h": {
+      "source": "upper/firmware/coremark/platform/ethernet.h",
+      "source_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032",
+      "packaged_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032"
+    },
+    "upper/firmware/coremark/platform/link.ld": {
+      "source": "upper/firmware/coremark/platform/link.ld",
+      "source_sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973",
+      "packaged_sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973"
+    },
+    "upper/firmware/coremark/platform/memory.c": {
+      "source": "upper/firmware/coremark/platform/memory.c",
+      "source_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6",
+      "packaged_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6"
+    },
+    "upper/firmware/coremark/platform/start.S": {
+      "source": "upper/firmware/coremark/platform/start.S",
+      "source_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3",
+      "packaged_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3"
+    },
+    "upper/firmware/coremark/platform/string.h": {
+      "source": "upper/firmware/coremark/platform/string.h",
+      "source_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21",
+      "packaged_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21"
+    },
+    "upper/firmware/coremark/port/benchmark.h": {
+      "source": "upper/firmware/coremark/port/benchmark.h",
+      "source_sha256": "7a5b27276d6ac340a8de036cfae78953b128f7205fa68d4bcbf18d01eaca2561",
+      "packaged_sha256": "7a5b27276d6ac340a8de036cfae78953b128f7205fa68d4bcbf18d01eaca2561"
+    },
+    "upper/firmware/coremark/port/core_portme.c": {
+      "source": "upper/firmware/coremark/port/core_portme.c",
+      "source_sha256": "8ba050749c4f84f379a7cb1bcaad9a576c5b3e638fa21aa940f0bfd1bbab0a71",
+      "packaged_sha256": "8ba050749c4f84f379a7cb1bcaad9a576c5b3e638fa21aa940f0bfd1bbab0a71"
+    },
+    "upper/firmware/coremark/port/core_portme.h": {
+      "source": "upper/firmware/coremark/port/core_portme.h",
+      "source_sha256": "2a7c55626f158743ff8950c6d4b083d87d6936eeef03659e6f873409550628c1",
+      "packaged_sha256": "2a7c55626f158743ff8950c6d4b083d87d6936eeef03659e6f873409550628c1"
+    },
+    "upper/firmware/coremark/port/main.c": {
+      "source": "upper/firmware/coremark/port/main.c",
+      "source_sha256": "c7809c6bd88e5054a694dcc6573b34f91684a4e8ecab85e687522717e0813314",
+      "packaged_sha256": "c7809c6bd88e5054a694dcc6573b34f91684a4e8ecab85e687522717e0813314"
+    },
+    "upper/firmware/coremark/port/service.c": {
+      "source": "upper/firmware/coremark/port/service.c",
+      "source_sha256": "a26e5820b1770f5703410baee811ac6f8876ca63c9be0e0783798255023bc0f0",
+      "packaged_sha256": "a26e5820b1770f5703410baee811ac6f8876ca63c9be0e0783798255023bc0f0"
+    },
+    "upper/firmware/coremark/port/service.h": {
+      "source": "upper/firmware/coremark/port/service.h",
+      "source_sha256": "7666942c1ec4e8d025a03f7b63f24dd06be6495fb79f5c3305af9bd9becbc839",
+      "packaged_sha256": "7666942c1ec4e8d025a03f7b63f24dd06be6495fb79f5c3305af9bd9becbc839"
+    },
+    "upper/firmware/coremark/tests/native.c": {
+      "source": "upper/firmware/coremark/tests/native.c",
+      "source_sha256": "0b88c767f77468e9ab315a9cecedd799bbe0d2ae3dfcaa14c7a5c85a1db4bbf9",
+      "packaged_sha256": "0b88c767f77468e9ab315a9cecedd799bbe0d2ae3dfcaa14c7a5c85a1db4bbf9"
+    },
+    "upper/firmware/coremark/upstream/coremark.h": {
+      "source": "upper/firmware/coremark/upstream/coremark.h",
+      "source_sha256": "0c6655620a7fb984a0f9a69b90e6fb0626694535971abfb3ca0eb88422cbeab0",
+      "packaged_sha256": "0c6655620a7fb984a0f9a69b90e6fb0626694535971abfb3ca0eb88422cbeab0"
+    },
+    "upper/firmware/coremark/upstream/core_list_join.c": {
+      "source": "upper/firmware/coremark/upstream/core_list_join.c",
+      "source_sha256": "cb85efa5ca7e8537ce90fdce8c13fc01de0457a162fc44ceba5e300e97306418",
+      "packaged_sha256": "cb85efa5ca7e8537ce90fdce8c13fc01de0457a162fc44ceba5e300e97306418"
+    },
+    "upper/firmware/coremark/upstream/core_main.c": {
+      "source": "upper/firmware/coremark/upstream/core_main.c",
+      "source_sha256": "c240afdd1bda84af55643ca812fcbb0dd52063a7bae2ebf12f5fc12e487328ff",
+      "packaged_sha256": "c240afdd1bda84af55643ca812fcbb0dd52063a7bae2ebf12f5fc12e487328ff"
+    },
+    "upper/firmware/coremark/upstream/core_matrix.c": {
+      "source": "upper/firmware/coremark/upstream/core_matrix.c",
+      "source_sha256": "247761a5bfd88868e4fba4b56646512f03a74ba6d35011b9bf902854f078e98b",
+      "packaged_sha256": "247761a5bfd88868e4fba4b56646512f03a74ba6d35011b9bf902854f078e98b"
+    },
+    "upper/firmware/coremark/upstream/core_state.c": {
+      "source": "upper/firmware/coremark/upstream/core_state.c",
+      "source_sha256": "b3e36c4dee73824c36261dd2f405bbd4e49f9eb94dd5bc2dfbd0e17ab3b3c028",
+      "packaged_sha256": "b3e36c4dee73824c36261dd2f405bbd4e49f9eb94dd5bc2dfbd0e17ab3b3c028"
+    },
+    "upper/firmware/coremark/upstream/core_util.c": {
+      "source": "upper/firmware/coremark/upstream/core_util.c",
+      "source_sha256": "166e9bf09afd290adffe2c6681d913c18373f77e457fae258499fbaad10b04fc",
+      "packaged_sha256": "166e9bf09afd290adffe2c6681d913c18373f77e457fae258499fbaad10b04fc"
+    },
+    "upper/firmware/coremark/upstream/LICENSE.md": {
+      "source": "upper/firmware/coremark/upstream/LICENSE.md",
+      "source_sha256": "0d92a0727423e27165852685d45d9f111a071dcba594454d7edbac48c28e4490",
+      "packaged_sha256": "0d92a0727423e27165852685d45d9f111a071dcba594454d7edbac48c28e4490"
+    },
+    "upper/firmware/ultraface/sources.json": {
+      "source": "upper/firmware/ultraface/sources.json",
+      "source_sha256": "3979df5131860f8d94e048a9be76c6c70381737b0c6aac15810debc898bdd3ee",
+      "packaged_sha256": "3979df5131860f8d94e048a9be76c6c70381737b0c6aac15810debc898bdd3ee"
+    },
+    "upper/firmware/ultraface/src/ethernet.c": {
+      "source": "upper/firmware/ultraface/src/ethernet.c",
+      "source_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed",
+      "packaged_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed"
+    },
+    "upper/firmware/ultraface/src/ethernet.h": {
+      "source": "upper/firmware/ultraface/src/ethernet.h",
+      "source_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032",
+      "packaged_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032"
+    },
+    "upper/firmware/ultraface/src/ethernet_soc.c": {
+      "source": "upper/firmware/ultraface/src/ethernet_soc.c",
+      "source_sha256": "6ce085dc546861cb3d79f4964f48bf26351e1d660ac56c7f091e57616824f2c3",
+      "packaged_sha256": "6ce085dc546861cb3d79f4964f48bf26351e1d660ac56c7f091e57616824f2c3"
+    },
+    "upper/firmware/ultraface/src/ethernet_soc.h": {
+      "source": "upper/firmware/ultraface/src/ethernet_soc.h",
+      "source_sha256": "3d8d00322b2567c03531dfb617ff1cc438b3d0f351e1621e975d7d1458e7333c",
+      "packaged_sha256": "3d8d00322b2567c03531dfb617ff1cc438b3d0f351e1621e975d7d1458e7333c"
+    },
+    "upper/firmware/ultraface/src/face_events.c": {
+      "source": "upper/firmware/ultraface/src/face_events.c",
+      "source_sha256": "4863e5bcc3d28ef1821d1a9e6d2af8f9ac2c68805bab7f019315b8d39868bc99",
+      "packaged_sha256": "4863e5bcc3d28ef1821d1a9e6d2af8f9ac2c68805bab7f019315b8d39868bc99"
+    },
+    "upper/firmware/ultraface/src/face_events.h": {
+      "source": "upper/firmware/ultraface/src/face_events.h",
+      "source_sha256": "1960815a63d24c867a98cfed7c9900e861fde6b78573bc57b557adf4c961ea0b",
+      "packaged_sha256": "1960815a63d24c867a98cfed7c9900e861fde6b78573bc57b557adf4c961ea0b"
+    },
+    "upper/firmware/ultraface/src/face_rpc.c": {
+      "source": "upper/firmware/ultraface/src/face_rpc.c",
+      "source_sha256": "4ced6af46d5650304ce0767218b19043a61b4bde8abb38ab36b67c7d6d74c298",
+      "packaged_sha256": "4ced6af46d5650304ce0767218b19043a61b4bde8abb38ab36b67c7d6d74c298"
+    },
+    "upper/firmware/ultraface/src/face_rpc.h": {
+      "source": "upper/firmware/ultraface/src/face_rpc.h",
+      "source_sha256": "209541bc68a209147f99a08339c875d3bc3f002d832fde27049b888902656a84",
+      "packaged_sha256": "209541bc68a209147f99a08339c875d3bc3f002d832fde27049b888902656a84"
+    },
+    "upper/firmware/ultraface/src/link.ld": {
+      "source": "upper/firmware/ultraface/src/link.ld",
+      "source_sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973",
+      "packaged_sha256": "d54332b2e2dad1a0452b44f8c7dd612b4f958c6bef7361fd02af524eb4fb0973"
+    },
+    "upper/firmware/ultraface/src/main.c": {
+      "source": "upper/firmware/ultraface/src/main.c",
+      "source_sha256": "9f3bb4e1ca45dae63692aea9e2dd34898df73949630ec1545559177f636f0e3d",
+      "packaged_sha256": "9f3bb4e1ca45dae63692aea9e2dd34898df73949630ec1545559177f636f0e3d"
+    },
+    "upper/firmware/ultraface/src/memory.c": {
+      "source": "upper/firmware/ultraface/src/memory.c",
+      "source_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6",
+      "packaged_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6"
+    },
+    "upper/firmware/ultraface/src/model_asset.h": {
+      "source": "upper/firmware/ultraface/src/model_asset.h",
+      "source_sha256": "ec2ef84d785c16eddb2e85f9b08fb31e1dd22207c69afc508e31528bbbf51644",
+      "packaged_sha256": "ec2ef84d785c16eddb2e85f9b08fb31e1dd22207c69afc508e31528bbbf51644"
+    },
+    "upper/firmware/ultraface/src/ngu_upload.c": {
+      "source": "upper/firmware/ultraface/src/ngu_upload.c",
+      "source_sha256": "b6f5a5edf02be71262cd3b1889e6bc290b3ba73b2c04e4ef03859862ffc3ca25",
+      "packaged_sha256": "b6f5a5edf02be71262cd3b1889e6bc290b3ba73b2c04e4ef03859862ffc3ca25"
+    },
+    "upper/firmware/ultraface/src/ngu_upload.h": {
+      "source": "upper/firmware/ultraface/src/ngu_upload.h",
+      "source_sha256": "451a59bc2077918a41511ae0a14fba2850757f90609fa2369c0d802b6cdc50c3",
+      "packaged_sha256": "451a59bc2077918a41511ae0a14fba2850757f90609fa2369c0d802b6cdc50c3"
+    },
+    "upper/firmware/ultraface/src/nigo_ai.c": {
+      "source": "upper/firmware/ultraface/src/nigo_ai.c",
+      "source_sha256": "8b05a37de787ed879edf584641c4888368128b662931e90dabf6b5976c35877b",
+      "packaged_sha256": "8b05a37de787ed879edf584641c4888368128b662931e90dabf6b5976c35877b"
+    },
+    "upper/firmware/ultraface/src/nigo_ai.h": {
+      "source": "upper/firmware/ultraface/src/nigo_ai.h",
+      "source_sha256": "c80f795d8df336e5b82cd5669872521e79bdb8fa3cefe180af727f88c5f8b647",
+      "packaged_sha256": "c80f795d8df336e5b82cd5669872521e79bdb8fa3cefe180af727f88c5f8b647"
+    },
+    "upper/firmware/ultraface/src/start.S": {
+      "source": "upper/firmware/ultraface/src/start.S",
+      "source_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3",
+      "packaged_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3"
+    },
+    "upper/firmware/ultraface/src/ultraface_decode.c": {
+      "source": "upper/firmware/ultraface/src/ultraface_decode.c",
+      "source_sha256": "278dac011e7311f438834d578986421d1d242605605a5c1067068236071e14a9",
+      "packaged_sha256": "278dac011e7311f438834d578986421d1d242605605a5c1067068236071e14a9"
+    },
+    "upper/firmware/ultraface/src/ultraface_runtime.c": {
+      "source": "upper/firmware/ultraface/src/ultraface_runtime.c",
+      "source_sha256": "82001c2069e1a0b4aeafd1b44852b513d177587e4efc68f53971a771b6c8fee4",
+      "packaged_sha256": "82001c2069e1a0b4aeafd1b44852b513d177587e4efc68f53971a771b6c8fee4"
+    },
+    "upper/firmware/ultraface/src/ultraface_runtime.h": {
+      "source": "upper/firmware/ultraface/src/ultraface_runtime.h",
+      "source_sha256": "ceedea8bc65cd1f0a1a8bc729208b415e60271aa448370de0c70e553b07e7394",
+      "packaged_sha256": "ceedea8bc65cd1f0a1a8bc729208b415e60271aa448370de0c70e553b07e7394"
+    },
+    "upper/firmware/ultraface/tests/rpc_test.c": {
+      "source": "upper/firmware/ultraface/tests/rpc_test.c",
+      "source_sha256": "f662065bb56f7e3fe9737afc627b3cf9aac5c8baf41c58a9b8cbdec3c7125807",
+      "packaged_sha256": "f662065bb56f7e3fe9737afc627b3cf9aac5c8baf41c58a9b8cbdec3c7125807"
+    },
+    "upper/firmware/ultraface/tests/software_test.c": {
+      "source": "upper/firmware/ultraface/tests/software_test.c",
+      "source_sha256": "14c9e7a555a11a8212f60ebc360f46eb83c82890e676851effcb257d0a7c0d4b",
+      "packaged_sha256": "14c9e7a555a11a8212f60ebc360f46eb83c82890e676851effcb257d0a7c0d4b"
+    },
+    "upper/firmware/ultraface/src/freestanding/string.h": {
+      "source": "upper/firmware/ultraface/src/freestanding/string.h",
+      "source_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21",
+      "packaged_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21"
+    },
+    "upper/firmware/arcade/sim/native.c": {
+      "source": "upper/firmware/arcade/sim/native.c",
+      "source_sha256": "725d29dc348a96dd13cb1754f6a5f9420da921bc05c6001da5be81dd3e68b88e",
+      "packaged_sha256": "725d29dc348a96dd13cb1754f6a5f9420da921bc05c6001da5be81dd3e68b88e"
+    },
+    "upper/firmware/arcade/sim/test.c": {
+      "source": "upper/firmware/arcade/sim/test.c",
+      "source_sha256": "943068952ea6ee30ba966bd4c990beef9ec10afada0b502cc865b820237729e6",
+      "packaged_sha256": "943068952ea6ee30ba966bd4c990beef9ec10afada0b502cc865b820237729e6"
+    },
+    "upper/firmware/shooter/play.cmd": {
+      "source": "upper/firmware/shooter/play.cmd",
+      "source_sha256": "ba325b948debe157733927b042fe225e5903f1cb2c8896e397628a5f0b32de8d",
+      "packaged_sha256": "ba325b948debe157733927b042fe225e5903f1cb2c8896e397628a5f0b32de8d"
+    },
+    "upper/firmware/shooter/play.ps1": {
+      "source": "upper/firmware/shooter/play.ps1",
+      "source_sha256": "663f6091569f598ae0838b7222115352783e3978a9fc56c07fcb39c124b97cf2",
+      "packaged_sha256": "663f6091569f598ae0838b7222115352783e3978a9fc56c07fcb39c124b97cf2"
+    },
+    "upper/firmware/shooter/SIMULATION_RESULT.json": {
+      "source": "upper/firmware/shooter/SIMULATION_RESULT.json",
+      "source_sha256": "11db42e3570a94efd7fd02ef2d73ef3e1e2e18d6c87ee1a38b65c84b885fde41",
+      "packaged_sha256": "11db42e3570a94efd7fd02ef2d73ef3e1e2e18d6c87ee1a38b65c84b885fde41"
+    },
+    "upper/firmware/shooter/preview/scope.json": {
+      "source": "upper/firmware/shooter/preview/scope.json",
+      "source_sha256": "fbd3d74d33b86d19ce59411da431cc0b18d60c5df16d58417cbc33c9bd5370e5",
+      "packaged_sha256": "fbd3d74d33b86d19ce59411da431cc0b18d60c5df16d58417cbc33c9bd5370e5"
+    },
+    "upper/firmware/shooter/sim/native.c": {
+      "source": "upper/firmware/shooter/sim/native.c",
+      "source_sha256": "0b347cbb10e7c4305337de61984adb000239ca9feb00b2f967abc3b8c52c9d5d",
+      "packaged_sha256": "0b347cbb10e7c4305337de61984adb000239ca9feb00b2f967abc3b8c52c9d5d"
+    },
+    "upper/firmware/shooter/sim/riscv_main.c": {
+      "source": "upper/firmware/shooter/sim/riscv_main.c",
+      "source_sha256": "30a657a7a7ec431e8c208f892fddea9bdc187ecc86f622fab640d391fe129709",
+      "packaged_sha256": "30a657a7a7ec431e8c208f892fddea9bdc187ecc86f622fab640d391fe129709"
+    },
+    "upper/firmware/shooter/sim/scenarios.c": {
+      "source": "upper/firmware/shooter/sim/scenarios.c",
+      "source_sha256": "37b7dff0c85dc03678d007c75c734660bec0878a3041ed22e25f6ddb228fecb3",
+      "packaged_sha256": "37b7dff0c85dc03678d007c75c734660bec0878a3041ed22e25f6ddb228fecb3"
+    },
+    "upper/firmware/shooter/sim/scenarios.h": {
+      "source": "upper/firmware/shooter/sim/scenarios.h",
+      "source_sha256": "48cd8adab6f1e080632f7f3e51facd250b03fca6cccb870dc43dcda967495ac3",
+      "packaged_sha256": "48cd8adab6f1e080632f7f3e51facd250b03fca6cccb870dc43dcda967495ac3"
+    },
+    "upper/firmware/shooter/sim/test_game.c": {
+      "source": "upper/firmware/shooter/sim/test_game.c",
+      "source_sha256": "db2245ff77e7f9a619bdd9fdb4a5ff5cab5b5e165c61293f6159b1488c31e5bb",
+      "packaged_sha256": "db2245ff77e7f9a619bdd9fdb4a5ff5cab5b5e165c61293f6159b1488c31e5bb"
+    },
+    "upper/firmware/runtime/sources.json": {
+      "source": "upper/firmware/runtime/sources.json",
+      "source_sha256": "97a64397c9e7a0cd58c24fa98a56be739ddc30ca2839daa01e7425df806970e3",
+      "packaged_sha256": "97a64397c9e7a0cd58c24fa98a56be739ddc30ca2839daa01e7425df806970e3"
+    },
+    "upper/firmware/runtime/adapters/coremark.c": {
+      "source": "upper/firmware/runtime/adapters/coremark.c",
+      "source_sha256": "1ce57011419fcb5f5b549ce8b66492dcedeba603d270281bc1e04d256b65b304",
+      "packaged_sha256": "1ce57011419fcb5f5b549ce8b66492dcedeba603d270281bc1e04d256b65b304"
+    },
+    "upper/firmware/runtime/adapters/face.c": {
+      "source": "upper/firmware/runtime/adapters/face.c",
+      "source_sha256": "0758d602ca628f53caab15b1e3e9f150fcc3c3ec21a6a068a42e8486bb0aed7c",
+      "packaged_sha256": "0758d602ca628f53caab15b1e3e9f150fcc3c3ec21a6a068a42e8486bb0aed7c"
+    },
+    "upper/firmware/runtime/adapters/game.c": {
+      "source": "upper/firmware/runtime/adapters/game.c",
+      "source_sha256": "0b5d9017bd1313753df7a6f6301bee1f73bf3b17456203e50cb66c7fa9863e2f",
+      "packaged_sha256": "0b5d9017bd1313753df7a6f6301bee1f73bf3b17456203e50cb66c7fa9863e2f"
+    },
+    "upper/firmware/runtime/adapters/receiver.c": {
+      "source": "upper/firmware/runtime/adapters/receiver.c",
+      "source_sha256": "a83a32688e475f3f8f7dea8647c6efebf198b238d0cfcf65044b1c5a4161098a",
+      "packaged_sha256": "a83a32688e475f3f8f7dea8647c6efebf198b238d0cfcf65044b1c5a4161098a"
+    },
+    "upper/firmware/runtime/src/main.c": {
+      "source": "upper/firmware/runtime/src/main.c",
+      "source_sha256": "4f051bb375509c31f95bcc1fddd308c2df512bbf5d51e571a7f4fdaff57f4d4a",
+      "packaged_sha256": "4f051bb375509c31f95bcc1fddd308c2df512bbf5d51e571a7f4fdaff57f4d4a"
+    },
+    "upper/firmware/runtime/src/mode.c": {
+      "source": "upper/firmware/runtime/src/mode.c",
+      "source_sha256": "efba27ac83ae565934bd52dcfedab27d360dbdec71d49ff8eb480d6872f61ca8",
+      "packaged_sha256": "efba27ac83ae565934bd52dcfedab27d360dbdec71d49ff8eb480d6872f61ca8"
+    },
+    "upper/firmware/runtime/src/mode.h": {
+      "source": "upper/firmware/runtime/src/mode.h",
+      "source_sha256": "ce5430a584adaa39d84954acf65798b6bc87fc90f2cdefbfee7b7f81399a38c4",
+      "packaged_sha256": "ce5430a584adaa39d84954acf65798b6bc87fc90f2cdefbfee7b7f81399a38c4"
+    },
+    "upper/firmware/runtime/tests/face_exit.c": {
+      "source": "upper/firmware/runtime/tests/face_exit.c",
+      "source_sha256": "080ab8d3d6dd21f82e15e0b1ca2a069893243efb640eca92d1f76b08b4cf5a19",
+      "packaged_sha256": "080ab8d3d6dd21f82e15e0b1ca2a069893243efb640eca92d1f76b08b4cf5a19"
+    },
+    "upper/firmware/runtime/tests/mode_test.c": {
+      "source": "upper/firmware/runtime/tests/mode_test.c",
+      "source_sha256": "e96e0c7294612a4bea97a87a308b3cbe0aadaa0c909b170cb87443cb086be19e",
+      "packaged_sha256": "e96e0c7294612a4bea97a87a308b3cbe0aadaa0c909b170cb87443cb086be19e"
+    },
+    "upper/firmware/runtime/tests/receiver_exit.c": {
+      "source": "upper/firmware/runtime/tests/receiver_exit.c",
+      "source_sha256": "68cd801da87044dbeb6c352e2965fdf68d1e7c762b42e0515f275a441fee0008",
+      "packaged_sha256": "68cd801da87044dbeb6c352e2965fdf68d1e7c762b42e0515f275a441fee0008"
+    },
+    "upper/firmware/runtime/tests/router_test.c": {
+      "source": "upper/firmware/runtime/tests/router_test.c",
+      "source_sha256": "d020602c1b680e85a673ca7d290c9df743e9b10c95145961b77a860d2ef131bf",
+      "packaged_sha256": "d020602c1b680e85a673ca7d290c9df743e9b10c95145961b77a860d2ef131bf"
+    },
+    "upper/firmware/runtime/tests/rx_native.h": {
+      "source": "upper/firmware/runtime/tests/rx_native.h",
+      "source_sha256": "6741d7a8c5709e93a021cda4a66bcc231fc8ac4fe7b1d95a10e383f2f4911547",
+      "packaged_sha256": "6741d7a8c5709e93a021cda4a66bcc231fc8ac4fe7b1d95a10e383f2f4911547"
+    },
+    "upper/firmware/runtime/vendor/rx/ethernet_rx.c": {
+      "source": "upper/firmware/runtime/vendor/rx/ethernet_rx.c",
+      "source_sha256": "ec96c648a1120c78b9644641a9a254888e13fff1ab3f7d1747c70a502d0e280e",
+      "packaged_sha256": "ec96c648a1120c78b9644641a9a254888e13fff1ab3f7d1747c70a502d0e280e"
+    },
+    "upper/firmware/runtime/vendor/rx/ethernet_rx.h": {
+      "source": "upper/firmware/runtime/vendor/rx/ethernet_rx.h",
+      "source_sha256": "672039803603734da3899e8de4a80f05dfc3baedd8b3ca3e20593607dc7bf570",
+      "packaged_sha256": "672039803603734da3899e8de4a80f05dfc3baedd8b3ca3e20593607dc7bf570"
+    },
+    "upper/firmware/runtime/vendor/rx/ethernet_rx_service.c": {
+      "source": "upper/firmware/runtime/vendor/rx/ethernet_rx_service.c",
+      "source_sha256": "9362af826ed845e9f993a8b0fcd82ef2c60f9163a82e429ffa4bb9af1e7169c5",
+      "packaged_sha256": "9362af826ed845e9f993a8b0fcd82ef2c60f9163a82e429ffa4bb9af1e7169c5"
+    },
+    "upper/firmware/runtime/vendor/rx/ethernet_rx_service.h": {
+      "source": "upper/firmware/runtime/vendor/rx/ethernet_rx_service.h",
+      "source_sha256": "908c4884603ecd49664e08d59f7eefab8398ebff45eac9f8260413721d797f65",
+      "packaged_sha256": "908c4884603ecd49664e08d59f7eefab8398ebff45eac9f8260413721d797f65"
+    },
+    "upper/firmware/arcade/src/arcade.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/arcade.c",
+      "source_sha256": "e2f2d3f4bdb6b6275daac2c27967c7f1ccff0021c11023e0b0c268e04a0296b7",
+      "packaged_sha256": "e2f2d3f4bdb6b6275daac2c27967c7f1ccff0021c11023e0b0c268e04a0296b7"
+    },
+    "upper/firmware/arcade/src/arcade.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/arcade.h",
+      "source_sha256": "63c1b8b9d25d4724794472bc93fff2801b9c68243b8981bc0a564d4986406b42",
+      "packaged_sha256": "63c1b8b9d25d4724794472bc93fff2801b9c68243b8981bc0a564d4986406b42"
+    },
+    "upper/firmware/arcade/src/draw.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/draw.c",
+      "source_sha256": "3d0ad75c019387ca43874f6a1e03073ed12fd0e245b9e9170ea51d3c74b85615",
+      "packaged_sha256": "3d0ad75c019387ca43874f6a1e03073ed12fd0e245b9e9170ea51d3c74b85615"
+    },
+    "upper/firmware/arcade/src/main.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/main.c",
+      "source_sha256": "5ffa748deba55042c8d2775ce4d29d75cf8182b3d3008222a2f60e7f4ac6a89a",
+      "packaged_sha256": "5ffa748deba55042c8d2775ce4d29d75cf8182b3d3008222a2f60e7f4ac6a89a"
+    },
+    "upper/firmware/arcade/src/protocol.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/protocol.c",
+      "source_sha256": "2e62431b3b1bef594a1ae7f841d68085ebff09129d1eb06ad4ff6528d8addce8",
+      "packaged_sha256": "2e62431b3b1bef594a1ae7f841d68085ebff09129d1eb06ad4ff6528d8addce8"
+    },
+    "upper/firmware/arcade/src/protocol.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/src/protocol.h",
+      "source_sha256": "6f0ad10f6ee697ff612311e25adc2e76c1eafa405200ed4840d6816e74fd9108",
+      "packaged_sha256": "6f0ad10f6ee697ff612311e25adc2e76c1eafa405200ed4840d6816e74fd9108"
+    },
+    "upper/firmware/shooter/src/game.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/shooter/src/game.c",
+      "source_sha256": "66057585779ccf8904794197e9e5e63b7cd9d0158eb00431aa0aabd34ece6fa1",
+      "packaged_sha256": "66057585779ccf8904794197e9e5e63b7cd9d0158eb00431aa0aabd34ece6fa1"
+    },
+    "upper/firmware/shooter/src/game.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/shooter/src/game.h",
+      "source_sha256": "44b73de82fbff51c7caaf93406a2bf35781196703a4b2b7c05777fa3981f5a4b",
+      "packaged_sha256": "44b73de82fbff51c7caaf93406a2bf35781196703a4b2b7c05777fa3981f5a4b"
+    },
+    "upper/firmware/shooter/src/gfx.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/shooter/src/gfx.h",
+      "source_sha256": "1d9fe9ce5048e7744944d43f9e9f775a659c46364e2e345a38e1cddd0db6ad5f",
+      "packaged_sha256": "1d9fe9ce5048e7744944d43f9e9f775a659c46364e2e345a38e1cddd0db6ad5f"
+    },
+    "upper/firmware/shooter/src/render.c": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/shooter/src/render.c",
+      "source_sha256": "83e0c6b9f38addc18b20fdbff20a1c2752eed239367a5643f11988a050d9358a",
+      "packaged_sha256": "83e0c6b9f38addc18b20fdbff20a1c2752eed239367a5643f11988a050d9358a"
+    },
+    "upper/assets/firmware/runtime.ngb": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/build/runtime/runtime.ngb",
+      "source_sha256": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661",
+      "packaged_sha256": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661"
+    },
+    "upper/assets/firmware/arcade.ngb": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/build/arcade.ngb",
+      "source_sha256": "451996c8e1f96be391940a4596b1fef89e05990f765a5f1e356f722c1acd7c1a",
+      "packaged_sha256": "451996c8e1f96be391940a4596b1fef89e05990f765a5f1e356f722c1acd7c1a"
+    },
+    "upper/provenance.json": {
+      "source": "upper/provenance.json",
+      "source_sha256": "cc5f0e6c8f7e2272e3b56289b45c752c070788fdc65030ee1c19306b3136d8f6",
+      "packaged_sha256": "6c4f03b055ae6a91a3d78a7a4c92462d3e8794cf35ff55669cb7dc2dcca04089",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "firmware/bootloader/src/boot_entry.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/boot_entry.c",
+      "source_sha256": "9b59a0fcd5adf603cd99377a82e166c5af9522fecad5c21676938f7c681b1fda",
+      "packaged_sha256": "9b59a0fcd5adf603cd99377a82e166c5af9522fecad5c21676938f7c681b1fda"
+    },
+    "firmware/bootloader/src/flash.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash.c",
+      "source_sha256": "fe7320d2a296291662dcac16f10b223b74637aa19ae07b36d4172ac7139da628",
+      "packaged_sha256": "fe7320d2a296291662dcac16f10b223b74637aa19ae07b36d4172ac7139da628"
+    },
+    "firmware/bootloader/src/flash.h": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash.h",
+      "source_sha256": "a07ee4f9c2ed2b74b1b059a2e6dc6fcb35b765e284ea70aa9a753d5dafe9778e",
+      "packaged_sha256": "a07ee4f9c2ed2b74b1b059a2e6dc6fcb35b765e284ea70aa9a753d5dafe9778e"
+    },
+    "firmware/bootloader/src/flash_boot_service.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_boot_service.c",
+      "source_sha256": "af96d4666dc8f6e43849f24ec30e91cb1887a137fdd37662dc6a07221e15027c",
+      "packaged_sha256": "af96d4666dc8f6e43849f24ec30e91cb1887a137fdd37662dc6a07221e15027c"
+    },
+    "firmware/bootloader/src/flash_boot_service.h": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_boot_service.h",
+      "source_sha256": "e88b58b16e1926e3600dccf5715df400bb411b61bac2a25a29c253113d27da78",
+      "packaged_sha256": "e88b58b16e1926e3600dccf5715df400bb411b61bac2a25a29c253113d27da78"
+    },
+    "firmware/bootloader/src/flash_mmio.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_mmio.c",
+      "source_sha256": "5fbf3d9ac2ab10d03f5b38ca3d6fc7a3ca16f1b73c27a51a853a668f90356eb5",
+      "packaged_sha256": "5fbf3d9ac2ab10d03f5b38ca3d6fc7a3ca16f1b73c27a51a853a668f90356eb5"
+    },
+    "firmware/bootloader/src/flash_store.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_store.c",
+      "source_sha256": "ce8c1e7c40e78aa890106c6661e1caa5e2f40c78c7552af24767392fa1dd0794",
+      "packaged_sha256": "ce8c1e7c40e78aa890106c6661e1caa5e2f40c78c7552af24767392fa1dd0794"
+    },
+    "firmware/bootloader/src/flash_store.h": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/flash_store.h",
+      "source_sha256": "5bfc9f131fb351005836ab3f23a0912366bb26787c7fe1cad1d69010d1db5a9c",
+      "packaged_sha256": "5bfc9f131fb351005836ab3f23a0912366bb26787c7fe1cad1d69010d1db5a9c"
+    },
+    "firmware/bootloader/src/network_main.c": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/firmware/network_main.c",
+      "source_sha256": "c72d4896a2a9cbf6fd57971c235c02c56ee912058cd2717a4316e9e8047060a0",
+      "packaged_sha256": "c72d4896a2a9cbf6fd57971c235c02c56ee912058cd2717a4316e9e8047060a0"
+    },
+    "firmware/bootloader/src/start.S": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/start.S",
+      "source_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3",
+      "packaged_sha256": "b178a875294dae4f6f0c650b44728b895f6267b7d27b70919a82fdf993c411e3"
+    },
+    "firmware/bootloader/src/jump.S": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/jump.S",
+      "source_sha256": "ec2c7acbf61792e146933de320807172044068a4247e2becbaac05d594ca4c9b",
+      "packaged_sha256": "ec2c7acbf61792e146933de320807172044068a4247e2becbaac05d594ca4c9b"
+    },
+    "firmware/bootloader/src/link.ld": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/link.ld",
+      "source_sha256": "9bb40c4babb033ee4df37445ac5487bb9b85c5b0785d4cac51f714b7ee85bff4",
+      "packaged_sha256": "9bb40c4babb033ee4df37445ac5487bb9b85c5b0785d4cac51f714b7ee85bff4"
+    },
+    "firmware/bootloader/src/loader.c": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/loader.c",
+      "source_sha256": "a837e9fb192b01c17493fa05ab3f56c73cc7f365f9222e3e18dd9730d1909199",
+      "packaged_sha256": "a837e9fb192b01c17493fa05ab3f56c73cc7f365f9222e3e18dd9730d1909199"
+    },
+    "firmware/bootloader/src/loader.h": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/loader.h",
+      "source_sha256": "5b14ba326cb4f3e4a38ba8fd5db4c9d5eff96cce8e81d06c2ea53b43f22f5c31",
+      "packaged_sha256": "5b14ba326cb4f3e4a38ba8fd5db4c9d5eff96cce8e81d06c2ea53b43f22f5c31"
+    },
+    "firmware/bootloader/src/program_upload.c": {
+      "source": "soc/candidates/ethernet_bootloader_20261028/boot/program_upload.c",
+      "source_sha256": "d1aaa1d64f80b64b4c1154f5bd60c50770055ead1c1a27d53f7b53dcf82710a8",
+      "packaged_sha256": "d1aaa1d64f80b64b4c1154f5bd60c50770055ead1c1a27d53f7b53dcf82710a8"
+    },
+    "firmware/bootloader/src/ethernet.c": {
+      "source": "soc/firmware/ethernet/ethernet.c",
+      "source_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed",
+      "packaged_sha256": "effd9537b3e5999ca2d2f66efaab3e85104edeab8d1cb0df02665b0302ff0fed"
+    },
+    "firmware/bootloader/src/ethernet.h": {
+      "source": "soc/firmware/ethernet/ethernet.h",
+      "source_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032",
+      "packaged_sha256": "a6b979a2ba2d5595cc69929acb772d0e3eab64491038cc60eef9ccb9c7fc2032"
+    },
+    "firmware/bootloader/src/memory.c": {
+      "source": "soc/candidates/ai_ultraface_20261026/firmware/memory.c",
+      "source_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6",
+      "packaged_sha256": "f5d0b347583232f961744bccf683222cd607b8c3b66b65728feb9d3b58be03f6"
+    },
+    "firmware/bootloader/src/freestanding/string.h": {
+      "source": "soc/candidates/ai_ultraface_20261026/firmware/freestanding/string.h",
+      "source_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21",
+      "packaged_sha256": "6e34f68f7656f3c88de24463965c3b2245bbb891363fc0b2e76e40ed8a337b21"
+    },
+    "tools/flash/flash_image.py": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/pc/flash_image.py",
+      "source_sha256": "ab510c3dc3a625dfd1fbdba863553aa44179f781ce15d37ee9775d8bb3ca2b71",
+      "packaged_sha256": "ab510c3dc3a625dfd1fbdba863553aa44179f781ce15d37ee9775d8bb3ca2b71"
+    },
+    "tools/flash/install_application.py": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/pc/install_application.py",
+      "source_sha256": "46cc6317b53a05b079a0a6c8ec4e8bd7637bc5b3ef7b1a49840e7f6cf539ef5a",
+      "packaged_sha256": "fc5f07c1e4e59ec2c35f757907f474aa9b08ab5eea0a3182f8b7d29a3f414a8b",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "tools/flash/send_image.py": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_20261030/pc/send_image.py",
+      "source_sha256": "fb8594f06c710391dff6a9dd87913efd09eb21199e95985c6fc95d6bdcf31959",
+      "packaged_sha256": "fb8594f06c710391dff6a9dd87913efd09eb21199e95985c6fc95d6bdcf31959"
+    },
+    "firmware/recipes/runtime_build_info.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/build/runtime/build_info.h",
+      "source_sha256": "888ff55cc63aca1416364a3c7ce0e544472e2ac26bcee68d951241c5c1b077bd",
+      "packaged_sha256": "888ff55cc63aca1416364a3c7ce0e544472e2ac26bcee68d951241c5c1b077bd"
+    },
+    "firmware/recipes/arcade_build_info.h": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/build/build_info.h",
+      "source_sha256": "fa69d19e4225bfccdd5f0f7892443c82c9f199ac9dc0e9703b623c39fe0b4d5f",
+      "packaged_sha256": "fa69d19e4225bfccdd5f0f7892443c82c9f199ac9dc0e9703b623c39fe0b4d5f"
+    },
+    "third_party/verilog-ethernet/COPYING": {
+      "source": "soc/third_party/verilog-ethernet/COPYING",
+      "source_sha256": "8ea57f95365e9b16a5b516f422b71269183a1ae53bab5878ae6d69039e58fe77",
+      "packaged_sha256": "8ea57f95365e9b16a5b516f422b71269183a1ae53bab5878ae6d69039e58fe77"
+    },
+    "reference/p3_setup25/SIGNOFF.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/SIGNOFF.json",
+      "source_sha256": "8c436709503cd9a780c03f9c2259090a06d1bd6311815b73989448cae1e47bb1",
+      "packaged_sha256": "41ee46d7874d9934776970a6f8a8749c0c929083870ff4e9b72dbda509bc5052"
+    },
+    "reference/p3_setup25/timing_result.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/timing_result.json",
+      "source_sha256": "fa1e5cafa77199915dcce71994d14b90f314ea15fa5ffb50aaf5c50ef625fcc4",
+      "packaged_sha256": "66624c8b05bd40cf632f90d0071ec38cbe8d96c0e43fc45c182bbbcf793e5e41"
+    },
+    "reference/p3_setup25/native_audit.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/native_audit.json",
+      "source_sha256": "ca0eed5ac53c561ab59698af66583386107db7322cae09155f3d42fbd87d592b",
+      "packaged_sha256": "bbebff5a820cbe1bb8d892faa5f8bf3cc7abfbd4b1303b79c059eec1643013d6"
+    },
+    "reference/p3_setup25/bitstream_equivalence.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/bitstream_equivalence.json",
+      "source_sha256": "c978c0bb5765e2fa3e198e8c76b03469b453239e77d970836471ae7dbf72234f",
+      "packaged_sha256": "1f49879e513bfd09d3e94dcb512fd882d8a6768765a721030a317ec380a15e6d"
+    },
+    "reference/p3_setup25/constraint_only_proof.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/constraint_only_proof.json",
+      "source_sha256": "9beb2aa316c9df4847f083069a0d4db25b39a17fdbc5f485fe06d2e6124b0789",
+      "packaged_sha256": "d1a5f3c47188d410380128f7180fc43aaa5716933fd30bde7494764cb28307ad"
+    },
+    "reference/p3_setup25/setup_summary.txt": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/setup_summary.txt",
+      "source_sha256": "316f2928b664109a1cd2c69431afac0da43b22b2171eab3e4afc40d842067a17",
+      "packaged_sha256": "3d195d4c36bda5216e0ec94a141eda70d9e180f9aea47e16ef1a1d0ff7e26ec2",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "reference/p3_setup25/hold_summary.txt": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/hold_summary.txt",
+      "source_sha256": "ad346058f7b29bff2a3a760abd0a65e85b4f39ab21fc82da568030a231f02227",
+      "packaged_sha256": "4f72f83b3aa79c11ba3f6392eba3a2f364c1ab0648f51d1e6e880ae40fe09818",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "reference/p3_setup25/RESULT.txt": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/RESULT.txt",
+      "source_sha256": "91ef8c2b0c66b304cca3e89631c6842dcca3b5685a5eab88bbf2e80b5cf65a06",
+      "packaged_sha256": "91ef8c2b0c66b304cca3e89631c6842dcca3b5685a5eab88bbf2e80b5cf65a06"
+    },
+    "release/fpga/pg2l100h_soc_p3_top.sbit": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+      "source_sha256": "43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a",
+      "packaged_sha256": "43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a"
+    },
+    "release/fpga/pg2l100h_soc_p3_top.bin": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.bin",
+      "source_sha256": "a83884fb0919ab12a3d0a83471cc8d14bfb7d7e94fb433e547341550f0b86b3f",
+      "packaged_sha256": "a83884fb0919ab12a3d0a83471cc8d14bfb7d7e94fb433e547341550f0b86b3f"
+    },
+    "validation/flash/board.json": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/BOARD_RESULT.json",
+      "source_sha256": "14627cbfde0f9c6ad4be6e7359dc784cf1a14881f2dbc81664750aaa96b1cd1d",
+      "packaged_sha256": "ee72de63604084abb9b16499805d4f43072fc99ee2179382f97cccacb6e5de08",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/flash/rtl_regression.json": {
+      "source": "soc/candidates/ethernet_rx_dma_p3_flash_pinfix_20261101/verification/result.json",
+      "source_sha256": "15576b4621c01a859d809542d66f34fd9b799f635602f61f2a022bbb20731575",
+      "packaged_sha256": "4d999559e59dae2a277d496cda2081f53a12a8aca6d2f1b9edf71713157b83f3",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/flash/functional.json": {
+      "source": "soc/build/mes2l676_soc_p3_flash_pinfix_20261101/functional_20261101/board_result.json",
+      "source_sha256": "de3071f6b4fccc505d4a9671a9495f652aaa7b2a334b692136e25ae0d33346b8",
+      "packaged_sha256": "7a9aae38c2ca424ba80b5d816fe2eed0c94ea68f9d3e5dca39eaec125073c278",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/board.json": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/BOARD_RESULT.json",
+      "source_sha256": "25585001fe287857a3876fe52a858200538e4a5e896f7d3dfc9ad84263482a4b",
+      "packaged_sha256": "66b82161eaec9cf4192d7d407731cb54f44e9ede82461cbd377d49f5538ec3b2",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/cpu_sim.json": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/arcade/build/cpu_result.json",
+      "source_sha256": "b44f66f87ee65032ec2ba09a87241d071f57739db6a1d85f3727a5c2ee642f8e",
+      "packaged_sha256": "b44f66f87ee65032ec2ba09a87241d071f57739db6a1d85f3727a5c2ee642f8e",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/followup.json": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_verified_20261101T171818Z/FOLLOWUP_RESULT.json",
+      "source_sha256": "149a7553891c57cf4631583da01f7f4c736e52a006fe5b7aa6964c5c5bf72f8f",
+      "packaged_sha256": "36866b2696e48086819452c428c3a77de1e286b2f4636d130145faa2bbe700f9",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/sanitizer.json": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/build/sanitizer_result.json",
+      "source_sha256": "6ad8a3ddf606e0fca405e038d4848dc875a5e0912a0db2dc5e32081a133de20c",
+      "packaged_sha256": "f51d7670db114747439f15dbdce4c835cff9207b8c6982f197f8aa62ab5d2361",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/stack.json": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/build/stack_result.json",
+      "source_sha256": "922ae63ff5e3227ebb436da21ee6f0c7cecb24245750789268e192cc4209c5cb",
+      "packaged_sha256": "2d1ace38c6af0ae3938b347e4e399c6e747fcefac23a277bbfd113480d6a0d4f",
+      "adaptation": "Package path, provenance or test dependency relocation; see package validation"
+    },
+    "validation/games/game_0.png": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_0_first.png",
+      "source_sha256": "dd1e12f97eb7689938d655511901b1668dea386db289aee1591a7b95be59b834",
+      "packaged_sha256": "dd1e12f97eb7689938d655511901b1668dea386db289aee1591a7b95be59b834"
+    },
+    "validation/games/game_1.png": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_1_first.png",
+      "source_sha256": "92713cafb81a32c77e5068763c970718aa1cda06cbfa3958de47bdac8c9375c3",
+      "packaged_sha256": "92713cafb81a32c77e5068763c970718aa1cda06cbfa3958de47bdac8c9375c3"
+    },
+    "validation/games/game_2.png": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_2_first.png",
+      "source_sha256": "1229a53034ac20a87370834579bc45221595a417cd2717fcfd266d1674da5565",
+      "packaged_sha256": "1229a53034ac20a87370834579bc45221595a417cd2717fcfd266d1674da5565"
+    },
+    "validation/games/game_3.png": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_3_first.png",
+      "source_sha256": "73ce9df74f341f2a5f1337b18593c2a4f57c051b38b27007c6168b3902da9e27",
+      "packaged_sha256": "73ce9df74f341f2a5f1337b18593c2a4f57c051b38b27007c6168b3902da9e27"
+    },
+    "validation/games/game_4.png": {
+      "source": "upper/candidates/arcade_visual_p1_20261101/board_validation/gui_verified_20261101T171818Z/board_game_4_first.png",
+      "source_sha256": "e99ba23df57259616f5cfd85693fdb4400fd52dda3bc4b6f2b7231ebbecc6ae6",
+      "packaged_sha256": "e99ba23df57259616f5cfd85693fdb4400fd52dda3bc4b6f2b7231ebbecc6ae6"
+    },
+    "firmware/bootloader/src/ngu_upload.h": {
+      "source": "soc/candidates/ai_ultraface_20261026/firmware/ngu_upload.h",
+      "source_sha256": "451a59bc2077918a41511ae0a14fba2850757f90609fa2369c0d802b6cdc50c3",
+      "packaged_sha256": "451a59bc2077918a41511ae0a14fba2850757f90609fa2369c0d802b6cdc50c3"
+    }
+  },
+  "excluded": [
+    "personal photos in assets/mysample",
+    "session logs and face captures",
+    "obsolete candidate trees",
+    "tool installations",
+    "temporary synthesis/route products"
+  ],
+  "original_project_modified": false,
+  "existing_git_history_preserved": true,
+  "package_changes": [
+    "ROM filename relocated, bytes unchanged",
+    "Default host runtime selects exact tested 9700ce2a",
+    "CoreMark audit parser extracted without algorithm change",
+    "Asset regression paths made relative",
+    "Only selected upstream CoreMark algorithm files and license retained",
+    "Historical record paths use source:// references",
+    "Fresh builds are separate from frozen routed-DB timing replay"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "CONSTRAINED_STA_SIGNOFF_PASS",
+  "scope": "All constrained clock groups, slow/fast setup, hold, recovery, removal and pulse-width, at user-selected sys100 setup25/hold0 budget",
+  "user_selected_setup_ps": 25,
+  "hold_ps": 0,
+  "actual_sys100_setup_deduction_ps": 175,
+  "physical_design_unchanged": true,
+  "run": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101",
+  "bitstream": [
+    {
+      "path": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.bin",
+      "bytes": 3789476,
+      "sha256": "a83884fb0919ab12a3d0a83471cc8d14bfb7d7e94fb433e547341550f0b86b3f"
+    },
+    {
+      "path": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+      "bytes": 3791112,
+      "sha256": "43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a"
+    }
+  ],
+  "original_versions_preserved": true,
+  "Flash_external_IO_signoff": false,
+  "full_board_electrical_signoff": false,
+  "files": {
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/setup.rtr": "0b768511671ff9ac8fc5e473806b5296f74de2bb5e48447377250c73077b5501",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/hold.rtr": "5bebf27d272fbfaae7ecc10c8d404c0611e2af9cd21f67a30ac832889faa2c21",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/setup_exception.rtr": "4027aff2bc32e8ff879dedf8e9f94b5f98e22d228821b91009181fcd4651b8b1",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/hold_exception.rtr": "6092570522aa90aac228dfa0206da33cb6e55d062effc74bb54a643289ef8600",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/native_audit.json": "ca0eed5ac53c561ab59698af66583386107db7322cae09155f3d42fbd87d592b",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/timing_result.json": "fa1e5cafa77199915dcce71994d14b90f314ea15fa5ffb50aaf5c50ef625fcc4",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/bitstream_result.json": "c219712e818fd993b21e662779e614a515dc2e7d2b793ac143686bc36ec5d348",
+    "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/setup25.pds": "bc14d3bf957c5b0947b67e20a1b0960b62374442d6b03e74c0d728ebe5604b2e"
+  },
+  "reproduce": "setup25.py: prepare -> import -> audit -> sta -> qualify -> bitstream -> program; use a new output directory for a new run",
+  "setup_slow": {
+    "worst_ns": 0.024,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "setup_fast": {
+    "worst_ns": 0.269,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_slow": {
+    "worst_ns": 0.138,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "hold_fast": {
+    "worst_ns": 0.04,
+    "failing_endpoints": 0,
+    "total_negative_ns": 0.0
+  },
+  "board_download": {
+    "status": "PASS",
+    "bitstream_sha256": "43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a",
+    "configuration_flash_written": false,
+    "finished_utc": "2026-11-01T16:14:07.706070+00:00",
+    "program_and_verify_success_from_native_log": true,
+    "console_encoding": "gb18030",
+    "wrapper_postprocessing_error": "Initial UTF-8 decoding rejected native progress glyphs; parsed original log without programming again"
+  },
+  "board_program_log": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/board_validation/program_1.log",
+  "new_game_runtime": {
+    "build_id": "9700ce2a",
+    "status": "FOUR_GAMES_BASIC_BOARD_VALIDATION_COMPLETE",
+    "image": "source://upper/candidates/arcade_visual_p1_20261101/build/runtime/runtime.ngb",
+    "board_result": "source://upper/candidates/arcade_visual_p1_20261101/BOARD_RESULT.json",
+    "currently_observed_runtime": "9700ce2a",
+    "current_runtime_confirmed": true,
+    "reset_cause": "CAUSE_UNCONFIRMED_POSSIBLE_MANUAL_RESET",
+    "reset_audit": "source://upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/AUDIT_RESULT.json",
+    "followup_result": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_verified_20261101T171818Z/FOLLOWUP_RESULT.json"
+  }
+}

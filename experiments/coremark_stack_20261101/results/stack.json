@@ -1,0 +1,1116 @@
+{
+  "linker_guarantee_bytes": 32768,
+  "space_between_bss_and_stack_top": 116512,
+  "coremark_work_area_bytes": 2000,
+  "coremark_main": {
+    "object": "022_core_main.su",
+    "function": "coremark_main",
+    "bytes": 2176,
+    "qualifier": "static"
+  },
+  "coremark_static_frame_inventory_sum": 3536,
+  "coremark_frames": [
+    {
+      "object": "019_coremark.su",
+      "function": "runtime_coremark",
+      "bytes": 352,
+      "qualifier": "static"
+    },
+    {
+      "object": "020_service.su",
+      "function": "cm_crc32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "020_service.su",
+      "function": "cm_request",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "cm_read_ticks",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "start_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "stop_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "get_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "time_in_secs",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "portable_init",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "portable_fini",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "ee_printf",
+      "bytes": 176,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "cm_run",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "022_core_main.su",
+      "function": "iterate",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "022_core_main.su",
+      "function": "coremark_main",
+      "bytes": 2176,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "calc_func",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "cmp_complex",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "cmp_idx",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "copy_info",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_bench_list",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_init",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_insert_new",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_remove",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_undo_remove",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_find",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_reverse",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_mergesort",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "core_bench_matrix",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_test",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "core_init_matrix",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_sum",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_const",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_add_const",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_vect",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_matrix",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_matrix_bitextract",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_bench_state",
+      "bytes": 144,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_init_state",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_state_transition",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "get_seed_32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu8",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu16",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crc16",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "check_data_types",
+      "bytes": 0,
+      "qualifier": "static"
+    }
+  ],
+  "all_reported_frames": [
+    {
+      "object": "001_memory.su",
+      "function": "memcpy",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "001_memory.su",
+      "function": "memset",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "001_memory.su",
+      "function": "memcmp",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "002_ethernet.su",
+      "function": "nigo_eth_open",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "002_ethernet.su",
+      "function": "nigo_eth_ready",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "002_ethernet.su",
+      "function": "nigo_eth_configure",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "002_ethernet.su",
+      "function": "nigo_eth_service",
+      "bytes": 80,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "runtime_pending",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "runtime_application_rx_ready",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "runtime_peer",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "runtime_mode_changed",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "runtime_poll",
+      "bytes": 128,
+      "qualifier": "static"
+    },
+    {
+      "object": "003_main.su",
+      "function": "nigo_application_main",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "004_mode.su",
+      "function": "mode_request",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "004_mode.su",
+      "function": "mode_commit",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "005_game.su",
+      "function": "send",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "005_game.su",
+      "function": "runtime_game",
+      "bytes": 400,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "fits",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "food",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "lock_piece",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "gx_tile",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "gx_panel",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "hud",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "menu_art",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "breakout_view",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_enter",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_init",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_step",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_render",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_encode",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "006_arcade.su",
+      "function": "arcade_crc",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "007_draw.su",
+      "function": "arcade_rect",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "007_draw.su",
+      "function": "arcade_text",
+      "bytes": 80,
+      "qualifier": "static"
+    },
+    {
+      "object": "007_draw.su",
+      "function": "arcade_number",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "008_protocol.su",
+      "function": "arcade_request",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "008_protocol.su",
+      "function": "arcade_packet",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "burst",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "game_init",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "game_start",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "game_step",
+      "bytes": 80,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "game_hash",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "009_game.su",
+      "function": "game_state_hash",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "010_render.su",
+      "function": "gx_panel",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "010_render.su",
+      "function": "game_draw_player",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "010_render.su",
+      "function": "game_draw_enemy",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "010_render.su",
+      "function": "game_draw_boss",
+      "bytes": 176,
+      "qualifier": "static"
+    },
+    {
+      "object": "010_render.su",
+      "function": "game_render",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "cache_sync",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "sink_abort",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "sink_commit",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "sink_store",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "sink_begin",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "send_mailbox.constprop",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "011_face.su",
+      "function": "runtime_face",
+      "bytes": 848,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_soc_open",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_image_submit",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_image_poll",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_image_abort",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_image_ack",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "012_ethernet_soc.su",
+      "function": "nigo_eth_result_send",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "013_face_events.su",
+      "function": "face_events_update",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "013_face_events.su",
+      "function": "face_result_encode",
+      "bytes": 80,
+      "qualifier": "static"
+    },
+    {
+      "object": "014_face_rpc.su",
+      "function": "face_rpc_handle",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "015_ngu_upload.su",
+      "function": "ngu_crc32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "015_ngu_upload.su",
+      "function": "ngu_init",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "015_ngu_upload.su",
+      "function": "ngu_cancel",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "015_ngu_upload.su",
+      "function": "ngu_handle",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "mmio_read",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "mmio_write",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "params",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_invalidate_shadow",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_bind",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_open",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_status",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_completions",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_ack",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_try_submit",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "016_nigo_ai.su",
+      "function": "nigo_ai_counter",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "017_ultraface_decode.su",
+      "function": "uf_decode",
+      "bytes": 5936,
+      "qualifier": "static"
+    },
+    {
+      "object": "018_ultraface_runtime.su",
+      "function": "uf_bind",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "018_ultraface_runtime.su",
+      "function": "uf_start",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "018_ultraface_runtime.su",
+      "function": "uf_poll",
+      "bytes": 176,
+      "qualifier": "static"
+    },
+    {
+      "object": "019_coremark.su",
+      "function": "runtime_coremark",
+      "bytes": 352,
+      "qualifier": "static"
+    },
+    {
+      "object": "020_service.su",
+      "function": "cm_crc32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "020_service.su",
+      "function": "cm_request",
+      "bytes": 112,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "cm_read_ticks",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "start_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "stop_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "get_time",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "time_in_secs",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "portable_init",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "portable_fini",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "ee_printf",
+      "bytes": 176,
+      "qualifier": "static"
+    },
+    {
+      "object": "021_core_portme.su",
+      "function": "cm_run",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "022_core_main.su",
+      "function": "iterate",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "022_core_main.su",
+      "function": "coremark_main",
+      "bytes": 2176,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "calc_func",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "cmp_complex",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "cmp_idx",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "copy_info",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_bench_list",
+      "bytes": 96,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_init",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_insert_new",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_remove",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_undo_remove",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_find",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_reverse",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "023_core_list_join.su",
+      "function": "core_list_mergesort",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "core_bench_matrix",
+      "bytes": 64,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_test",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "core_init_matrix",
+      "bytes": 48,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_sum",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_const",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_add_const",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_vect",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_matrix",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "024_core_matrix.su",
+      "function": "matrix_mul_matrix_bitextract",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_bench_state",
+      "bytes": 144,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_init_state",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "025_core_state.su",
+      "function": "core_state_transition",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "get_seed_32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu8",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu16",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crcu32",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "crc16",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "026_core_util.su",
+      "function": "check_data_types",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "027_receiver.su",
+      "function": "runtime_receiver",
+      "bytes": 368,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "mmio_read",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "mmio_write",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_open",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_arm",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_get_progress",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_take",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_release",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_cancel",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "028_ethernet_rx.su",
+      "function": "nigo_rx_nax_cache",
+      "bytes": 0,
+      "qualifier": "static"
+    },
+    {
+      "object": "029_ethernet_rx_service.su",
+      "function": "acknowledge",
+      "bytes": 16,
+      "qualifier": "static"
+    },
+    {
+      "object": "029_ethernet_rx_service.su",
+      "function": "nigo_rx_service_open",
+      "bytes": 32,
+      "qualifier": "static"
+    },
+    {
+      "object": "029_ethernet_rx_service.su",
+      "function": "nigo_rx_service_poll",
+      "bytes": 144,
+      "qualifier": "static"
+    }
+  ],
+  "static_memblk_removed": true,
+  "dynamic_stack_high_water_measured": false
+}

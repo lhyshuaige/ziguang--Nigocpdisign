@@ -1,0 +1,244 @@
+
+Discarded input sections
+
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+ .comment       0x00000000       0x23 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x82000000         0x00040000         xrw
+service          0x82080000         0x00040000         xr
+service_ram      0x82100000         0x00040000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+LOAD /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+LOAD /mnt/d/PDS/tools/riscv_ubuntu_workspace/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a
+
+.init           0x82000000       0x30
+ *bench_*.o(.init)
+ .init          0x82000000       0x30 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+                0x82000000                _start
+
+.text           0x82000040     0x9b00
+ *bench_*.o(.text .text.*)
+ .text          0x82000040       0xcc /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+                0x82000040                iterate
+ *fill*         0x8200010c       0x14 
+ .text.startup  0x82000120      0xdc4 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+                0x82000120                main
+ *fill*         0x82000ee4       0x1c 
+ .text          0x82000f00     0x16d0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+                0x82000f00                calc_func
+                0x82001040                cmp_complex
+                0x82001280                cmp_idx
+                0x820012e0                copy_info
+                0x82001300                core_bench_list
+                0x82001dc0                core_list_init
+                0x82002180                core_list_insert_new
+                0x82002200                core_list_remove
+                0x82002240                core_list_undo_remove
+                0x82002260                core_list_find
+                0x820022c0                core_list_reverse
+                0x82002380                core_list_mergesort
+ .text.unlikely
+                0x820025d0       0x10 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+ *fill*         0x820025e0        0x0 
+ .text          0x820025e0     0x4298 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+                0x820025e0                core_bench_matrix
+                0x82003d40                matrix_test
+                0x820054a0                core_init_matrix
+                0x820058a0                matrix_sum
+                0x82005d60                matrix_mul_const
+                0x82005f60                matrix_add_const
+                0x82006200                matrix_mul_vect
+                0x820063e0                matrix_mul_matrix
+                0x82006640                matrix_mul_matrix_bitextract
+ *fill*         0x82006878        0x8 
+ .text          0x82006880     0x1510 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+                0x82006880                core_bench_state
+                0x820076c0                core_init_state
+                0x82007a20                core_state_transition
+ *fill*         0x82007d90       0x10 
+ .text          0x82007da0      0xb1c /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+                0x82007da0                get_seed_32
+                0x82007e00                crcu8
+                0x82007f40                crcu16
+                0x820081a0                crcu32
+                0x82008640                crc16
+                0x820088a0                check_data_types
+ *fill*         0x820088bc        0x4 
+ .text          0x820088c0       0xd0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+                0x820088c0                start_time
+                0x820088e0                stop_time
+                0x82008900                get_time
+                0x82008920                time_in_secs
+                0x82008940                portable_init
+                0x82008960                portable_fini
+ *fill*         0x82008990       0x10 
+ .text          0x820089a0     0x11a0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+                0x820089a0                ee_printf
+                0x820096c0                memcpy
+                0x820099a0                memset
+ .text          0x82009b40        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+
+.rodata         0x82009b40      0x70c
+ *bench_*.o(.rodata .rodata.* .srodata .srodata.*)
+ .rodata.str1.4
+                0x82009b40      0x659 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+                                0x58a (size before relaxing)
+ .rodata.str1.4
+                0x8200a199       0xad /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ *fill*         0x8200a199        0x3 
+ .rodata        0x8200a19c       0x40 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ .rodata        0x8200a1dc       0x18 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+ .rodata.str1.4
+                0x8200a1f4        0xb /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+ .rodata.str1.4
+                0x8200a1f4       0x11 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+ .rodata        0x8200a1f4       0x58 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+
+.data           0x8200a24c       0x18
+ *bench_*.o(.data .data.*)
+ .data          0x8200a24c        0xc /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+                0x8200a24c                mem_name
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+ .data          0x8200a258        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+                0x8200a258                        . = ALIGN (0x8)
+                0x8200aa58                        __global_pointer$ = (. + 0x800)
+ *bench_*.o(.sdata .sdata.*)
+ .sdata         0x8200a258        0xc /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+                0x8200a258                default_num_contexts
+                0x8200a25c                seed4_volatile
+                0x8200a260                seed3_volatile
+
+.bss            0x8200a264       0x14
+                0x8200a264                        . = ALIGN (0x4)
+                0x8200a264                        __bss_start = .
+ *bench_*.o(.sbss .sbss.* .bss .bss.* COMMON)
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+ .bss           0x8200a264        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+ .sbss          0x8200a264       0x14 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+                0x8200a26c                seed5_volatile
+                0x8200a270                seed2_volatile
+                0x8200a274                seed1_volatile
+ .bss           0x8200a278        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+ .bss           0x8200a278        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+                0x8200a278                        . = ALIGN (0x4)
+                0x8200a278                        _end = .
+                0x8203fff0                        _sp = ((ORIGIN (ram) + LENGTH (ram)) - 0x10)
+
+.service        0x82080000     0x1234
+ *svc_*.o(.text.service_start)
+ .text.service_start
+                0x82080000       0x5c /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+                0x82080000                service_start
+ *svc_*.o(.text .text.*)
+ .text          0x8208005c       0x58 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+                0x8208005c                replay_invoke
+                0x82080098                replay_return
+ .text          0x820800b4      0xbe4 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+                0x82080254                memcmp
+                0x82080288                replay_capture
+                0x8208039c                replay_main
+ .text          0x82080c98      0x59c /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+                0x82080c98                nigo_eth_open
+                0x82080cd4                nigo_eth_ready
+                0x82080cf0                nigo_eth_configure
+                0x82080de0                nigo_eth_service
+ *(.text .text.*)
+
+.service_rodata
+                0x82081234       0x58
+ *svc_*.o(.rodata .rodata.* .srodata .srodata.*)
+ .rodata.str1.4
+                0x82081234       0x29 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+                                 0x19 (size before relaxing)
+ *fill*         0x8208125d        0x3 
+ .rodata        0x82081260       0x2c /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+ .rodata.str1.4
+                0x8208128c        0xd /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+
+.rela.dyn       0x8208128c        0x0
+ .rela.init     0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+ .rela.text     0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+ .rela.text.service_start
+                0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+
+.service_data   0x8208128c        0x0
+ *svc_*.o(.data .data.* .sdata .sdata.*)
+ .data          0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+ .data          0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+ .data          0x8208128c        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+                0x00000001                        ASSERT ((SIZEOF (.service_data) == 0x0), Service data must be initialized explicitly)
+
+.service_bss    0x82100000       0xb4
+                0x82100000                        . = ALIGN (0x4)
+                0x82100000                        __service_bss_start = .
+ *svc_*.o(.sbss .sbss.* .bss .bss.* COMMON)
+ .bss           0x82100000        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+ .bss           0x82100000       0xb4 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+                0x821000ac                saved_ra
+                0x821000b0                saved_sp
+ .bss           0x821000b4        0x0 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o
+                0x821000b4                        . = ALIGN (0x4)
+                0x821000b4                        __service_bss_end = .
+                0x8213fff0                        __service_stack = ((ORIGIN (service_ram) + LENGTH (service_ram)) - 0x10)
+                0x82000028                        __reference_call_main = 0x82000028
+
+/DISCARD/
+ *(.comment .note .eh_frame*)
+OUTPUT(/mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/canonical_unpatched.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x37
+ .riscv.attributes
+                0x00000000       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_00.o
+ .riscv.attributes
+                0x00000033       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_01.o
+ .riscv.attributes
+                0x00000066       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_02.o
+ .riscv.attributes
+                0x00000099       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_03.o
+ .riscv.attributes
+                0x000000cc       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_04.o
+ .riscv.attributes
+                0x000000ff       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_05.o
+ .riscv.attributes
+                0x00000132       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_06.o
+ .riscv.attributes
+                0x00000165       0x31 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/bench_07.o
+ .riscv.attributes
+                0x00000196       0x35 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_00.o
+ .riscv.attributes
+                0x000001cb       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_01.o
+ .riscv.attributes
+                0x000001fe       0x33 /mnt/d/PDS/project/Nigo-2/experiments/coremark_replay_20261101/build/obj/svc_02.o

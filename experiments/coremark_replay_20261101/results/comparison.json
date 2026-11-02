@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "build_id": "56d1cdac",
+  "cpu_hz": 100000000,
+  "fpga_changed": false,
+  "flash_changed": false,
+  "original_simulation_100": 5.21081335481439,
+  "canonical_simulation_100": 5.210738686300869,
+  "board_automatic_100": 5.037608518273597,
+  "board_controlled_100": [
+    5.132346273654855,
+    5.136515483435225,
+    5.135744400985775
+  ],
+  "board_controlled_100_mean": 5.134868719358619,
+  "board_long_11000": [
+    5.142169570675377,
+    5.142180104191536,
+    5.1421861474012545
+  ],
+  "board_long_mean": 5.142178607422722,
+  "board_long_coremark": 514.2178607422723,
+  "board_long_span_percent": 0.00032236775777030814,
+  "previous_unified_stack_mean": 5.0120580611,
+  "gain_over_previous_stack_percent": 2.5961500193428355,
+  "difference_long_vs_short_simulation_percent": -1.3157458664813104,
+  "automatic_100_gap_percent": -3.322564773444392,
+  "iterations_per_seed": 11000,
+  "seeds_per_suite": 2,
+  "suites": 3,
+  "total_long_outer_iterations": 66000,
+  "all_standard_crc_pass": true,
+  "all_controlled_audits_pass": true,
+  "limits": [
+    "100-iteration simulations are diagnostic only, below 10 seconds.",
+    "Long-vs-short score difference is not a matched-length hardware attribution.",
+    "Model is the frozen CPU/cache/HMIC snapshot with one-cycle backing memory, not P3 RTL with a DDR PHY.",
+    "The first board sample and subsequent controlled samples have different startup state.",
+    "These are local measurements, not EEMBC-certified results."
+  ]
+}

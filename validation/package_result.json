@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "recorded_utc": "2026-11-01T18:16:52.476975+00:00",
+  "purpose": "Relocate current P3 hardware and host into a Git-ready repository",
+  "host_tests": {
+    "passed": 62,
+    "failed": 0,
+    "command": "cd upper && python -B -m unittest discover -s tests -v",
+    "network": "127.0.0.1 only"
+  },
+  "native_tests": {
+    "status": "PASS",
+    "groups": [
+      "mode",
+      "router",
+      "rx_exit",
+      "face_exit",
+      "ai_driver",
+      "ai_rpc",
+      "rx_driver",
+      "coremark"
+    ],
+    "command": "python tools/test_native.py"
+  },
+  "reference_builds": {
+    "runtime": {
+      "status": "REFERENCE_BYTES_MATCH",
+      "compiler": "riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0",
+      "binary_sha256": "38721fa41573db259d6028ec383bfb576964f3dcde6f96cec35f56832951c39b",
+      "shipped_assets_modified": false
+    },
+    "arcade": {
+      "status": "REFERENCE_BYTES_MATCH",
+      "compiler": "riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0",
+      "binary_sha256": "8f04ba8df929ea1cbb5359e18361e179b8a1cbbb79070921a033e2026d241d51",
+      "shipped_assets_modified": false
+    },
+    "bootloader": {
+      "status": "REFERENCE_BYTES_MATCH",
+      "compiler": "riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0",
+      "binary_sha256": "52a9ef99273325e609decd296e9d975abcd850f7fe024b035b531ea8abc79ee4",
+      "shipped_assets_modified": false
+    }
+  },
+  "archived_STA_summary_comparison": "PASS",
+  "PDS_source_paths_resolved": true,
+  "git_diff_check": "PASS",
+  "git_filter_preserves_packaged_bytes": true,
+  "FPGA_synthesis_run": false,
+  "FPGA_place_route_run": false,
+  "STA_rerun": false,
+  "FPGA_downloaded": false,
+  "Flash_written": false,
+  "original_workspaces_modified": false,
+  "git_history_preserved": true,
+  "git_commit_created": false,
+  "github_upload_performed": false
+}

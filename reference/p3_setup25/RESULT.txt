@@ -1,0 +1,16 @@
+P3 Flash pinfix：按用户指定 sys100 setup25ps / hold0ps 完成约束范围内签核。
+独立全角 STA；自动 PLL 附加 150ps 保留，setup 实际扣减175ps。
+原生数据库反向审计：仅 setup50→25ps，逻辑、全部布局布线、hold 与其它约束完全保留。
+setup_slow: +0.024 ns / 0 失败端点
+setup_fast: +0.269 ns / 0 失败端点
+hold_slow: +0.138 ns / 0 失败端点
+hold_fast: +0.040 ns / 0 失败端点
+Recovery、Removal、最小脉宽全部通过；未增加 false path 或 multicycle。
+签核以该预算及现有 I/O/CDC 约束为条件；不等同于未覆盖的 Flash 外部 AC 与全板电气签核。
+没有重新综合、布局或布线；旧 P3/A30/当前生产指针保留。
+
+位流已生成、JTAG SRAM 下载与回读校验通过。
+位流 SHA256：43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a
+原始 .bin 与旧 P3 Flash pinfix 逐字节相同；.sbit 的文件封装元数据不同。
+配置 Flash 与应用 Flash 均未写入。原统一固件946fbc9b仍保留在Flash中。
+新版游戏统一候选9700ce2a已通过网口校验并在DDR启动；菜单539帧约29.98FPS、CRC与像素比较通过。四款游戏手动按键验证待记录。

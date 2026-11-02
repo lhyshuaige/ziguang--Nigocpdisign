@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "build_id": "85a0e6af",
+  "functional_change": "MEM_STATIC -> MEM_STACK",
+  "requested_flags_unchanged": true,
+  "original_release_sources_unchanged": true,
+  "coremark_main_stack_bytes": 2176,
+  "bss_to_stack_top_bytes": 116512,
+  "runtime_stack_high_water_measured": false
+}

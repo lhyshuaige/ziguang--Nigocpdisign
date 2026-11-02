@@ -1,0 +1,11 @@
+{
+  "boot": {
+    "entry": 0,
+    "crc": 0
+  },
+  "download": {
+    "entry": 2181562368,
+    "crc": 3117461640,
+    "execute_ack": true
+  }
+}

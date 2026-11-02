@@ -1,0 +1,72 @@
+{
+  "nigo_host/program.py": {
+    "source": "source://soc/candidates/ethernet_bootloader_20261028/pc/program.py",
+    "source_sha256": "a874143d7a59f82f4d0ed8015f55a6d139aa156bcb6c68e23905a550ebea1d2d",
+    "bytes": 5427,
+    "type": "protocol_base_modified_in_upper"
+  },
+  "nigo_host/upload.py": {
+    "source": "source://soc/candidates/ai_ultraface_20261026/pc/upload.py",
+    "source_sha256": "7a82f3a7610430d26007d2679a9dfc0bb86ef2c4a0908612960065b9eb1b1044",
+    "bytes": 3487,
+    "type": "protocol_base_modified_in_upper"
+  },
+  "nigo_host/protocol.py": {
+    "source": "source://soc/candidates/ai_ultraface_20261026/pc/protocol.py",
+    "source_sha256": "f8919c9a175cd8c6f27489fab77d7a273ea87ac1b39450f78c843f63c692358c",
+    "bytes": 1335,
+    "type": "protocol_base_modified_in_upper"
+  },
+  "nigo_host/rx.py": {
+    "source": "source://soc/candidates/ethernet_rx_dma_p2_20261029/pc/send_image.py",
+    "source_sha256": "fb8594f06c710391dff6a9dd87913efd09eb21199e95985c6fc95d6bdcf31959",
+    "bytes": 7797,
+    "type": "protocol_base_modified_in_upper"
+  },
+  "assets/firmware/keys_led.ngb": {
+    "source": "source://soc/candidates/gpio_keys4_20261029/examples/build/keys_led.ngb",
+    "source_sha256": "2929a1cc2ba8b526a418d56f1ba1eaa555fc2c6d2df199789e5483b6a8c9bd29",
+    "bytes": 1920,
+    "type": "asset"
+  },
+  "assets/firmware/receiver.ngb": {
+    "source": "source://soc/build/mes2l676_soc_rx_dma_p2_setup50_20261029/board_test/receiver.ngb",
+    "source_sha256": "7d8b54347fa18c0a4990eddf73a7afdadeb8a8ac56b30cf3c2c90cfb4817994d",
+    "bytes": 5376,
+    "type": "asset"
+  },
+  "assets/firmware/ultraface.ngb": {
+    "source": "source://upper/firmware/ultraface/build/ultraface.ngb",
+    "source_sha256": "2e8b44c628a245fe75d0d72a2d6070da88d282452381ce44a2ad4cbd880fb5e6",
+    "bytes": 20888,
+    "type": "asset",
+    "build_id": "17db1bb7"
+  },
+  "assets/model/ultraface.ngm": {
+    "source": "source://soc/candidates/ai_ultraface_20261026/assets/ultraface.ngm",
+    "source_sha256": "569f94b78e7088348ce4f4c693584757bef516a284007884d3e74d540fd506cf",
+    "bytes": 1371584,
+    "type": "asset"
+  },
+  "assets/firmware/coremark.ngb": {
+    "source": "firmware/coremark/build/coremark.ngb",
+    "source_sha256": "c014428df25328eea26e32fe5a3c74037f36f2b6a48a8beee40b0e46a9e136bb",
+    "bytes": 27920,
+    "type": "asset",
+    "build_id": "5d467f12",
+    "upstream_commit": "1f483d5b8316753a742cbf5590caf5bd0a4e4777"
+  },
+  "assets/firmware/ultraface_legacy_20261028.ngb": {
+    "source": "source://soc/candidates/ethernet_bootloader_20261028/application/build/application.ngb",
+    "source_sha256": "8793af36863c402e2f346fa3fe81ef990e870bf6ca849201632cb290a2dd763b",
+    "bytes": 19672,
+    "type": "asset"
+  },
+  "assets/firmware/runtime.ngb": {
+    "source": "firmware/recipes/runtime.json",
+    "source_sha256": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661",
+    "bytes": 125368,
+    "type": "asset",
+    "build_id": "9700ce2a"
+  }
+}

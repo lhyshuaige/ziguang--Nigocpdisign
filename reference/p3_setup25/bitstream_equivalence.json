@@ -1,0 +1,15 @@
+{
+  "old_sbit": "source://soc/build/mes2l676_soc_p3_flash_pinfix_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+  "new_sbit": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+  "same_length": true,
+  "changed_byte_offsets": [
+    104,
+    105,
+    107,
+    108,
+    110,
+    111
+  ],
+  "all_changes_in_first_1636_bytes": true,
+  "raw_bin_identical": true
+}

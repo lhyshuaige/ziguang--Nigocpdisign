@@ -1,0 +1,12 @@
+{
+  "boot": {
+    "entry": 0,
+    "crc": 0
+  },
+  "download": {
+    "entry": 2181038080,
+    "crc": 3345433655,
+    "execute_ack": true
+  },
+  "build_id": "85a0e6af"
+}

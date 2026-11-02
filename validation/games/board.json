@@ -1,0 +1,152 @@
+{
+  "status": "FOUR_GAMES_BASIC_BOARD_VALIDATION_COMPLETE",
+  "runtime_build_id": "9700ce2a",
+  "fpga_bitstream": "source://soc/build/mes2l676_soc_p3_flash_pinfix_setup25_20261101/generate_bitstream/pg2l100h_soc_p3_top.sbit",
+  "fpga_sha256": "43fc76db3db726b4eb9ec2648f9dcda1a946bb90f45481da4fbfec925c3d009a",
+  "runtime_ngb_sha256": "5047392f58056cc307995d6eabd8afe76bdddf0a8b6c3690551674ea403bf661",
+  "upload_result": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/upload_20261101T162141Z.json",
+  "regression_result": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/regression_20261101T162157Z/result.json",
+  "manual_GUI_evidence": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/result.json",
+  "menu_frames": 539,
+  "menu_FPS": [
+    29.982363315716874,
+    29.982363315716874
+  ],
+  "menu_pixels_exact_reference_per_capture": 76800,
+  "menu_invalid_packets": 0,
+  "menu_dropped_frames": 0,
+  "mode_switch_without_reset": true,
+  "rx_gray8_rgb565_commit": true,
+  "rx_DDR_readback": false,
+  "gameplay_manual_status": "BASIC_OPERATIONS_COMPLETED_ACROSS_TWO_RUNS",
+  "physical_flash_written": false,
+  "default_runtime_asset_unchanged": true,
+  "completed_menu_soak": {
+    "evidence": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162344Z/result.json",
+    "stats": {
+      "received": 8032,
+      "dropped": 0,
+      "invalid": 0,
+      "fps": 30.103718694707496,
+      "age": 0.01600000000325963
+    },
+    "window_closed_cleanly": true
+  },
+  "manual_snapshot": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/manual_snapshot_20261101T164232Z.json",
+  "observed_games": {
+    "0": {
+      "observed_frames": 10845,
+      "key_masks": [
+        0,
+        2
+      ],
+      "fps_median": 29.982363315716874,
+      "first_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_0_first.png",
+      "latest_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_0.png"
+    },
+    "1": {
+      "observed_frames": 8566,
+      "key_masks": [
+        0,
+        4,
+        8,
+        2,
+        1
+      ],
+      "fps_median": 29.982363315716874,
+      "first_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_1_first.png",
+      "latest_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_1.png"
+    },
+    "2": {
+      "observed_frames": 2222,
+      "key_masks": [
+        0,
+        4,
+        1
+      ],
+      "fps_median": 29.982363315716874,
+      "first_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_2_first.png",
+      "latest_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_2.png"
+    },
+    "3": {
+      "observed_frames": 839,
+      "key_masks": [
+        0,
+        2,
+        4,
+        3
+      ],
+      "fps_median": 29.982363315716874,
+      "first_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_3_first.png",
+      "latest_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/board_game_3.png"
+    }
+  },
+  "manual_stream_stats": {
+    "received": 22558,
+    "dropped": 0,
+    "invalid": 0,
+    "fps": 29.98236331560695,
+    "age": 0.015999999988707714
+  },
+  "all_four_key_inputs_observed": true,
+  "manual_stream_errors": [],
+  "currently_observed_runtime": "9700ce2a",
+  "expected_runtime": "9700ce2a",
+  "runtime_changed": true,
+  "reset_cause": "CAUSE_UNCONFIRMED_POSSIBLE_MANUAL_RESET",
+  "new_game_test_stream_final_complete_frames": 22618,
+  "new_game_test_stream_dropped": 0,
+  "new_game_test_stream_invalid": 0,
+  "version_change_evidence": {
+    "gui_report": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_20261101T162821Z/result.json",
+    "host_log": "source://upper/logs/session_20261101_102822.jsonl",
+    "last_good_generation": 4,
+    "returned_generation": 1,
+    "first_timeout_local": "2026-11-01T10:41:02-06:00",
+    "old_runtime_confirmed_local": "2026-11-01T10:42:51-06:00"
+  },
+  "old_runtime_frames_excluded": true,
+  "user_reported_blocks_operation_complete": true,
+  "observed_runtime_at_followup": "946fbc9b",
+  "new_blocks_validation_complete": true,
+  "followup_checked_utc": "2026-11-01T17:23:41.836983+00:00",
+  "user_latest_reset_clarification": "那可能是我不小心按到了",
+  "reset_audit": "source://upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/AUDIT_RESULT.json",
+  "followup_validation": {
+    "status": "BASIC_BLOCKS_AND_BOUNDED_OBSERVATION_PASS",
+    "recorded_utc": "2026-11-01T17:23:41.836983+00:00",
+    "runtime_build_id": "9700ce2a",
+    "raw_evidence": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_verified_20261101T171818Z/result.json",
+    "verified_observation_seconds": 321.734,
+    "version_checks": 318,
+    "all_versions_match": true,
+    "maximum_query_interval_seconds": 1.047,
+    "last_query_age_seconds": 1.536,
+    "stats": {
+      "received": 9655,
+      "dropped": 0,
+      "invalid": 0,
+      "fps": 29.98236331560695,
+      "age": 0.0
+    },
+    "median_fps": 29.982363315716874,
+    "blocks_observed_frames": 839,
+    "blocks_key_masks_observed": [
+      0,
+      1,
+      2,
+      8,
+      3
+    ],
+    "blocks_image": "source://upper/candidates/arcade_visual_p1_20261101/board_validation/gui_verified_20261101T171818Z/board_game_4_first.png",
+    "manual_confirmation": "okl",
+    "previous_reset_cause": "UNCONFIRMED_POSSIBLE_MANUAL_RESET",
+    "no_spontaneous_reset_claim": true,
+    "physical_flash_written": false,
+    "FPGA_reprogrammed": false,
+    "scope": "Basic blocks operation plus bounded mixed-scene stream observation; not exhaustive game or board stability qualification"
+  },
+  "current_run_version_checks_passed": true,
+  "previous_reset_cause_unresolved": true,
+  "blocks_manual_confirmation": "okl"
+}

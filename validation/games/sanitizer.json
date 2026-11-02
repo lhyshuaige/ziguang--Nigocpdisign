@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "host": "Linux x86_64, not physical Nigo CPU",
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "seconds": 39.799007118,
+  "command": [
+    "gcc",
+    "-std=c11",
+    "-O1",
+    "-g",
+    "-fno-omit-frame-pointer",
+    "-fno-sanitize-recover=all",
+    "-fsanitize=address,undefined",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-misleading-indentation",
+    "-Isource://upper/candidates/arcade_visual_p1_20261101/arcade/src",
+    "-Isource://upper/candidates/arcade_visual_p1_20261101/shooter/src",
+    "-Isource://upper/candidates/arcade_visual_p1_20261101/shooter/sim",
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/arcade.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/draw.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/protocol.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/src/game.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/src/render.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/sim/scenarios.c",
+    "source://upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/stress.c",
+    "-o",
+    "source://upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/build/stress"
+  ],
+  "summary": "RESET_AUDIT_SANITIZER_PASS steps=274800 renders=137400",
+  "inputs": {
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/arcade.c": "e2f2d3f4bdb6b6275daac2c27967c7f1ccff0021c11023e0b0c268e04a0296b7",
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/draw.c": "3d0ad75c019387ca43874f6a1e03073ed12fd0e245b9e9170ea51d3c74b85615",
+    "source://upper/candidates/arcade_visual_p1_20261101/arcade/src/protocol.c": "2e62431b3b1bef594a1ae7f841d68085ebff09129d1eb06ad4ff6528d8addce8",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/src/game.c": "66057585779ccf8904794197e9e5e63b7cd9d0158eb00431aa0aabd34ece6fa1",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/src/render.c": "83e0c6b9f38addc18b20fdbff20a1c2752eed239367a5643f11988a050d9358a",
+    "source://upper/candidates/arcade_visual_p1_20261101/shooter/sim/scenarios.c": "37b7dff0c85dc03678d007c75c734660bec0878a3041ed22e25f6ddb228fecb3",
+    "source://upper/candidates/arcade_visual_p1_20261101/diagnostics/reset_20261101/stress.c": "51dbc60e3458a5e5b76920b68d976a6301e6ab69847ea6ef763b226f8d5fdb2f"
+  }
+}
